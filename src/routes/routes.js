@@ -11,7 +11,7 @@ const routes = [
                 exact: true,
                 path: '/',
                 component: Home,
-                auth: true,
+                auth: false,
             }
         ],
     },

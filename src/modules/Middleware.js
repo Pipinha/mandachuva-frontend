@@ -1,7 +1,6 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Redirect, Route, Switch, withRouter } from "react-router-dom";
-import { sessionStart } from "../actions/App";
 import Header from "../components/Header";
 
 class Middleware extends Component {
@@ -9,13 +8,8 @@ class Middleware extends Component {
         super(props)
 
         this.state = {
-            tab: [],
-            categoryId: 0,
-            menuId: 0,
             auth: false,
         }
-
-        props.dispatch(sessionStart);
     }
 
     handlerHeader(attr) {
@@ -30,7 +24,7 @@ class Middleware extends Component {
     render() {
 
         return (
-            <Header categoryId={this.state.categoryId} menuId={this.state.menuId} tab={this.state.tab} auth={this.state.auth}>
+            <Header auth={this.state.auth}>
                 <Switch>
                     {this.props.routes.map((a, i) => {
                         return <Route key={'route-middleware-' + i} exact={a.exact} path={a.path} render={(props) => {
