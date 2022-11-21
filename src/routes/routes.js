@@ -1,4 +1,5 @@
 import Home from "../modules/Home"
+import Test from "../modules/Test"
 import Middleware from "../modules/Middleware"
 
 const routes = [
@@ -7,6 +8,12 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: true,
+                path: '/test',
+                component: Test,
+                auth: false,
+            },
             {
                 exact: true,
                 path: '/',
