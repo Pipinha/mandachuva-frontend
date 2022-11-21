@@ -5,7 +5,7 @@ class Button extends Component {
     render(){
         return (
             <>
-                <button className={this.props.className}>{this.props.children}</button>
+                <button className={`${this.props.className} ${(this.props.elevated?'with-shadow':'no-shadow')}`}>{this.props.children}</button>
             </>
         )
     }
@@ -13,6 +13,7 @@ class Button extends Component {
 
 Button.defaultProps = {
     className: 'btn btn-a',
+    elevated: false,
 }
 
 export default Button;

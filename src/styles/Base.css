@@ -8,14 +8,38 @@
     line-height: normal;
     font-size: 14px;
     padding: 0 20px;
+    border: none;
+}
+
+.btn.no-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn.with-shadow {
+    /* TODO: retirar depois o border */
+    border: none;
 }
 
 .btn.btn-a {
     background-color: #20DEF6;
-    border: transparent;
     color: #0E181A;
+    
 }
 
 .btn.btn-a:hover {
     background-color: #12CCE4;
+}
+
+.btn.btn-a:focus {
+    background-color: #12CCE4;
+}
+
+.btn.btn-a:active {
+    background-color: #07C0D8;
+}
+
+.btn.btn-a:visited {
+    background-color: #07C0D8;
 }
