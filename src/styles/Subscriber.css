@@ -1,0 +1,170 @@
+* {
+    font-family: 'Montserrat';
+}
+
+.container-custom {
+    max-width: 1366px;
+}
+
+header.b1 {
+    height    : auto !important;
+    padding   : 0;
+    position  : static;
+    background: #4A4A4A;
+    border    : none;
+}
+
+header.b1 .box-info {
+    height     : 43px;
+    display    : flex !important;
+    align-items: center;
+}
+
+header.b1 .box-info .info {
+    display    : flex;
+    align-items: center;
+    color      : #fff;
+    font-size  : 16px;
+
+}
+
+header.b1 .box-info .info:hover,
+header.b1 .box-info .info:hover i {
+    text-decoration: none;
+}
+
+header.b1 .box-info .info i {
+    color: #96C11E;
+}
+
+header.b2 {
+    height    : auto !important;
+    padding   : 0;
+    position  : static;
+    background: #fff;
+    border    : none;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1);
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+header.b2 .box-logo {
+    height     : 108px;
+    display    : flex;
+    align-items: center;
+}
+
+header.b2 .box-logo .logo {
+    display: block;
+}
+
+header.b2 .box-logo .logo img {
+    max-height: 85px;
+}
+
+header.b3 {
+    height          : auto !important;
+    padding         : 0;
+    position        : static;
+    background      : #fff;
+    border          : none;
+    background-color: transparent;
+    background-image: linear-gradient(180deg, #345975 0%, #29A1F2 100%);
+}
+
+header.b3 .box-description {
+    min-height : 65px;
+    display    : flex;
+    align-items: center;
+    color      : #F3EBEB;
+    font-size  : 26px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+.title-main {
+    color: #000;
+}
+
+.plan .plan-item .h {
+    padding: 15px 0;
+}
+
+.plan .plan-item .h .title {
+    font-size  : 30px;
+    line-height: 30px;
+    text-align : center;
+    font-weight: bold;
+}
+
+.plan .plan-item .h .qty {
+    text-align: center;
+    font-size : 12px;
+}
+
+.plan .plan-item .b {
+    background: #f7f7f7;
+}
+
+.plan .plan-item .b .installment {
+    text-align : center;
+    color      : #333;
+    font-size  : 30px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.plan .plan-item .b .installment .cent {
+    font-size     : 14px;
+    display       : inline-block;
+    margin-left   : 2px;
+    vertical-align: text-top;
+}
+
+.plan .plan-item .b .options {
+    margin-top: 10px;
+    padding   : 0 20px;
+}
+
+.plan .plan-item .b .options .options-item {
+    display      : flex;
+    align-items  : center;
+    font-size    : 16px;
+    font-weight  : 300;
+    min-height   : 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.plan .plan-item .b .options .options-item i {
+    margin-right: 10px;
+}
+
+.plan .plan-item .b .actions {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding-top    : 20px;
+}
+
+.plan .plan-item .b .actions .enter {
+    font-size       : 18px;
+    font-weight     : 600;
+    background-color: #96C11E;
+    border-radius   : 100px;
+    padding-top     : 15px;
+    padding-right   : 30px;
+    padding-bottom  : 15px;
+    padding-left    : 30px;
+    box-shadow      : none;
+    text-decoration : none;
+    border          : 0;
+    outline         : 0;
+    color           : #fff;
+}
+
+.plan .plan-item .b .price {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding-top    : 20px;
+    padding-bottom : 20px;
+}

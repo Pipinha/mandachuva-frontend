@@ -1,0 +1,122 @@
+.container-login {
+    height: 100%;
+}
+
+.container-login .sdk {
+    background: #127e9f;
+    flex: 1 1 40%;
+    padding: 100px 20px 50px;
+}
+
+.container-login .sdk h2 {
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -1.13px;
+    line-height: 44px;
+    margin: 45px 0 0;
+    font-size: 36px;
+}
+
+.container-login .sdk .logo img {
+    height: 33px;
+}
+
+.container-login .img {
+    background: #eeeeef;
+    flex: 1 1 60%;
+}
+
+.authfast-sdk {
+    margin-top: 50px !important;
+    width: 70%;
+}
+
+.authfast-sdk .title-h1,
+.authfast-sdk .title-sep {
+    display: none !important;
+}
+
+.authfast-sdk .login {
+    max-width: 100% !important;
+}
+
+.authfast-sdk .login input,
+.authfast-sdk .login select {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    padding: 14px 14px;
+    transition: 0.2s all ease;
+    border: 2px solid #EEE;
+    height: auto !important;
+}
+
+.authfast-sdk .login .pass {
+    border-right-width: 0;
+}
+
+.authfast-sdk .brand {
+    border: 2px solid #EEE;
+    width: auto !important;
+    border-left-width: 0;
+    padding-right: 14px !important;
+}
+
+.authfast-sdk .brand span {
+    font-weight: 800;
+}
+
+.authfast-sdk .login button {
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: MontSerrat;
+    height: auto !important;
+    width: 100%;
+    padding: 14px 28px;
+}
+
+.authfast-sdk .login a.forget,
+.authfast-sdk .login a.forget small {
+    color: #f2f2f2 !important;
+}
+
+.authfast-sdk .hide-pass {
+    border: 2px solid #EEE !important;
+    width: auto !important;
+    border-left-width: 0 !important;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    width: 57px !important;
+}
+
+a.bydev {
+    color: #f2f2f2;
+}
+
+@media (max-width: 767px) {
+    .container-login {
+        flex-direction: column;
+    }
+
+    .container-login .sdk {
+        padding: 40px 20px 40px;
+    }
+
+    .container-login .sdk h2 {
+        font-size: 28px;
+    }
+
+    .authfast-sdk {
+        width: 90%;
+    }
+}
