@@ -1,0 +1,21 @@
+.btn {
+    height: 40px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    padding: 0 20px;
+}
+
+.btn.btn-a {
+    background-color: #20DEF6;
+    border: transparent;
+    color: #0E181A;
+}
+
+.btn.btn-a:hover {
+    background-color: #12CCE4;
+}

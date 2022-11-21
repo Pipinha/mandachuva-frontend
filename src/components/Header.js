@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 import Loader from "./Loader";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import './../styles/Base.css'
 
 class Header extends Component {
     render() {

@@ -1,16 +1,15 @@
 import { Component } from "react";
 import { connect } from "react-redux";
-import { /* Link, */ withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
+import Button from "../components/Button";
 
 class Home extends Component {
 
     render() {
         return (
-            <div className="card-custom">
-                <div className="card-body">
-                    <p className="card-text">HOME</p>
-                </div>
-            </div>
+            <>
+                <Button>Enabled</Button>
+            </>
         )
     }
 }
