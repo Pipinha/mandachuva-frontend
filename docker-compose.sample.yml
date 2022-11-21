@@ -1,0 +1,17 @@
+version: '2'
+services:
+  front:
+    container_name: mandachuva.front
+    image: ertfly/php7.4.9-apache-buster
+    build: .
+    restart: always
+    ports:
+      - '8000:80'
+    volumes:
+      - ./build:/app/public
+    networks:
+      - dev-net
+
+networks:
+  dev-net:
+    external: true
