@@ -1,3 +1,9 @@
+/* TYPE FAMILY */
+h1 {
+    font-size: 74px;
+}
+
+/* BUTTONS */
 .btn {
     height: 40px;
     -webkit-border-radius: 20px;
