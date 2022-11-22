@@ -20,13 +20,12 @@ class Header extends Component {
                                     <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
                                 </div>
                                 <div className="menu flex-fill text-right">
-                                    <Link className="menu-item" to={'/account/register'}>REGISTER</Link>
-                                    <Link className="menu-item" to={'/account/login'}>LOGIN</Link>
+                                    <Link className="menu-item" to={'/'}>REGISTER</Link>
+                                    <Link className="menu-item" to={'/'}>LOGIN</Link>
                                 </div>
                             </div>
                         </div>
                     </header>
-
                     {this.props.children}
                 </div>
             </>

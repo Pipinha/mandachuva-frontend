@@ -27,8 +27,24 @@ font-family: 'Roboto Condensed', sans-serif;
 .page {
     height: 100%;
 }
+/* PAGES - HOME */
 .page-home {
     background: #182123;
+}
+.page-home .block-1 .title {
+    color: #12CCE4;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
+    text-align: center;
+}
+.page-home .block-1 .caption {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 0.5px;
 }
 
 /* TYPE FAMILY */
@@ -38,7 +54,7 @@ h1 {
 
 .menu-item {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: #CCCCCC;
 }
 .menu-item:hover {
