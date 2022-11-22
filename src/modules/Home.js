@@ -3,11 +3,16 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 
 class Home extends Component {
-
     render() {
         return (
             <>
-                
+                <div className="container">
+                    <div className="row">
+                        <div className="col-md-6">
+                            <img src="/assets/img/img-home-1.png" alt="Rainmakr" />
+                        </div>
+                    </div>
+                </div>
             </>
         )
     }
