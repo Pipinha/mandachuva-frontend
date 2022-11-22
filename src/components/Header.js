@@ -1,6 +1,6 @@
 import { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import Loader from "./Loader";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -12,15 +12,29 @@ class Header extends Component {
             <>
                 <Loader show={this.props.store.loader} />
                 <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
-                {this.props.store.session.logged ?
-                    <></> : this.props.children}
+                <div className={`page page-${this.props.page}`}>
+                    <header className="header-default landpage">
+                        <div className="container">
+                            <div className="in d-flex align-items-center">
+                                <div className="logo">
+                                    <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
+                                </div>
+                                <div className="menu">
+
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
             </>
         )
     }
 }
 
-/* Header.defaultProps = {
-} */
+Header.defaultProps = {
+    auth: false,
+    page: 'home',
+}
 
 const mapPropsToState = function (store) {
     return {

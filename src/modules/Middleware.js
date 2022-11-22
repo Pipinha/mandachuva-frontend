@@ -9,14 +9,13 @@ class Middleware extends Component {
 
         this.state = {
             auth: false,
+            page: 'home',
         }
     }
 
     handlerHeader(attr) {
         this.setState({
-            tab: attr.tab,
-            categoryId: attr.categoryId,
-            menuId: attr.menuId,
+            page: attr.page,
             auth: attr.auth
         })
     }
@@ -24,7 +23,7 @@ class Middleware extends Component {
     render() {
 
         return (
-            <Header auth={this.state.auth}>
+            <Header auth={this.state.auth} page={this.state.page}>
                 <Switch>
                     {this.props.routes.map((a, i) => {
                         return <Route key={'route-middleware-' + i} exact={a.exact} path={a.path} render={(props) => {

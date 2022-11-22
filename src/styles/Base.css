@@ -1,7 +1,32 @@
+body, html, #root {
+    height: 100%;
+}
+
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
 */
+
+/* HEADERS */
+.header-default {
+    height: 56px;
+}
+.header-default .container,
+.header-default .container .in {
+    height: inherit;
+}
+
+.header-default.landpage {
+    background-color: #273539;
+}
+
+/* PAGES */
+.page {
+    height: 100%;
+}
+.page-home {
+    background: #525050;
+}
 
 /* TYPE FAMILY */
 h1 {
