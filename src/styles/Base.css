@@ -19,6 +19,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .header-default.landpage {
     background-color: #273539;
 }
+.header-default.landpage .menu .menu-item {
+    margin-left: 30px;
+}
 
 /* PAGES */
 .page {
@@ -31,6 +34,16 @@ font-family: 'Roboto Condensed', sans-serif;
 /* TYPE FAMILY */
 h1 {
     font-size: 74px;
+}
+
+.menu-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #CCCCCC;
+}
+.menu-item:hover {
+    color: #3CE9FF;
+    text-decoration: none;
 }
 
 /* BUTTONS */

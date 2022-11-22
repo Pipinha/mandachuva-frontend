@@ -19,8 +19,9 @@ class Header extends Component {
                                 <div className="logo">
                                     <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
                                 </div>
-                                <div className="menu">
-
+                                <div className="menu flex-fill text-right">
+                                    <Link className="menu-item" to={'/account/register'}>REGISTER</Link>
+                                    <Link className="menu-item" to={'/account/login'}>LOGIN</Link>
                                 </div>
                             </div>
                         </div>
