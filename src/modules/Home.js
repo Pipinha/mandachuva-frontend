@@ -11,11 +11,11 @@ class Home extends Component {
                         <div className="col-md-6 text-center">
                             <img src="/assets/img/img-home-1.png" alt="Rainmakr" />
                         </div>
-                        <div className="col-md-6">
+                        <div className="col-md-6 d-flex justify-content-center flex-column">
                             <div className="title">BE YOUR BUSINESS MANAGER</div>
-                            <div className="caption mt-4">Sell your content, get jobs, pitch to brands and be part of the Rain community!</div>
+                            <div className="caption mt-4 px-4">Sell your content, get jobs, pitch to brands and be part of the Rain community!</div>
                             <div className="box-button">
-                                <Link class="btn">Be a Rainmakr</Link>
+                                <Link to={'/'} className="btn">Be a Rainmakr</Link>
                             </div>
                         </div>
                     </div>

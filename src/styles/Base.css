@@ -38,6 +38,7 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 48px;
     font-weight: 400;
     text-align: center;
+    letter-spacing: 0.5px;
 }
 .page-home .block-1 .caption {
     font-family: 'Roboto', sans-serif;
