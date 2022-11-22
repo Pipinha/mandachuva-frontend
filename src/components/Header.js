@@ -8,12 +8,10 @@ import './../styles/Base.css'
 
 class Header extends Component {
     render() {
-
         return (
             <>
                 <Loader show={this.props.store.loader} />
                 <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
-                <header>header</header>
                 {this.props.store.session.logged ?
                     <></> : this.props.children}
             </>
