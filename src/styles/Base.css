@@ -70,7 +70,7 @@ font-family: 'Roboto Condensed', sans-serif;
     left: 35px;
 }
 .page-home .block-2 .adjust {
-    width: 390px;
+    padding: 0 30px;
 }
 
 /* HELPERS */
