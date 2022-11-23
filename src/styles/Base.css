@@ -39,8 +39,7 @@ font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px;
     line-height: 48px;
     font-weight: 400;
-    text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: -1.5px;
 }
 .page-home .caption {
     font-family: 'Roboto', sans-serif;
@@ -48,12 +47,35 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 25px;
     color: #FFFFFF;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: -0.5px;
 }
 
 .page-home .block-2 .box-brand {
     background-color: #273539;
-    padding: 50px 30px;
+    padding: 40px 30px;
+}
+.page-home .block-2 .bg-brand {
+    position: relative;
+    width: 390px;
+}
+.page-home .block-2 .title-over {
+    color: #FF6B00;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 400;
+    letter-spacing: -1.5px;
+    position: absolute;
+    top: 88px;
+    left: 35px;
+}
+.page-home .block-2 .adjust {
+    width: 390px;
+}
+
+/* HELPERS */
+.mt-6 {
+    margin-top: 60px;
 }
 
 /* TYPE FAMILY */
