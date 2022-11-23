@@ -33,7 +33,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-home {
     background: #182123;
 }
-.page-home .block-1 .title {
+.page-home .title {
     color: #12CCE4;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px;
@@ -42,13 +42,18 @@ font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     letter-spacing: 0.5px;
 }
-.page-home .block-1 .caption {
+.page-home .caption {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 25px;
     color: #FFFFFF;
     text-align: center;
     letter-spacing: 0.5px;
+}
+
+.page-home .block-2 .box-brand {
+    background-color: #273539;
+    padding: 50px 30px;
 }
 
 /* TYPE FAMILY */
@@ -89,8 +94,9 @@ h1 {
 }
 
 .btn.with-shadow {
-    /* TODO: retirar depois o border */
-    border: none;
+    -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.2);
 }
 
 .btn.btn-a {

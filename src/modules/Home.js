@@ -13,9 +13,20 @@ class Home extends Component {
                         </div>
                         <div className="col-md-6 d-flex justify-content-center flex-column">
                             <div className="title">BE YOUR BUSINESS MANAGER</div>
-                            <div className="caption mt-4 px-4">Sell your content, get jobs, pitch to<br/> brands and be part of the Rain community!</div>
+                            <div className="caption mt-4 px-4">Sell your content, get jobs, pitch to<br /> brands and be part of the Rain community!</div>
                             <div className="box-button text-center mt-4">
-                                <Link to={'/'} className="btn btn-grad-a">Be a Rainmakr</Link>
+                                <Link to={'/'} className="btn btn-grad-a with-shadow">Be a Rainmakr</Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="row block-2 align-items-center">
+                        <div className="col-md-6">
+                            <div className="box-brand d-flex flex-column justify-content-center">
+                                <div className="title">ARE YOU A BRAND?</div>
+                                <div className="caption mt-3">Easy, simple and fast!</div>
+                                <div className="box-button text-center mt-3">
+                                    <Link to={'/'} className="btn btn-a with-shadow text-white">Check what you can do</Link>
+                                </div>
                             </div>
                         </div>
                     </div>
