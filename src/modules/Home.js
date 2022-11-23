@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <div className="container d-block d-sm-none">
+                <div className="container">
                     <div className="row block-1 align-items-center mt-6">
                         <div className="col-md-6 text-center">
                             <img src="/assets/img/img-home-1.png" alt="Rainmakr" className="img-fluid" />
@@ -77,7 +77,24 @@ class Home extends Component {
                             <div className="infos caption">Most brands and marketers hire ten or more creators annually, trusting their budget to get the needed return. But running influencer marketing campaigns in-house with few resources takes a lot of work. No problem, we got you.<br /><br />In Rainmakr, you select between thousands of creators the best ones for your campaign, directbook them with the highest response rates. Everything is ten times faster and with a <strong>money-back guarantee.</strong></div>
                         </div>
                     </div>
+                    <div className="row block-5 align-items-center mt-6">
+                        <div className="col-md-4">
+                            <div className="brands-title">BE ONE OF OVER<br /><span className="c1">160 BRANDS</span> THAT<br />TRUST US</div>
+                        </div>
+                        <div className="col-md-4 box-img text-center">
+                            <img src="/assets/img/img-brands.png" alt="Rainmakr" className="img-fluid" />
+                        </div>
+                        <div className="col-md-4">
+                            <div className="box-register">
+                                <div className="caption text-center">Start searching for creators and<br />posting your jobs now</div>
+                                <div className="box-btn text-center mt-3">
+                                    <Link to={'/'} className="btn btn-grad-a with-shadow">Create your account</Link>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <footer className="footer-default">&nbsp;</footer>
             </>
         )
     }
