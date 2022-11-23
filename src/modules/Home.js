@@ -6,7 +6,7 @@ class Home extends Component {
     render() {
         return (
             <>
-                <div className="container">
+                <div className="container d-block d-sm-none">
                     <div className="row block-1 align-items-center mt-6">
                         <div className="col-md-6 text-center">
                             <img src="/assets/img/img-home-1.png" alt="Rainmakr" className="img-fluid" />
