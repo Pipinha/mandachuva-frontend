@@ -63,6 +63,20 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
+                    <div className="row block-4 mt-6">
+                        <div className="col-md-6">
+                            <div className="box-img">
+                                <div className="title">ARE YOU A BRAND?</div>
+                                <div className="caption">Are you tired of searching for creators and managing campaigns?<br /><strong>You're not alone.</strong></div>
+                                <div className="img">
+                                    <img src="/assets/img/img-block-4.png" alt="Rainmakr" className="img-fluid" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-6">
+                            <div className="infos caption">Most brands and marketers hire ten or more creators annually, trusting their budget to get the needed return. But running influencer marketing campaigns in-house with few resources takes a lot of work. No problem, we got you.<br /><br />In Rainmakr, you select between thousands of creators the best ones for your campaign, directbook them with the highest response rates. Everything is ten times faster and with a <strong>money-back guarantee.</strong></div>
+                        </div>
+                    </div>
                 </div>
             </>
         )

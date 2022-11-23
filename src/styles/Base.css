@@ -103,6 +103,14 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: -2px;
 }
 
+.page-home .block-4 .box-img {
+    margin: 0 48px;
+}
+
+.page-home .block-4 .infos {
+    margin: 0 48px;   
+}
+
 /* HELPERS */
 .mt-6 {
     margin-top: 60px;
