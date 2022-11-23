@@ -107,10 +107,10 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .block-4 .box-img {
-    margin: 0 48px;
+    margin: 0 28px;
 }
 .page-home .block-4 .infos {
-    margin: 0 48px;   
+    margin: 0 28px;   
 }
 
 .page-home .block-5 .brands-title {
@@ -211,15 +211,11 @@ h1 {
     }
 
     .page-home .block-3 .box-register {
-        margin: 60px 48px 0 48px;
+        margin: 60px 28px 0 28px;
     }
 
     .page-home .block-5 .box-img {
         margin-top: 30px;
-    }
-
-    .page-home .block-5 .box-img img {
-        width: 284px;
     }
 
     .page-home .block-5 .box-register {
