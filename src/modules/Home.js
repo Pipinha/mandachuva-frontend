@@ -39,8 +39,8 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="row block-3 mt-6">
-                        <div className="col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div className="row block-3 mt-6 align-items-center">
+                        <div className="col-md-4 d-flex flex-column justify-content-center align-items-center">
                             <div className="box-info">
                                 <div className="title-links">RAINLINKS</div>
                                 <div className="caption mt-2">Get your page to share links and receive direct bookings from brands. Set the prices for your content and start selling. Easy, fast, and free.</div>
@@ -50,8 +50,17 @@ class Home extends Component {
                                 <div className="caption text-right mt-2">Access jobs from over 170 platforms in just one place. 1000s of active creators and jobs with the highest response rates.</div>
                             </div>
                         </div>
-                        <div className="col-md-6 box-img">
+                        <div className="col-md-4 box-img">
                             <img src="/assets/img/img-links-jobs.png" alt="Rainmakr" className="img-fluid" />
+                        </div>
+                        <div className="col-md-4">
+                            <div className="box-register">
+                                <div className="title-register">WHAT ARE YOU<br />WAITING FOR?</div>
+                                <div className="caption mt-3">Sign up now and get access to your day-to-day operations platform.</div>
+                                <div className="box-btn mt-3">
+                                    <Link to={'/'} className="btn btn-grad-a with-shadow">Be a Rainmakr</Link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
