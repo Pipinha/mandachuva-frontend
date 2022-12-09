@@ -3,6 +3,14 @@ import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 
 class Home extends Component {
+    constructor(props) {
+        super(props)
+
+        props.handlerHeader({
+            page: 'home'
+        })
+    }
+
     render() {
         return (
             <>
