@@ -193,6 +193,39 @@ h4 {
     margin: 0;
 }
 
+a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none !important;
+    border: none !important;
+}
+
+textarea:focus,
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+
+input[type=text].with-label,
+input[type=email].with-label,
+input[type=password].with-label {
+    background: #0E181A;
+}
+
 .menu-item {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -209,6 +242,28 @@ h4 {
     background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgba(237, 30, 121, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.text-pitaya {
+    color: #ED1E79;
+}
+
+a.text-pitaya:hover {
+    text-decoration: underline;
+    color: #ED1E79;
+}
+
+.text-gray-20 {
+    color: #CCCCCC;
+}
+
+.text-gray-20:hover {
+    text-decoration: underline;
+    color: #CCCCCC;
+}
+
+.bg-steelo-m2 {
+    background-color: #0E181A;
 }
 
 /* BUTTONS */
