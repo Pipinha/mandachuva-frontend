@@ -23,7 +23,7 @@ class AccountLogin extends Component {
         return (
             <>
                 <div className="d-flex align-items-center justify-content-center">
-                    <div className="box-central mt-6">
+                    <div className="box-central mt-6 mb-6">
                         <div className="in">
                             <div className="logo d-flex align-items-center justify-content-center">
                                 <img src="/assets/img/logo-login.png" alt="Rainmaker" />
@@ -45,6 +45,15 @@ class AccountLogin extends Component {
                                     </div>
                                     <div className="mt-3">
                                         <button type="submit" className="btn btn-a btn-block with-shadow">Login</button>
+                                    </div>
+                                    <h5 className="text-gray-30 text-center mt-4">OR CONTINUE WITH</h5>
+                                    <div className="d-flex justify-content-center mt-4">
+                                        <Link to={'/'}><img src="/assets/img/ico-facebook.png" alt="Rainmakr" /></Link>
+                                        <Link to={'/'} className="ml-2"><img src="/assets/img/ico-google.png" alt="Rainmakr" /></Link>
+                                    </div>
+                                    <div className="line-sep bg-steelo-l2 mt-4">&nbsp;</div>
+                                    <div>
+                                        <h6 className="text-white mt-4">IF YOU DON’T HAVE AN ACCOUNT <Link className="h6 text-blueberry-l2">REGISTER HERE !</Link></h6>
                                     </div>
                                 </form>
                             </div>

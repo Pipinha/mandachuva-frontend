@@ -160,9 +160,17 @@ font-family: 'Roboto Condensed', sans-serif;
     height: 155px;
 }
 
+.page-account-login .box-central .line-sep {
+    height: 1px;
+}
+
 /* HELPERS */
 .mt-6 {
     margin-top: 60px;
+}
+
+.mb-6 {
+    margin-bottom: 60px;
 }
 
 /* TYPE FAMILY */
@@ -190,6 +198,26 @@ h4 {
     font-size: 26px;
     line-height: 26px;
     letter-spacing: 0.25px;
+    margin: 0;
+}
+
+h5,
+.h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+h6,
+.h6 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0px;
     margin: 0;
 }
 
@@ -237,6 +265,15 @@ input[type=password].with-label {
 }
 
 /* COLORS */
+.text-blueberry-l2 {
+    color: #3CE9FF;
+}
+
+a.text-blueberry-l2:hover {
+    text-decoration: none;
+    color: #3CE9FF;
+}
+
 .text-grad-hot-pink {
     background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgba(237, 30, 121, 1) 100%);
     -webkit-background-clip: text;
@@ -261,8 +298,29 @@ a.text-pitaya:hover {
     color: #CCCCCC;
 }
 
+.text-gray-30 {
+    color: #B5B5B5;
+}
+
+.text-gray-30:hover {
+    text-decoration: underline;
+    color: #B5B5B5;
+}
+
+.bg-steelo-l2 {
+    background-color: #5D818D;
+}
+
+.bg-steelo-l1 {
+    background-color: #273539;
+}
+
 .bg-steelo-m2 {
     background-color: #0E181A;
+}
+
+.bg-gray-20 {
+    background-color: #CCCCCC;
 }
 
 /* BUTTONS */
