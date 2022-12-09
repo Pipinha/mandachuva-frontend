@@ -9,16 +9,8 @@ const initialState = {
     loader: false,
     error: '',
     success: '',
-    config: {
-        logoA: '',
-        logoB: '',
-        logoEloss: '',
-        bgLoginA: '',
-        ip: '',
-    },
     session: {
         logged: false,
-        name: '',
         photo: '',
         profileId: null,
     },
@@ -51,21 +43,8 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 session: {
                     logged: action.payload.logged,
-                    name: action.payload.name,
                     photo: action.payload.photo,
                     profileId: action.payload.profileId
-                }
-            }
-        case 'CONFIG':
-            return {
-                ...state,
-                first: false,
-                config: {
-                    logoA: action.payload.logoA,
-                    logoB: action.payload.logoB,
-                    logoEloss: action.payload.logoEloss,
-                    bgLoginA: action.payload.bgLoginA,
-                    ip: action.payload.ip,
                 }
             }
         default:
