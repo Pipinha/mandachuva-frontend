@@ -44,7 +44,7 @@ class AccountLogin extends Component {
                                         <Link to={'/'} className="text-pitaya">Forgot password ?</Link>
                                     </div>
                                     <div className="mt-3">
-                                        <button type="submit" className="btn btn-a btn-block">Login</button>
+                                        <button type="submit" className="btn btn-a btn-block with-shadow">Login</button>
                                     </div>
                                 </form>
                             </div>
