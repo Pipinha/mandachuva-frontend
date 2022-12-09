@@ -13,18 +13,31 @@ class Header extends Component {
                 <Loader show={this.props.store.loader} />
                 <ToastContainer position="top-right" autoClose={5000} hideProgressBar={false} newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover />
                 <div className={`page page-${this.props.page}`}>
-                    <header className="header-default landpage">
-                        <div className="container">
-                            <div className="in d-flex align-items-center">
-                                <div className="logo">
-                                    <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
+                    {!this.props.store.session.logged ?
+                        (
+                            <header className="header-default landpage">
+                                <div className="container">
+                                    <div className="in d-flex align-items-center">
+                                        <div className="logo">
+                                            <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
+                                        </div>
+                                        <div className="menu flex-fill text-right">
+                                            <Link className="menu-item" to={'/account/login'}>LOGIN</Link>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div className="menu flex-fill text-right">
-                                    <Link className="menu-item" to={'/'}>LOGIN</Link>
+                            </header>
+                        ) : (
+                            <header className="header-default logged">
+                                <div className="container">
+                                    <div className="in d-flex align-items-center">
+                                        <div className="logo">
+                                            <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </header>
+                            </header>
+                        )}
                     {this.props.children}
                 </div>
             </>

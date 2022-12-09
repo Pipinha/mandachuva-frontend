@@ -15,7 +15,7 @@ class Home extends Component {
                             <div className="title text-center">BE YOUR BUSINESS MANAGER</div>
                             <div className="caption text-center mt-4 px-4">Sell your content, get jobs, pitch to<br /> brands and be part of the Rain community!</div>
                             <div className="box-button text-center mt-4">
-                                <Link to={'/'} className="btn btn-grad-a with-shadow">Be a Rainmakr</Link>
+                                <Link to={'/register'} className="btn btn-grad-a with-shadow">Be a Rainmakr</Link>
                             </div>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ class Home extends Component {
                                 <div className="title text-center">ARE YOU A BRAND?</div>
                                 <div className="caption mt-3">Easy, simple and fast!</div>
                                 <div className="box-button text-center mt-3">
-                                    <Link to={'/'} className="btn btn-a with-shadow text-white">Check what you can do</Link>
+                                    <Link to={'/register'} className="btn btn-a with-shadow text-white">Check what you can do</Link>
                                 </div>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ class Home extends Component {
                                 <div className="title-register">WHAT ARE YOU<br />WAITING FOR?</div>
                                 <div className="caption mt-3">Sign up now and get access to your day-to-day operations platform.</div>
                                 <div className="box-btn mt-3">
-                                    <Link to={'/'} className="btn btn-grad-a with-shadow">Be a Rainmakr</Link>
+                                    <Link to={'/register'} className="btn btn-grad-a with-shadow">Be a Rainmakr</Link>
                                 </div>
                             </div>
                         </div>
@@ -88,7 +88,7 @@ class Home extends Component {
                             <div className="box-register">
                                 <div className="caption text-center">Start searching for creators and<br />posting your jobs now</div>
                                 <div className="box-btn text-center mt-3">
-                                    <Link to={'/'} className="btn btn-grad-a with-shadow">Create your account</Link>
+                                    <Link to={'/register'} className="btn btn-grad-a with-shadow">Create your account</Link>
                                 </div>
                             </div>
                         </div>
