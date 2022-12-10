@@ -1,5 +1,7 @@
-body, html, #root {
-    height: 100%;
+body,
+html,
+#root {
+    height  : 100%;
     overflow: hidden;
 }
 
@@ -32,7 +34,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 /* PAGES */
 .page {
-    height: 100%;
+    height  : 100%;
     overflow: auto;
 }
 
@@ -42,42 +44,42 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .title {
-    color: #12CCE4;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 48px;
-    line-height: 48px;
-    font-weight: 400;
+    color         : #12CCE4;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-size     : 48px;
+    line-height   : 48px;
+    font-weight   : 400;
     letter-spacing: -2x;
 }
 
 .page-home .caption {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    line-height: 25px;
-    color: #FFFFFF;
+    font-family   : 'Roboto', sans-serif;
+    font-size     : 16px;
+    line-height   : 25px;
+    color         : #FFFFFF;
     letter-spacing: -0.5px;
 }
 
 .page-home .block-2 .box-brand {
     background-color: #273539;
-    padding: 40px 30px;
+    padding         : 40px 30px;
 }
 
 .page-home .block-2 .bg-brand {
     position: relative;
-    width: 390px;
+    width   : 390px;
 }
 
 .page-home .block-2 .title-over {
-    color: #FF6B00;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 38px;
-    line-height: 38px;
-    font-weight: 400;
+    color         : #FF6B00;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-size     : 38px;
+    line-height   : 38px;
+    font-weight   : 400;
     letter-spacing: -2x;
-    position: absolute;
-    top: 88px;
-    left: 35px;
+    position      : absolute;
+    top           : 88px;
+    left          : 35px;
 }
 
 .page-home .block-2 .adjust {
@@ -89,20 +91,20 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .block-3 .box-info .title-links {
-    color: #ED1E79;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
-    line-height: 38px;
-    font-weight: 400;
+    color         : #ED1E79;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-size     : 40px;
+    line-height   : 38px;
+    font-weight   : 400;
     letter-spacing: -2x;
 }
 
 .page-home .block-3 .box-info .title-jobs {
-    color: #12CCE4;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
-    line-height: 38px;
-    font-weight: 400;
+    color         : #12CCE4;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-size     : 40px;
+    line-height   : 38px;
+    font-weight   : 400;
     letter-spacing: -2x;
 }
 
@@ -111,11 +113,11 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .block-3 .box-register .title-register {
-    color: #fff;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 48px;
-    line-height: 48px;
-    font-weight: 400;
+    color         : #fff;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-size     : 48px;
+    line-height   : 48px;
+    font-weight   : 400;
     letter-spacing: -2px;
 }
 
@@ -128,13 +130,13 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .block-5 .brands-title {
-    color: #fff;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 38px;
-    line-height: 38px;
-    font-weight: 400;
+    color         : #fff;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-size     : 38px;
+    line-height   : 38px;
+    font-weight   : 400;
     letter-spacing: -2px;
-    margin: 0 48px;
+    margin        : 0 48px;
 }
 
 .page-home .block-5 .brands-title .c1 {
@@ -143,15 +145,15 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-account-login,
 .page-register {
-    background-image: url(/public/assets/img/bg-login.png);
+    background-image : url(/public/assets/img/bg-login.png);
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size  : 100% auto;
 }
 
 .page-account-login .box-central,
 .page-register .box-central {
     background: #273539;
-    width: 360px;
+    width     : 360px;
 }
 
 .page-account-login .box-central .in,
@@ -179,75 +181,75 @@ font-family: 'Roboto Condensed', sans-serif;
 
 /* TYPE FAMILY */
 h1 {
-    font-size: 74px;
-    line-height: 74px;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 500;
+    font-size     : 74px;
+    line-height   : 74px;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-weight   : 500;
     letter-spacing: -1.5px;
-    margin: 0;
+    margin        : 0;
 }
 
 h2 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 500;
-    font-size: 45px;
-    line-height: 35px;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-weight   : 500;
+    font-size     : 45px;
+    line-height   : 35px;
     letter-spacing: -0.5px;
-    margin: 0;
+    margin        : 0;
 }
 
 h4 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 26px;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-weight   : 700;
+    font-size     : 26px;
+    line-height   : 26px;
     letter-spacing: 0.25px;
-    margin: 0;
+    margin        : 0;
 }
 
 h5,
 .h5 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 18px;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-weight   : 400;
+    font-size     : 18px;
+    line-height   : 18px;
     letter-spacing: 0px;
-    margin: 0;
+    margin        : 0;
 }
 
 h6,
 .h6 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
+    font-family   : 'Roboto Condensed', sans-serif;
+    font-weight   : 400;
+    font-size     : 14px;
+    line-height   : 18px;
     letter-spacing: 0px;
-    margin: 0;
+    margin        : 0;
 }
 
 a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
+    font-family   : 'Roboto', sans-serif;
+    font-weight   : 500;
+    font-size     : 14px;
     letter-spacing: 0px;
 }
 
 input[type=text],
 input[type=email],
 input[type=password] {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+    font-family   : 'Roboto', sans-serif;
+    font-weight   : 400;
+    font-size     : 16px;
     letter-spacing: 0.5px;
-    border: none;
-    outline: none;
+    border        : none;
+    outline       : none;
 }
 
 textarea:focus,
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus {
-    outline: none;
+    outline   : none;
     box-shadow: none !important;
 }
 
@@ -259,12 +261,12 @@ input[type=password].with-label {
 
 .menu-item {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    color: #CCCCCC;
+    font-size  : 14px;
+    color      : #CCCCCC;
 }
 
 .menu-item:hover {
-    color: #3CE9FF;
+    color          : #3CE9FF;
     text-decoration: none;
 }
 
@@ -275,11 +277,11 @@ input[type=password].with-label {
 
 a.text-blueberry-l2:hover {
     text-decoration: none;
-    color: #3CE9FF;
+    color          : #3CE9FF;
 }
 
 .text-grad-hot-pink {
-    background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgba(237, 30, 121, 1) 100%);
+    background             : linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgba(237, 30, 121, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -290,7 +292,7 @@ a.text-blueberry-l2:hover {
 
 a.text-pitaya:hover {
     text-decoration: underline;
-    color: #ED1E79;
+    color          : #ED1E79;
 }
 
 .text-gray-20 {
@@ -299,7 +301,7 @@ a.text-pitaya:hover {
 
 a.text-gray-20:hover {
     text-decoration: underline;
-    color: #CCCCCC;
+    color          : #CCCCCC;
 }
 
 .text-gray-30 {
@@ -308,7 +310,7 @@ a.text-gray-20:hover {
 
 a.text-gray-30:hover {
     text-decoration: underline;
-    color: #B5B5B5;
+    color          : #B5B5B5;
 }
 
 .bg-steelo-l2 {
@@ -329,35 +331,35 @@ a.text-gray-30:hover {
 
 /* BUTTONS */
 .btn {
-    height: 40px;
+    height               : 40px;
     -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0px;
-    padding: 0 20px;
-    border: none;
-    display: inline-block;
-    line-height: 40px;
+    -moz-border-radius   : 20px;
+    border-radius        : 20px;
+    font-family          : 'Roboto', sans-serif;
+    font-weight          : 500;
+    font-size            : 14px;
+    letter-spacing       : 0px;
+    padding              : 0 20px;
+    border               : none;
+    display              : inline-block;
+    line-height          : 40px;
 }
 
 .btn.no-shadow {
     -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    -moz-box-shadow   : none;
+    box-shadow        : none;
 }
 
 .btn.with-shadow {
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow   : 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow        : 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn.btn-a {
     background-color: #20DEF6;
-    color: #0E181A;
+    color           : #0E181A;
 
 }
 
@@ -380,13 +382,18 @@ a.text-gray-30:hover {
 .btn.btn-grad-a {
     background: rgb(255, 107, 0);
     background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgba(237, 30, 121, 1) 100%);
-    color: #fff;
+    color     : #fff;
 }
 
 @media screen and (max-width: 991px) {
+    .page-account-login,
+    .page-register {
+        background-size: auto 100%;
+    }
+
     .page-home .block-3 .box-img {
-        margin: 60px 0 0 0;
-        padding: 0 0 0 0;
+        margin    : 60px 0 0 0;
+        padding   : 0 0 0 0;
         text-align: right;
     }
 
