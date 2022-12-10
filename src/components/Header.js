@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './../styles/Base.css'
 
 class Header extends Component {
+    notShowLogin = ['account-login']
     render() {
         return (
             <>
@@ -22,7 +23,7 @@ class Header extends Component {
                                             <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
                                         </div>
                                         <div className="menu flex-fill text-right">
-                                            <Link className="menu-item" to={'/account/login'}>LOGIN</Link>
+                                            {this.notShowLogin.indexOf(this.props.page) !== -1 ? <></> : <Link className="menu-item" to={'/account/login'}>LOGIN</Link>}
                                         </div>
                                     </div>
                                 </div>
