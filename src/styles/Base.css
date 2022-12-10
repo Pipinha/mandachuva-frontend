@@ -293,7 +293,7 @@ a.text-pitaya:hover {
     color: #CCCCCC;
 }
 
-.text-gray-20:hover {
+a.text-gray-20:hover {
     text-decoration: underline;
     color: #CCCCCC;
 }
@@ -302,7 +302,7 @@ a.text-pitaya:hover {
     color: #B5B5B5;
 }
 
-.text-gray-30:hover {
+a.text-gray-30:hover {
     text-decoration: underline;
     color: #B5B5B5;
 }
