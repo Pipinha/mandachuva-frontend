@@ -15,7 +15,7 @@ class AccountLogin extends Component {
             pass: '',
         }
     }
-    loginSubmit() {
+    submit() {
 
     }
 
@@ -33,7 +33,7 @@ class AccountLogin extends Component {
                                 <h4 className="text-white mt-3">AND START TO ...</h4>
                             </div>
                             <div className="mt-3">
-                                <form onSubmit={e => { e.preventDefault(); this.loginSubmit() }}>
+                                <form onSubmit={e => { e.preventDefault(); this.submit() }}>
                                     <div>
                                         <input type="text" className="form-control with-label" value={this.state.login} onChange={(e) => this.setState({ login: e.target.value })} placeholder="Login" />
                                     </div>

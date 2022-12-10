@@ -141,22 +141,26 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #ED1E79 !important;
 }
 
-.page-account-login {
+.page-account-login,
+.page-register {
     background-image: url(/public/assets/img/bg-login.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
 }
 
-.page-account-login .box-central {
+.page-account-login .box-central,
+.page-register .box-central {
     background: #273539;
     width: 360px;
 }
 
-.page-account-login .box-central .in {
+.page-account-login .box-central .in,
+.page-register .box-central .in {
     padding: 24px;
 }
 
-.page-account-login .box-central .logo {
+.page-account-login .box-central .logo,
+.page-register .box-central .logo {
     height: 155px;
 }
 

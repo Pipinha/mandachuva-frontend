@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './../styles/Base.css'
 
 class Header extends Component {
-    notShowLogin = ['account-login']
+    notShowLogin = ['account-login', 'register']
     render() {
         return (
             <>
