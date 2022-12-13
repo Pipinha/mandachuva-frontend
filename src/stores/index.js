@@ -10,7 +10,7 @@ const initialState = {
     error: '',
     success: '',
     session: {
-        logged: false,
+        logged: true,
         photo: '',
         profileId: null,
     },

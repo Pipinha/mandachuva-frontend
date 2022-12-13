@@ -28,6 +28,10 @@ font-family: 'Roboto Condensed', sans-serif;
     margin-left: 15px;
 }
 
+.header-default.logged {
+    background-color: #273539;
+}
+
 .footer-default {
     height: 100px;
 }
@@ -169,6 +173,11 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-account-login .box-central .line-sep {
     height: 1px;
 }
+
+.page-creator-profile {
+    background-color: #1E1E1E;
+}
+
 
 /* HELPERS */
 .mt-6 {
@@ -323,6 +332,10 @@ a.text-gray-30:hover {
 
 .bg-steelo-m2 {
     background-color: #0E181A;
+}
+
+.bg-steelo {
+    background-color: #273539;
 }
 
 .bg-gray-20 {
