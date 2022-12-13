@@ -2,6 +2,7 @@ import { Component } from "react";
 import { connect } from "react-redux";
 import { Redirect, Route, Switch, withRouter } from "react-router-dom";
 import Header from "../components/Header";
+import { PROFILE_COMPANY, PROFILE_CREATOR } from "../constants/Config";
 
 class Middleware extends Component {
     constructor(props) {
@@ -28,8 +29,11 @@ class Middleware extends Component {
                             if (!this.props.store.session.logged && a.auth) {
                                 return <Redirect to={'/account/login'} />
                             }
-                            if (this.props.store.session.logged && !a.auth) {
-                                return <Redirect to={'/dashboard'} />
+                            if (this.props.store.session.logged && !a.auth && this.props.store.session.profileId === PROFILE_CREATOR) {
+                                return <Redirect to={'/creator/profile'} />
+                            }
+                            if (this.props.store.session.logged && !a.auth && this.props.store.session.profileId === PROFILE_COMPANY) {
+                                return <Redirect to={'/company/profile'} />
                             }
                             return <a.component {...props} handlerHeader={(attr) => this.handlerHeader(attr)} />
                         }} />

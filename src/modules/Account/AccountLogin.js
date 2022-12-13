@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import { actionPostLogin } from "../../actions/ActionLogin";
 
 class AccountLogin extends Component {
     constructor(props) {
@@ -16,7 +17,10 @@ class AccountLogin extends Component {
         }
     }
     submit() {
-
+        this.props.dispatch(actionPostLogin({
+            login: this.state.login,
+            pass: this.state.pass,
+        }))
     }
 
     render() {
