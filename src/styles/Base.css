@@ -32,6 +32,57 @@ font-family: 'Roboto Condensed', sans-serif;
     background-color: #273539;
 }
 
+.header-default.logged .logo {
+    width: 25%;
+}
+
+.header-default.logged .search {
+    width: 50%;
+}
+
+.header-default.logged .search input {
+    font-family     : 'Roboto', sans-serif;
+    font-weight     : 400;
+    font-size       : 16px;
+    color           : #ccc;
+    letter-spacing  : 0.5px;
+    border          : none;
+    outline         : none;
+    background-color: #42585F;
+}
+
+.header-default.logged .search .input-icon svg {
+    color : #ccc;
+    cursor: pointer;
+}
+
+.header-default.logged .search input:focus {
+    outline         : none;
+    box-shadow      : none !important;
+    background-color: #42585F;
+}
+
+.header-default.logged .search input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color  : #ccc;
+    opacity: 1;
+    /* Firefox */
+}
+
+.header-default.logged .search input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #ccc;
+}
+
+.header-default.logged .search input::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #ccc;
+}
+
+.header-default.logged .menu {
+    width: 25%;
+}
+
 .footer-default {
     height: 100px;
 }
@@ -245,7 +296,8 @@ a {
 
 input[type=text],
 input[type=email],
-input[type=password] {
+input[type=password],
+input[type=search] {
     font-family   : 'Roboto', sans-serif;
     font-weight   : 400;
     font-size     : 16px;
@@ -257,15 +309,29 @@ input[type=password] {
 textarea:focus,
 input[type=text]:focus,
 input[type=email]:focus,
-input[type=password]:focus {
-    outline   : none;
-    box-shadow: none !important;
+input[type=password]:focus,
+input[type=search]:focus {
+    outline         : none;
+    box-shadow      : none !important;
+    background-color: #0E181A;
 }
 
 input[type=text].with-label,
 input[type=email].with-label,
-input[type=password].with-label {
-    background: #0E181A;
+input[type=password].with-label,
+input[type=search].with-label {
+    background-color: #0E181A;
+}
+
+.input-icon {
+    position: relative;
+}
+
+.input-icon svg {
+    position  : absolute;
+    top       : 50%;
+    right     : 10px;
+    margin-top: -10px;
 }
 
 .menu-item {
@@ -399,6 +465,7 @@ a.text-gray-30:hover {
 }
 
 @media screen and (max-width: 991px) {
+
     .page-account-login,
     .page-register {
         background-size: auto 100%;

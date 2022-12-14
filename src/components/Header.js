@@ -5,6 +5,8 @@ import Loader from "./Loader";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './../styles/Base.css'
+import { PROFILE_CREATOR } from "../constants/Config";
+import { Icon } from '@iconify/react';
 
 class Header extends Component {
     notShowLogin = ['account-login', 'register']
@@ -34,6 +36,21 @@ class Header extends Component {
                                     <div className="in d-flex align-items-center">
                                         <div className="logo">
                                             <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
+                                        </div>
+                                        <div className="search">
+                                            <div className="input-icon">
+                                                <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : ''} /><Icon icon="material-symbols:search" width={20} height={20} />
+                                            </div>
+                                        </div>
+                                        <div className="menu d-flex align-items-center justify-content-end">
+                                            <Link to={'/creator/profile'}><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
+                                            <Link to={'/creator/profile'}><Icon icon="material-symbols:link-rounded" width={24} height={24} /></Link>
+                                            <Link to={'/creator/profile'}><Icon icon="material-symbols:group-outline-rounded" width={24} height={24} /></Link>
+                                            <Link to={'/creator/profile'}><Icon icon="material-symbols:notifications-outline-rounded" width={24} height={24} /></Link>
+                                            <div className="profile d-flex align-items-center">
+                                                <img src={this.props.store.session.photo} alt="Rainmakr" />
+                                                <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
