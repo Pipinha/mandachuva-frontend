@@ -42,7 +42,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .header-default.logged .search input {
     font-family     : 'Roboto', sans-serif;
-    font-weight     : 400;
+    font-weight     : 300;
     font-size       : 16px;
     color           : #ccc;
     letter-spacing  : 0.5px;
@@ -64,19 +64,31 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .header-default.logged .search input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color  : #ccc;
+    font-family     : 'Roboto', sans-serif;
+    font-weight     : 300;
+    font-size       : 16px;
+    color           : #ccc;
+    letter-spacing  : 0.5px;
     opacity: 1;
     /* Firefox */
 }
 
 .header-default.logged .search input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    color: #ccc;
+    font-family     : 'Roboto', sans-serif;
+    font-weight     : 300;
+    font-size       : 16px;
+    color           : #ccc;
+    letter-spacing  : 0.5px;
 }
 
 .header-default.logged .search input::-ms-input-placeholder {
     /* Microsoft Edge */
-    color: #ccc;
+    font-family     : 'Roboto', sans-serif;
+    font-weight     : 300;
+    font-size       : 16px;
+    color           : #ccc;
+    letter-spacing  : 0.5px;
 }
 
 .header-default.logged .menu {
