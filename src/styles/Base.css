@@ -83,6 +83,26 @@ font-family: 'Roboto Condensed', sans-serif;
     width: 25%;
 }
 
+.header-default.logged .menu .menu-item {
+    color: #ccc;
+    margin-left: 20px;
+}
+
+.header-default.logged .menu .profile {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header-default.logged .menu .profile img {
+    height: 32px;
+    opacity: 0.6;
+}
+
+.header-default.logged .menu .profile svg {
+    color: #ccc;
+}
+
+
 .footer-default {
     height: 100px;
 }
