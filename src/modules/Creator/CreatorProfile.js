@@ -21,11 +21,18 @@ class CreatorProfile extends Component {
     render() {
         return (
             <>
-                <div className="container">
+                <div className="container mt-5">
                     <div className="row">
                         <div className="col-md-3">
                             <div className="card-custom">
-                                Teste
+                                <div className="profile">
+                                    <div className="photo">
+                                        <img src="/assets/img/bg-profile-card.png" alt="Rainmakr" className="img-fluid" />
+                                        <img src="/assets/img/user-creator.png" alt="Rainmakr" className="main" />
+                                    </div>
+                                    <div className="name text-white text-center">ARIEL CHRISTINE</div>
+                                    <div className="followers text-blueberry text-center mt-1">9300 Followers</div>
+                                </div>
                             </div>
                         </div>
                         <div className="col-md-6">
