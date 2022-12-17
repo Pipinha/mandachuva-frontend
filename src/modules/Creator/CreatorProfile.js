@@ -32,6 +32,9 @@ class CreatorProfile extends Component {
                                     </div>
                                     <div className="name text-white text-center">ARIEL CHRISTINE</div>
                                     <div className="followers text-blueberry text-center mt-1">9300 Followers</div>
+                                    <div className="category text-blueberry text-center mt-1">LIFESTYLE, FASHION</div>
+                                    <div className="category2 text-steelo-l2 text-center mt-1">E-COMMERCE - BUENOS AIRES</div>
+                                    <div className="sep"></div>
                                 </div>
                             </div>
                         </div>
