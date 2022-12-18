@@ -27,7 +27,7 @@ class CreatorProfile extends Component {
     render() {
         return (
             <>
-                <div className="container mt-5">
+                <div className="container mt-4">
                     <div className="row">
                         <div className="col-md-3">
                             <div className="card-custom">
@@ -70,9 +70,9 @@ class CreatorProfile extends Component {
                             <div className="card-custom mt-4">
                                 <div className="simple p-3">
                                     <div className="title text-steelo-l2">COMMUNITY</div>
-                                    
+                                    <div className="txt text-white mt-3">Access our discord and make contact with other creators to exchange experiences and partnerships.</div>
                                     <div className="copy text-right mt-3">
-                                        <span className="text-blueberry">Go to Discord</span>
+                                        <span onClick={_=>window.open('https://discord.com','_blank')} className="text-blueberry">Go to Discord</span>
                                     </div>
                                 </div>
                             </div>
@@ -85,6 +85,7 @@ class CreatorProfile extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="clearfix mt-4"></div>
             </>
         )
     }

@@ -5,10 +5,6 @@ html,
     overflow: hidden !important;
 }
 
-body.swal2-height-auto {
-    height: 100% !important
-}
-
 /*
 font-family: 'Roboto', sans-serif;
 font-family: 'Roboto Condensed', sans-serif;
@@ -380,6 +376,14 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.5px;
     color         : #CCCCCC;
     text-indent   : 10px;
+}
+
+.card-custom .simple .txt {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
 }
 
 .card-custom .simple .copy span {
