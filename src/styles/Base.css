@@ -342,18 +342,28 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .profile .sep {
-    height: 2px;
+    height          : 2px;
     background-color: #182123;
 }
 
 .card-custom .profile .scores .scores-item a,
 .card-custom .profile .scores .scores-item b {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
+    font-family   : 'Roboto';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 14px;
+    line-height   : 16px;
     text-transform: capitalize;
+}
+
+.card-custom .rainlinks .title {
+    font-family   : 'Roboto';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 16px;
+    line-height   : 23px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
 }
 
 /* TYPE FAMILY */

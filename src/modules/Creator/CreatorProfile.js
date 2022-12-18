@@ -51,6 +51,11 @@ class CreatorProfile extends Component {
                                     </div>
                                 </div>
                             </div>
+                            <div className="card-custom mt-4">
+                                <div className="rainlinks p-3">
+                                    <div className="title text-steelo-l2">SHARE YOUR RAINLINKS</div>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-6">
 
