@@ -360,7 +360,7 @@ font-family: 'Roboto Condensed', sans-serif;
     text-transform: capitalize;
 }
 
-.card-custom .rainlinks .title {
+.card-custom .simple .title {
     font-family   : 'Roboto';
     font-style    : normal;
     font-weight   : 700;
@@ -370,7 +370,7 @@ font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
-.card-custom .rainlinks .link {
+.card-custom .simple .link {
     height        : 40px;
     font-family   : 'Roboto';
     font-style    : normal;
@@ -382,7 +382,7 @@ font-family: 'Roboto Condensed', sans-serif;
     text-indent   : 10px;
 }
 
-.card-custom .rainlinks .copy span {
+.card-custom .simple .copy span {
     font-family: 'Roboto';
     font-style : normal;
     font-weight: 700;

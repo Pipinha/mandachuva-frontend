@@ -58,11 +58,21 @@ class CreatorProfile extends Component {
                                 </div>
                             </div>
                             <div className="card-custom mt-4">
-                                <div className="rainlinks p-3">
+                                <div className="simple p-3">
                                     <div className="title text-steelo-l2">SHARE YOUR RAINLINKS</div>
                                     <div className="link mt-3 bg-steelo-m1 d-flex align-items-center">{this.state.rainlink}</div>
                                     <div className="copy text-right mt-3">
                                         <span className="text-blueberry" onClick={_=>this.copyRainlink()}>Copy</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="card-custom mt-4">
+                                <div className="simple p-3">
+                                    <div className="title text-steelo-l2">COMMUNITY</div>
+                                    
+                                    <div className="copy text-right mt-3">
+                                        <span className="text-blueberry">Go to Discord</span>
                                     </div>
                                 </div>
                             </div>
