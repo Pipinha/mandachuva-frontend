@@ -2,7 +2,11 @@ body,
 html,
 #root {
     height  : 100%;
-    overflow: hidden;
+    overflow: hidden !important;
+}
+
+body.swal2-height-auto {
+    height: 100% !important
 }
 
 /*
@@ -366,6 +370,27 @@ font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
+.card-custom .rainlinks .link {
+    height        : 40px;
+    font-family   : 'Roboto';
+    font-style    : normal;
+    font-weight   : 400;
+    font-size     : 14px;
+    line-height   : 16px;
+    letter-spacing: 0.5px;
+    color         : #CCCCCC;
+    text-indent   : 10px;
+}
+
+.card-custom .rainlinks .copy span {
+    font-family: 'Roboto';
+    font-style : normal;
+    font-weight: 700;
+    font-size  : 12px;
+    line-height: 14px;
+    cursor     : pointer;
+}
+
 /* TYPE FAMILY */
 h1 {
     font-size     : 74px;
@@ -539,6 +564,10 @@ a.text-gray-30:hover {
 
 .bg-steelo-l1 {
     background-color: #273539;
+}
+
+.bg-steelo-m1 {
+    background-color: #182123;
 }
 
 .bg-steelo-m2 {
