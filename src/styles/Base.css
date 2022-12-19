@@ -615,6 +615,10 @@ font-family: 'Roboto Condensed', sans-serif;
     background: linear-gradient(170.68deg, rgba(255, 107, 0, 0.5) 0%, rgba(237, 30, 121, 0.5) 86.67%);
 }
 
+.card-custom.post-item {
+    background: #0E181A;
+}
+
 .card-custom .profile .photo {
     position: relative;
     -webkit-border-radius: 8px;
@@ -919,7 +923,13 @@ font-family: 'Roboto Condensed', sans-serif;
     background-color: #42585F;
 }
 
-.card-custom .post-new-item .title {
+.card-custom .post-new-item,
+.card-custom .post-item {
+    min-height: 285px;
+}
+
+.card-custom .post-new-item .title,
+.card-custom .post-item .title {
     font-family: 'Roboto Condensed';
     font-style: normal;
     font-weight: 400;
@@ -939,6 +949,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .card-custom .post-new-item .start a {
     color: #5D818D;
 }
+
 .card-custom .post-new-item .start a:hover {
     text-decoration: none;
 }
@@ -953,6 +964,58 @@ font-family: 'Roboto Condensed', sans-serif;
     align-items: flex-end;
     text-align: center;
     letter-spacing: 0.25px;
+    color: #fff;
+}
+
+.card-custom .post-item .photo {
+    position: relative;
+}
+
+.card-custom .post-item .social a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-right: 15px;
+}
+
+.card-custom .post-item .social a:last-child {
+    margin-right: 0 !important;
+}
+
+.card-custom .post-item .social a:hover {
+    text-decoration: none;
+}
+
+.card-custom .post-item .options a {
+    margin-right: 10px;
+}
+
+.card-custom .post-item .options a:last-child {
+    margin-right: 0 !important;
+}
+
+.card-custom .post-item .options .edit {
+    display: block;
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background: #12CCE4;
+    color: #fff;
+}
+
+.card-custom .post-item .options .trash {
+    display: block;
+    width: 24px;
+    height: 24px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background: #FF6B00;
     color: #fff;
 }
 

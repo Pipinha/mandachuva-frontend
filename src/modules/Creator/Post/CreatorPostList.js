@@ -15,6 +15,11 @@ class CreatorPostList extends Component {
 
         this.state = {
             store: false,
+            jobs: [
+                {
+                    name: 'DRINKS TIPS'
+                }
+            ]
         }
 
         this.changeStore = this.changeStore.bind(this);
@@ -83,7 +88,7 @@ class CreatorPostList extends Component {
                                         <Switch onChange={this.changeStore} width={45} checked={this.state.store} offColor="#3CE9FF" onColor="#3CE9FF" offHandleColor="#00AFC6" onHandleColor="#00AFC6" uncheckedIcon={false} checkedIcon={false} checkedHandleIcon={<Icon icon="material-symbols:check" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} uncheckedHandleIcon={<Icon icon="material-symbols:close" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} handleDiameter={20} />
                                     </div>
                                 </div>
-                                <div className="row mt-4">
+                                <div className="row mt-4 pt-2">
                                     <div className="col-md-3">
                                         <div className="card-custom">
                                             <div className="post-new-item p-3">
@@ -94,7 +99,25 @@ class CreatorPostList extends Component {
                                                     </div>
                                                     <Link to={'/creator/ready-to-post'} className="mt-1">START NOW</Link>
                                                 </div>
-                                                <div className="description mt-3">Create your ready  to post content.</div>
+                                                <div className="description mt-3">Create your ready to post content.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-md-3">
+                                        <div className="card-custom post-item">
+                                            <div className="post-item p-3">
+                                                <div className="title text-white">DRINKS TIPS</div>
+                                                <div className="photo mt-3">
+                                                    <img src="/assets/img/photo-job-a.png" alt="Rainmakr" className="img-fluid" />
+                                                </div>
+                                                <div className="social d-flex justify-content-center mt-3">
+                                                    <Link to={'#a'} className="text-white"><Icon icon="bi:tiktok" width={12} height={12} /> TIKTOK</Link>
+                                                    <Link to={'#a'} className="text-white"><Icon icon="bi:instagram" width={12} height={12} /> REELS</Link>
+                                                </div>
+                                                <div className="options d-flex justify-content-center mt-3">
+                                                    <Link to={'#a'} className="edit d-flex justify-content-center align-items-center"><Icon icon="akar-icons:pencil" width={16} height={16} /></Link>
+                                                    <Link to={'#a'} className="trash d-flex justify-content-center align-items-center"><Icon icon="tabler:trash" width={16} height={16} /></Link>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
