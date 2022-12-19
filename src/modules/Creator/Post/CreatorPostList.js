@@ -4,6 +4,7 @@ import { Link, withRouter } from "react-router-dom";
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { Icon } from "@iconify/react";
 import Switch from "react-switch";
+import Swal from "sweetalert2";
 
 class CreatorPostList extends Component {
     constructor(props) {
@@ -134,6 +135,29 @@ class CreatorPostList extends Component {
     changeStore(v) {
         this.setState({ store: v })
     }
+
+    deleteJobItem(idx) {
+        Swal.fire({
+            title: 'Are you sure you want to delete?',
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: 'Yes',
+            denyButtonText: 'No',
+            background: '#273539',
+            color: '#fff',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                let newArr = [];
+                for (let i = 0; i < this.state.jobs.length; i++) {
+                    if (i !== idx) {
+                        newArr.push(this.state.jobs[i])
+                    }
+                }
+                this.setState({ jobs: newArr })
+            }
+        })
+    }
+
     render() {
         return (
             <>
@@ -242,7 +266,7 @@ class CreatorPostList extends Component {
                                                         ))}                                                    </div>
                                                     <div className="options d-flex justify-content-center mt-3">
                                                         <Link to={'#a'} className="edit d-flex justify-content-center align-items-center"><Icon icon="akar-icons:pencil" width={16} height={16} /></Link>
-                                                        <Link to={'#a'} className="trash d-flex justify-content-center align-items-center"><Icon icon="tabler:trash" width={16} height={16} /></Link>
+                                                        <Link to={'#a'} onClick={_ => this.deleteJobItem(ia)} className="trash d-flex justify-content-center align-items-center"><Icon icon="tabler:trash" width={16} height={16} /></Link>
                                                     </div>
                                                 </div>
                                             </div>
