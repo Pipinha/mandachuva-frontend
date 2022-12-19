@@ -14,7 +14,7 @@ class CreatorSocial extends Component {
         })
 
         this.state = {
-            integraded: true,
+            integraded: false,
             storiesPrice: '$1,000',
             reelsPrice: '$1,000',
             feedPrice: '$1,000'
@@ -83,7 +83,7 @@ class CreatorSocial extends Component {
                                     <div className="sep mt-2"></div>
                                     {!this.state.integraded ?
                                         <div className="mt-3">
-                                            <img src="/assets/img/login-insta.png" alt="Rainmakr" onClick={_ => this.init()} />
+                                            <img src="/assets/img/login-insta.png" alt="Rainmakr" onClick={_ => this.init()} className="btn-insta" />
                                         </div> :
                                         <div className="integraded-ok mt-3">
                                             <div className="status d-flex align-items-center">

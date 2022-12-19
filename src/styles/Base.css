@@ -519,6 +519,10 @@ font-family: 'Roboto Condensed', sans-serif;
     border-bottom: 3px solid #fff;
 }
 
+.page-creator-setting-social .btn-insta {
+    cursor: pointer;
+}
+
 .page-creator-setting-social .integraded-ok .status .infos .a {
     font-family: 'Roboto';
     font-style: normal;
