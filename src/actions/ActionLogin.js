@@ -18,4 +18,20 @@ let actionPostLogin = (data) => (dispatch) => {
     // })
 }
 
-export { actionPostLogin }
+let actionDeleteLogin = (dispatch) => {
+    // Helper.request(dispatch, 'POST', 'auth', data, (data) => {
+    dispatch({
+        type: 'SESSION',
+        payload: {
+            logged: false,
+            photo: null,
+            profileId: null,
+        }
+    })
+    // document.body.className = document.getElementById('root').className = 'body-in'
+    // dispatch(callConfigMenuGet)
+    history.push('/account/login')
+    // })
+}
+
+export { actionPostLogin, actionDeleteLogin }

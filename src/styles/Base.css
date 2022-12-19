@@ -99,6 +99,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .header-default.logged .menu .profile {
     margin-left: 20px;
     cursor: pointer;
+    position: relative;
 }
 
 .header-default.logged .menu .profile img {
@@ -108,6 +109,37 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .header-default.logged .menu .profile svg {
     color: #ccc;
+}
+
+.header-default.logged .menu .profile:hover .profile-menu {
+    display: block !important;
+}
+.header-default.logged .menu .profile .profile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #273539;
+    z-index: 4;
+    text-align: right;
+    min-width: 150px;
+    padding: 20px;
+}
+
+.header-default.logged .menu .profile .profile-menu a {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: #CCCCCC;
+}
+
+.header-default.logged .menu .profile .profile-menu a:hover {
+    text-decoration: none;
+    color: #3CE9FF;
 }
 
 

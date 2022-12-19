@@ -7,9 +7,13 @@ import 'react-toastify/dist/ReactToastify.css';
 import './../styles/Base.css'
 import { PROFILE_CREATOR } from "../constants/Config";
 import { Icon } from '@iconify/react';
+import { actionDeleteLogin } from "../actions/ActionLogin";
 
 class Header extends Component {
     notShowLogin = ['account-login', 'register']
+    logout() {
+        this.props.dispatch(actionDeleteLogin)
+    }
     render() {
         return (
             <>
@@ -50,6 +54,10 @@ class Header extends Component {
                                             <div className="profile d-flex align-items-center">
                                                 <img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" />
                                                 <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />
+                                                <div className="profile-menu">
+                                                    <Link to={'/creator/profile'}>MY PROFILE</Link>
+                                                    <a href="#logout" onClick={_ => this.logout()} className="mt-2">LOGOUT</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

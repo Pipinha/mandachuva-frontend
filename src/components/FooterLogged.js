@@ -14,7 +14,7 @@ class FooterLogged extends Component {
                         <Link to={'/creator/profile'} className="text-steelo-l2">TERMOS DE PRIVACIDADE</Link>
                     </div>
                     <div className="logo text-center mt-3">
-                        <Link className={'creator/profile'}><img src="/assets/img/logo-footer-logged.png" alt="Rainmakr" /></Link>
+                        <Link to={'creator/profile'}><img src="/assets/img/logo-footer-logged.png" alt="Rainmakr" /></Link>
                     </div>
                 </footer>
             </>
