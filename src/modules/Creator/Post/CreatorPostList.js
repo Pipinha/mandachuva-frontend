@@ -5,6 +5,7 @@ import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { Icon } from "@iconify/react";
 import Switch from "react-switch";
 import Swal from "sweetalert2";
+import { toast } from "react-toastify";
 
 class CreatorPostList extends Component {
     constructor(props) {
@@ -154,6 +155,16 @@ class CreatorPostList extends Component {
                     }
                 }
                 this.setState({ jobs: newArr })
+                toast.success('Delete success!', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                });
             }
         })
     }
