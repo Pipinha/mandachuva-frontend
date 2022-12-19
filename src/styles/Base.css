@@ -1115,6 +1115,16 @@ a.text-gray-30:hover {
     color: #fff;
 }
 
+.btn.btn-submit {
+    background-color: #5D818D;
+    color: #FFFFFF;
+}
+
+.btn.btn-no {
+    background-color: transparent;
+    color: #5D818D;
+}
+
 @media screen and (max-width: 991px) {
 
     .page-account-login,

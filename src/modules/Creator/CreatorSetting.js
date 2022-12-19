@@ -23,14 +23,18 @@ class CreatorSetting extends Component {
                     id: 1,
                     description: 'Lifestyle'
                 }
+            ],
+            blockers: [
+                {
+                    id: 1,
+                    description: 'Adult Content'
+                }
             ]
         }
     }
     submit() {
 
     }
-
-
     render() {
         return (
             <>
@@ -122,6 +126,29 @@ class CreatorSetting extends Component {
                                                     selected={this.state.segments}
                                                 />
                                             </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">BLOCKERS</label>
+                                                <Typeahead
+                                                    id="blockers"
+                                                    labelKey="description"
+                                                    multiple
+                                                    onChange={(e) => this.setState({ segments: e })}
+                                                    options={[
+                                                        {
+                                                            id: 1,
+                                                            description: 'Adult Content'
+                                                        }
+                                                    ]}
+                                                    placeholder="Add your blockers here"
+                                                    selected={this.state.blockers}
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="text-right">
+                                            <Link to={'/creator/profile'} className="btn btn-no">Cancel</Link>
+                                            <button type="submit" className="btn btn-submit with-shadow">Save</button>
                                         </div>
                                     </form>
                                 </div>
