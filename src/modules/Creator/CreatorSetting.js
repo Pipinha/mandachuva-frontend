@@ -44,7 +44,6 @@ class CreatorSetting extends Component {
             progress: undefined,
             theme: "colored",
         });
-        this.props.history.push('/creator/profile')
     }
     render() {
         return (
