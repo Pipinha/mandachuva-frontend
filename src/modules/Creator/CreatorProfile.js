@@ -1,6 +1,7 @@
+import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import Swal from "sweetalert2";
 
 class CreatorProfile extends Component {
@@ -12,7 +13,23 @@ class CreatorProfile extends Component {
         })
 
         this.state = {
-            rainlink: 'https://rainlinks.com/ariel'
+            rainlink: 'https://rainlinks.com/ariel',
+            jobs: [
+                {
+                    name: 'MERCADO LIVRE',
+                    description: 'READY TO POST',
+                    icon: '/assets/img/icon-wait.png',
+                    message: false,
+                    open: false,
+                },
+                {
+                    name: 'MERCADO LIVRE',
+                    description: 'READY TO POST',
+                    icon: '/assets/img/ico-danger.png',
+                    message: true,
+                    open: true,
+                }
+            ]
         }
     }
     submit() {
@@ -21,7 +38,7 @@ class CreatorProfile extends Component {
 
     async copyRainlink() {
         await navigator.clipboard.writeText(this.state.rainlink);
-        Swal.fire('Success!','Rainlink copied success!')
+        Swal.fire('Success!', 'Rainlink copied success!')
     }
 
     render() {
@@ -62,7 +79,7 @@ class CreatorProfile extends Component {
                                     <div className="title text-steelo-l2">SHARE YOUR RAINLINKS</div>
                                     <div className="link mt-3 bg-steelo-m1 d-flex align-items-center">{this.state.rainlink}</div>
                                     <div className="copy text-right mt-3">
-                                        <span className="text-blueberry" onClick={_=>this.copyRainlink()}>Copy</span>
+                                        <span className="text-blueberry" onClick={_ => this.copyRainlink()}>Copy</span>
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +89,7 @@ class CreatorProfile extends Component {
                                     <div className="title text-steelo-l2">COMMUNITY</div>
                                     <div className="txt text-white mt-3">Access our discord and make contact with other creators to exchange experiences and partnerships.</div>
                                     <div className="copy text-right mt-3">
-                                        <span onClick={_=>window.open('https://discord.com','_blank')} className="text-blueberry">Go to Discord</span>
+                                        <span onClick={_ => window.open('https://discord.com', '_blank')} className="text-blueberry">Go to Discord</span>
                                     </div>
                                 </div>
                             </div>
@@ -84,25 +101,60 @@ class CreatorProfile extends Component {
                                     <div className="timeline mt-3 d-flex justify-content-between align-items-center">
                                         <div className="timeline-point">
                                             <div className="bal">&nbsp;</div>
-                                            <div className="description text-white">Validate Your<br/>Account</div>
+                                            <div className="description text-white">Validate Your<br />Account</div>
                                         </div>
                                         <div className="timeline-bar"></div>
                                         <div className="timeline-point">
                                             <div className="bal">&nbsp;</div>
-                                            <div className="description text-white">Complete<br/>You Bio</div>
+                                            <div className="description text-white">Complete<br />You Bio</div>
                                         </div>
                                         <div className="timeline-bar"></div>
                                         <div className="timeline-point">
                                             <div className="bal">&nbsp;</div>
-                                            <div className="description text-white">Complete<br/>Your Niches</div>
+                                            <div className="description text-white">Complete<br />Your Niches</div>
                                         </div>
                                         <div className="timeline-bar"></div>
                                         <div className="timeline-point active">
                                             <div className="bal">&nbsp;</div>
-                                            <div className="description text-white">Start<br/>Selling</div>
+                                            <div className="description text-white">Start<br />Selling</div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div className="jobs-options d-flex justify-content-between mt-4">
+                                <div className="menu">
+                                    <Link to={'/creator/profile'} className="active">ACTIVE</Link>
+                                    <Link to={'/creator/profile'}>FAVORITES</Link>
+                                </div>
+                                <div className="sort text-steelo-l2">
+                                    ORDER BY <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />
+                                </div>
+                            </div>
+                            <div className="jobs-list mt-2">
+                                {this.state.jobs.map((a, ia) => (
+                                    <div className={'item' + (ia > 0 ? ' mt-3' : '')}>
+                                        <div className="card-custom">
+                                            <div className="item-main d-flex">
+                                                <div className="company flex-fill">
+                                                    <div className="name">{a.name}</div>
+                                                    <div className="description">{a.description}</div>
+                                                </div>
+                                                <div className="status-click flex-fill">
+                                                    <div className="status"><img src={a.icon} alt="Rainkmakr" />&nbsp;Waiting Report</div>
+                                                    <div className={'click' + (a.message ? ' new' : '')}>
+                                                        <Icon icon="material-symbols:arrow-drop-up-rounded" width={24} height={24} />
+                                                    </div>
+                                                </div>
+                                                <div className="msg">
+                                                    <Icon icon="material-symbols:chat-rounded" width={24} height={24} />
+                                                </div>
+                                                <div className="link">
+                                                    <Link to={'/creator/profile'}>More</Link>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                         <div className="col-md-3">

@@ -264,6 +264,41 @@ font-family: 'Roboto Condensed', sans-serif;
     background-color: #1E1E1E;
 }
 
+.page-creator-profile .jobs-options .menu a:first {
+    margin-right: 0 !important;
+}
+
+.page-creator-profile .jobs-options .menu a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    color: #42585F;
+    margin-right: 20px;
+}
+
+.page-creator-profile .jobs-options .menu a.active {
+    color: #fff;
+}
+
+.page-creator-profile .jobs-options .menu a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.page-creator-profile .jobs-options .sort {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.page-creator-profile .jobs-list {}
+
 
 /* HELPERS */
 .mt-6 {
