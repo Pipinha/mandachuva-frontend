@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import { actionPostRegister } from "../../actions/ActionRegister";
 
 class Register extends Component {
     constructor(props) {
@@ -24,7 +25,18 @@ class Register extends Component {
         }
     }
     submit() {
-
+        this.props.dispatch(actionPostRegister({
+            firstname: '',
+            lastname: '',
+            location: {
+                lat: '',
+                lng: '',
+                name: '',
+            },
+            phone: '',
+            pass: '',
+            passConfirm: '',
+        }))
     }
 
     render() {
