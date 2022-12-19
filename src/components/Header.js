@@ -47,7 +47,7 @@ class Header extends Component {
                                             </div>
                                         </div>
                                         <div className="col-md-3 menu d-flex align-items-center justify-content-end">
-                                            <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
+                                            <Link to={'/creator/ready-to-post'} className="menu-item"><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
                                             <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:link-rounded" width={24} height={24} /></Link>
                                             <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:group-outline-rounded" width={24} height={24} /></Link>
                                             <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:notifications-outline-rounded" width={24} height={24} /></Link>

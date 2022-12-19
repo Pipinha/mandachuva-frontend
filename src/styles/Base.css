@@ -300,7 +300,8 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-profile,
 .page-creator-setting,
-.page-creator-setting-social {
+.page-creator-setting-social,
+.page-creator-post-list {
     background-color: #1E1E1E;
 }
 
@@ -575,6 +576,10 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 8px;
 }
 
+.card-custom.bg-profile2 {
+    background: linear-gradient(170.68deg, #FF6B00 0%, #ED1E79 86.67%);
+}
+
 .card-custom .profile .photo {
     position: relative;
     -webkit-border-radius: 8px;
@@ -631,13 +636,61 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.5px;
 }
 
+.card-custom .profile .country-state {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+}
+
+.card-custom .profile .segment {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+
 .card-custom .profile .sep {
     height: 2px;
     background-color: #182123;
 }
 
-.card-custom .profile .scores .scores-item a,
-.card-custom .profile .scores .scores-item b {
+.card-custom .profile .scores2 .scores-item .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.card-custom .profile .scores2 .scores-item .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+}
+
+.card-custom .profile .scores2 .scores-item {
+    border-bottom: 1px solid #42585F;
+}
+.card-custom .profile .scores2 .scores-item:last-child {
+    border-bottom: none !important;
+}
+
+.card-custom .profile .social-links a {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.card-custom .profile .scores .scores-item .a,
+.card-custom .profile .scores .scores-item .b {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -1091,6 +1144,15 @@ a.text-gray-20:hover {
 a.text-gray-30:hover {
     text-decoration: underline;
     color: #B5B5B5;
+}
+
+.text-gray-40 {
+    color: #999999;
+}
+
+a.text-gray-40:hover {
+    text-decoration: underline;
+    color: #999999;
 }
 
 .bg-steelo-l2 {

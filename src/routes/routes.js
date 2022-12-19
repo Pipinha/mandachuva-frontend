@@ -7,6 +7,7 @@ import CreatorProfile from "../modules/Creator/CreatorProfile"
 import CompanyProfile from "../modules/Company/CompanyProfile"
 import CreatorSetting from "../modules/Creator/CreatorSetting"
 import CreatorSocial from "../modules/Creator/CreatorSocial"
+import CreatorPostList from "../modules/Creator/Post/CreatorPostList"
 
 const routes = [
     {
@@ -18,6 +19,12 @@ const routes = [
                 exact: true,
                 path: '/company/profile',
                 component: CompanyProfile,
+                auth: true,
+            },
+            {
+                exact: true,
+                path: '/creator/ready-to-post',
+                component: CreatorPostList,
                 auth: true,
             },
             {

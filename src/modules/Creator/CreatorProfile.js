@@ -118,11 +118,11 @@ class CreatorProfile extends Component {
                                             <div className="a text-white">Profile Hits</div>
                                             <div className="b text-white">1570</div>
                                         </div>
-                                        <div className="scores-item d-flex justify-content-between">
+                                        <div className="scores-item d-flex justify-content-between mt-2">
                                             <div className="a text-white">Companies Following</div>
                                             <div className="b text-white">85</div>
                                         </div>
-                                        <div className="scores-item d-flex justify-content-between">
+                                        <div className="scores-item d-flex justify-content-between mt-2">
                                             <div className="a text-white">Creators Following</div>
                                             <div className="b text-white">17</div>
                                         </div>
