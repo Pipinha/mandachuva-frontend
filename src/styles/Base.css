@@ -919,6 +919,43 @@ font-family: 'Roboto Condensed', sans-serif;
     background-color: #42585F;
 }
 
+.card-custom .post-new-item .title {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    text-align: center;
+}
+
+.card-custom .post-new-item .start {
+    height: 150px;
+    background: #182123;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+}
+
+.card-custom .post-new-item .start a {
+    color: #5D818D;
+}
+.card-custom .post-new-item .start a:hover {
+    text-decoration: none;
+}
+
+.card-custom .post-new-item .description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #fff;
+}
+
 
 /* TYPE FAMILY */
 h1 {

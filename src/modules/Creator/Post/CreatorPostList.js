@@ -83,6 +83,22 @@ class CreatorPostList extends Component {
                                         <Switch onChange={this.changeStore} width={45} checked={this.state.store} offColor="#3CE9FF" onColor="#3CE9FF" offHandleColor="#00AFC6" onHandleColor="#00AFC6" uncheckedIcon={false} checkedIcon={false} checkedHandleIcon={<Icon icon="material-symbols:check" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} uncheckedHandleIcon={<Icon icon="material-symbols:close" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} handleDiameter={20} />
                                     </div>
                                 </div>
+                                <div className="row mt-4">
+                                    <div className="col-md-3">
+                                        <div className="card-custom">
+                                            <div className="post-new-item p-3">
+                                                <div className="title text-white">CREATE YOUR POST</div>
+                                                <div className="start d-flex flex-column align-items-center justify-content-center mt-3">
+                                                    <div className="icon">
+                                                        <img src="/assets/img/icon-start-now.png" alt="Rainmakr" />
+                                                    </div>
+                                                    <Link to={'/creator/ready-to-post'} className="mt-1">START NOW</Link>
+                                                </div>
+                                                <div className="description mt-3">Create your ready  to post content.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
