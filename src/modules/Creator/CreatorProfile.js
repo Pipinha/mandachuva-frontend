@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import { toast } from "react-toastify";
 import Swal from "sweetalert2";
 import FooterLogged from "../../components/FooterLogged";
 
@@ -84,7 +85,16 @@ class CreatorProfile extends Component {
 
     async copyRainlink() {
         await navigator.clipboard.writeText(this.state.rainlink);
-        Swal.fire('Success!', 'Rainlink copied success!')
+        toast.success('Rainlink copied success!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
     }
 
     render() {

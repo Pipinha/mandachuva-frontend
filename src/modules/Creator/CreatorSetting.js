@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 import { Typeahead } from 'react-bootstrap-typeahead';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
+import { toast } from "react-toastify";
 
 class CreatorSetting extends Component {
     constructor(props) {
@@ -33,6 +34,16 @@ class CreatorSetting extends Component {
         }
     }
     submit() {
+        toast.success('Save success!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
         this.props.history.push('/creator/profile')
     }
     render() {
