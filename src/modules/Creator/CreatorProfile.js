@@ -151,6 +151,39 @@ class CreatorProfile extends Component {
                                                 <div className={'btn-show-hide text-center' + (a.open ? ' open' : '')}><Icon icon={'material-symbols:arrow-drop-' + (!a.open ? 'up' : 'down') + '-rounded'} width={24} height={24} /></div>
                                             </div>
                                         </div>
+                                        <div className="item-hide" style={{ display: a.open ? 'block' : 'none' }}>
+                                            <div className="timeline mt-3 d-flex justify-content-between align-items-center">
+                                                <div className="timeline-point">
+                                                    <div className="bal">&nbsp;</div>
+                                                    <div className="description text-white">1. Purchase</div>
+                                                </div>
+                                                <div className="timeline-bar"></div>
+                                                <div className="timeline-point">
+                                                    <div className="bal">&nbsp;</div>
+                                                    <div className="description text-white">2. Briefing</div>
+                                                </div>
+                                                <div className="timeline-bar"></div>
+                                                <div className="timeline-point">
+                                                    <div className="bal">&nbsp;</div>
+                                                    <div className="description text-white">3. Creation</div>
+                                                </div>
+                                                <div className="timeline-bar"></div>
+                                                <div className="timeline-point error">
+                                                    <div className="bal">&nbsp;</div>
+                                                    <div className="description text-white">4. Publish</div>
+                                                </div>
+                                                <div className="timeline-bar"></div>
+                                                <div className="timeline-point off">
+                                                    <div className="bal">&nbsp;</div>
+                                                    <div className="description text-white">5. Report</div>
+                                                </div>
+                                                <div className="timeline-bar"></div>
+                                                <div className="timeline-point off">
+                                                    <div className="bal">&nbsp;</div>
+                                                    <div className="description text-white">6. Finish</div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

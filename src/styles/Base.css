@@ -331,9 +331,10 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.1px;
 }
 
-.page-creator-profile .jobs-list .item .item-main .link .msg.new{
+.page-creator-profile .jobs-list .item .item-main .link .msg.new {
     position: relative;
 }
+
 .page-creator-profile .jobs-list .item .item-main .link .msg.new:before {
     position: absolute;
     content: ' ';
@@ -366,6 +367,64 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-profile .jobs-list .item .item-main .btn-show-hide.open {
     color: #0E181A;
 }
+
+.page-creator-profile .jobs-list .item .item-hide {
+    padding: 0 15px;
+}
+
+.page-creator-profile .jobs-list .item .item-hide .timeline {
+    padding: 0 28px 47px 28px;
+}
+
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #273539;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.1px;
+    position: absolute;
+    width: 72px;
+    top: 30px;
+    text-align: center;
+}
+
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .bal {
+    width: 12px;
+    height: 12px;
+    background-color: #5D818D;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point.error .bal {
+    background-color: #EE0000;
+}
+
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point.off .bal {
+    background-color: #0E181A;
+}
+
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-bar {
+    flex: 1;
+    height: 3px;
+    background-color: #273539;
+}
+
 
 
 /* HELPERS */
@@ -525,7 +584,6 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .timeline-profile .timeline .timeline-point .description {
-    position: absolute;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -533,6 +591,7 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 14px;
     text-align: center;
     text-transform: capitalize;
+    position: absolute;
     width: 72px;
     top: 30px;
 }
