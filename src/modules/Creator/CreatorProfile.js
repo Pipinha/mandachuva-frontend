@@ -19,14 +19,14 @@ class CreatorProfile extends Component {
                     name: 'MERCADO LIVRE',
                     description: 'READY TO POST',
                     icon: '/assets/img/icon-wait.png',
-                    message: false,
+                    message: true,
                     open: false,
                 },
                 {
                     name: 'MERCADO LIVRE',
                     description: 'READY TO POST',
                     icon: '/assets/img/ico-danger.png',
-                    message: true,
+                    message: false,
                     open: true,
                 }
             ]
@@ -132,25 +132,23 @@ class CreatorProfile extends Component {
                             </div>
                             <div className="jobs-list mt-2">
                                 {this.state.jobs.map((a, ia) => (
-                                    <div className={'item' + (ia > 0 ? ' mt-3' : '')}>
+                                    <div className={'item' + (ia > 0 ? ' mt-3' : '')} key={ia}>
                                         <div className="card-custom">
-                                            <div className="item-main d-flex">
+                                            <div className="item-main d-flex align-items-center">
                                                 <div className="company flex-fill">
-                                                    <div className="name">{a.name}</div>
-                                                    <div className="description">{a.description}</div>
+                                                    <div className="name text-white">{a.name}</div>
+                                                    <div className="description text-steelo-l2">{a.description}</div>
                                                 </div>
-                                                <div className="status-click flex-fill">
-                                                    <div className="status"><img src={a.icon} alt="Rainkmakr" />&nbsp;Waiting Report</div>
-                                                    <div className={'click' + (a.message ? ' new' : '')}>
-                                                        <Icon icon="material-symbols:arrow-drop-up-rounded" width={24} height={24} />
+                                                <div className="status text-white flex-fill">
+                                                    <img src={a.icon} alt="Rainkmakr" className="mr-2" />Waiting Report
+                                                </div>
+                                                <div className="link flex-fill d-flex justify-content-end align-items-center">
+                                                    <div className={'msg' + (a.message ? ' new text-gray-20' : ' text-steelo-m2')}>
+                                                        <Icon icon="material-symbols:chat-rounded" width={24} height={24} />
                                                     </div>
+                                                    <Link to={'/creator/profile'} className="text-blueberry">More</Link>
                                                 </div>
-                                                <div className="msg">
-                                                    <Icon icon="material-symbols:chat-rounded" width={24} height={24} />
-                                                </div>
-                                                <div className="link">
-                                                    <Link to={'/creator/profile'}>More</Link>
-                                                </div>
+                                                <div className={'btn-show-hide text-center' + (a.open ? ' open' : '')}><Icon icon={'material-symbols:arrow-drop-' + (!a.open ? 'up' : 'down') + '-rounded'} width={24} height={24} /></div>
                                             </div>
                                         </div>
                                     </div>

@@ -297,7 +297,82 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 12px;
 }
 
-.page-creator-profile .jobs-list {}
+.page-creator-profile .jobs-list .item {
+    background-color: #0E181A;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.page-creator-profile .jobs-list .item .item-main {
+    padding: 15px;
+    position: relative;
+}
+
+.page-creator-profile .jobs-list .item .item-main .company .name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+
+.page-creator-profile .jobs-list .item .item-main .company .description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height */
+    letter-spacing: 0.5px;
+}
+
+.page-creator-profile .jobs-list .item .item-main .status {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1px;
+}
+
+.page-creator-profile .jobs-list .item .item-main .link .msg.new{
+    position: relative;
+}
+.page-creator-profile .jobs-list .item .item-main .link .msg.new:before {
+    position: absolute;
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #EEBA00;
+    right: 0;
+}
+
+.page-creator-profile .jobs-list .item .item-main .link a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin-left: 30px;
+}
+
+.page-creator-profile .jobs-list .item .item-main .btn-show-hide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    color: #5D818D;
+}
+
+.page-creator-profile .jobs-list .item .item-main .btn-show-hide.open {
+    color: #0E181A;
+}
 
 
 /* HELPERS */
@@ -636,6 +711,15 @@ a.text-steelo-l2:hover {
 a.text-pitaya:hover {
     text-decoration: underline;
     color: #ED1E79;
+}
+
+.text-steelo-m2 {
+    color: #0E181A;
+}
+
+a.text-steelo-m2:hover {
+    text-decoration: underline;
+    color: #0E181A;
 }
 
 .text-gray-20 {
