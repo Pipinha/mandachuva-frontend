@@ -14,11 +14,17 @@ class CreatorSocial extends Component {
 
         this.state = {
             integraded: true,
+            storiesPrice: '$1,000',
+            reelsPrice: '$1,000',
+            feedPrice: '$1,000'
         }
 
     }
     init() {
         this.setState({ integraded: true })
+    }
+    submit(){
+
     }
     render() {
         return (
@@ -84,6 +90,26 @@ class CreatorSocial extends Component {
                                             </div>
                                             <div className="title2 text-white mt-3">VALUES</div>
                                             <div className="description text-steelo-l2 mt-2">This data is important for our search and fit engine. If the fields stay empty, the prices suggested by Rain will appear instead.</div>
+                                            <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
+                                                <div className="form-row">
+                                                    <div className="col-md-3">
+                                                        <label className="text-steelo-l2">STORIES PRICE</label>
+                                                        <input type="text" className="form-control with-label2" value={this.state.storiesPrice} onChange={(e) => this.setState({ storiesPrice: e.target.value })} placeholder="STORIES PRICE" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-row mt-2">
+                                                    <div className="col-md-3">
+                                                        <label className="text-steelo-l2">REELS PRICE</label>
+                                                        <input type="text" className="form-control with-label2" value={this.state.reelsPrice} onChange={(e) => this.setState({ reelsPrice: e.target.value })} placeholder="REELS PRICE" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-row mt-2">
+                                                    <div className="col-md-3">
+                                                        <label className="text-steelo-l2">FEED PRICE</label>
+                                                        <input type="text" className="form-control with-label2" value={this.state.feedPrice} onChange={(e) => this.setState({ feedPrice: e.target.value })} placeholder="FEED PRICE" />
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     }
                                 </div>

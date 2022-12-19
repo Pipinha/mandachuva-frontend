@@ -911,6 +911,14 @@ input[type=search].with-label {
     background-color: #0E181A;
 }
 
+input[type=text].with-label2,
+input[type=email].with-label2,
+input[type=password].with-label2,
+input[type=search].with-label2 {
+    color: #CCCCCC;
+    background-color: #0E181A;
+}
+
 .input-icon {
     position: relative;
 }
