@@ -5,6 +5,7 @@ import { Link, withRouter } from "react-router-dom";
 import { Typeahead } from 'react-bootstrap-typeahead';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { toast } from "react-toastify";
+import FooterLogged from "../../components/FooterLogged";
 
 class CreatorSetting extends Component {
     constructor(props) {
@@ -83,6 +84,7 @@ class CreatorSetting extends Component {
                                     </div>
                                 </div>
                             </div>
+                            <FooterLogged className="mt-3" />
                         </div>
                         <div className="col-md-9">
                             <div className="card-custom p-3">

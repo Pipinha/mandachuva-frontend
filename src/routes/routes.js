@@ -6,6 +6,7 @@ import Register from "../modules/Register/Register"
 import CreatorProfile from "../modules/Creator/CreatorProfile"
 import CompanyProfile from "../modules/Company/CompanyProfile"
 import CreatorSetting from "../modules/Creator/CreatorSetting"
+import CreatorSocial from "../modules/Creator/CreatorSocial"
 
 const routes = [
     {
@@ -17,6 +18,12 @@ const routes = [
                 exact: true,
                 path: '/company/profile',
                 component: CompanyProfile,
+                auth: true,
+            },
+            {
+                exact: true,
+                path: '/creator/setting/social',
+                component: CreatorSocial,
                 auth: true,
             },
             {
