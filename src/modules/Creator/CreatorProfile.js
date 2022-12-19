@@ -3,6 +3,7 @@ import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 import Swal from "sweetalert2";
+import FooterLogged from "../../components/FooterLogged";
 
 class CreatorProfile extends Component {
     constructor(props) {
@@ -275,6 +276,8 @@ class CreatorProfile extends Component {
                                     </div>
                                 </div>
                             </div>
+
+                            <FooterLogged className="mt-3" />
                         </div>
                     </div>
                 </div>
