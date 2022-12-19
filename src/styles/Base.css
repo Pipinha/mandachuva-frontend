@@ -928,6 +928,10 @@ font-family: 'Roboto Condensed', sans-serif;
     min-height: 285px;
 }
 
+.card-custom .post-item {
+    cursor: pointer;
+}
+
 .card-custom .post-new-item .title,
 .card-custom .post-item .title {
     font-family: 'Roboto Condensed';
@@ -974,7 +978,7 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 8px;
 }
 
-.card-custom .post-item .photo:hover > .infos {
+.card-custom .post-item:hover > .photo .infos {
     display: block !important;
 }
 
