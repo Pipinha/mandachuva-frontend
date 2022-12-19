@@ -12,10 +12,16 @@ class CreatorPostEdit extends Component {
         })
 
         this.state = {
+            social: ''
         }
+        this.changeSocial = this.changeSocial.bind(this);
     }
     submit() {
 
+    }
+
+    changeSocial(e){
+        
     }
 
     render() {
@@ -102,7 +108,19 @@ class CreatorPostEdit extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="col-md-8"></div>
+                                            <div className="col-md-8">
+                                                <div className="form-row" onChange={this.changeSocial}>
+                                                    <div className="col-md-4">
+                                                        <label className="text-white d-flex align-items-center"><input type="radio" name="social" value="Feed" className="mr-2" /> Feed</label>
+                                                    </div>
+                                                    <div className="col-md-4 d-flex justify-content-center">
+                                                        <label className="text-white d-flex align-items-center"><input type="radio" name="social" value="Stories" className="mr-2" /> Stories</label>
+                                                    </div>
+                                                    <div className="col-md-4 d-flex justify-content-end">
+                                                        <label className="text-white d-flex align-items-center"><input type="radio" name="social" value="Reels" className="mr-2" /> Reels</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </form>
                                 </div>

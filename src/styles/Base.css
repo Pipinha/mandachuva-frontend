@@ -983,7 +983,7 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 8px;
 }
 
-.card-custom .post-item:hover > .photo .infos {
+.card-custom .post-item:hover>.photo .infos {
     display: block !important;
 }
 
@@ -1211,6 +1211,50 @@ input[type=search].with-label3 {
     color: #CCCCCC;
     background-color: #182123;
 }
+
+input[type="radio"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    margin: 0;
+  
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+    background: #666666;
+  }
+  
+  input[type="radio"]::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: #fff;
+  }
+
+  input[type="radio"]:checked {
+    background: #FF6B00;
+  }
+  
+  input[type="radio"]:checked::before {
+    transform: scale(1);
+  }
+  
+  input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid currentColor;
+    outline-offset: max(2px, 0.15em);
+  }
 
 .input-icon {
     position: relative;
