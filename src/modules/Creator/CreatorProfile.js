@@ -169,31 +169,37 @@ class CreatorProfile extends Component {
                                                 <div className="timeline-point">
                                                     <div className="bal">&nbsp;</div>
                                                     <div className="description text-white">1. Purchase</div>
+                                                    <div className="date text-steelo-l2">10/10/2022</div>
                                                 </div>
                                                 <div className="timeline-bar"></div>
                                                 <div className="timeline-point">
                                                     <div className="bal">&nbsp;</div>
                                                     <div className="description text-white">2. Briefing</div>
+                                                    <div className="date text-steelo-l2">20/10/2022</div>
                                                 </div>
                                                 <div className="timeline-bar"></div>
                                                 <div className="timeline-point">
                                                     <div className="bal">&nbsp;</div>
                                                     <div className="description text-white">3. Creation</div>
+                                                    <div className="date text-steelo-l2">30/10/2022</div>
                                                 </div>
                                                 <div className="timeline-bar"></div>
                                                 <div className="timeline-point error">
                                                     <div className="bal">&nbsp;</div>
                                                     <div className="description text-white">4. Publish</div>
+                                                    <div className="date text-steelo-l2">10/11/2022</div>
                                                 </div>
                                                 <div className="timeline-bar"></div>
                                                 <div className="timeline-point off">
                                                     <div className="bal">&nbsp;</div>
                                                     <div className="description text-white">5. Report</div>
+                                                    <div className="date text-steelo-l2">Waiting</div>
                                                 </div>
                                                 <div className="timeline-bar"></div>
                                                 <div className="timeline-point off">
                                                     <div className="bal">&nbsp;</div>
                                                     <div className="description text-white">6. Finish</div>
+                                                    <div className="date text-steelo-l2">Waiting</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -202,7 +208,12 @@ class CreatorProfile extends Component {
                             </div>
                         </div>
                         <div className="col-md-3">
-
+                            <div className="card-custom">
+                                <div className="simple p-3">
+                                    <div className="title text-steelo-l2">RAINJOBS</div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
