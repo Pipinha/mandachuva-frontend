@@ -571,6 +571,58 @@ font-family: 'Roboto Condensed', sans-serif;
     cursor: pointer;
 }
 
+.card-custom .simple .list-fit-companies .item {
+    padding: 15px 0;
+    border-bottom: 2px solid #182123;
+}
+.card-custom .simple .list-fit-companies .item:last-child {
+    border-bottom: none !important;
+}
+
+.card-custom .simple .list-fit-companies .item .logo img {
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.card-custom .simple .list-fit-companies .item .infos .name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.card-custom .simple .list-fit-companies .item .infos .brand {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
+.card-custom .simple .list-fit-companies .item .fit .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+}
+
+.card-custom .simple .list-fit-companies .item .fit .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+}
+
 .card-custom .timeline-profile .title {
     font-family: 'Roboto';
     font-style: normal;

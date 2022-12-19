@@ -29,6 +29,38 @@ class CreatorProfile extends Component {
                     message: false,
                     open: true,
                 }
+            ],
+            fitCompanies: [
+                {
+                    logo: '/assets/img/logo-nescafe.png',
+                    name: 'Coffee Time',
+                    brand: 'NESPRESSO',
+                    fit: '80%',
+                },
+                {
+                    logo: '/assets/img/logo-absolut.png',
+                    name: 'Party Hard',
+                    brand: 'ABSOLUT',
+                    fit: '78%',
+                },
+                {
+                    logo: '/assets/img/logo-sephora.png',
+                    name: 'Summer Posts',
+                    brand: 'SEPHORA',
+                    fit: '76%',
+                },
+                {
+                    logo: '/assets/img/logo-nike.png',
+                    name: 'Active Lifestyle',
+                    brand: 'NIKE',
+                    fit: '74%',
+                },
+                {
+                    logo: '/assets/img/logo-skillshare.png',
+                    name: 'Keep Learning',
+                    brand: 'SKILLSHARE',
+                    fit: '72%',
+                }
             ]
         }
     }
@@ -145,7 +177,7 @@ class CreatorProfile extends Component {
                             </div>
                             <div className="jobs-list mt-2">
                                 {this.state.jobs.map((a, ia) => (
-                                    <div className={'item' + (ia > 0 ? ' mt-3' : '')} key={ia}>
+                                    <div className={'item' + (ia > 0 ? ' mt-3' : '')} key={'job-'+ia}>
                                         <div className="card-custom" onClick={_ => this.openJob(ia)}>
                                             <div className="item-main d-flex align-items-center">
                                                 <div className="company flex-fill">
@@ -211,7 +243,23 @@ class CreatorProfile extends Component {
                             <div className="card-custom">
                                 <div className="simple p-3">
                                     <div className="title text-steelo-l2">RAINJOBS</div>
-                                    
+                                    <div className="list-fit-companies">
+                                        {this.state.fitCompanies.map((a, ia) => (
+                                            <div className="item d-flex align-items-center" key={'fit-'+ia}>
+                                                <div className="logo mr-2">
+                                                    <img src={a.logo} alt="Rainmakr" />
+                                                </div>
+                                                <div className="infos flex-fill">
+                                                    <div className="name text-white">{a.name}</div>
+                                                    <div className="brand text-steelo-l2">{a.brand}</div>
+                                                </div>
+                                                <div className="fit">
+                                                    <div className="a text-steelo-l2">FIT</div>
+                                                    <div className="b text-white">{a.fit}</div>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         </div>
