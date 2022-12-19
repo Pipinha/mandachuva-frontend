@@ -21,7 +21,7 @@ class CreatorPostList extends Component {
                 <div className="container mt-4">
                     <div className="row">
                         <div className="col-md-3">
-                            <div className="card-custom bg-profile2">
+                            <div className="card-custom bg-profile">
                                 <div className="profile pb-4">
                                     <div className="photo">
                                         <img src="/assets/img/bg-profile-card.png" alt="Rainmakr" className="img-fluid" />
@@ -52,6 +52,13 @@ class CreatorPostList extends Component {
                                         <a href="https://instagram.com" className="text-white"><Icon icon="bi:instagram" width={24} height={24} /></a>
                                         <a href="https://instagram.com" className="text-white"><Icon icon="bi:tiktok" width={24} height={24} /></a>
                                         <a href="https://instagram.com" className="text-white"><Icon icon="bi:snapchat" width={24} height={24} /></a>
+                                    </div>
+                                    <div className="links mt-4 px-4">
+                                        <a href="#a" className="item btn btn-block btn-a">Direct book me</a>
+                                        <a href="#a" className="item btn btn-block btn-b active">Follow</a>
+                                        <a href="#a" className="item btn btn-block btn-b">My store</a>
+                                        <a href="#a" className="item btn btn-block btn-b">My podcast</a>
+                                        <a href="#a" className="item btn btn-block btn-b">Wish list</a>
                                     </div>
                                 </div>
                             </div>

@@ -576,8 +576,8 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 8px;
 }
 
-.card-custom.bg-profile2 {
-    background: linear-gradient(170.68deg, #FF6B00 0%, #ED1E79 86.67%);
+.card-custom.bg-profile {
+    background: linear-gradient(170.68deg, rgba(255, 107, 0, 0.5) 0%, rgba(237, 30, 121, 0.5) 86.67%);
 }
 
 .card-custom .profile .photo {
@@ -1210,23 +1210,29 @@ a.text-gray-40:hover {
 .btn.btn-a {
     background-color: #20DEF6;
     color: #0E181A;
-
 }
 
-.btn.btn-a:hover {
-    background-color: #12CCE4;
-}
-
+.btn.btn-a:hover,
 .btn.btn-a:focus {
     background-color: #12CCE4;
 }
 
-.btn.btn-a:active {
+.btn.btn-a:active,
+.btn.btn-a:visited {
     background-color: #07C0D8;
 }
 
-.btn.btn-a:visited {
-    background-color: #07C0D8;
+.btn.btn-b {
+    background-color: transparent;
+    color: #5D818D;
+    border: 2px solid #5D818D;
+}
+
+.btn.btn-b:hover,
+.btn.btn-b:focus,
+.btn.btn-b.active {
+    color: #12CCE4;
+    border: 2px solid #12CCE4;
 }
 
 .btn.btn-grad-a {
