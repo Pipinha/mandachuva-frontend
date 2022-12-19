@@ -17,15 +17,122 @@ class CreatorPostList extends Component {
             store: false,
             jobs: [
                 {
-                    name: 'DRINKS TIPS'
+                    name: 'DRINKS TIPS',
+                    photo: '/assets/img/photo-job-a.png',
+                    socials: [
+                        {
+                            icon: 'bi:tiktok',
+                            name: 'TIKTOK'
+                        },
+                        {
+                            icon: 'bi:instagram',
+                            name: 'REELS'
+                        }
+                    ],
+                    potential: '10K',
+                    stories: '$1,000',
+                    reels: '$1,000',
+                    feed: '$1,000'
+                },
+                {
+                    name: 'HEALTHY BRUNCH',
+                    photo: '/assets/img/photo-job-a.png',
+                    socials: [
+                        {
+                            icon: 'bi:instagram',
+                            name: 'STORIES'
+                        }
+                    ],
+                    potential: '10K',
+                    stories: '$1,000',
+                    reels: '$1,000',
+                    feed: '$1,000'
+                },
+                {
+                    name: 'FASHION CHOICES',
+                    photo: '/assets/img/photo-job-b.png',
+                    socials: [
+                        {
+                            icon: 'bi:tiktok',
+                            name: 'TIKTOK'
+                        }
+                    ],
+                    potential: '10K',
+                    stories: '$1,000',
+                    reels: '$1,000',
+                    feed: '$1,000'
+                },
+                {
+                    name: 'MORNING ROUTINE',
+                    photo: '/assets/img/photo-job-d.png',
+                    socials: [
+                        {
+                            icon: 'bi:instagram',
+                            name: 'STORIES'
+                        },
+                        {
+                            icon: 'bi:instagram',
+                            name: 'FEED'
+                        }
+                    ],
+                    potential: '10K',
+                    stories: '$1,000',
+                    reels: '$1,000',
+                    feed: '$1,000'
+                },
+                {
+                    name: 'DRINKS TIPS',
+                    photo: '/assets/img/photo-job-a.png',
+                    socials: [
+                        {
+                            icon: 'bi:tiktok',
+                            name: 'TIKTOK'
+                        },
+                        {
+                            icon: 'bi:instagram',
+                            name: 'REELS'
+                        }
+                    ],
+                    potential: '10K',
+                    stories: '$1,000',
+                    reels: '$1,000',
+                    feed: '$1,000'
+                },
+                {
+                    name: 'HEALTHY BRUNCH',
+                    photo: '/assets/img/photo-job-c.png',
+                    socials: [
+                        {
+                            icon: 'bi:instagram',
+                            name: 'STORIES'
+                        }
+                    ],
+                    potential: '10K',
+                    stories: '$1,000',
+                    reels: '$1,000',
+                    feed: '$1,000'
+                },
+                {
+                    name: 'FASHION CHOICES',
+                    photo: '/assets/img/photo-job-b.png',
+                    socials: [
+                        {
+                            icon: 'bi:tiktok',
+                            name: 'TIKTOK'
+                        }
+                    ],
+                    potential: '10K',
+                    stories: '$1,000',
+                    reels: '$1,000',
+                    feed: '$1,000'
                 }
             ]
         }
 
         this.changeStore = this.changeStore.bind(this);
     }
-    changeStore(v){
-        this.setState({store: v})
+    changeStore(v) {
+        this.setState({ store: v })
     }
     render() {
         return (
@@ -85,11 +192,11 @@ class CreatorPostList extends Component {
                                     <div className="store d-flex align-items-center justify-content-center">
                                         <span className="a text-white mr-1">Store:</span>
                                         <span className="b text-white mr-2">On</span>
-                                        <Switch onChange={this.changeStore} width={45} checked={this.state.store} offColor="#3CE9FF" onColor="#3CE9FF" offHandleColor="#00AFC6" onHandleColor="#00AFC6" uncheckedIcon={false} checkedIcon={false} checkedHandleIcon={<Icon icon="material-symbols:check" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} uncheckedHandleIcon={<Icon icon="material-symbols:close" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} handleDiameter={20} />
+                                        <Switch onChange={this.changeStore} width={45} checked={this.state.store} offColor="#3CE9FF" onColor="#3CE9FF" offHandleColor="#00AFC6" onHandleColor="#00AFC6" uncheckedIcon={false} checkedIcon={false} checkedHandleIcon={<Icon icon="material-symbols:check" width={18} height={18} color="#ffffff" style={{ marginTop: '-6px', marginLeft: '1px' }} />} uncheckedHandleIcon={<Icon icon="material-symbols:close" width={18} height={18} color="#ffffff" style={{ marginTop: '-6px', marginLeft: '1px' }} />} handleDiameter={20} />
                                     </div>
                                 </div>
-                                <div className="row mt-4 pt-2">
-                                    <div className="col-md-3">
+                                <div className="row mt-3">
+                                    <div className="col-md-3 mt-3">
                                         <div className="card-custom">
                                             <div className="post-new-item p-3">
                                                 <div className="title text-white">CREATE YOUR POST</div>
@@ -103,24 +210,44 @@ class CreatorPostList extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-md-3">
-                                        <div className="card-custom post-item">
-                                            <div className="post-item p-3">
-                                                <div className="title text-white">DRINKS TIPS</div>
-                                                <div className="photo mt-3">
-                                                    <img src="/assets/img/photo-job-a.png" alt="Rainmakr" className="img-fluid" />
-                                                </div>
-                                                <div className="social d-flex justify-content-center mt-3">
-                                                    <Link to={'#a'} className="text-white"><Icon icon="bi:tiktok" width={12} height={12} /> TIKTOK</Link>
-                                                    <Link to={'#a'} className="text-white"><Icon icon="bi:instagram" width={12} height={12} /> REELS</Link>
-                                                </div>
-                                                <div className="options d-flex justify-content-center mt-3">
-                                                    <Link to={'#a'} className="edit d-flex justify-content-center align-items-center"><Icon icon="akar-icons:pencil" width={16} height={16} /></Link>
-                                                    <Link to={'#a'} className="trash d-flex justify-content-center align-items-center"><Icon icon="tabler:trash" width={16} height={16} /></Link>
+                                    {this.state.jobs.map((a, ia) => (
+                                        <div className="col-md-3 mt-3" key={'post-item-' + ia}>
+                                            <div className="card-custom post-item">
+                                                <div className="post-item p-3">
+                                                    <div className="title text-white">{a.name}</div>
+                                                    <div className="photo mt-3">
+                                                        <img src={a.photo} alt="Rainmakr" className="img-fluid" />
+                                                        <div className="infos p-2">
+                                                            <div className="infos-title">POTENTIAL REACH:</div>
+                                                            <div className="potential mt-3">{a.potential}</div>
+                                                            <div className="prices mt-3">
+                                                                <div className="price-item mt-2 d-flex justify-content-between align-items-center">
+                                                                    <div className="a">Stories:</div>
+                                                                    <div className="b">$1,000</div>
+                                                                </div>
+                                                                <div className="price-item mt-2 d-flex justify-content-between align-items-center">
+                                                                    <div className="a">REELS:</div>
+                                                                    <div className="b">$1,000</div>
+                                                                </div>
+                                                                <div className="price-item mt-2 d-flex justify-content-between align-items-center">
+                                                                    <div className="a">FEED:</div>
+                                                                    <div className="b">$1,000</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div className="social d-flex justify-content-center mt-3">
+                                                        {a.socials.map((b, ib) => (
+                                                            <Link key={'post-item-social-' + ib} to={'#a'} className="text-white"><Icon icon={b.icon} width={12} height={12} /> {b.name}</Link>
+                                                        ))}                                                    </div>
+                                                    <div className="options d-flex justify-content-center mt-3">
+                                                        <Link to={'#a'} className="edit d-flex justify-content-center align-items-center"><Icon icon="akar-icons:pencil" width={16} height={16} /></Link>
+                                                        <Link to={'#a'} className="trash d-flex justify-content-center align-items-center"><Icon icon="tabler:trash" width={16} height={16} /></Link>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
                         </div>

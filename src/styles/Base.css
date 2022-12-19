@@ -969,6 +969,70 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .card-custom .post-item .photo {
     position: relative;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.card-custom .post-item .photo:hover > .infos {
+    display: block !important;
+}
+
+.card-custom .post-item .photo .infos {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(136.67deg, rgba(237, 30, 121, 0.2) 2.16%, rgba(18, 204, 228, 0.2) 100%), rgba(0, 0, 0, 0.72);
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+.card-custom .post-item .photo .infos .infos-title {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+}
+
+.card-custom .post-item .photo .infos .potential {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #FF910F;
+}
+
+.card-custom .post-item .photo .infos .prices .price-item .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+}
+
+
+.card-custom .post-item .photo .infos .prices .price-item .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
 }
 
 .card-custom .post-item .social a {
