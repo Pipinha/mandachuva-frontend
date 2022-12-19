@@ -1,8 +1,9 @@
 import { Component } from "react";
 import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 import { Icon } from "@iconify/react";
+import Switch from "react-switch";
 
 class CreatorPostList extends Component {
     constructor(props) {
@@ -13,7 +14,13 @@ class CreatorPostList extends Component {
         })
 
         this.state = {
+            store: false,
         }
+
+        this.changeStore = this.changeStore.bind(this);
+    }
+    changeStore(v){
+        this.setState({store: v})
     }
     render() {
         return (
@@ -59,6 +66,23 @@ class CreatorPostList extends Component {
                                         <a href="#a" className="item btn btn-block btn-b">My store</a>
                                         <a href="#a" className="item btn btn-block btn-b">My podcast</a>
                                         <a href="#a" className="item btn btn-block btn-b">Wish list</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-md-9">
+                            <div className="post-list">
+                                <div className="menu-store d-flex align-items-center justify-content-between">
+                                    <div className="menu">
+                                        <Link to={'#a'} className="active mr-3">READY TO POST</Link>
+                                        <Link to={'#a'}>MY INSTAGRAM</Link>
+                                    </div>
+                                    <div className="store d-flex align-items-center justify-content-center">
+                                        <span className="a text-white mr-1">Store:</span>
+                                        <span className="b text-white">On</span>
+                                        <div className="switch ml-2">
+                                            <Switch onChange={this.changeStore} checked={this.state.store} offColor="#3CE9FF" onColor="#3CE9FF" offHandleColor="#00AFC6" onHandleColor="#00AFC6" uncheckedIcon={false} checkedIcon={false} checkedHandleIcon={<Icon icon="material-symbols:check" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} uncheckedHandleIcon={<Icon icon="material-symbols:close" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} handleDiameter={20} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>

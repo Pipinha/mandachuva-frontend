@@ -556,6 +556,41 @@ font-family: 'Roboto Condensed', sans-serif;
     width: 344px;
 }
 
+.page-creator-post-list .post-list .menu-store .menu a.active {
+    color: #fff;
+    border-bottom: 3px solid #fff;
+}
+
+.page-creator-post-list .post-list .menu-store .menu a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    color: #999999;
+    padding-bottom: 5px;
+}
+
+.page-creator-post-list .post-list .menu-store .menu a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-creator-post-list .post-list .menu-store .store .a,
+.page-creator-post-list .post-list .menu-store .store .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.page-creator-post-list .post-list .menu-store .store .b {
+    font-weight: 700 !important;
+}
+
 /* HELPERS */
 .mt-6 {
     margin-top: 60px;
@@ -680,6 +715,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .card-custom .profile .scores2 .scores-item {
     border-bottom: 1px solid #42585F;
 }
+
 .card-custom .profile .scores2 .scores-item:last-child {
     border-bottom: none !important;
 }
