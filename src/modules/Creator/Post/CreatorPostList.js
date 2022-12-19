@@ -249,6 +249,9 @@ class CreatorPostList extends Component {
                                         </div>
                                     ))}
                                 </div>
+                                <div className="mt-4 text-center">
+                                    <Link to={'#a'} className="btn btn-c">+ Add a new creation</Link>
+                                </div>
                             </div>
                         </div>
                     </div>

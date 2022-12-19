@@ -1396,7 +1396,7 @@ a.text-gray-40:hover {
     padding: 0 20px;
     border: none;
     display: inline-block;
-    line-height: 40px;
+    line-height: 37px;
 }
 
 .btn.no-shadow {
@@ -1437,6 +1437,19 @@ a.text-gray-40:hover {
 .btn.btn-b.active {
     color: #12CCE4;
     border: 2px solid #12CCE4;
+}
+
+.btn.btn-c {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn.btn-c:hover,
+.btn.btn-c:focus,
+.btn.btn-c.active {
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 .btn.btn-grad-a {
