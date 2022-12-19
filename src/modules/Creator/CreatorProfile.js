@@ -3,7 +3,6 @@ import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 import { toast } from "react-toastify";
-import Swal from "sweetalert2";
 import FooterLogged from "../../components/FooterLogged";
 
 class CreatorProfile extends Component {
