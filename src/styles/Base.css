@@ -526,9 +526,11 @@ font-family: 'Roboto Condensed', sans-serif;
     font-size: 14px;
     line-height: 16px;
 }
+
 .page-creator-setting-social .integraded-ok .status .infos .b {
     line-height: 10px;
 }
+
 .page-creator-setting-social .integraded-ok .status .infos .b .l,
 .page-creator-setting-social .integraded-ok .status .infos .b .r {
     font-family: 'Roboto';
@@ -537,6 +539,16 @@ font-family: 'Roboto Condensed', sans-serif;
     font-size: 10px;
     line-height: 12px;
     letter-spacing: 0.5px;
+}
+
+.page-creator-setting-social .integraded-ok .description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
+    width: 344px;
 }
 
 /* HELPERS */

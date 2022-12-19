@@ -63,7 +63,7 @@ class CreatorSetting extends Component {
                 </div>
                 <div className="container">
                     <div className="back-to mt-3">
-                        <Link onClick={_ => window.history.back()} className="text-blueberry"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={14} height={14} /> Back to Dashboard</Link>
+                        <Link to={'#back'} onClick={_ => window.history.back()} className="text-blueberry"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={14} height={14} /> Back to Dashboard</Link>
                     </div>
                     <div className="row mt-3">
                         <div className="col-md-3">

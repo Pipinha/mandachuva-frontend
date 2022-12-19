@@ -37,7 +37,7 @@ class CreatorSocial extends Component {
                 </div>
                 <div className="container">
                     <div className="back-to mt-3">
-                        <Link onClick={_ => window.history.back()} className="text-blueberry"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={14} height={14} /> Back to Dashboard</Link>
+                        <Link to={'#back'} onClick={_ => window.history.back()} className="text-blueberry"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={14} height={14} /> Back to Dashboard</Link>
                     </div>
                     <div className="row mt-3">
                         <div className="col-md-3">
@@ -83,6 +83,7 @@ class CreatorSocial extends Component {
                                                 </div>
                                             </div>
                                             <div className="title2 text-white mt-3">VALUES</div>
+                                            <div className="description text-steelo-l2 mt-2">This data is important for our search and fit engine. If the fields stay empty, the prices suggested by Rain will appear instead.</div>
                                         </div>
                                     }
                                 </div>
