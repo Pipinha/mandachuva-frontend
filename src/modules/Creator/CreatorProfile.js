@@ -144,7 +144,7 @@ class CreatorProfile extends Component {
                                     <div className="title text-steelo-l2">COMMUNITY</div>
                                     <div className="txt text-white mt-3">Access our discord and make contact with other creators to exchange experiences and partnerships.</div>
                                     <div className="copy text-right mt-3">
-                                        <span onClick={_ => window.open('https://discord.com', '_blank')} className="text-blueberry">Go to Discord</span>
+                                        <span onClick={_ => window.open('https://discord.com/invite/KxAZC48cav', '_blank')} className="text-blueberry">Go to Discord</span>
                                     </div>
                                 </div>
                             </div>
@@ -281,7 +281,7 @@ class CreatorProfile extends Component {
                                     <div className="title text-steelo-l2">INVITE YOUR FRIENDS</div>
                                     <div className="txt text-white mt-3">Invite your friends and get exclusive benefits.</div>
                                     <div className="copy text-right mt-3">
-                                        <span className="text-blueberry">Go to Discord</span>
+                                        <span onClick={_ => window.open('https://discord.com/invite/KxAZC48cav', '_blank')} className="text-blueberry">Go to Discord</span>
                                     </div>
                                 </div>
                             </div>
