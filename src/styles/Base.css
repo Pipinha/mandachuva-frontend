@@ -301,7 +301,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-profile,
 .page-creator-setting,
 .page-creator-setting-social,
-.page-creator-post-list {
+.page-creator-post-list,
+.page-creator-post-edit {
     background-color: #1E1E1E;
 }
 
@@ -556,11 +557,13 @@ font-family: 'Roboto Condensed', sans-serif;
     width: 344px;
 }
 
+.page-creator-post-edit .post-list .menu-store .menu a.active,
 .page-creator-post-list .post-list .menu-store .menu a.active {
     color: #fff;
     border-bottom: 3px solid #fff;
 }
 
+.page-creator-post-edit .post-list .menu-store .menu a,
 .page-creator-post-list .post-list .menu-store .menu a {
     font-family: 'Roboto';
     font-style: normal;
@@ -573,6 +576,7 @@ font-family: 'Roboto Condensed', sans-serif;
     padding-bottom: 5px;
 }
 
+.page-creator-post-edit .post-list .menu-store .menu a:hover,
 .page-creator-post-list .post-list .menu-store .menu a:hover {
     text-decoration: none;
     color: #fff;

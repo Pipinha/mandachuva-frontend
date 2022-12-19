@@ -239,7 +239,7 @@ class CreatorPostList extends Component {
                                                     <div className="icon">
                                                         <img src="/assets/img/icon-start-now.png" alt="Rainmakr" />
                                                     </div>
-                                                    <Link to={'/creator/ready-to-post'} className="mt-1">START NOW</Link>
+                                                    <Link to={'/creator/ready-to-post/edit/0'} className="mt-1">START NOW</Link>
                                                 </div>
                                                 <div className="description mt-3">Create your ready to post content.</div>
                                             </div>
@@ -285,7 +285,7 @@ class CreatorPostList extends Component {
                                     ))}
                                 </div>
                                 <div className="mt-4 text-center">
-                                    <Link to={'#a'} className="btn btn-c">+ Add a new creation</Link>
+                                    <Link to={'/creator/ready-to-post/edit/0'} className="btn btn-c">+ Add a new creation</Link>
                                 </div>
                             </div>
                         </div>
