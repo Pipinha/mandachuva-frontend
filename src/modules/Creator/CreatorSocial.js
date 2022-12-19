@@ -12,6 +12,13 @@ class CreatorSocial extends Component {
             page: 'creator-setting-social'
         })
 
+        this.state = {
+            integraded: true,
+        }
+
+    }
+    init() {
+        this.setState({ integraded: true })
     }
     render() {
         return (
@@ -58,9 +65,26 @@ class CreatorSocial extends Component {
                                 <div className="simple">
                                     <div className="title2 text-white">SOCIAL MEDIA</div>
                                     <div className="sep mt-2"></div>
-                                    <div className="mt-3">
-                                        <img src="/assets/img/login-insta.png" alt="Rainmakr" />
-                                    </div>
+                                    {!this.state.integraded ?
+                                        <div className="mt-3">
+                                            <img src="/assets/img/login-insta.png" alt="Rainmakr" onClick={_ => this.init()} />
+                                        </div> :
+                                        <div className="integraded-ok mt-3">
+                                            <div className="status d-flex align-items-center">
+                                                <div className="img mr-2">
+                                                    <img src="/assets/img/icon-insta-integraded.png" alt="Rainmakr" />
+                                                </div>
+                                                <div className="infos">
+                                                    <div className="a text-white">Instagram</div>
+                                                    <div className="b">
+                                                        <span className="l text-steelo-l2 mr-2">STATUS:</span>
+                                                        <span className="r text-green">ACTIVE</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="title2 text-white mt-3">VALUES</div>
+                                        </div>
+                                    }
                                 </div>
                             </div>
                         </div>

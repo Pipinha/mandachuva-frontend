@@ -519,6 +519,26 @@ font-family: 'Roboto Condensed', sans-serif;
     border-bottom: 3px solid #fff;
 }
 
+.page-creator-setting-social .integraded-ok .status .infos .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+.page-creator-setting-social .integraded-ok .status .infos .b {
+    line-height: 10px;
+}
+.page-creator-setting-social .integraded-ok .status .infos .b .l,
+.page-creator-setting-social .integraded-ok .status .infos .b .r {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
 /* HELPERS */
 .mt-6 {
     margin-top: 60px;
@@ -996,6 +1016,15 @@ a.text-blueberry:hover {
 a.text-steelo-l2:hover {
     text-decoration: none;
     color: #5D818D;
+}
+
+.text-green {
+    color: #00EE0A;
+}
+
+a.text-green:hover {
+    text-decoration: none;
+    color: #00EE0A;
 }
 
 .text-grad-hot-pink {
