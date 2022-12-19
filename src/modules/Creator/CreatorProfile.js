@@ -78,7 +78,32 @@ class CreatorProfile extends Component {
                             </div>
                         </div>
                         <div className="col-md-6">
-
+                            <div className="card-custom">
+                                <div className="timeline-profile p-3">
+                                    <div className="title text-steelo-l2">GROWTH YOUR FIT WITH BRANDS</div>
+                                    <div className="timeline mt-3 d-flex justify-content-between align-items-center">
+                                        <div className="timeline-point">
+                                            <div className="bal">&nbsp;</div>
+                                            <div className="description text-white">Validate Your<br/>Account</div>
+                                        </div>
+                                        <div className="timeline-bar"></div>
+                                        <div className="timeline-point">
+                                            <div className="bal">&nbsp;</div>
+                                            <div className="description text-white">Complete<br/>You Bio</div>
+                                        </div>
+                                        <div className="timeline-bar"></div>
+                                        <div className="timeline-point">
+                                            <div className="bal">&nbsp;</div>
+                                            <div className="description text-white">Complete<br/>Your Niches</div>
+                                        </div>
+                                        <div className="timeline-bar"></div>
+                                        <div className="timeline-point active">
+                                            <div className="bal">&nbsp;</div>
+                                            <div className="description text-white">Start<br/>Selling</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-3">
 
