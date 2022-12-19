@@ -36,6 +36,19 @@ class CreatorProfile extends Component {
 
     }
 
+    openJob(idx) {
+        let newArr = [];
+        for (let i = 0; i < this.state.jobs.length; i++) {
+            newArr.push(this.state.jobs[i])
+
+            if (i === idx) {
+                newArr[i].open = newArr[i].open ? false : true
+            }
+        }
+
+        this.setState({ jobs: newArr })
+    }
+
     async copyRainlink() {
         await navigator.clipboard.writeText(this.state.rainlink);
         Swal.fire('Success!', 'Rainlink copied success!')
@@ -133,7 +146,7 @@ class CreatorProfile extends Component {
                             <div className="jobs-list mt-2">
                                 {this.state.jobs.map((a, ia) => (
                                     <div className={'item' + (ia > 0 ? ' mt-3' : '')} key={ia}>
-                                        <div className="card-custom">
+                                        <div className="card-custom" onClick={_ => this.openJob(ia)}>
                                             <div className="item-main d-flex align-items-center">
                                                 <div className="company flex-fill">
                                                     <div className="name text-white">{a.name}</div>
