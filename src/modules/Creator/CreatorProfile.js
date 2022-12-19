@@ -260,6 +260,19 @@ class CreatorProfile extends Component {
                                             </div>
                                         ))}
                                     </div>
+                                    <div className="copy text-right mt-3">
+                                        <span className="text-blueberry">More jobs</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="card-custom mt-4">
+                                <div className="simple p-3">
+                                    <div className="title text-steelo-l2">INVITE YOUR FRIENDS</div>
+                                    <div className="txt text-white mt-3">Invite your friends and get exclusive benefits.</div>
+                                    <div className="copy text-right mt-3">
+                                        <span className="text-blueberry">Go to Discord</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
