@@ -14,6 +14,10 @@ class CreatorPostEdit extends Component {
         this.state = {
         }
     }
+    submit() {
+
+    }
+
     render() {
         return (
             <>
@@ -69,6 +73,38 @@ class CreatorPostEdit extends Component {
                                         <Link to={'/creator/ready-to-post'} className="active mr-3">READY TO POST</Link>
                                         <Link to={'#a'}>MY INSTAGRAM</Link>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div className="card-custom post-edit mt-4">
+                                <div className="post-edit p-3">
+                                    <form onSubmit={e => { e.preventDefault(); this.submit() }}>
+                                        <div className="form-row">
+                                            <div className="col-md-12">
+                                                <label className="text-steelo-l2">JOB NAME</label>
+                                                <input type="text" className="form-control with-label3" placeholder="Write the exactly description" />
+                                            </div>
+                                        </div>
+                                        <div className="form-row mt-3">
+                                            <div className="col-md-4">
+                                                <div className="photo d-flex align-items-center justify-content-center">
+                                                    <img src="/assets/img/img-add-photo.png" alt="Rainmakr" className="img-fluid" />
+                                                </div>
+                                                <div className="thumbs d-flex justify-content-between mt-3">
+                                                    <div className="d-flex justify-content-center align-items-center thumb">
+                                                        <img src="/assets/img/img-add-photo.png" alt="Rainmakr" className="img-fluid" />
+                                                    </div>
+                                                    <div className="d-flex justify-content-center align-items-center thumb">
+                                                        <img src="/assets/img/img-add-photo.png" alt="Rainmakr" className="img-fluid" />
+                                                    </div>
+                                                    <div className="d-flex justify-content-center align-items-center thumb">
+                                                        <img src="/assets/img/img-add-photo.png" alt="Rainmakr" className="img-fluid" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className="col-md-8"></div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

@@ -619,7 +619,8 @@ font-family: 'Roboto Condensed', sans-serif;
     background: linear-gradient(170.68deg, rgba(255, 107, 0, 0.5) 0%, rgba(237, 30, 121, 0.5) 86.67%);
 }
 
-.card-custom.post-item {
+.card-custom.post-item,
+.card-custom.post-edit {
     background: #0E181A;
 }
 
@@ -1091,6 +1092,25 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
+.card-custom .post-edit .photo {
+    border: 2px solid #5D818D;
+    height: 227px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-custom .post-edit .thumbs .thumb {
+    width: 30%;
+    height: 58px;
+    border: 2px solid #5D818D;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
 
 /* TYPE FAMILY */
 h1 {
@@ -1182,6 +1202,14 @@ input[type=password].with-label2,
 input[type=search].with-label2 {
     color: #CCCCCC;
     background-color: #0E181A;
+}
+
+input[type=text].with-label3,
+input[type=email].with-label3,
+input[type=password].with-label3,
+input[type=search].with-label3 {
+    color: #CCCCCC;
+    background-color: #182123;
 }
 
 .input-icon {
