@@ -56,6 +56,7 @@ class Header extends Component {
                                                 <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />
                                                 <div className="profile-menu">
                                                     <Link to={'/creator/profile'}>MY PROFILE</Link>
+                                                    <Link to={'/creator/setting'} className="mt-2">SETTING</Link>
                                                     <a href="#logout" onClick={_ => this.logout()} className="mt-2">LOGOUT</a>
                                                 </div>
                                             </div>

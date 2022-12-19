@@ -13,6 +13,8 @@ font-family: 'Roboto Condensed', sans-serif;
 /* HEADERS AND FOOTERS */
 .header-default {
     height: 56px;
+    position: relative;
+    z-index: 2;
 }
 
 .header-default .container,
@@ -114,6 +116,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .header-default.logged .menu .profile:hover .profile-menu {
     display: block !important;
 }
+
 .header-default.logged .menu .profile .profile-menu {
     display: none;
     position: absolute;
@@ -295,7 +298,8 @@ font-family: 'Roboto Condensed', sans-serif;
     height: 1px;
 }
 
-.page-creator-profile {
+.page-creator-profile,
+.page-creator-setting {
     background-color: #1E1E1E;
 }
 
@@ -481,7 +485,34 @@ font-family: 'Roboto Condensed', sans-serif;
     background-color: #273539;
 }
 
+.page-creator-setting .title {
+    position: relative;
+}
 
+.page-creator-setting .title .bg {
+    margin-top: -56px;
+    width: 100%;
+    height: auto;
+}
+
+.page-creator-setting .title .infos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.page-creator-setting .title .infos .txt {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #fff;
+}
 
 /* HELPERS */
 .mt-6 {
