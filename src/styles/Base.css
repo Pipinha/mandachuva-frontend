@@ -629,6 +629,11 @@ font-family: 'Roboto Condensed', sans-serif;
     height: 1px;
 }
 
+.card-custom .simple .item-menu a svg {
+    position: relative;
+    margin-top: -4px;
+}
+
 .card-custom .simple .item-menu a {
     font-family: 'Roboto';
     font-style: normal;
@@ -637,6 +642,7 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 16px;
     color: #999999;
 }
+
 .card-custom .simple .item-menu a:hover,
 .card-custom .simple .item-menu.active a {
     color: #12CCE4;
@@ -839,16 +845,16 @@ a {
     letter-spacing: 0px;
 }
 
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=search] {
+input[type=text].form-control,
+input[type=email].form-control,
+input[type=password].form-control,
+input[type=search].form-control {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.5px;
-    border: none;
-    outline: none;
+    border: none !important;
+    outline: none !important;
 }
 
 textarea:focus,
@@ -877,6 +883,75 @@ input[type=search].with-label {
     top: 50%;
     right: 10px;
     margin-top: -10px;
+}
+
+form label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+}
+
+.rbt-input-multi.form-control {
+    background-color: #0E181A !important;
+}
+
+.rbt-input-multi.focus {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+.dropdown-menu {
+    background-color: #0E181A !important;
+}
+
+.dropdown-item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover,
+.dropdown-item {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #0E181A !important;
+    color: #fff;
+}
+
+.rbt-token-active {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #12CCE4 !important;
+    color: #0E181A !important;
+}
+
+.rbt-token {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    background-color: #12CCE4 !important;
+    color: #0E181A !important;
+}
+
+.form-control {
+    border: none !important;
 }
 
 .menu-item {

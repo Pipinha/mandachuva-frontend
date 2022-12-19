@@ -14,6 +14,7 @@ class Register extends Component {
         this.state = {
             firstname: '',
             lastname: '',
+            email: '',
             location: {
                 lat: '',
                 lng: '',
@@ -28,6 +29,7 @@ class Register extends Component {
         this.props.dispatch(actionPostRegister({
             firstname: '',
             lastname: '',
+            email: '',
             location: {
                 lat: '',
                 lng: '',

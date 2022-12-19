@@ -2,6 +2,8 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import { Typeahead } from 'react-bootstrap-typeahead';
+import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 class CreatorSetting extends Component {
     constructor(props) {
@@ -12,12 +14,22 @@ class CreatorSetting extends Component {
         })
 
         this.state = {
-
+            firstname: '',
+            lastname: '',
+            pronoum: '',
+            city: '',
+            segments: [
+                {
+                    id: 1,
+                    description: 'Lifestyle'
+                }
+            ]
         }
     }
     submit() {
 
     }
+
 
     render() {
         return (
@@ -44,15 +56,15 @@ class CreatorSetting extends Component {
                                 <div className="simple">
                                     <div className="title2 text-white">SETTINGS MENU</div>
                                     <div className="sep mt-2"></div>
-                                    <div className="item-menu active">
+                                    <div className="item-menu active mt-2">
                                         <Link to={'/creator/setting'}><Icon icon="ic:baseline-person-outline" width={14} height={14} /> Profile settings</Link>
                                     </div>
                                     <div className="sep mt-2"></div>
-                                    <div className="item-menu">
+                                    <div className="item-menu mt-2">
                                         <Link to={'/creator/setting/social'}><Icon icon="mdi:instagram" width={14} height={14} /> Social Media</Link>
                                     </div>
                                     <div className="sep mt-2"></div>
-                                    <div className="item-menu">
+                                    <div className="item-menu mt-2">
                                         <Link to={'/creator/setting/privacy'}><Icon icon="ic:outline-privacy-tip" width={14} height={14} /> Privacy and security</Link>
                                     </div>
                                 </div>
@@ -63,6 +75,55 @@ class CreatorSetting extends Component {
                                 <div className="simple">
                                     <div className="title2 text-white">PROFILE SETTINGS</div>
                                     <div className="sep mt-2"></div>
+                                    <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
+                                        <div className="form-row">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">FIRST NAME</label>
+                                                <input type="text" className="form-control with-label" value={this.state.firstname} onChange={(e) => this.setState({ firstname: e.target.value })} placeholder="FIRST NAME" />
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">LAST NAME</label>
+                                                <input type="text" className="form-control with-label" value={this.state.lastname} onChange={(e) => this.setState({ lastname: e.target.value })} placeholder="LAST NAME" />
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">PRONOUM</label>
+                                                <input type="text" className="form-control with-label" value={this.state.pronoum} onChange={(e) => this.setState({ pronoum: e.target.value })} placeholder="PRONOUM" />
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">CITY</label>
+                                                <input type="text" className="form-control with-label" value={this.state.city} onChange={(e) => this.setState({ city: e.target.value })} placeholder="CITY" />
+                                            </div>
+                                        </div>
+                                        <div className="form-row">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">SEGMENT</label>
+                                                <Typeahead
+                                                    id="segments"
+                                                    labelKey="description"
+                                                    multiple
+                                                    onChange={(e) => this.setState({ segments: e })}
+                                                    options={[
+                                                        {
+                                                            id: 1,
+                                                            description: 'Lifestyle'
+                                                        },
+                                                        {
+                                                            id: 2,
+                                                            description: 'Fashion'
+                                                        }
+                                                    ]}
+                                                    placeholder="Add your segments here"
+                                                    selected={this.state.segments}
+                                                />
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
