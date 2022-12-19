@@ -33,7 +33,7 @@ class CreatorSetting extends Component {
         }
     }
     submit() {
-
+        this.props.history.push('/creator/profile')
     }
     render() {
         return (
