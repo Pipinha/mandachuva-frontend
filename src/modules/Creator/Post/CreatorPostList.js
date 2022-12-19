@@ -80,7 +80,7 @@ class CreatorPostList extends Component {
                                     <div className="store d-flex align-items-center justify-content-center">
                                         <span className="a text-white mr-1">Store:</span>
                                         <span className="b text-white mr-2">On</span>
-                                        <Switch onChange={this.changeStore} checked={this.state.store} offColor="#3CE9FF" onColor="#3CE9FF" offHandleColor="#00AFC6" onHandleColor="#00AFC6" uncheckedIcon={false} checkedIcon={false} checkedHandleIcon={<Icon icon="material-symbols:check" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} uncheckedHandleIcon={<Icon icon="material-symbols:close" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} handleDiameter={20} />
+                                        <Switch onChange={this.changeStore} width={45} checked={this.state.store} offColor="#3CE9FF" onColor="#3CE9FF" offHandleColor="#00AFC6" onHandleColor="#00AFC6" uncheckedIcon={false} checkedIcon={false} checkedHandleIcon={<Icon icon="material-symbols:check" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} uncheckedHandleIcon={<Icon icon="material-symbols:close" width={18} height={18} color="#ffffff" style={{marginTop:'-6px',marginLeft:'1px'}} />} handleDiameter={20} />
                                     </div>
                                 </div>
                             </div>
