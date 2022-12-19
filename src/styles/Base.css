@@ -615,6 +615,34 @@ font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
+.card-custom .simple .title2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+
+.card-custom .simple .sep {
+    background-color: #42585F;
+    height: 1px;
+}
+
+.card-custom .simple .item-menu a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #999999;
+}
+.card-custom .simple .item-menu a:hover,
+.card-custom .simple .item-menu.active a {
+    color: #12CCE4;
+    text-decoration: none;
+}
+
 .card-custom .simple .link {
     height: 40px;
     font-family: 'Roboto';
