@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import { toast } from "react-toastify";
 import FooterLogged from "../../components/FooterLogged";
 
 class CreatorSocial extends Component {
@@ -23,8 +24,17 @@ class CreatorSocial extends Component {
     init() {
         this.setState({ integraded: true })
     }
-    submit(){
-
+    submit() {
+        toast.success('Save success!', {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+        });
     }
     render() {
         return (
@@ -108,6 +118,10 @@ class CreatorSocial extends Component {
                                                         <label className="text-steelo-l2">FEED PRICE</label>
                                                         <input type="text" className="form-control with-label2" value={this.state.feedPrice} onChange={(e) => this.setState({ feedPrice: e.target.value })} placeholder="FEED PRICE" />
                                                     </div>
+                                                </div>
+                                                <div className="text-right">
+                                                    <Link to={'/creator/profile'} className="btn btn-no">Cancel</Link>
+                                                    <button type="submit" className="btn btn-submit with-shadow">Save</button>
                                                 </div>
                                             </form>
                                         </div>
