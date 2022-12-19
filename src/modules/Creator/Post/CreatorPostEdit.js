@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import Helper from "../../../components/Helper";
 
 class CreatorPostEdit extends Component {
     constructor(props) {
@@ -12,7 +13,8 @@ class CreatorPostEdit extends Component {
         })
 
         this.state = {
-            social: ''
+            social: '',
+            photoA: '/assets/img/img-add-photo.png'
         }
         this.changeSocial = this.changeSocial.bind(this);
     }
@@ -22,6 +24,12 @@ class CreatorPostEdit extends Component {
 
     changeSocial(e) {
 
+    }
+
+    uploadA(){
+        Helper.uploadFileOne((error,file)=>{
+            this.setState({photoA: file})
+        })
     }
 
     render() {
@@ -93,8 +101,8 @@ class CreatorPostEdit extends Component {
                                         </div>
                                         <div className="form-row mt-3">
                                             <div className="col-md-4">
-                                                <div className="photo d-flex align-items-center justify-content-center">
-                                                    <img src="/assets/img/img-add-photo.png" alt="Rainmakr" className="img-fluid" />
+                                                <div className="photo d-flex align-items-center justify-content-center" onClick={_=>this.uploadA()}>
+                                                    <img src={this.state.photoA} alt="Rainmakr" className="img-fluid" />
                                                 </div>
                                                 <div className="thumbs d-flex justify-content-between mt-3">
                                                     <div className="d-flex justify-content-center align-items-center thumb">

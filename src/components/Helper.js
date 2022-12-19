@@ -1,4 +1,3 @@
-import { setLoader } from '../actions/App'
 import axios from "axios"
 import history from '../routes/history'
 import { toast } from 'react-toastify'
@@ -22,7 +21,7 @@ let Helper = {
             loader = true
         }
         if (loader) {
-            dispatch(setLoader(true))
+            // dispatch(setLoader(true))
         }
         let urlRequest = '/request.php?method=' + encodeURI(method) + '&url=' + btoa(url)
         if (window.location.href.indexOf('localhost:3000') !== -1) {
@@ -39,7 +38,7 @@ let Helper = {
             headers: { 'token': token }
         }).then((res) => {
             if (loader) {
-                dispatch(setLoader(false))
+                // dispatch(setLoader(false))
             }
 
             if (typeof (res.data.response) !== 'object' || typeof (res.data.data) === 'undefined') {
@@ -78,6 +77,40 @@ let Helper = {
                 error(response)
             }
         })
+    },
+    uploadFileOne(callback){
+        let file = document.createElement('input')
+        file.setAttribute('type', 'file')
+        file.setAttribute('accept', '.jpg,.jpeg,.png')
+        file.click()
+        file.onchange = function (a) {
+            if (typeof (a.target.files[0]) !== 'object') {
+                if (typeof (callback) === 'function') {
+                    callback('Tentativa inválida!')
+                }
+                return
+            }
+            if (typeof(a.target.files[0]) !== 'object') {
+                if (typeof (callback) == 'function') {
+                    callback('Objeto do arquivo é inválido!')
+                }
+                return
+            }
+
+            let file = a.target.files[0]
+
+            if (!(/image/i).test(file.type)) {
+                if (typeof (callback) == 'function') {
+                    callback('Arquivo ' + file.name + ' não é uma imagem.', null)
+                }
+                return;
+            }
+            var reader = new FileReader()
+            reader.readAsDataURL(file)
+            reader.onload = function (event) {
+                callback(false, event.target.result)
+            }
+        }
     }
 }
 export default Helper
