@@ -9,9 +9,9 @@ class FooterLogged extends Component {
                 <footer className={'footer-logged '+this.props.className}>
                     <div className="links text-center">
                         <Link to={'/creator/profile'} className="text-steelo-l2">FAQ</Link>&nbsp;&nbsp;
-                        <Link to={'/creator/profile'} className="text-steelo-l2">CENTRAL DE AJUDA</Link>&nbsp;&nbsp;
-                        <Link to={'/creator/profile'} className="text-steelo-l2">COOKIES</Link><br/>
-                        <Link to={'/creator/profile'} className="text-steelo-l2">TERMOS DE PRIVACIDADE</Link>
+                        <Link to={'/creator/profile'} className="text-steelo-l2">TERMS OF SERVICE</Link>&nbsp;&nbsp;
+                        <Link to={'/creator/profile'} className="text-steelo-l2">PRIVACY</Link><br/>
+                        <Link to={'/creator/profile'} className="text-steelo-l2">TALK TO US</Link>
                     </div>
                     <div className="logo text-center mt-3">
                         <Link to={'creator/profile'}><img src="/assets/img/logo-footer-logged.png" alt="Rainmakr" /></Link>
