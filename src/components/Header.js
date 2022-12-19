@@ -33,16 +33,16 @@ class Header extends Component {
                         ) : (
                             <header className="header-default logged">
                                 <div className="container">
-                                    <div className="in d-flex align-items-center">
-                                        <div className="logo">
+                                    <div className="row align-items-center">
+                                        <div className="col-md-3 logo">
                                             <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
                                         </div>
-                                        <div className="search">
+                                        <div className="col-md-6 search">
                                             <div className="input-icon">
                                                 <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} /><Icon icon="material-symbols:search" width={20} height={20} />
                                             </div>
                                         </div>
-                                        <div className="menu d-flex align-items-center justify-content-end">
+                                        <div className="col-md-3 menu d-flex align-items-center justify-content-end">
                                             <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
                                             <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:link-rounded" width={24} height={24} /></Link>
                                             <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:group-outline-rounded" width={24} height={24} /></Link>

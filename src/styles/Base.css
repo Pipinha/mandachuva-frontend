@@ -35,12 +35,9 @@ font-family: 'Roboto Condensed', sans-serif;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header-default.logged .logo {
-    width: 25%;
-}
-
-.header-default.logged .search {
-    width: 50%;
+.header-default.logged .container,
+.header-default.logged .container .row {
+    height: 56px;
 }
 
 .header-default.logged .search input {
@@ -92,10 +89,6 @@ font-family: 'Roboto Condensed', sans-serif;
     font-size: 16px;
     color: #ccc;
     letter-spacing: 0.5px;
-}
-
-.header-default.logged .menu {
-    width: 25%;
 }
 
 .header-default.logged .menu .menu-item {
