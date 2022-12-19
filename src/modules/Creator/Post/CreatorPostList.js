@@ -152,7 +152,7 @@ class CreatorPostList extends Component {
                                     <div className="scores2 mt-3 px-4">
                                         <div className="scores-item d-flex justify-content-between py-2">
                                             <div className="a text-white">Engagement</div>
-                                            <div className="b text-white">75%</div>
+                                            <div className="b text-white">5%</div>
                                         </div>
                                         <div className="scores-item d-flex justify-content-between py-2">
                                             <div className="a text-white">Credibility</div>
@@ -160,11 +160,11 @@ class CreatorPostList extends Component {
                                         </div>
                                         <div className="scores-item d-flex justify-content-between py-2">
                                             <div className="a text-white">Followers</div>
-                                            <div className="b text-white">9.375</div>
+                                            <div className="b text-white">101.380</div>
                                         </div>
                                         <div className="scores-item d-flex justify-content-between py-2">
                                             <div className="a text-white">Likes</div>
-                                            <div className="b text-white">101.380</div>
+                                            <div className="b text-white">9.375</div>
                                         </div>
                                     </div>
                                     <div className="social-links text-center mt-3">
