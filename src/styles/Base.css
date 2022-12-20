@@ -1219,19 +1219,19 @@ input[type="radio"] {
     appearance: none;
     /* For iOS < 15 */
     margin: 0;
-  
+
     width: 20px;
     height: 20px;
-    border: none;
+    border: 2px solid #fff;
     border-radius: 50%;
     transform: translateY(-0.075em);
-  
+
     display: grid;
     place-content: center;
-    background: #666666;
-  }
-  
-  input[type="radio"]::before {
+    background: transparent;
+}
+
+input[type="radio"]::before {
     content: "";
     width: 8px;
     height: 8px;
@@ -1241,20 +1241,93 @@ input[type="radio"] {
     box-shadow: inset 1em 1em var(--form-control-color);
     /* Windows High Contrast Mode */
     background-color: #fff;
-  }
+}
 
-  input[type="radio"]:checked {
+input[type="radio"]:checked {
     background: #FF6B00;
-  }
-  
-  input[type="radio"]:checked::before {
+}
+
+input[type="radio"]:checked::before {
     transform: scale(1);
-  }
-  
-  input[type="radio"]:focus {
-    outline: max(2px, 0.15em) solid currentColor;
+}
+
+input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid #ccc;
     outline-offset: max(2px, 0.15em);
-  }
+}
+
+/* The container */
+.custom-checkbox {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.custom-checkbox span {
+    position: relative;
+    margin-top: -2px;
+}
+
+/* Hide the browser's default checkbox */
+.custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-checkbox:hover input~.checkmark {
+    background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.custom-checkbox input:checked~.checkmark {
+    background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.custom-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.custom-checkbox .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
 
 .input-icon {
     position: relative;
@@ -1286,6 +1359,10 @@ form label {
 .rbt-input-multi.focus {
     border-color: transparent !important;
     box-shadow: none !important;
+}
+
+.rbt-close-content {
+    margin-top: 2px;
 }
 
 .dropdown-menu {

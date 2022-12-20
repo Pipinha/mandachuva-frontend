@@ -14,10 +14,11 @@ class CreatorSocial extends Component {
         })
 
         this.state = {
-            integraded: false,
+            integraded: true,
             storiesPrice: '$1,000',
             reelsPrice: '$1,000',
-            feedPrice: '$1,000'
+            feedPrice: '$1,000',
+            consult: true
         }
 
     }
@@ -117,6 +118,15 @@ class CreatorSocial extends Component {
                                                     <div className="col-md-3">
                                                         <label className="text-steelo-l2">FEED PRICE</label>
                                                         <input type="text" className="form-control with-label2" value={this.state.feedPrice} onChange={(e) => this.setState({ feedPrice: e.target.value })} placeholder="FEED PRICE" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-row mt-3">
+                                                    <div className="col-md-3">
+                                                        <label class="custom-checkbox">
+                                                            <input type="checkbox" checked={this.state.consult} onChange={e => this.setState({ consult: e.target.checked })} />
+                                                            <span class="checkmark"></span>
+                                                            <span className="text-white">Under consultant</span>
+                                                        </label>
                                                     </div>
                                                 </div>
                                                 <div className="text-right">
