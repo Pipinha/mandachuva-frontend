@@ -5,7 +5,7 @@ import { Link, withRouter } from "react-router-dom";
 import { toast } from "react-toastify";
 import FooterLogged from "../../components/FooterLogged";
 
-class CreatorSocial extends Component {
+class CreatorSettingSocial extends Component {
     constructor(props) {
         super(props)
 
@@ -14,11 +14,11 @@ class CreatorSocial extends Component {
         })
 
         this.state = {
-            integraded: true,
+            integraded: false,
             storiesPrice: '$1,000',
             reelsPrice: '$1,000',
             feedPrice: '$1,000',
-            consult: true
+            consult: false
         }
 
     }
@@ -54,7 +54,7 @@ class CreatorSocial extends Component {
                 </div>
                 <div className="container">
                     <div className="back-to mt-3">
-                        <Link to={'#back'} onClick={_ => window.history.back()} className="text-blueberry"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={14} height={14} /> Back to Dashboard</Link>
+                        <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={14} height={14} /> Back to Dashboard</Link>
                     </div>
                     <div className="row mt-3">
                         <div className="col-md-3">
@@ -157,4 +157,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch: dispatch
 })
 
-export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CreatorSocial))
+export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CreatorSettingSocial))

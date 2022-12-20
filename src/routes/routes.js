@@ -6,9 +6,10 @@ import Register from "../modules/Register/Register"
 import CreatorProfile from "../modules/Creator/CreatorProfile"
 import CompanyProfile from "../modules/Company/CompanyProfile"
 import CreatorSetting from "../modules/Creator/CreatorSetting"
-import CreatorSocial from "../modules/Creator/CreatorSocial"
+import CreatorSettingSocial from "../modules/Creator/CreatorSettingSocial"
 import CreatorPostList from "../modules/Creator/Post/CreatorPostList"
 import CreatorPostEdit from "../modules/Creator/Post/CreatorPostEdit"
+import CreatorSettingPrivacy from "../modules/Creator/CreatorSettingPrivacy"
 
 const routes = [
     {
@@ -36,8 +37,14 @@ const routes = [
             },
             {
                 exact: true,
+                path: '/creator/setting/privacy',
+                component: CreatorSettingPrivacy,
+                auth: true,
+            },
+            {
+                exact: true,
                 path: '/creator/setting/social',
-                component: CreatorSocial,
+                component: CreatorSettingSocial,
                 auth: true,
             },
             {

@@ -301,6 +301,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-profile,
 .page-creator-setting,
 .page-creator-setting-social,
+.page-creator-setting-privacy,
 .page-creator-post-list,
 .page-creator-post-edit {
     background-color: #1E1E1E;
@@ -489,19 +490,22 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-setting .title,
-.page-creator-setting-social .title {
+.page-creator-setting-social .title,
+.page-creator-setting-privacy .title {
     position: relative;
 }
 
 .page-creator-setting .title .bg,
-.page-creator-setting-social .title .bg {
+.page-creator-setting-social .title .bg,
+.page-creator-setting-privacy .title .bg {
     margin-top: -56px;
     width: 100%;
     height: auto;
 }
 
 .page-creator-setting .title .infos,
-.page-creator-setting-social .title .infos {
+.page-creator-setting-social .title .infos,
+.page-creator-setting-privacy .title .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -509,7 +513,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-setting .title .infos .txt,
-.page-creator-setting-social .title .infos .txt {
+.page-creator-setting-social .title .infos .txt,
+.page-creator-setting-privacy .title .infos .txt {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
