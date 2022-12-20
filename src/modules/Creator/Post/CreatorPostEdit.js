@@ -14,7 +14,10 @@ class CreatorPostEdit extends Component {
 
         this.state = {
             social: '',
-            photoA: '/assets/img/img-add-photo.png'
+            photoA: '/assets/img/img-add-photo.png',
+            photoB: '/assets/img/img-add-photo.png',
+            photoC: '/assets/img/img-add-photo.png',
+            photoD: '/assets/img/img-add-photo.png'
         }
         this.changeSocial = this.changeSocial.bind(this);
     }
@@ -26,9 +29,13 @@ class CreatorPostEdit extends Component {
 
     }
 
-    uploadA(){
-        Helper.uploadFileOne((error,file)=>{
-            this.setState({photoA: file})
+    uploadA() {
+        Helper.uploadFileOne((error, file) => {
+            if (error !== false) {
+                return;
+            }
+
+            this.setState({ photoA: file })
         })
     }
 
@@ -101,18 +108,18 @@ class CreatorPostEdit extends Component {
                                         </div>
                                         <div className="form-row mt-3">
                                             <div className="col-md-4">
-                                                <div className="photo d-flex align-items-center justify-content-center" onClick={_=>this.uploadA()}>
+                                                <div className="photo d-flex align-items-center justify-content-center" onClick={_ => this.uploadA()}>
                                                     <img src={this.state.photoA} alt="Rainmakr" className="img-fluid" />
                                                 </div>
                                                 <div className="thumbs d-flex justify-content-between mt-3">
                                                     <div className="d-flex justify-content-center align-items-center thumb">
-                                                        <img src="/assets/img/img-add-photo.png" alt="Rainmakr" className="img-fluid" />
+                                                        <img src={this.state.photoB} alt="Rainmakr" className="img-fluid" />
                                                     </div>
                                                     <div className="d-flex justify-content-center align-items-center thumb">
-                                                        <img src="/assets/img/img-add-photo.png" alt="Rainmakr" className="img-fluid" />
+                                                        <img src={this.state.photoC} alt="Rainmakr" className="img-fluid" />
                                                     </div>
                                                     <div className="d-flex justify-content-center align-items-center thumb">
-                                                        <img src="/assets/img/img-add-photo.png" alt="Rainmakr" className="img-fluid" />
+                                                        <img src={this.state.photoD} alt="Rainmakr" className="img-fluid" />
                                                     </div>
                                                 </div>
                                             </div>
