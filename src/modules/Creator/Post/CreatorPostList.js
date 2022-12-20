@@ -276,7 +276,7 @@ class CreatorPostList extends Component {
                                                             <Link key={'post-item-social-' + ib} to={'#a'} className="text-white"><Icon icon={b.icon} width={12} height={12} /> {b.name}</Link>
                                                         ))}                                                    </div>
                                                     <div className="options d-flex justify-content-center mt-3">
-                                                        <Link to={'#a'} className="edit d-flex justify-content-center align-items-center"><Icon icon="akar-icons:pencil" width={16} height={16} /></Link>
+                                                        <Link to={'/creator/ready-to-post/edit/1'} className="edit d-flex justify-content-center align-items-center"><Icon icon="akar-icons:pencil" width={16} height={16} /></Link>
                                                         <Link to={'#a'} onClick={_ => this.deleteJobItem(ia)} className="trash d-flex justify-content-center align-items-center"><Icon icon="tabler:trash" width={16} height={16} /></Link>
                                                     </div>
                                                 </div>
