@@ -58,6 +58,7 @@ class Header extends Component {
                                                     <Link to={'/creator/profile'}>MY PROFILE</Link>
                                                     <Link to={'/creator/setting'} className="mt-2">SETTING</Link>
                                                     <Link to={'/creator/ariel'} className="mt-2">RAINLINK</Link>
+                                                    <Link to={'/creator/rainjobs'} className="mt-2">RAINJOBS</Link>
                                                     <a href="#logout" onClick={_ => this.logout()} className="mt-2">LOGOUT</a>
                                                 </div>
                                             </div>

@@ -46,7 +46,7 @@ class CreatorSettingSocial extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-6">
-                                    <div className="txt text-white">SETTINGS</div>
+                                    <Link to={'/creator/setting/social'} className="txt active">SETTINGS</Link>
                                 </div>
                             </div>
                         </div>

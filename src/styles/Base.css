@@ -526,7 +526,14 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 28px;
     letter-spacing: 0.25px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: #999999;
+}
+.page-creator-setting .title .infos .txt.active,
+.page-creator-setting-social .title .infos .txt.active,
+.page-creator-setting-privacy .title .infos .txt.active {
     border-bottom: 3px solid #fff;
+    color: #fff !important;
 }
 
 .page-creator-setting-social .btn-insta {
