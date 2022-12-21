@@ -10,6 +10,7 @@ import CreatorSettingSocial from "../modules/Creator/CreatorSettingSocial"
 import CreatorPostList from "../modules/Creator/Post/CreatorPostList"
 import CreatorPostEdit from "../modules/Creator/Post/CreatorPostEdit"
 import CreatorSettingPrivacy from "../modules/Creator/CreatorSettingPrivacy"
+import CreatorRainlink from "../modules/Creator/CreatorRainlink"
 
 const routes = [
     {
@@ -57,6 +58,12 @@ const routes = [
                 exact: true,
                 path: '/creator/profile',
                 component: CreatorProfile,
+                auth: true,
+            },
+            {
+                exact: false,
+                path: '/creator/:username',
+                component: CreatorRainlink,
                 auth: true,
             },
             {

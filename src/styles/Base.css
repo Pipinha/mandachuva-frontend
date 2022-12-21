@@ -272,6 +272,7 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-account-login,
+.page-creator-rainlink,
 .page-register {
     background-image: url(/public/assets/img/bg-login.png);
     background-repeat: no-repeat;
@@ -279,9 +280,11 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-account-login .box-central,
-.page-register .box-central {
+.page-register .box-central,
+.page-creator-rainlink .box-central {
     background: #273539;
     width: 360px;
+    border-radius: 8px;
 }
 
 .page-account-login .box-central .in,
@@ -598,6 +601,72 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-post-list .post-list .menu-store .store .b {
     font-weight: 700 !important;
+}
+
+.page-creator-rainlink .profile .name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
+}
+
+.page-creator-rainlink .profile .country-state {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+}
+
+.page-creator-rainlink .profile .segment {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+
+.page-creator-rainlink .profile .scores .scores-item {
+    border-bottom: 1px solid #42585F;
+}
+
+.page-creator-rainlink .profile .scores .scores-item:last-child {
+    border-bottom: none !important;
+}
+
+.page-creator-rainlink .profile .scores .scores-item .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.page-creator-rainlink .profile .scores .scores-item .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.page-creator-rainlink .profile .social-links a {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.page-creator-rainlink .profile .caption {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
 }
 
 /* HELPERS */
@@ -1121,6 +1190,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .text-bold {
     font-weight: 700;
 }
+
 h1 {
     font-size: 74px;
     line-height: 74px;
@@ -1514,6 +1584,15 @@ a.text-blueberry-l2:hover {
 a.text-blueberry:hover {
     text-decoration: none;
     color: #12CCE4;
+}
+
+.text-orange-m1 {
+    color: #F15700;
+}
+
+a.text-orange-m1:hover {
+    text-decoration: none;
+    color: #F15700;
 }
 
 .text-steelo-l2 {
