@@ -11,6 +11,7 @@ import CreatorPostList from "../modules/Creator/Post/CreatorPostList"
 import CreatorPostEdit from "../modules/Creator/Post/CreatorPostEdit"
 import CreatorSettingPrivacy from "../modules/Creator/CreatorSettingPrivacy"
 import CreatorRainlink from "../modules/Creator/CreatorRainlink"
+import CreatorJobList from "../modules/Creator/Job/CreatorJobList"
 
 const routes = [
     {
@@ -22,6 +23,12 @@ const routes = [
                 exact: true,
                 path: '/company/profile',
                 component: CompanyProfile,
+                auth: true,
+            },
+            {
+                exact: true,
+                path: '/creator/rainjobs',
+                component: CreatorJobList,
                 auth: true,
             },
             {
