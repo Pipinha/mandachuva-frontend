@@ -57,10 +57,15 @@ class CreatorJobList extends Component {
                                     <div className="col-md-4 mt-3">
                                         <div className="card-custom">
                                             <div className="list-job-item p-3">
-                                                <div className="names-fit d-flex justify-content-between pb-2">
+                                                <div className="names-fit d-flex justify-content-between pb-2 mt-2">
                                                     <div className="names">
-                                                        <div className="a text-steelo-l2">NESPRESSO</div>
-                                                        <div className="b text-white">COFFEE TIME</div>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="logo mr-2"><img src="/assets/img/logo-nike.png" alt="Rainmakr" /></div>
+                                                            <div className="txt">
+                                                                <div className="a text-steelo-l2">NESPRESSO</div>
+                                                                <div className="b text-white">COFFEE TIME</div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div className="fit">
                                                         <div className="a text-steelo-l2 text-right">FIT</div>
@@ -69,7 +74,8 @@ class CreatorJobList extends Component {
                                                 </div>
                                                 <div className="infos mt-2">
                                                     <span className="a text-white mr-1">Start:</span><span className="b text-white">July 25th</span><br />
-                                                    <span className="a text-white mr-1">Delivery:</span><span className="b text-white">August 6th</span>
+                                                    <span className="a text-white mr-1">Delivery:</span><span className="b text-white">August 6th</span><br />
+                                                    <span className="a text-white mr-1">Budget:</span><span className="b text-white">$40-$300</span>
                                                 </div>
                                                 <div className="segment text-blueberry pb-3 mt-1">LIFESTYLE</div>
                                                 <div className="plataform-action d-flex justify-content-between align-items-end mt-3">
@@ -80,7 +86,7 @@ class CreatorJobList extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="action">
-                                                        <button type="button" className="btn btn-submit with-shadow btn-sm">Get it</button>
+                                                        <button type="button" className="btn btn-submit with-shadow btn-sm">More</button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -98,8 +104,13 @@ class CreatorJobList extends Component {
                                             <div className="list-job-item p-3">
                                                 <div className="names-fit d-flex justify-content-between pb-2">
                                                     <div className="names">
-                                                        <div className="a text-steelo-l2">NESPRESSO</div>
-                                                        <div className="b text-white">COFFEE TIME</div>
+                                                        <div className="d-flex align-items-center">
+                                                            <div className="logo mr-2"><img src="/assets/img/logo-nike.png" alt="Rainmakr" /></div>
+                                                            <div className="txt">
+                                                                <div className="a text-steelo-l2">NESPRESSO</div>
+                                                                <div className="b text-white">COFFEE TIME</div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <div className="fit">
                                                         <div className="a text-steelo-l2 text-right">FIT</div>
@@ -108,7 +119,8 @@ class CreatorJobList extends Component {
                                                 </div>
                                                 <div className="infos mt-2">
                                                     <span className="a text-white mr-1">Start:</span><span className="b text-white">July 25th</span><br />
-                                                    <span className="a text-white mr-1">Delivery:</span><span className="b text-white">August 6th</span>
+                                                    <span className="a text-white mr-1">Delivery:</span><span className="b text-white">August 6th</span><br />
+                                                    <span className="a text-white mr-1">Budget:</span><span className="b text-white">$40-$300</span>
                                                 </div>
                                                 <div className="segment text-blueberry pb-3 mt-1">LIFESTYLE</div>
                                                 <div className="plataform-action d-flex justify-content-between align-items-end mt-3">
@@ -119,7 +131,7 @@ class CreatorJobList extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="action">
-                                                        <button type="button" className="btn btn-submit with-shadow btn-sm">Get it</button>
+                                                        <button type="button" className="btn btn-submit with-shadow btn-sm">More</button>
                                                     </div>
                                                 </div>
                                             </div>
