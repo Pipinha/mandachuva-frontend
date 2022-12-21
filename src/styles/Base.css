@@ -1118,6 +1118,9 @@ font-family: 'Roboto Condensed', sans-serif;
 
 
 /* TYPE FAMILY */
+.text-bold {
+    font-weight: 700;
+}
 h1 {
     font-size: 74px;
     line-height: 74px;
@@ -1332,6 +1335,71 @@ input[type="radio"]:focus {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.checkbox {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+/* The switch - the box around the slider */
+.custom-switch {
+    position: relative;
+    display: inline-block;
+    width: 39px;
+    height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.custom-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.custom-switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #5D818D;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.custom-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 3px;
+    background-color: #273539;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+
+
+.custom-switch input:checked+.slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+/* Rounded sliders */
+.custom-switch .slider.round {
+    border-radius: 12px;
+}
+
+.custom-switch .slider.round:before {
+    border-radius: 50%;
 }
 
 .input-icon {

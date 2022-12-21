@@ -14,6 +14,9 @@ class CreatorSettingPrivacy extends Component {
         })
 
         this.state = {
+            email: '',
+            phone: '',
+            password: ''
         }
 
     }
@@ -77,6 +80,43 @@ class CreatorSettingPrivacy extends Component {
                                 <div className="simple">
                                     <div className="title2 text-white">PRIVACY AND SECURITY</div>
                                     <div className="sep mt-2"></div>
+                                    <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
+                                        <div className="form-row">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">EMAIL</label>
+                                                <input type="text" className="form-control with-label" value={this.state.email} onChange={(e) => this.setState({ email: e.target.value })} placeholder="your-email@domain.com" />
+                                            </div>
+                                        </div>
+                                        <div className="form-row mt-2">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">PHONE</label>
+                                                <input type="text" className="form-control with-label" value={this.state.phone} onChange={(e) => this.setState({ phone: e.target.value })} placeholder="+00000000" />
+                                            </div>
+                                        </div>
+                                        <div className="form-row mt-2">
+                                            <div className="col-md-5">
+                                                <label className="text-steelo-l2">Password</label>
+                                                <input type="password" className="form-control with-label" value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} placeholder="Password" />
+                                            </div>
+                                        </div>
+                                        <div className="title2 text-white mt-6">RAINBOT NOTIFICATION</div>
+                                        <div className="sep mt-2"></div>
+                                        <div className="form-row mt-2">
+                                            <div className="col-md-4">
+                                                <div className="d-flex text-white align-items-center">
+                                                    <label className="custom-switch mr-2">
+                                                        <input type="checkbox" />
+                                                        <span className="slider round"></span>
+                                                    </label>
+                                                    <div className="checkbox">Bot status: <span className="text-bold">On</span></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="text-right mt-3">
+                                            <Link to={'/creator/profile'} className="btn btn-no">Cancel</Link>
+                                            <button type="submit" className="btn btn-submit with-shadow">Save</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
