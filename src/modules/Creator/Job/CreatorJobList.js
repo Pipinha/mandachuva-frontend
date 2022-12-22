@@ -2,6 +2,9 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import FooterLogged from "../../../components/FooterLogged";
+import { Typeahead } from 'react-bootstrap-typeahead';
+import 'react-bootstrap-typeahead/css/Typeahead.css';
 
 class CreatorJobList extends Component {
     constructor(props) {
@@ -24,6 +27,9 @@ class CreatorJobList extends Component {
                 {},
                 {},
             ],
+            fits: [],
+            segments: [],
+            plataforms: [],
         }
     }
     render() {
@@ -54,7 +60,7 @@ class CreatorJobList extends Component {
                             </div>
                             <div className="row list-job">
                                 {this.state.yourFit.map((a, ia) => (
-                                    <div className="col-md-4 mt-3">
+                                    <div className="col-md-4 mt-3" key={'yourfit-' + ia}>
                                         <div className="card-custom">
                                             <div className="list-job-item p-3">
                                                 <div className="names-fit d-flex justify-content-between pb-2 mt-2">
@@ -99,7 +105,7 @@ class CreatorJobList extends Component {
                             </div>
                             <div className="row list-job">
                                 {this.state.lastest.map((a, ia) => (
-                                    <div className="col-md-4 mt-3">
+                                    <div className="col-md-4 mt-3" key={'lastests-' + ia}>
                                         <div className="card-custom">
                                             <div className="list-job-item p-3">
                                                 <div className="names-fit d-flex justify-content-between pb-2">
@@ -140,7 +146,75 @@ class CreatorJobList extends Component {
                                 ))}
                             </div>
                         </div>
-                        <div className="col-md-3"></div>
+                        <div className="col-md-3">
+                            <div className="card-custom">
+                                <div className="filter-job p-3">
+                                    <form onSubmit={e => { e.preventDefault(); }}>
+                                        <div className="title text-white">FILTERS</div>
+                                        <div className="mt-2">
+                                            <label className="text-steelo-l2">FIT</label>
+                                            <Typeahead
+                                                id="fits"
+                                                labelKey="description"
+                                                multiple
+                                                onChange={(e) => this.setState({ fits: e })}
+                                                options={[
+                                                    {
+                                                        id: 1,
+                                                        description: '0% <= 20%'
+                                                    },
+                                                    {
+                                                        id: 2,
+                                                        description: '21% >= 40%'
+                                                    }
+                                                ]}
+                                                placeholder="Any"
+                                                selected={this.state.fits}
+                                            />
+                                        </div>
+                                        <div className="mt-2">
+                                            <label className="text-steelo-l2">SEGMENT</label>
+                                            <Typeahead
+                                                id="segments"
+                                                labelKey="description"
+                                                multiple
+                                                onChange={(e) => this.setState({ segments: e })}
+                                                options={[
+                                                    {
+                                                        id: 1,
+                                                        description: 'Lifestyle'
+                                                    }
+                                                ]}
+                                                placeholder="All"
+                                                selected={this.state.segments}
+                                            />
+                                        </div>
+                                        <div className="mt-2">
+                                            <label className="text-steelo-l2">PLATAFORM</label>
+                                            <Typeahead
+                                                id="plataforms"
+                                                labelKey="description"
+                                                multiple
+                                                onChange={(e) => this.setState({ plataforms: e })}
+                                                options={[
+                                                    {
+                                                        id: 1,
+                                                        description: 'Instagram'
+                                                    },
+                                                    {
+                                                        id: 2,
+                                                        description: 'Tiktok'
+                                                    }
+                                                ]}
+                                                placeholder="All"
+                                                selected={this.state.plataforms}
+                                            />
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <FooterLogged className="mt-4" />
+                        </div>
                     </div>
                 </div>
                 <div className="clearfix mt-4"></div>

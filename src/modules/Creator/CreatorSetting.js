@@ -146,7 +146,7 @@ class CreatorSetting extends Component {
                                                     id="blockers"
                                                     labelKey="description"
                                                     multiple
-                                                    onChange={(e) => this.setState({ segments: e })}
+                                                    onChange={(e) => this.setState({ blockers: e })}
                                                     options={[
                                                         {
                                                             id: 1,
