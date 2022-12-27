@@ -54,7 +54,7 @@ class CreatorSettingSocial extends Component {
                 </div>
                 <div className="container">
                     <div className="back-to mt-3">
-                        <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={14} height={14} /> Back to Dashboard</Link>
+                        <Link to={'/creator/profile'} className="text-blueberry d-flex align-items-center"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={12} height={12} className="mr-1" /> Back to Dashboard</Link>
                     </div>
                     <div className="row mt-3">
                         <div className="col-md-3">
