@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import Swal from "sweetalert2";
 
 class CreatorJobView extends Component {
     constructor(props) {
@@ -45,6 +46,31 @@ class CreatorJobView extends Component {
                 }
             ]
         }
+
+        this.apply.bind(this)
+    }
+    apply() {
+        Swal.fire({
+            title: 'GOOD LUCK!',
+            text: 'Continue searching the perfect RainJobs for you.',
+            showDenyButton: false,
+            showCancelButton: false,
+            confirmButtonText: 'Back to RainJobs',
+            background: '#273539',
+            color: '#fff',
+            customClass: {
+                confirmButton: 'btn btn-e',
+            },
+            buttonsStyling: false,
+            footer: '<a href="/creator/rainjobs" class="text-blueberry">Back to the actual job</a>'
+        })
+
+        // Swal.fire({
+        //     icon: 'error',
+        //     title: 'Oops...',
+        //     text: 'Something went wrong!',
+        //     footer: '<a href="">Why do I have this issue?</a>'
+        //   })
     }
     render() {
         return (
@@ -115,7 +141,7 @@ class CreatorJobView extends Component {
                                         <span className="a text-white mr-1">Budget:</span><span className="b text-white">$40-$300</span>
                                     </div>
                                     <div className="option text-right mt-3">
-                                        <button type="button" className="btn btn-a px-5">Apply</button>
+                                        <button type="button" onClick={this.apply} className="btn btn-a px-5">Apply</button>
                                     </div>
                                 </div>
                             </div>

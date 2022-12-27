@@ -1414,6 +1414,10 @@ font-family: 'Roboto Condensed', sans-serif;
     height: 3px;
 }
 
+.swal2-footer {
+    border-top: none !important;
+}
+
 /* TYPE FAMILY */
 .text-bold {
     font-weight: 700;
@@ -1956,6 +1960,10 @@ a.text-gray-40:hover {
     line-height: 39px;
 }
 
+.btn:focus {
+    box-shadow: none;
+}
+
 .btn-sm {
     height: 35px;
     line-height: 35px;
@@ -2024,6 +2032,17 @@ a.text-gray-40:hover {
 .btn.btn-d:hover,
 .btn.btn-d:focus,
 .btn.btn-d.active {
+    color: #fff;
+}
+
+.btn.btn-e {
+    background-color: #5D818D;
+    color: #fff;
+}
+
+.btn.btn-e:hover,
+.btn.btn-e:focus,
+.btn.btn-e.active {
     color: #fff;
 }
 
