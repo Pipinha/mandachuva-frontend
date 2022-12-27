@@ -13,6 +13,8 @@ import CreatorSettingPrivacy from "../modules/Creator/CreatorSettingPrivacy"
 import CreatorRainlink from "../modules/Creator/CreatorRainlink"
 import CreatorJobList from "../modules/Creator/Job/CreatorJobList"
 import CreatorJobView from "../modules/Creator/Job/CreatorJobView"
+import CreatorBrandView from "../modules/Creator/Brand/CreatorBrandView"
+import CreatorBrandList from "../modules/Creator/Brand/CreatorBrandList"
 
 const routes = [
     {
@@ -27,7 +29,19 @@ const routes = [
                 auth: true,
             },
             {
+                exact: false,
+                path: '/creator/brand/:id',
+                component: CreatorBrandView,
+                auth: true,
+            },
+            {
                 exact: true,
+                path: '/creator/brand',
+                component: CreatorBrandList,
+                auth: true,
+            },
+            {
+                exact: false,
                 path: '/creator/rainjobs/:id',
                 component: CreatorJobView,
                 auth: true,

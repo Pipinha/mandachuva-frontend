@@ -308,7 +308,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-post-list,
 .page-creator-post-edit,
 .page-creator-job,
-.page-creator-job-view {
+.page-creator-job-view,
+.page-creator-brand,
+.page-creator-brand-view {
     background-color: #1E1E1E;
 }
 
@@ -498,7 +500,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-social .title,
 .page-creator-setting-privacy .title,
 .page-creator-job .title,
-.page-creator-job-view .title {
+.page-creator-job-view .title,
+.page-creator-brand .title {
     position: relative;
 }
 
@@ -506,7 +509,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-social .title .bg,
 .page-creator-setting-privacy .title .bg,
 .page-creator-job .title .bg,
-.page-creator-job-view .title .bg {
+.page-creator-job-view .title .bg,
+.page-creator-brand .title .bg {
     margin-top: -56px;
     width: 100%;
     height: auto;
@@ -516,7 +520,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-social .title .infos,
 .page-creator-setting-privacy .title .infos,
 .page-creator-job .title .infos,
-.page-creator-job-view .title .infos {
+.page-creator-job-view .title .infos,
+.page-creator-brand .title .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -527,7 +532,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-social .title .infos .txt,
 .page-creator-setting-privacy .title .infos .txt,
 .page-creator-job .title .infos .txt,
-.page-creator-job-view .title .infos .txt {
+.page-creator-job-view .title .infos .txt,
+.page-creator-brand .title .infos .txt {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -545,7 +551,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting .title .infos .txt.active,
 .page-creator-setting-social .title .infos .txt.active,
 .page-creator-setting-privacy .title .infos .txt.active,
-.page-creator-job .title .infos .txt.active {
+.page-creator-job .title .infos .txt.active,
+.page-creator-brand .title .infos .txt.active {
     border-bottom: 3px solid #fff;
     color: #fff !important;
 }
@@ -695,11 +702,13 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.5px;
 }
 
-.page-creator-job .caption-sort {
+.page-creator-job .caption-sort,
+.page-creator-brand .caption-sort {
     border-bottom: 2px solid #273539;
 }
 
-.page-creator-job .caption-sort .caption {
+.page-creator-job .caption-sort .caption,
+.page-creator-brand .caption-sort .caption {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -709,13 +718,13 @@ font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
-.page-creator-job .caption-sort .sort {
+.page-creator-job .caption-sort .sort,
+.page-creator-brand .caption-sort .sort {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 10px;
     line-height: 12px;
-    /* identical to box height */
     text-align: right;
 }
 
@@ -1371,6 +1380,66 @@ font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;
+}
+
+.card-custom .list-a-item .img img {
+    height: 45px;
+}
+.card-custom .list-a-item .names .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.25px;
+}
+
+.card-custom .list-a-item .names .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
+.card-custom .list-a-item .names .c {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+}
+
+.card-custom .list-a-item .fit-info .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    letter-spacing: 0.5px;
+}
+
+.card-custom .list-a-item .fit-info .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
+    letter-spacing: 0.25px;
+}
+
+.card-custom .list-a-item .fit-info .c {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    text-align: right;
 }
 
 .fit-box {
