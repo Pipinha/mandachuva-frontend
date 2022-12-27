@@ -64,13 +64,6 @@ class CreatorJobView extends Component {
             buttonsStyling: false,
             footer: '<a href="/creator/rainjobs" class="text-blueberry">Back to the actual job</a>'
         })
-
-        // Swal.fire({
-        //     icon: 'error',
-        //     title: 'Oops...',
-        //     text: 'Something went wrong!',
-        //     footer: '<a href="">Why do I have this issue?</a>'
-        //   })
     }
     render() {
         return (
