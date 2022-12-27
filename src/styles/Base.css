@@ -1293,6 +1293,11 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.25px;
 }
 
+.trace-a {
+    background-color: #182123;
+    height: 3px;
+}
+
 /* TYPE FAMILY */
 .text-bold {
     font-weight: 700;
@@ -1562,7 +1567,8 @@ input[type="radio"]:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #5D818D;
+    background-color: #273539;
+    border: 2px solid #5D818D;
     -webkit-transition: .4s;
     transition: .4s;
 }
@@ -1570,21 +1576,26 @@ input[type="radio"]:focus {
 .custom-switch .slider:before {
     position: absolute;
     content: "";
-    height: 18px;
-    width: 18px;
-    left: 4px;
-    bottom: 3px;
-    background-color: #273539;
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 2px;
+    background-color: #5D818D;
     -webkit-transition: .4s;
     transition: .4s;
 }
-
-
 
 .custom-switch input:checked+.slider:before {
     -webkit-transform: translateX(14px);
     -ms-transform: translateX(14px);
     transform: translateX(14px);
+}
+
+.custom-switch input:checked ~ .slider {
+    background-color: #5D818D;
+}
+.custom-switch input:checked ~ .slider:before {
+    background-color: #273539;
 }
 
 /* Rounded sliders */

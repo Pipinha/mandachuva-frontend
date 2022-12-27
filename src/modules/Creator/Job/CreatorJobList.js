@@ -210,6 +210,25 @@ class CreatorJobList extends Component {
                                                 selected={this.state.plataforms}
                                             />
                                         </div>
+                                        <div className="trace-a mt-3"></div>
+                                        <div className="title text-white mt-3">EXIBITION</div>
+                                        <div className="mt-3 d-flex align-items-center">
+                                            <label className="custom-switch mr-2">
+                                                <input type="checkbox" />
+                                                <span className="slider round"></span>
+                                            </label>
+                                            <div className="checkbox text-white">Blockers: <span className="text-bold">ON</span></div>
+                                        </div>
+                                        <div className="mt-3 d-flex align-items-center">
+                                            <label className="custom-switch mr-2">
+                                                <input type="checkbox" />
+                                                <span className="slider round"></span>
+                                            </label>
+                                            <div className="checkbox text-white">Show ended jobs: <span className="text-bold">ON</span></div>
+                                        </div>
+                                        <div className="mt-4">
+                                            <button type="button" className="btn btn-b btn-block">Refine the Result</button>
+                                        </div>
                                     </form>
                                 </div>
                             </div>
