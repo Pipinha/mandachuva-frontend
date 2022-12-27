@@ -92,7 +92,7 @@ class CreatorJobList extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="action">
-                                                        <button type="button" className="btn btn-submit with-shadow btn-sm">More</button>
+                                                        <Link to={'/creator/rainjobs/3'} className="btn btn-submit with-shadow btn-sm">More</Link>
                                                     </div>
                                                 </div>
                                             </div>
@@ -137,7 +137,7 @@ class CreatorJobList extends Component {
                                                         </div>
                                                     </div>
                                                     <div className="action">
-                                                        <button type="button" className="btn btn-submit with-shadow btn-sm">More</button>
+                                                        <Link to={'/creator/rainjobs/3'} className="btn btn-submit with-shadow btn-sm">More</Link>
                                                     </div>
                                                 </div>
                                             </div>

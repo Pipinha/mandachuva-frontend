@@ -307,7 +307,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-privacy,
 .page-creator-post-list,
 .page-creator-post-edit,
-.page-creator-job {
+.page-creator-job,
+.page-creator-job-view {
     background-color: #1E1E1E;
 }
 
@@ -496,14 +497,16 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting .title,
 .page-creator-setting-social .title,
 .page-creator-setting-privacy .title,
-.page-creator-job .title {
+.page-creator-job .title,
+.page-creator-job-view .title {
     position: relative;
 }
 
 .page-creator-setting .title .bg,
 .page-creator-setting-social .title .bg,
 .page-creator-setting-privacy .title .bg,
-.page-creator-job .title .bg {
+.page-creator-job .title .bg,
+.page-creator-job-view .title .bg {
     margin-top: -56px;
     width: 100%;
     height: auto;
@@ -512,7 +515,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting .title .infos,
 .page-creator-setting-social .title .infos,
 .page-creator-setting-privacy .title .infos,
-.page-creator-job .title .infos {
+.page-creator-job .title .infos,
+.page-creator-job-view .title .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -522,7 +526,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting .title .infos .txt,
 .page-creator-setting-social .title .infos .txt,
 .page-creator-setting-privacy .title .infos .txt,
-.page-creator-job .title .infos .txt {
+.page-creator-job .title .infos .txt,
+.page-creator-job-view .title .infos .txt {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -542,6 +547,11 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-privacy .title .infos .txt.active,
 .page-creator-job .title .infos .txt.active {
     border-bottom: 3px solid #fff;
+    color: #fff !important;
+}
+
+.page-creator-job-view .title .infos .txt.active {
+    border-bottom: 3px solid transparent;
     color: #fff !important;
 }
 
