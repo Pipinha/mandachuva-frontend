@@ -26,6 +26,9 @@ class CreatorBrandList extends Component {
             segments: [],
         }
     }
+    showView(id){
+        this.props.history.push('/creator/brand/'+id)
+    }
     render() {
         return (
             <>
@@ -69,7 +72,7 @@ class CreatorBrandList extends Component {
                                                     <div className="fit-info">
                                                         <div className="a text-steelo-l2">FIT</div>
                                                         <div className="b text-white">80%</div>
-                                                        <div className="c text-blueberry mt-2">PROFILE</div>
+                                                        <div className="c text-blueberry mt-2" onClick={_=>this.showView(3)}>PROFILE</div>
                                                     </div>
                                                 </div>
                                             </div>
