@@ -73,7 +73,8 @@ class CreatorSettingPrivacy extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <FooterLogged className="mt-3" />
+                            <div className="mt-3 d-block d-sm-none"></div>
+                            <FooterLogged className="mt-3 d-none d-sm-block" />
                         </div>
                         <div className="col-md-9">
                             <div className="card-custom p-3">

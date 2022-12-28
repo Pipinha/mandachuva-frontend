@@ -250,6 +250,7 @@ class CreatorProfile extends Component {
                             </div>
                         </div>
                         <div className="col-md-3">
+                            <div className="mt-4 d-block d-sm-none"></div>
                             <div className="card-custom">
                                 <div className="simple p-3">
                                     <div className="title text-steelo-l2">RAINJOBS</div>

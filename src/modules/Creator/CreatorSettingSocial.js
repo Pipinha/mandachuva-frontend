@@ -75,7 +75,8 @@ class CreatorSettingSocial extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <FooterLogged className="mt-3" />
+                            <div className="mt-3 d-block d-sm-none"></div>
+                            <FooterLogged className="mt-3 d-none d-sm-block" />
                         </div>
                         <div className="col-md-9">
                             <div className="card-custom p-3">
@@ -84,7 +85,7 @@ class CreatorSettingSocial extends Component {
                                     <div className="sep mt-2"></div>
                                     {!this.state.integraded ?
                                         <div className="mt-3">
-                                            <img src="/assets/img/login-insta.png" alt="Rainmakr" onClick={_ => this.init()} className="btn-insta" />
+                                            <img src="/assets/img/login-insta.png" alt="Rainmakr" onClick={_ => this.init()} className="btn-insta img-fluid" />
                                         </div> :
                                         <div className="integraded-ok mt-3">
                                             <div className="status d-flex align-items-center">

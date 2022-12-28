@@ -218,6 +218,7 @@ class CreatorPostList extends Component {
                             </div>
                         </div>
                         <div className="col-md-9">
+                            <div className="mt-4 d-block d-sm-none"></div>
                             <div className="post-list">
                                 <div className="menu-store d-flex align-items-center justify-content-between">
                                     <div className="menu">

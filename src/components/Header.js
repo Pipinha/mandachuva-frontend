@@ -68,7 +68,7 @@ class Header extends Component {
                                         <div className="col-md-3 d-none d-sm-block">
                                             <div className="menu d-flex align-items-center justify-content-end">
                                                 <Link to={'/creator/ready-to-post'} className="menu-item"><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
-                                                <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:link-rounded" width={24} height={24} /></Link>
+                                                <Link to={'/creator/ariel'} className="menu-item"><Icon icon="material-symbols:link-rounded" width={24} height={24} /></Link>
                                                 <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:group-outline-rounded" width={24} height={24} /></Link>
                                                 <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:notifications-outline-rounded" width={24} height={24} /></Link>
                                                 <div className="profile d-flex align-items-center">
@@ -77,7 +77,6 @@ class Header extends Component {
                                                     <div className="profile-menu">
                                                         <Link to={'/creator/profile'}>MY PROFILE</Link>
                                                         <Link to={'/creator/setting'} className="mt-2">SETTING</Link>
-                                                        <Link to={'/creator/ariel'} className="mt-2">RAINLINK</Link>
                                                         <Link to={'/creator/rainjobs'} className="mt-2">RAINJOBS</Link>
                                                         <a href="#logout" onClick={_ => this.logout()} className="mt-2">LOGOUT</a>
                                                     </div>
@@ -89,20 +88,30 @@ class Header extends Component {
                                 <div className="menu-mob-sub" style={{ display: this.state.displayMob }} onClick={_=>this.toggleMenuMob()}>
                                     <div className="p-3">
                                         <div className="menu-mob-item text-center">
-                                            <img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" />
+                                            <Link to={'/creator/profile'}><img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" /></Link>
+                                        </div>
+                                        <div className="menu-mob-item">
+                                            <Link to={'/creator/setting'} className="text-blueberry"><Icon icon="mdi:account-cog-outline" className="text-white" width={24} height={24} /> SETTING</Link>
                                         </div>
                                         <div className="menu-mob-item">
                                             <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:notifications-outline-rounded" className="text-white" width={24} height={24} /> NOTIFICATIONS</Link>
                                         </div>
                                         <div className="menu-mob-item">
-                                            <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:space-dashboard-sharp" className="text-white" width={24} height={24} /> RAINJOBS</Link>
+                                            <Link to={'/creator/ready-to-post'} className="text-blueberry"><Icon icon="material-symbols:space-dashboard-sharp" className="text-white" width={24} height={24} /> READY TO POST</Link>
                                         </div>
                                         <div className="menu-mob-item">
-                                            <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:link-rounded" className="text-white" width={24} height={24} /> RAINLINKS</Link>
+                                            <Link to={'/creator/ariel'} className="text-blueberry"><Icon icon="material-symbols:link-rounded" className="text-white" width={24} height={24} /> RAINLINKS</Link>
                                         </div>
                                         <div className="menu-mob-item">
                                             <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:group-outline-rounded" className="text-white" width={24} height={24} /> GROUPS</Link>
                                         </div>
+                                        <div className="menu-mob-item">
+                                            <Link to={'/creator/rainjobs'} className="text-blueberry"><Icon icon="material-symbols:home-work-outline" className="text-white" width={24} height={24} /> RAINJOBS</Link>
+                                        </div>
+                                        <div className="menu-mob-item">
+                                            <a href="#logout" onClick={_ => this.logout()} className="text-blueberry"><Icon icon="material-symbols:logout-rounded" className="text-white" width={24} height={24} /> LOGOUT</a>
+                                        </div>
+                                        
                                     </div>
                                 </div>
                             </header>

@@ -84,7 +84,8 @@ class CreatorSetting extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <FooterLogged className="mt-3" />
+                            <div className="mt-3 d-block d-sm-none"></div>
+                            <FooterLogged className="mt-3 d-none d-sm-block" />
                         </div>
                         <div className="col-md-9">
                             <div className="card-custom p-3">
@@ -158,7 +159,7 @@ class CreatorSetting extends Component {
                                                 />
                                             </div>
                                         </div>
-                                        <div className="text-right">
+                                        <div className="text-right mt-3">
                                             <Link to={'/creator/profile'} className="btn btn-no">Cancel</Link>
                                             <button type="submit" className="btn btn-submit with-shadow">Save</button>
                                         </div>

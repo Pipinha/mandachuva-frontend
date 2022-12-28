@@ -124,32 +124,21 @@ class CreatorPostEdit extends Component {
                                                 </div>
                                             </div>
                                             <div className="col-md-8">
+                                                <div className="mt-3 d-block d-sm-none"></div>
                                                 <div className="form-row" onChange={this.changeSocial}>
-                                                    <div className="col-md-4">
+                                                    <div className="col">
                                                         <label className="text-white d-flex align-items-center"><input type="radio" name="social" value="Feed" className="mr-2" /> Feed</label>
                                                     </div>
-                                                    <div className="col-md-4 d-flex justify-content-center">
+                                                    <div className="col d-flex justify-content-center">
                                                         <label className="text-white d-flex align-items-center"><input type="radio" name="social" value="Stories" className="mr-2" /> Stories</label>
                                                     </div>
-                                                    <div className="col-md-4 d-flex justify-content-end">
+                                                    <div className="col d-flex justify-content-end">
                                                         <label className="text-white d-flex align-items-center"><input type="radio" name="social" value="Reels" className="mr-2" /> Reels</label>
                                                     </div>
                                                 </div>
                                                 <div className="form-row mt-2">
                                                     <div className="col-md-12">
-                                                        <label className="text-steelo-l2">STORIES PRICE</label>
-                                                        <input type="text" className="form-control with-label3" placeholder="Set the value" />
-                                                    </div>
-                                                </div>
-                                                <div className="form-row mt-2">
-                                                    <div className="col-md-12">
-                                                        <label className="text-steelo-l2">REELS PRICE</label>
-                                                        <input type="text" className="form-control with-label3" placeholder="Set the value" />
-                                                    </div>
-                                                </div>
-                                                <div className="form-row mt-2">
-                                                    <div className="col-md-12">
-                                                        <label className="text-steelo-l2">FEED PRICE</label>
+                                                        <label className="text-steelo-l2">PRICE</label>
                                                         <input type="text" className="form-control with-label3" placeholder="Set the value" />
                                                     </div>
                                                 </div>

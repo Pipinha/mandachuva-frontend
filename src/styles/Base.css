@@ -870,6 +870,11 @@ font-family: 'Roboto Condensed', sans-serif;
     min-height: 180px;
 }
 
+.card-custom .profile .photo img {
+    width: 100%;
+    height: auto;
+}
+
 .card-custom.bg-profile2 .profile .photo {
     min-height: 120px;
 }
@@ -2255,6 +2260,89 @@ a.text-gray-40:hover {
 
     .header-default.logged {
         background-color: #182123;
+    }
+
+    .page-creator-setting .title .bg,
+    .page-creator-setting-social .title .bg,
+    .page-creator-setting-privacy .title .bg,
+    .page-creator-job .title .bg,
+    .page-creator-job-view .title .bg,
+    .page-creator-brand .title .bg {
+        display: none;
+    }
+
+    .page-creator-setting .title .infos,
+    .page-creator-setting-social .title .infos,
+    .page-creator-setting-privacy .title .infos,
+    .page-creator-job .title .infos,
+    .page-creator-job-view .title .infos,
+    .page-creator-brand .title .infos {
+        margin-top: 20px;
+        position: static;
+    }
+
+    .page-creator-setting .title .infos .txt,
+    .page-creator-setting-social .title .infos .txt,
+    .page-creator-setting-privacy .title .infos .txt,
+    .page-creator-job .title .infos .txt,
+    .page-creator-job-view .title .infos .txt,
+    .page-creator-brand .title .infos .txt {
+        display: block;
+        margin-top: 15px;
+    }
+
+    .page-creator-setting .title .infos .txt:first,
+    .page-creator-setting-social .title .infos .txt:first,
+    .page-creator-setting-privacy .title .infos .txt:first,
+    .page-creator-job .title .infos .txt:first,
+    .page-creator-job-view .title .infos .txt:first,
+    .page-creator-brand .title .infos .txt:first {
+        margin-top: 0 !important;
+    }
+
+    .page-account-login,
+    .page-creator-rainlink,
+    .page-register {
+        background-position: center top;
+        background-size: auto 100%;
+    }
+
+    .page-creator-post-list .post-list .menu-store,
+    .page-creator-post-edit .post-list .menu-store {
+        flex-direction: column !important;
+    }
+
+    .page-creator-post-list .post-list .menu-store .menu,
+    .page-creator-post-edit .post-list .menu-store .menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-creator-post-list .post-list .menu-store .menu a,
+    .page-creator-post-edit .post-list .menu-store .menu a {
+        margin-top: 20px;
+        ;
+    }
+
+    .page-creator-post-list .post-list .menu-store .menu a:first,
+    .page-creator-post-edit .post-list .menu-store .menu a:first {
+        margin-top: 0px !important;
+    }
+
+    .page-creator-post-list .post-list .menu-store .store,
+    .page-creator-post-edit .post-list .menu-store .store {
+        margin-top: 20px;
+    }
+
+    .card-custom .post-item .photo {
+        overflow: hidden;
+        height: 200px;
+    }
+
+    .card-custom .post-item .photo img {
+        width: 100%;
+        height: auto;
+
     }
 }
 
