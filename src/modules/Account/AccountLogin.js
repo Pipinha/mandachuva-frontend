@@ -64,6 +64,7 @@ class AccountLogin extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="clearfix mt-6"></div>
             </>
         )
     }
