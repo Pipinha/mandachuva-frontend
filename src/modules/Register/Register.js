@@ -88,6 +88,7 @@ class Register extends Component {
                         </div>
                     </div>
                 </div>
+                <div className="clearfix mt-5"></div>
             </>
         )
     }

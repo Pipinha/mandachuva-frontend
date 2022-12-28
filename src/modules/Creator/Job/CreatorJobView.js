@@ -168,7 +168,7 @@ class CreatorJobView extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="clearfix mt-6"></div>
+                <div className="clearfix mt-5"></div>
             </>
         )
     }
