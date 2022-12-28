@@ -35,6 +35,7 @@ font-family: 'Roboto Condensed', sans-serif;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 
 .header-default.logged .container,
@@ -143,6 +144,52 @@ font-family: 'Roboto Condensed', sans-serif;
 .header-default.logged .menu .profile .profile-menu a:hover {
     text-decoration: none;
     color: #3CE9FF;
+}
+
+.header-default.logged .menu-mob {
+    cursor: pointer;
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+}
+
+.header-default.logged .menu-mob-sub {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #273539;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-default.logged .menu-mob-sub .menu-mob-item {
+    border-bottom: 1px solid #42585F;
+    padding: 8px 0;
+}
+
+.header-default.logged .menu-mob-sub .menu-mob-item:last-child {
+    border-bottom: none;
+}
+
+.header-default.logged .menu-mob-sub .menu-mob-item img {
+    height: 50px;
+}
+
+.header-default.logged .menu-mob-sub .menu-mob-item a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+}
+
+.header-default.logged .menu-mob-sub .menu-mob-item a svg {
+    margin-right: 10px;
 }
 
 
@@ -754,6 +801,7 @@ font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     color: #fff;
 }
+
 .page-creator-brand-view .title2 .infos .a.active {
     border-bottom: 3px solid #fff;
     padding-bottom: 8px;
@@ -2186,7 +2234,7 @@ a.text-gray-40:hover {
 
 .btn.btn-grad-a {
     background: rgb(255, 107, 0);
-    background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgba(237, 30, 121, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgb(239, 223, 230) 100%);
     color: #fff;
 }
 
@@ -2198,6 +2246,16 @@ a.text-gray-40:hover {
 .btn.btn-no {
     background-color: transparent;
     color: #5D818D;
+}
+
+@media screen and (max-width: 1112px) {
+    .header-default.logged .menu .menu-item {
+        margin-left: 10px;
+    }
+
+    .header-default.logged {
+        background-color: #182123;
+    }
 }
 
 @media screen and (max-width: 991px) {

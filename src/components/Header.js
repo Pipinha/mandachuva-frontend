@@ -11,6 +11,20 @@ import { actionDeleteLogin } from "../actions/ActionLogin";
 
 class Header extends Component {
     notShowLogin = ['account-login', 'register']
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            displayMob: 'none',
+        }
+    }
+    toggleMenuMob() {
+        if (this.state.displayMob === 'none') {
+            this.setState({ displayMob: 'block' })
+        } else {
+            this.setState({ displayMob: 'none' })
+        }
+    }
     logout() {
         this.props.dispatch(actionDeleteLogin)
     }
@@ -40,28 +54,54 @@ class Header extends Component {
                                     <div className="row align-items-center">
                                         <div className="col-md-3 logo">
                                             <Link to={'/'}><img src="/assets/img/logo.png" alt="Rainmakr" /></Link>
-                                        </div>
-                                        <div className="col-md-6 search">
-                                            <div className="input-icon">
-                                                <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} /><Icon icon="material-symbols:search" width={20} height={20} />
+                                            <div className="menu-mob d-block d-sm-none float-right" onClick={_=>this.toggleMenuMob()}>
+                                                <Icon icon="material-symbols:menu-rounded" width={24} height={24} className="text-white" />
                                             </div>
                                         </div>
-                                        <div className="col-md-3 menu d-flex align-items-center justify-content-end">
-                                            <Link to={'/creator/ready-to-post'} className="menu-item"><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
-                                            <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:link-rounded" width={24} height={24} /></Link>
-                                            <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:group-outline-rounded" width={24} height={24} /></Link>
-                                            <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:notifications-outline-rounded" width={24} height={24} /></Link>
-                                            <div className="profile d-flex align-items-center">
-                                                <img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" />
-                                                <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />
-                                                <div className="profile-menu">
-                                                    <Link to={'/creator/profile'}>MY PROFILE</Link>
-                                                    <Link to={'/creator/setting'} className="mt-2">SETTING</Link>
-                                                    <Link to={'/creator/ariel'} className="mt-2">RAINLINK</Link>
-                                                    <Link to={'/creator/rainjobs'} className="mt-2">RAINJOBS</Link>
-                                                    <a href="#logout" onClick={_ => this.logout()} className="mt-2">LOGOUT</a>
+                                        <div className="col-md-6 d-none d-sm-block">
+                                            <div className="search">
+                                                <div className="input-icon">
+                                                    <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} /><Icon icon="material-symbols:search" width={20} height={20} />
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div className="col-md-3 d-none d-sm-block">
+                                            <div className="menu d-flex align-items-center justify-content-end">
+                                                <Link to={'/creator/ready-to-post'} className="menu-item"><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
+                                                <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:link-rounded" width={24} height={24} /></Link>
+                                                <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:group-outline-rounded" width={24} height={24} /></Link>
+                                                <Link to={'/creator/profile'} className="menu-item"><Icon icon="material-symbols:notifications-outline-rounded" width={24} height={24} /></Link>
+                                                <div className="profile d-flex align-items-center">
+                                                    <img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" />
+                                                    <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />
+                                                    <div className="profile-menu">
+                                                        <Link to={'/creator/profile'}>MY PROFILE</Link>
+                                                        <Link to={'/creator/setting'} className="mt-2">SETTING</Link>
+                                                        <Link to={'/creator/ariel'} className="mt-2">RAINLINK</Link>
+                                                        <Link to={'/creator/rainjobs'} className="mt-2">RAINJOBS</Link>
+                                                        <a href="#logout" onClick={_ => this.logout()} className="mt-2">LOGOUT</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="menu-mob-sub" style={{ display: this.state.displayMob }} onClick={_=>this.toggleMenuMob()}>
+                                    <div className="p-3">
+                                        <div className="menu-mob-item text-center">
+                                            <img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" />
+                                        </div>
+                                        <div className="menu-mob-item">
+                                            <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:notifications-outline-rounded" className="text-white" width={24} height={24} /> NOTIFICATIONS</Link>
+                                        </div>
+                                        <div className="menu-mob-item">
+                                            <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:space-dashboard-sharp" className="text-white" width={24} height={24} /> RAINJOBS</Link>
+                                        </div>
+                                        <div className="menu-mob-item">
+                                            <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:link-rounded" className="text-white" width={24} height={24} /> RAINLINKS</Link>
+                                        </div>
+                                        <div className="menu-mob-item">
+                                            <Link to={'/creator/profile'} className="text-blueberry"><Icon icon="material-symbols:group-outline-rounded" className="text-white" width={24} height={24} /> GROUPS</Link>
                                         </div>
                                     </div>
                                 </div>
