@@ -16,6 +16,7 @@ import CreatorJobView from "../modules/Creator/Job/CreatorJobView"
 import CreatorBrandView from "../modules/Creator/Brand/CreatorBrandView"
 import CreatorBrandList from "../modules/Creator/Brand/CreatorBrandList"
 import AccountForgot from "../modules/Account/AccountForgot"
+import AccountRecovery from "../modules/Account/AccountRecovery"
 
 const routes = [
     {
@@ -99,6 +100,12 @@ const routes = [
                 exact: true,
                 path: '/register',
                 component: Register,
+                auth: false,
+            },
+            {
+                exact: true,
+                path: '/account/recovery',
+                component: AccountRecovery,
                 auth: false,
             },
             {

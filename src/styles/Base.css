@@ -320,6 +320,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-account-login,
 .page-account-forgot,
+.page-account-recovery,
 .page-creator-rainlink,
 .page-register {
     background-image: url(/public/assets/img/bg-login.png);
@@ -329,6 +330,7 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-account-login .box-central,
 .page-account-forgot .box-central,
+.page-account-recovery .box-central,
 .page-register .box-central,
 .page-creator-rainlink .box-central {
     background: #273539;
@@ -338,25 +340,30 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-account-login .box-central .in,
 .page-account-forgot .box-central .in,
+.page-account-recovery .box-central .in,
 .page-register .box-central .in {
     padding: 24px;
 }
 
 .page-account-login .box-central .logo,
 .page-account-forgot .box-central .logo,
+.page-account-recovery .box-central .logo,
 .page-register .box-central .logo {
     height: 155px;
 }
 
 .page-account-login .box-central .line-sep,
-.page-account-forgot .box-central .line-sep {
+.page-account-forgot .box-central .line-sep,
+.page-account-recovery .box-central .line-sep {
     height: 1px;
 }
 
-.page-account-forgot .t1 {
+.page-account-forgot .t1,
+.page-account-recovery .t1 {
     font-size: 30px;
 }
-.page-account-forgot .t2 {
+.page-account-forgot .t2,
+.page-account-recovery .t2 {
     font-size: 20px;
 }
 
@@ -2325,6 +2332,7 @@ a.text-gray-40:hover {
 
     .page-account-login,
     .page-account-forgot,
+    .page-account-recovery,
     .page-creator-rainlink,
     .page-register {
         background-position: center top;
@@ -2374,6 +2382,7 @@ a.text-gray-40:hover {
 
     .page-account-login,
     .page-account-forgot,
+    .page-account-recovery,
     .page-register {
         background-size: auto 100%;
     }
