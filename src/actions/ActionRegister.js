@@ -1,20 +1,28 @@
 // import {Helper} from '../components/Helper'
-import { PROFILE_CREATOR } from '../constants/Config'
+import { PROFILE_COMPANY } from '../constants/Config'
 import history from '../routes/history'
 
 let actionPostRegister = (data) => (dispatch) => {
     // Helper.request(dispatch, 'POST', 'auth', data, (data) => {
+    let photo = '/assets/img/user-creator.png'
+    if (data.profileId === PROFILE_COMPANY) {
+        photo = '/assets/img/user-company.png'
+    }
     dispatch({
         type: 'SESSION',
         payload: {
             logged: true,
-            photo: '/assets/img/user-creator.png',
-            profileId: PROFILE_CREATOR,
+            photo: photo,
+            profileId: data.profileId,
         }
     })
     // document.body.className = document.getElementById('root').className = 'body-in'
     // dispatch(callConfigMenuGet)
-    history.push('/creator/profile')
+    let uri = '/creator/profile';
+    if (data.profileId === PROFILE_COMPANY) {
+        uri = '/company/profile';
+    }
+    history.push(uri)
     // })
 }
 

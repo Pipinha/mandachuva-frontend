@@ -2,6 +2,7 @@ import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 import { actionPostRegister } from "../../actions/ActionRegister";
+import { PROFILE_COMPANY, PROFILE_CREATOR } from "../../constants/Config";
 
 class Register extends Component {
     constructor(props) {
@@ -12,6 +13,7 @@ class Register extends Component {
         })
 
         this.state = {
+            profileId: '',
             firstname: '',
             lastname: '',
             email: '',
@@ -27,6 +29,7 @@ class Register extends Component {
     }
     submit() {
         this.props.dispatch(actionPostRegister({
+            profileId: this.state.profileId,
             firstname: '',
             lastname: '',
             email: '',
@@ -54,9 +57,17 @@ class Register extends Component {
                                 <h2 className="text-grad-hot-pink">EASY TO START</h2>
                                 <h4 className="text-white mt-3">COMPLETE YOUR PROFILE</h4>
                             </div>
-                            <div className="mt-3">
+                            <div className="mt-4">
                                 <form onSubmit={e => { e.preventDefault(); this.submit() }}>
-                                    <div>
+                                    <div className="row">
+                                        <div className="col-md-6">
+                                            <label className="text-white d-flex align-items-center"><input type="radio" name="profileId" value="1" checked={this.state.profileId === PROFILE_CREATOR} className="mr-2" onChange={(e)=>this.setState({profileId: parseInt(e.target.value)})} /> I'm creator</label>
+                                        </div>
+                                        <div className="col-md-6 d-flex justify-content-end">
+                                            <label className="text-white d-flex align-items-center"><input type="radio" name="profileId" value="2" checked={this.state.profileId === PROFILE_COMPANY} className="mr-2" onChange={(e)=>this.setState({profileId: parseInt(e.target.value)})} /> I'm company</label>
+                                        </div>
+                                    </div>
+                                    <div className="mt-3">
                                         <input type="text" className="form-control with-label" value={this.state.firstname} onChange={(e) => this.setState({ firstname: e.target.value })} placeholder="First Name" />
                                     </div>
                                     <div className="mt-3">
