@@ -352,6 +352,17 @@ font-family: 'Roboto Condensed', sans-serif;
     height: 155px;
 }
 
+.page-register .radio-profile {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    letter-spacing: 0.5px;
+    color: #fff;
+}
+
 .page-account-login .box-central .line-sep,
 .page-account-forgot .box-central .line-sep,
 .page-account-recovery .box-central .line-sep {
@@ -362,6 +373,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-account-recovery .t1 {
     font-size: 30px;
 }
+
 .page-account-forgot .t2,
 .page-account-recovery .t2 {
     font-size: 20px;
