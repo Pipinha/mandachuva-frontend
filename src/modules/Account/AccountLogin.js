@@ -1,6 +1,7 @@
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import { toast } from "react-toastify";
 import { actionPostLogin } from "../../actions/ActionLogin";
 
 class AccountLogin extends Component {
@@ -17,6 +18,17 @@ class AccountLogin extends Component {
         }
     }
     submit() {
+
+        if(!this.state.pass || !this.state.login){
+            toast.error('User or password invalid.')
+            return;
+        }
+
+        if(['company@test.com','creator@test.com'].indexOf(this.state.login)===-1){
+            toast.error('User or password invalid.')
+            return;
+        }
+
         this.props.dispatch(actionPostLogin({
             login: this.state.login,
             pass: this.state.pass,
