@@ -319,6 +319,7 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-account-login,
+.page-account-forgot,
 .page-creator-rainlink,
 .page-register {
     background-image: url(/public/assets/img/bg-login.png);
@@ -327,6 +328,7 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-account-login .box-central,
+.page-account-forgot .box-central,
 .page-register .box-central,
 .page-creator-rainlink .box-central {
     background: #273539;
@@ -335,17 +337,27 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-account-login .box-central .in,
+.page-account-forgot .box-central .in,
 .page-register .box-central .in {
     padding: 24px;
 }
 
 .page-account-login .box-central .logo,
+.page-account-forgot .box-central .logo,
 .page-register .box-central .logo {
     height: 155px;
 }
 
-.page-account-login .box-central .line-sep {
+.page-account-login .box-central .line-sep,
+.page-account-forgot .box-central .line-sep {
     height: 1px;
+}
+
+.page-account-forgot .t1 {
+    font-size: 30px;
+}
+.page-account-forgot .t2 {
+    font-size: 20px;
 }
 
 .page-creator-profile,
@@ -2237,6 +2249,17 @@ a.text-gray-40:hover {
     color: #fff;
 }
 
+.btn.btn-f {
+    background-color: #ED1E79;
+    color: #0E181A;
+}
+
+.btn.btn-f:hover,
+.btn.btn-f:focus,
+.btn.btn-f.active {
+    color: #0E181A;
+}
+
 .btn.btn-grad-a {
     background: rgb(255, 107, 0);
     background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgb(239, 223, 230) 100%);
@@ -2301,6 +2324,7 @@ a.text-gray-40:hover {
     }
 
     .page-account-login,
+    .page-account-forgot,
     .page-creator-rainlink,
     .page-register {
         background-position: center top;
@@ -2349,6 +2373,7 @@ a.text-gray-40:hover {
 @media screen and (max-width: 991px) {
 
     .page-account-login,
+    .page-account-forgot,
     .page-register {
         background-size: auto 100%;
     }
