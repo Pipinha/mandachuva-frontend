@@ -3,6 +3,7 @@ import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 import FooterLogged from "../../components/FooterLogged";
 import history from "../../routes/history";
 
@@ -47,6 +48,39 @@ class CompanySettingPayment extends Component {
             theme: "colored",
         });
     }
+
+    deleteItem(idx) {
+        Swal.fire({
+            title: 'Are you sure you want to delete?',
+            showDenyButton: true,
+            showCancelButton: false,
+            confirmButtonText: 'Yes',
+            denyButtonText: 'No',
+            background: '#273539',
+            color: '#fff',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                let newArr = [];
+                for (let i = 0; i < this.state.cards.length; i++) {
+                    if (i !== idx) {
+                        newArr.push(this.state.cards[i])
+                    }
+                }
+                this.setState({ cards: newArr })
+                toast.success('Delete success!', {
+                    position: "top-right",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "colored",
+                });
+            }
+        })
+    }
+
     render() {
         return (
             <>
@@ -98,22 +132,22 @@ class CompanySettingPayment extends Component {
                                             <div className="col-md-6">
                                                 <label className="text-steelo-l2">MY PAYMENTS METHODYS</label>
                                                 <div className="credit-list mt-1">
-                                                    {this.state.cards.map((a) => (
-                                                        <div className="credit-item d-flex align-items-center justify-content-between" onClick={_=>history.push('/company/setting/payment/3')}>
+                                                    {this.state.cards.map((a, ai) => (
+                                                        <div className="credit-item d-flex align-items-center justify-content-between">
                                                             <div className="brand">
                                                                 <img src={a.brand} alt="Rainmakr" />
                                                             </div>
-                                                            <div className="name flex-fill ml-2">{a.bank}</div>
+                                                            <div className="name flex-fill ml-2" onClick={_ => history.push('/company/setting/payment/3')}>{a.bank}</div>
                                                             <div className="options">
                                                                 <span className="option-btn bg-orange">
-                                                                    <Icon icon="tabler:trash" width={16} height={16} />
+                                                                    <Icon icon="tabler:trash" width={16} height={16} onClick={_ => this.deleteItem(ai)} />
                                                                 </span>
                                                             </div>
                                                         </div>
                                                     ))}
                                                 </div>
                                                 <div className="sep mt-3"></div>
-                                                <div className="credit-add" onClick={_=>history.push('/company/setting/payment/0')}>
+                                                <div className="credit-add" onClick={_ => history.push('/company/setting/payment/0')}>
                                                     <span className="ico bg-pitaya"><Icon icon="material-symbols:add" width={16} height={16} /></span>
                                                     <div className="txt ml-2">ADD A PAYMENT</div>
                                                 </div>
