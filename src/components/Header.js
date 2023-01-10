@@ -154,10 +154,10 @@ class Header extends Component {
                             <div className="menu-mob-sub" style={{ display: this.state.displayMob }} onClick={_ => this.toggleMenuMob()}>
                                 <div className="p-3">
                                     <div className="menu-mob-item text-center">
-                                        <Link to={'/creator/profile'}><img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" /></Link>
+                                        <Link to={'/company/profile'}><img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" /></Link>
                                     </div>
                                     <div className="menu-mob-item">
-                                        <Link to={'/creator/setting'} className="text-blueberry"><Icon icon="mdi:account-cog-outline" className="text-white" width={24} height={24} /> SETTING</Link>
+                                        <Link to={'/company/setting'} className="text-blueberry"><Icon icon="mdi:account-cog-outline" className="text-white" width={24} height={24} /> SETTING</Link>
                                     </div>
                                     <div className="menu-mob-item">
                                         <a href="#logout" onClick={_ => this.logout()} className="text-blueberry"><Icon icon="material-symbols:logout-rounded" className="text-white" width={24} height={24} /> LOGOUT</a>

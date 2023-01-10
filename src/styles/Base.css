@@ -388,15 +388,18 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job,
 .page-creator-job-view,
 .page-creator-brand,
-.page-creator-brand-view {
+.page-creator-brand-view,
+.page-company-profile {
     background-color: #182123;
 }
 
-.page-creator-profile .jobs-options .menu a:first {
+.page-creator-profile .jobs-options .menu a:first,
+.page-company-profile .jobs-options .menu a:first {
     margin-right: 0 !important;
 }
 
-.page-creator-profile .jobs-options .menu a {
+.page-creator-profile .jobs-options .menu a,
+.page-company-profile .jobs-options .menu a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -408,16 +411,19 @@ font-family: 'Roboto Condensed', sans-serif;
     margin-right: 20px;
 }
 
-.page-creator-profile .jobs-options .menu a.active {
+.page-creator-profile .jobs-options .menu a.active,
+.page-company-profile .jobs-options .menu a.active {
     color: #fff;
 }
 
-.page-creator-profile .jobs-options .menu a:hover {
+.page-creator-profile .jobs-options .menu a:hover,
+.page-company-profile .jobs-options .menu a:hover {
     color: #fff;
     text-decoration: none;
 }
 
-.page-creator-profile .jobs-options .sort {
+.page-creator-profile .jobs-options .sort,
+.page-company-profile .jobs-options .sort {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -425,20 +431,23 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 12px;
 }
 
-.page-creator-profile .jobs-list .item {
+.page-creator-profile .jobs-list .item,
+.page-company-profile .jobs-list .item {
     background-color: #0E181A;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
     border-radius: 8px;
 }
 
-.page-creator-profile .jobs-list .item .item-main {
+.page-creator-profile .jobs-list .item .item-main,
+.page-company-profile .jobs-list .item .item-main {
     padding: 15px;
     position: relative;
     cursor: pointer;
 }
 
-.page-creator-profile .jobs-list .item .item-main .company .name {
+.page-creator-profile .jobs-list .item .item-main .company .name,
+.page-company-profile .jobs-list .item .item-main .company .name {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -448,7 +457,8 @@ font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
 }
 
-.page-creator-profile .jobs-list .item .item-main .company .description {
+.page-creator-profile .jobs-list .item .item-main .company .description,
+.page-company-profile .jobs-list .item .item-main .company .description {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -458,7 +468,8 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.5px;
 }
 
-.page-creator-profile .jobs-list .item .item-main .status {
+.page-creator-profile .jobs-list .item .item-main .status,
+.page-company-profile .jobs-list .item .item-main .status {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -467,11 +478,13 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.1px;
 }
 
-.page-creator-profile .jobs-list .item .item-main .link .msg.new {
+.page-creator-profile .jobs-list .item .item-main .link .msg.new,
+.page-company-profile .jobs-list .item .item-main .link .msg.new {
     position: relative;
 }
 
-.page-creator-profile .jobs-list .item .item-main .link .msg.new:before {
+.page-creator-profile .jobs-list .item .item-main .link .msg.new:before,
+.page-company-profile .jobs-list .item .item-main .link .msg.new:before {
     position: absolute;
     content: ' ';
     width: 10px;
@@ -483,7 +496,8 @@ font-family: 'Roboto Condensed', sans-serif;
     right: 0;
 }
 
-.page-creator-profile .jobs-list .item .item-main .link a {
+.page-creator-profile .jobs-list .item .item-main .link a,
+.page-company-profile .jobs-list .item .item-main .link a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -492,7 +506,8 @@ font-family: 'Roboto Condensed', sans-serif;
     margin-left: 30px;
 }
 
-.page-creator-profile .jobs-list .item .item-main .btn-show-hide {
+.page-creator-profile .jobs-list .item .item-main .btn-show-hide,
+.page-company-profile .jobs-list .item .item-main .btn-show-hide {
     position: absolute;
     left: 0;
     right: 0;
@@ -500,19 +515,23 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #5D818D;
 }
 
-.page-creator-profile .jobs-list .item .item-main .btn-show-hide.open {
+.page-creator-profile .jobs-list .item .item-main .btn-show-hide.open,
+.page-company-profile .jobs-list .item .item-main .btn-show-hide.open {
     color: #0E181A;
 }
 
-.page-creator-profile .jobs-list .item .item-hide {
+.page-creator-profile .jobs-list .item .item-hide,
+.page-company-profile .jobs-list .item .item-hide {
     padding: 0 15px;
 }
 
-.page-creator-profile .jobs-list .item .item-hide .timeline {
+.page-creator-profile .jobs-list .item .item-hide .timeline,
+.page-company-profile .jobs-list .item .item-hide .timeline {
     padding: 0 28px 47px 28px;
 }
 
-.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point {
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point,
+.page-company-profile .jobs-list .item .item-hide .timeline .timeline-point {
     width: 24px;
     height: 24px;
     border: 3px solid #273539;
@@ -525,7 +544,8 @@ font-family: 'Roboto Condensed', sans-serif;
     position: relative;
 }
 
-.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .description {
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .description,
+.page-company-profile .jobs-list .item .item-hide .timeline .timeline-point .description {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -538,7 +558,8 @@ font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
 
-.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .date {
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .date,
+.page-company-profile .jobs-list .item .item-hide .timeline .timeline-point .date {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -551,7 +572,8 @@ font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
 }
 
-.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .bal {
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .bal,
+.page-company-profile .jobs-list .item .item-hide .timeline .timeline-point .bal {
     width: 12px;
     height: 12px;
     background-color: #5D818D;
@@ -560,15 +582,18 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 6px;
 }
 
-.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point.error .bal {
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point.error .bal,
+.page-company-profile .jobs-list .item .item-hide .timeline .timeline-point.error .bal {
     background-color: #EE0000;
 }
 
-.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point.off .bal {
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point.off .bal,
+.page-company-profile .jobs-list .item .item-hide .timeline .timeline-point.off .bal {
     background-color: #0E181A;
 }
 
-.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-bar {
+.page-creator-profile .jobs-list .item .item-hide .timeline .timeline-bar,
+.page-company-profile .jobs-list .item .item-hide .timeline .timeline-bar {
     flex: 1;
     height: 3px;
     background-color: #273539;
@@ -899,6 +924,18 @@ font-family: 'Roboto Condensed', sans-serif;
     -moz-border-radius: 8px;
     border-radius: 8px;
     min-height: 180px;
+}
+
+.card-custom .profile.company .photo {
+    position: static;
+    min-height: auto;
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.card-custom .profile.company .photo .main {
+    position: static;
+    margin-left: auto;
+    padding-bottom: 1.5rem;
 }
 
 .card-custom .profile .photo img {
