@@ -392,7 +392,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-profile,
 .page-company-setting,
 .page-company-setting-privacy,
-.page-company-setting-payment {
+.page-company-setting-payment,
+.page-company-setting-payment-edit {
     background-color: #182123;
 }
 
@@ -610,7 +611,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand .title,
 .page-company-setting .title,
 .page-company-setting-privacy .title,
-.page-company-setting-payment .title {
+.page-company-setting-payment .title,
+.page-company-setting-payment-edit .title {
     position: relative;
 }
 
@@ -622,7 +624,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand .title .bg,
 .page-company-setting .title .bg,
 .page-company-setting-privacy .title .bg,
-.page-company-setting-payment .title .bg {
+.page-company-setting-payment .title .bg,
+.page-company-setting-payment-edit .title .bg {
     margin-top: -56px;
     width: 100%;
     height: auto;
@@ -636,7 +639,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand .title .infos,
 .page-company-setting .title .infos,
 .page-company-setting-privacy .title .infos,
-.page-company-setting-payment .title .infos {
+.page-company-setting-payment .title .infos,
+.page-company-setting-payment-edit .title .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -651,7 +655,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand .title .infos .txt,
 .page-company-setting .title .infos .txt,
 .page-company-setting-privacy .title .infos .txt,
-.page-company-setting-payment .title .infos .txt {
+.page-company-setting-payment .title .infos .txt,
+.page-company-setting-payment-edit .title .infos .txt {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -673,7 +678,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand .title .infos .txt.active,
 .page-company-setting .title .infos .txt.active,
 .page-company-setting-privacy .title .infos .txt.active,
-.page-company-setting-payment .title .infos .txt.active {
+.page-company-setting-payment .title .infos .txt.active,
+.page-company-setting-payment-edit .title .infos .txt.active {
     border-bottom: 3px solid #fff;
     color: #fff !important;
 }
@@ -2480,7 +2486,8 @@ a.text-gray-40:hover {
     .page-creator-brand .title .bg,
     .page-company-setting .title .bg,
     .page-company-setting-privacy .title .bg,
-    .page-company-setting-payment .title .bg {
+    .page-company-setting-payment .title .bg,
+    .page-company-setting-payment-edit .title .bg {
         display: none;
     }
 
@@ -2492,7 +2499,8 @@ a.text-gray-40:hover {
     .page-creator-brand .title .infos,
     .page-company-setting .title .infos,
     .page-company-setting-privacy .title .infos,
-    .page-company-setting-payment .title .infos {
+    .page-company-setting-payment .title .infos,
+    .page-company-setting-payment-edit .title .infos {
         margin-top: 20px;
         position: static;
     }
@@ -2505,7 +2513,8 @@ a.text-gray-40:hover {
     .page-creator-brand .title .infos .txt,
     .page-company-setting .title .infos .txt,
     .page-company-setting-privacy .title .infos .txt,
-    .page-company-setting-payment .title .infos .txt {
+    .page-company-setting-payment .title .infos .txt,
+    .page-company-setting-payment-edit .title .infos .txt {
         display: block;
         margin-top: 15px;
     }
@@ -2518,7 +2527,8 @@ a.text-gray-40:hover {
     .page-creator-brand .title .infos .txt:first,
     .page-company-setting .title .infos .txt:first,
     .page-company-setting-privacy .title .infos .txt:first,
-    .page-company-setting-payment .title .infos .txt:first {
+    .page-company-setting-payment .title .infos .txt:first,
+    .page-company-setting-payment-edit .title .infos .txt:first {
         margin-top: 0 !important;
     }
 

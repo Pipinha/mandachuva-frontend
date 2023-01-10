@@ -6,29 +6,20 @@ import { toast } from "react-toastify";
 import FooterLogged from "../../components/FooterLogged";
 import history from "../../routes/history";
 
-class CompanySettingPayment extends Component {
+class CompanySettingPaymentEdit extends Component {
     constructor(props) {
         super(props)
 
         props.handlerHeader({
-            page: 'company-setting-payment'
+            page: 'company-setting-payment-edit'
         })
 
         this.state = {
-            cards: [
-                {
-                    brand: '/assets/img/mastercard.png',
-                    bank: 'AXIS BANK XXXX 4468',
-                },
-                {
-                    brand: '/assets/img/mastercard.png',
-                    bank: 'AXIS BANK XXXX 4468',
-                },
-                {
-                    brand: '/assets/img/mastercard.png',
-                    bank: 'AXIS BANK XXXX 4468',
-                }
-            ],
+            cardNumber: '',
+            holderName: '',
+            cardExpired: '',
+            cardCVV: '',
+            phone: '',
         }
 
     }
@@ -46,6 +37,7 @@ class CompanySettingPayment extends Component {
             progress: undefined,
             theme: "colored",
         });
+        history.push('/company/setting/payment')
     }
     render() {
         return (
@@ -91,31 +83,43 @@ class CompanySettingPayment extends Component {
                         <div className="col-md-9">
                             <div className="card-custom p-3">
                                 <div className="simple">
-                                    <div className="title2 text-white">PAYMENT</div>
+                                    <div className="title2 text-white">ADD A NEW PAYMMENT</div>
                                     <div className="sep mt-2"></div>
                                     <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
                                         <div className="form-row">
                                             <div className="col-md-6">
-                                                <label className="text-steelo-l2">MY PAYMENTS METHODYS</label>
-                                                <div className="credit-list mt-1">
-                                                    {this.state.cards.map((a) => (
-                                                        <div className="credit-item d-flex align-items-center justify-content-between" onClick={_=>history.push('/company/setting/payment/3')}>
-                                                            <div className="brand">
-                                                                <img src={a.brand} alt="Rainmakr" />
-                                                            </div>
-                                                            <div className="name flex-fill ml-2">{a.bank}</div>
-                                                            <div className="options">
-                                                                <span className="option-btn bg-orange">
-                                                                    <Icon icon="tabler:trash" width={16} height={16} />
-                                                                </span>
-                                                            </div>
+                                                <div className="form-row">
+                                                    <div className="col-md-12">
+                                                        <label className="text-steelo-l2">CREDIT CARD NUMBER</label>
+                                                        <div className="d-flex mt-1">
+                                                            <img src="/assets/img/mastercard.png" alt="Rainmakr" />
+                                                            <img src="/assets/img/mastercard.png" alt="Rainmakr" className="ml-2" />
+                                                            <img src="/assets/img/mastercard.png" alt="Rainmakr" className="ml-2" />
                                                         </div>
-                                                    ))}
+                                                        <input type="text" className="form-control with-label mt-2" value={this.state.cardNumber} onChange={(e) => this.setState({ cardNumber: e.target.value })} placeholder="XXXX XXXX XXXX XXXX" />
+                                                    </div>
                                                 </div>
-                                                <div className="sep mt-3"></div>
-                                                <div className="credit-add" onClick={_=>history.push('/company/setting/payment/0')}>
-                                                    <span className="ico bg-pitaya"><Icon icon="material-symbols:add" width={16} height={16} /></span>
-                                                    <div className="txt ml-2">ADD A PAYMENT</div>
+                                                <div className="form-row">
+                                                    <div className="col-md-12">
+                                                        <label className="text-steelo-l2">CARD HOLDER NAME</label>
+                                                        <input type="text" className="form-control with-label" value={this.state.holderName} onChange={(e) => this.setState({ holderName: e.target.value })} placeholder="CARD HOLDER NAME" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-row mt-2">
+                                                    <div className="col-md-6">
+                                                        <label className="text-steelo-l2">EXPIRY</label>
+                                                        <input type="text" className="form-control with-label" value={this.state.cardExpired} onChange={(e) => this.setState({ cardExpired: e.target.value })} placeholder="MM/YY" />
+                                                    </div>
+                                                    <div className="col-md-6">
+                                                        <label className="text-steelo-l2">CVV</label>
+                                                        <input type="text" className="form-control with-label" value={this.state.cardCVV} onChange={(e) => this.setState({ cardCVV: e.target.value })} placeholder="000" />
+                                                    </div>
+                                                </div>
+                                                <div className="form-row mt-2">
+                                                    <div className="col-md-12">
+                                                        <label className="text-steelo-l2">PHONE</label>
+                                                        <input type="text" className="form-control with-label" value={this.state.phone} onChange={(e) => this.setState({ phone: e.target.value })} placeholder="+00000000" />
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,4 +149,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch: dispatch
 })
 
-export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CompanySettingPayment))
+export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CompanySettingPaymentEdit))
