@@ -19,6 +19,7 @@ import AccountForgot from "../modules/Account/AccountForgot"
 import AccountRecovery from "../modules/Account/AccountRecovery"
 import CompanySetting from "../modules/Company/CompanySetting"
 import CompanySettingPrivacy from "../modules/Company/CompanySettingPrivacy"
+import CompanySettingPayment from "../modules/Company/CompanySettingPayment"
 
 const routes = [
     {
@@ -26,6 +27,12 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: true,
+                path: '/company/setting/payment',
+                component: CompanySettingPayment,
+                auth: true,
+            },
             {
                 exact: true,
                 path: '/company/setting/privacy',
