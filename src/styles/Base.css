@@ -389,7 +389,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job-view,
 .page-creator-brand,
 .page-creator-brand-view,
-.page-company-profile {
+.page-company-profile,
+.page-company-setting,
+.page-company-setting-privacy {
     background-color: #182123;
 }
 
@@ -604,7 +606,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-privacy .title,
 .page-creator-job .title,
 .page-creator-job-view .title,
-.page-creator-brand .title {
+.page-creator-brand .title,
+.page-company-setting .title,
+.page-company-setting-privacy .title {
     position: relative;
 }
 
@@ -613,7 +617,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-privacy .title .bg,
 .page-creator-job .title .bg,
 .page-creator-job-view .title .bg,
-.page-creator-brand .title .bg {
+.page-creator-brand .title .bg,
+.page-company-setting .title .bg,
+.page-company-setting-privacy .title .bg {
     margin-top: -56px;
     width: 100%;
     height: auto;
@@ -624,7 +630,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-privacy .title .infos,
 .page-creator-job .title .infos,
 .page-creator-job-view .title .infos,
-.page-creator-brand .title .infos {
+.page-creator-brand .title .infos,
+.page-company-setting .title .infos,
+.page-company-setting-privacy .title .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -636,7 +644,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-privacy .title .infos .txt,
 .page-creator-job .title .infos .txt,
 .page-creator-job-view .title .infos .txt,
-.page-creator-brand .title .infos .txt {
+.page-creator-brand .title .infos .txt,
+.page-company-setting .title .infos .txt,
+.page-company-setting-privacy .title .infos .txt {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -655,7 +665,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-setting-social .title .infos .txt.active,
 .page-creator-setting-privacy .title .infos .txt.active,
 .page-creator-job .title .infos .txt.active,
-.page-creator-brand .title .infos .txt.active {
+.page-creator-brand .title .infos .txt.active,
+.page-company-setting .title .infos .txt.active,
+.page-company-setting-privacy .title .infos .txt.active {
     border-bottom: 3px solid #fff;
     color: #fff !important;
 }
@@ -932,6 +944,7 @@ font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     padding-top: 1.5rem;
 }
+
 .card-custom .profile.company .photo .main {
     position: static;
     margin-left: auto;
@@ -1094,6 +1107,31 @@ font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     line-height: 23px;
     text-transform: uppercase;
+}
+
+.card-custom .simple .change-photo {
+    position: relative;
+}
+
+.card-custom .simple .change-photo .in {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.card-custom .simple .change-photo .in img {
+    height: 120px;
+    width: auto;
+}
+
+.card-custom .simple .change-photo .in .upload {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
 }
 
 .card-custom .simple .sep {
@@ -2346,7 +2384,9 @@ a.text-gray-40:hover {
     .page-creator-setting-privacy .title .bg,
     .page-creator-job .title .bg,
     .page-creator-job-view .title .bg,
-    .page-creator-brand .title .bg {
+    .page-creator-brand .title .bg,
+    .page-company-setting .title .bg,
+    .page-company-setting-privacy .title .bg {
         display: none;
     }
 
@@ -2355,7 +2395,9 @@ a.text-gray-40:hover {
     .page-creator-setting-privacy .title .infos,
     .page-creator-job .title .infos,
     .page-creator-job-view .title .infos,
-    .page-creator-brand .title .infos {
+    .page-creator-brand .title .infos,
+    .page-company-setting .title .infos,
+    .page-company-setting-privacy .title .infos {
         margin-top: 20px;
         position: static;
     }
@@ -2365,7 +2407,9 @@ a.text-gray-40:hover {
     .page-creator-setting-privacy .title .infos .txt,
     .page-creator-job .title .infos .txt,
     .page-creator-job-view .title .infos .txt,
-    .page-creator-brand .title .infos .txt {
+    .page-creator-brand .title .infos .txt,
+    .page-company-setting .title .infos .txt,
+    .page-company-setting-privacy .title .infos .txt {
         display: block;
         margin-top: 15px;
     }
@@ -2375,7 +2419,9 @@ a.text-gray-40:hover {
     .page-creator-setting-privacy .title .infos .txt:first,
     .page-creator-job .title .infos .txt:first,
     .page-creator-job-view .title .infos .txt:first,
-    .page-creator-brand .title .infos .txt:first {
+    .page-creator-brand .title .infos .txt:first,
+    .page-company-setting .title .infos .txt:first,
+    .page-company-setting-privacy .title .infos .txt:first {
         margin-top: 0 !important;
     }
 
@@ -2452,5 +2498,14 @@ a.text-gray-40:hover {
 
     .page-home .block-5 .box-register {
         margin-top: 50px;
+    }
+
+    .card-custom .simple .change-photo {
+        position: static;
+        padding: 1.5rem 0;
+    }
+    
+    .card-custom .simple .change-photo .in {
+        position: static;
     }
 }
