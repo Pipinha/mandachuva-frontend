@@ -18,6 +18,7 @@ import CreatorBrandList from "../modules/Creator/Brand/CreatorBrandList"
 import AccountForgot from "../modules/Account/AccountForgot"
 import AccountRecovery from "../modules/Account/AccountRecovery"
 import CompanySetting from "../modules/Company/CompanySetting"
+import CompanySettingPrivacy from "../modules/Company/CompanySettingPrivacy"
 
 const routes = [
     {
@@ -25,6 +26,12 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: true,
+                path: '/company/setting/privacy',
+                component: CompanySettingPrivacy,
+                auth: true,
+            },
             {
                 exact: true,
                 path: '/company/setting',
