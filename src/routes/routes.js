@@ -21,6 +21,7 @@ import CompanySetting from "../modules/Company/CompanySetting"
 import CompanySettingPrivacy from "../modules/Company/CompanySettingPrivacy"
 import CompanySettingPayment from "../modules/Company/CompanySettingPayment"
 import CompanySettingPaymentEdit from "../modules/Company/CompanySettingPaymentEdit"
+import CompanyJobList from "../modules/Company/Job/CompanyJobList"
 
 const routes = [
     {
@@ -28,6 +29,12 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: true,
+                path: '/company/rainjobs',
+                component: CompanyJobList,
+                auth: true,
+            },
             {
                 exact: false,
                 path: '/company/setting/payment/:id',

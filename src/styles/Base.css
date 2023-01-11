@@ -393,7 +393,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting,
 .page-company-setting-privacy,
 .page-company-setting-payment,
-.page-company-setting-payment-edit {
+.page-company-setting-payment-edit,
+.page-company-job {
     background-color: #182123;
 }
 
@@ -612,7 +613,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting .title,
 .page-company-setting-privacy .title,
 .page-company-setting-payment .title,
-.page-company-setting-payment-edit .title {
+.page-company-setting-payment-edit .title,
+.page-company-job .title {
     position: relative;
 }
 
@@ -625,7 +627,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting .title .bg,
 .page-company-setting-privacy .title .bg,
 .page-company-setting-payment .title .bg,
-.page-company-setting-payment-edit .title .bg {
+.page-company-setting-payment-edit .title .bg,
+.page-company-job .title .bg {
     margin-top: -56px;
     width: 100%;
     height: auto;
@@ -640,7 +643,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting .title .infos,
 .page-company-setting-privacy .title .infos,
 .page-company-setting-payment .title .infos,
-.page-company-setting-payment-edit .title .infos {
+.page-company-setting-payment-edit .title .infos,
+.page-company-job .title .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -656,7 +660,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting .title .infos .txt,
 .page-company-setting-privacy .title .infos .txt,
 .page-company-setting-payment .title .infos .txt,
-.page-company-setting-payment-edit .title .infos .txt {
+.page-company-setting-payment-edit .title .infos .txt,
+.page-company-job .title .infos .txt {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -679,7 +684,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting .title .infos .txt.active,
 .page-company-setting-privacy .title .infos .txt.active,
 .page-company-setting-payment .title .infos .txt.active,
-.page-company-setting-payment-edit .title .infos .txt.active {
+.page-company-setting-payment-edit .title .infos .txt.active,
+.page-company-job .title .infos .txt.active {
     border-bottom: 3px solid #fff;
     color: #fff !important;
 }
@@ -830,12 +836,14 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-job .caption-sort,
-.page-creator-brand .caption-sort {
+.page-creator-brand .caption-sort,
+.page-company-job .caption-sort {
     border-bottom: 2px solid #273539;
 }
 
 .page-creator-job .caption-sort .caption,
-.page-creator-brand .caption-sort .caption {
+.page-creator-brand .caption-sort .caption,
+.page-company-job .caption-sort .caption {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -846,7 +854,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-job .caption-sort .sort,
-.page-creator-brand .caption-sort .sort {
+.page-creator-brand .caption-sort .sort,
+.page-company-job .caption-sort .sort {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -2487,7 +2496,8 @@ a.text-gray-40:hover {
     .page-company-setting .title .bg,
     .page-company-setting-privacy .title .bg,
     .page-company-setting-payment .title .bg,
-    .page-company-setting-payment-edit .title .bg {
+    .page-company-setting-payment-edit .title .bg,
+    .page-company-job .title .bg {
         display: none;
     }
 
@@ -2500,7 +2510,8 @@ a.text-gray-40:hover {
     .page-company-setting .title .infos,
     .page-company-setting-privacy .title .infos,
     .page-company-setting-payment .title .infos,
-    .page-company-setting-payment-edit .title .infos {
+    .page-company-setting-payment-edit .title .infos,
+    .page-company-job .title .infos {
         margin-top: 20px;
         position: static;
     }
@@ -2514,7 +2525,8 @@ a.text-gray-40:hover {
     .page-company-setting .title .infos .txt,
     .page-company-setting-privacy .title .infos .txt,
     .page-company-setting-payment .title .infos .txt,
-    .page-company-setting-payment-edit .title .infos .txt {
+    .page-company-setting-payment-edit .title .infos .txt,
+    .page-company-job .title .infos .txt {
         display: block;
         margin-top: 15px;
     }
@@ -2528,7 +2540,8 @@ a.text-gray-40:hover {
     .page-company-setting .title .infos .txt:first,
     .page-company-setting-privacy .title .infos .txt:first,
     .page-company-setting-payment .title .infos .txt:first,
-    .page-company-setting-payment-edit .title .infos .txt:first {
+    .page-company-setting-payment-edit .title .infos .txt:first,
+    .page-company-job .title .infos .txt:first {
         margin-top: 0 !important;
     }
 

@@ -144,6 +144,7 @@ class Header extends Component {
                                                 <div className="profile-menu">
                                                     <Link to={'/company/profile'}>MY PROFILE</Link>
                                                     <Link to={'/company/setting'} className="mt-2">SETTING</Link>
+                                                    <Link to={'/company/rainjobs'} className="mt-2">RAINJOBS</Link>
                                                     <a href="#logout" onClick={_ => this.logout()} className="mt-2">LOGOUT</a>
                                                 </div>
                                             </div>
@@ -158,6 +159,9 @@ class Header extends Component {
                                     </div>
                                     <div className="menu-mob-item">
                                         <Link to={'/company/setting'} className="text-blueberry"><Icon icon="mdi:account-cog-outline" className="text-white" width={24} height={24} /> SETTING</Link>
+                                    </div>
+                                    <div className="menu-mob-item">
+                                        <Link to={'/company/rainjobs'} className="text-blueberry"><Icon icon="material-symbols:home-work-outline" className="text-white" width={24} height={24} /> RAINJOBS</Link>
                                     </div>
                                     <div className="menu-mob-item">
                                         <a href="#logout" onClick={_ => this.logout()} className="text-blueberry"><Icon icon="material-symbols:logout-rounded" className="text-white" width={24} height={24} /> LOGOUT</a>
