@@ -395,7 +395,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment,
 .page-company-setting-payment-edit,
 .page-company-job,
-.page-company-search {
+.page-company-search,
+.page-company-brand,
+.page-company-brand-view {
     background-color: #182123;
 }
 
@@ -616,7 +618,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title,
 .page-company-setting-payment-edit .title,
 .page-company-job .title,
-.page-company-search .title {
+.page-company-search .title,
+.page-company-brand .title {
     position: relative;
 }
 
@@ -631,7 +634,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title .bg,
 .page-company-setting-payment-edit .title .bg,
 .page-company-job .title .bg,
-.page-company-search .title .bg {
+.page-company-search .title .bg,
+.page-company-brand .title .bg {
     margin-top: -56px;
     width: 100%;
     height: auto;
@@ -648,7 +652,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title .infos,
 .page-company-setting-payment-edit .title .infos,
 .page-company-job .title .infos,
-.page-company-search .title .infos {
+.page-company-search .title .infos,
+.page-company-brand .title .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -666,7 +671,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title .infos .txt,
 .page-company-setting-payment-edit .title .infos .txt,
 .page-company-job .title .infos .txt,
-.page-company-search .title .infos .txt {
+.page-company-search .title .infos .txt,
+.page-company-brand .title .infos .txt {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -691,7 +697,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title .infos .txt.active,
 .page-company-setting-payment-edit .title .infos .txt.active,
 .page-company-job .title .infos .txt.active,
-.page-company-search .title .infos .txt.active {
+.page-company-search .title .infos .txt.active,
+.page-company-brand .title .infos .txt.active {
     border-bottom: 3px solid #fff;
     color: #fff !important;
 }
@@ -844,14 +851,16 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job .caption-sort,
 .page-creator-brand .caption-sort,
 .page-company-job .caption-sort,
-.page-company-search .caption-sort {
+.page-company-search .caption-sort,
+.page-company-brand .caption-sort {
     border-bottom: 2px solid #273539;
 }
 
 .page-creator-job .caption-sort .caption,
 .page-creator-brand .caption-sort .caption,
 .page-company-job .caption-sort .caption,
-.page-company-search .caption-sort .caption {
+.page-company-search .caption-sort .caption,
+.page-company-brand .caption-sort .caption {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -864,7 +873,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job .caption-sort .sort,
 .page-creator-brand .caption-sort .sort,
 .page-company-job .caption-sort .sort,
-.page-company-search .caption-sort .sort {
+.page-company-search .caption-sort .sort,
+.page-company-brand .caption-sort .sort {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -873,23 +883,27 @@ font-family: 'Roboto Condensed', sans-serif;
     text-align: right;
 }
 
-.page-creator-brand-view .title2 {
+.page-creator-brand-view .title2,
+.page-company-brand-view .title2 {
     position: relative;
 }
 
-.page-creator-brand-view .title2 .bg {
+.page-creator-brand-view .title2 .bg,
+.page-company-brand-view .title2 .bg {
     width: 100%;
     height: auto;
 }
 
-.page-creator-brand-view .title2 .infos {
+.page-creator-brand-view .title2 .infos,
+.page-company-brand-view .title2 .infos {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 11px;
 }
 
-.page-creator-brand-view .title2 .infos .a {
+.page-creator-brand-view .title2 .infos .a,
+.page-company-brand-view .title2 .infos .a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -900,18 +914,21 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
-.page-creator-brand-view .title2 .infos .a.active {
+.page-creator-brand-view .title2 .infos .a.active,
+.page-company-brand-view .title2 .infos .a.active {
     border-bottom: 3px solid #fff;
     padding-bottom: 8px;
 }
 
-.page-creator-brand-view .wrap {
+.page-creator-brand-view .wrap,
+.page-company-brand-view .wrap {
     position: relative;
     z-index: 1;
     margin-top: -160px;
 }
 
-.page-creator-brand-view .list-job {
+.page-creator-brand-view .list-job,
+.page-company-brand-view .list-job {
     margin-top: 170px;
 }
 
@@ -2510,7 +2527,9 @@ a.text-gray-40:hover {
     .page-company-setting-payment .title .bg,
     .page-company-setting-payment-edit .title .bg,
     .page-company-job .title .bg,
-    .page-company-search .title .bg {
+    .page-company-search .title .bg,
+    .page-company-job .title .bg,
+    .page-company-job-view .title .bg {
         display: none;
     }
 
@@ -2525,7 +2544,9 @@ a.text-gray-40:hover {
     .page-company-setting-payment .title .infos,
     .page-company-setting-payment-edit .title .infos,
     .page-company-job .title .infos,
-    .page-company-search .title .infos {
+    .page-company-search .title .infos,
+    .page-company-job .title .infos,
+    .page-company-job-view .title .infos {
         margin-top: 20px;
         position: static;
     }
@@ -2541,7 +2562,9 @@ a.text-gray-40:hover {
     .page-company-setting-payment .title .infos .txt,
     .page-company-setting-payment-edit .title .infos .txt,
     .page-company-job .title .infos .txt,
-    .page-company-search .title .infos .txt {
+    .page-company-search .title .infos .txt,
+    .page-company-job .title .infos .txt,
+    .page-company-job-view .title .infos .txt {
         display: block;
         margin-top: 15px;
     }
@@ -2557,7 +2580,9 @@ a.text-gray-40:hover {
     .page-company-setting-payment .title .infos .txt:first,
     .page-company-setting-payment-edit .title .infos .txt:first,
     .page-company-job .title .infos .txt:first,
-    .page-company-search .title .infos .txt:first {
+    .page-company-search .title .infos .txt:first,
+    .page-company-job .title .infos .txt:first,
+    .page-company-job-view .title .infos .txt:first {
         margin-top: 0 !important;
     }
 

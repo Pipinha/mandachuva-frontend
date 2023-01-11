@@ -24,6 +24,8 @@ import CompanySettingPaymentEdit from "../modules/Company/CompanySettingPaymentE
 import CompanyJobList from "../modules/Company/Job/CompanyJobList"
 import CompanySearch from "../modules/Company/CompanySearch"
 import { PROFILE_COMPANY, PROFILE_CREATOR } from "../constants/Config"
+import CompanyBrandList from "../modules/Company/Brand/CompanyBrandList"
+import CompanyBrandView from "../modules/Company/Brand/CompanyBrandView"
 
 const routes = [
     {
@@ -31,6 +33,20 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: false,
+                path: '/company/brand/:id',
+                component: CompanyBrandView,
+                auth: true,
+                profileId: PROFILE_COMPANY
+            },
+            {
+                exact: true,
+                path: '/company/brand',
+                component: CompanyBrandList,
+                auth: true,
+                profileId: PROFILE_COMPANY
+            },
             {
                 exact: true,
                 path: '/company/search',
