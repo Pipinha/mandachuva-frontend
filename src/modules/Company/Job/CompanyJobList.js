@@ -41,6 +41,7 @@ class CompanyJobList extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-6">
+                                    <Link to={'/company/search'} className="txt mr-4">SEARCH</Link>
                                     <Link to={'/company/rainjobs'} className="txt active mr-4">RAINJOBS</Link>
                                     <Link to={'/company/brand'} className="txt mr-4">BRANDS</Link>
                                     <Link to={'/company/creators'} className="txt mr-4">CREATORS</Link>
