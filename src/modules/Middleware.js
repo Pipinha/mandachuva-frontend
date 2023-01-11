@@ -35,6 +35,15 @@ class Middleware extends Component {
                             if (this.props.store.session.logged && !a.auth && this.props.store.session.profileId === PROFILE_COMPANY) {
                                 return <Redirect to={'/company/profile'} />
                             }
+                            if (this.props.store.session.logged && this.props.store.session.profileId !== a.profileId) {
+                                if(this.props.store.session.profileId === PROFILE_CREATOR){
+                                    return <Redirect to={'/creator/profile'} />
+                                }
+                                if(this.props.store.session.profileId === PROFILE_COMPANY){
+                                    return <Redirect to={'/company/profile'} />
+                                }
+                                //TODO CRIAR TELA DE ERRO para redireiconar caso o profileId não condiz com as opções, aplicar erro sistemico
+                            }
                             return <a.component {...props} handlerHeader={(attr) => this.handlerHeader(attr)} />
                         }} />
                     })}
