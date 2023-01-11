@@ -148,12 +148,12 @@ class CompanySearch extends Component {
                                                     <div className="names flex-fill">
                                                         <div className="a text-white">MERCADO LIVRE</div>
                                                         <div className="b text-steelo-l2">BUENOS AIRES</div>
-                                                        <div className="c text-blueberry mt-2">E-COMMERCE</div>
+                                                        <div className="c text-blueberry mt-1">E-COMMERCE</div>
                                                     </div>
                                                     <div className="fit-info">
                                                         <div className="a text-steelo-l2">FIT</div>
-                                                        <div className="b text-white">80%</div>
-                                                        <div className="c text-blueberry mt-2" onClick={_=>this.showView(3)}>PROFILE</div>
+                                                        <div className="b text-white mt-1">80%</div>
+                                                        <div className="c text-blueberry mt-1" onClick={_=>this.showView(3)}>PROFILE</div>
                                                     </div>
                                                 </div>
                                             </div>
