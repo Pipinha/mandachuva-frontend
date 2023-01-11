@@ -8,6 +8,7 @@ import './../styles/Base.css'
 import { PROFILE_COMPANY, PROFILE_CREATOR } from "../constants/Config";
 import { Icon } from '@iconify/react';
 import { actionDeleteLogin } from "../actions/ActionLogin";
+import history from "../routes/history";
 
 class Header extends Component {
     notShowLogin = ['account-login', 'register']
@@ -16,6 +17,7 @@ class Header extends Component {
 
         this.state = {
             displayMob: 'none',
+            search: '',
         }
     }
     toggleMenuMob() {
@@ -27,6 +29,12 @@ class Header extends Component {
     }
     logout() {
         this.props.dispatch(actionDeleteLogin)
+    }
+    companySearch() {
+        let search = this.state.search
+        this.setState({ search: '' })
+        history.push('/company/search?search=' + search)
+        
     }
     render() {
         return (
@@ -62,7 +70,7 @@ class Header extends Component {
                                     <div className="col-md-6 d-none d-sm-block">
                                         <div className="search">
                                             <div className="input-icon">
-                                                <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} /><Icon icon="material-symbols:search" width={20} height={20} />
+                                                <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} onChange={e => this.setState({ search: e.target.value })} value={this.state.search} /><Icon icon="material-symbols:search" width={20} height={20} />
                                             </div>
                                         </div>
                                     </div>
@@ -130,7 +138,7 @@ class Header extends Component {
                                     <div className="col-md-6 d-none d-sm-block">
                                         <div className="search">
                                             <div className="input-icon">
-                                                <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} /><Icon icon="material-symbols:search" width={20} height={20} />
+                                                <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} onChange={e => this.setState({ search: e.target.value })} value={this.state.search} /><Icon icon="material-symbols:search" width={20} height={20} onClick={_ => this.companySearch()} />
                                             </div>
                                         </div>
                                     </div>
