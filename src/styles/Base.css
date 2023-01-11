@@ -925,6 +925,9 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* LAYOUT */
+.cursor-pointer {
+    cursor: pointer;
+}
 .back-to a {
     font-family: 'Roboto';
     font-style: normal;

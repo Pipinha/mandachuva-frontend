@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import history from "../../routes/history";
 
 class CompanySearch extends Component {
     constructor(props) {
@@ -54,11 +55,11 @@ class CompanySearch extends Component {
                         <div className="col-md-12">
                             <div className="caption-sort d-flex justify-content-between align-items-center pb-2">
                                 <div className="caption text-white">RAINJOBS</div>
-                                <div className="sort text-steelo-l2">See more RainJobs</div>
+                                <div className="sort text-steelo-l2 cursor-pointer" onClick={_=>history.push('/company/rainjobs')}>See more RainJobs</div>
                             </div>
                             <div className="row list-job">
                                 {this.state.jobs.map((a, ia) => (
-                                    <div className="col-md-4 mt-3" key={'yourfit-' + ia}>
+                                    <div className="col-md-4 mt-3" key={'jobs-' + ia}>
                                         <div className="card-custom">
                                             <div className="list-job-item p-3">
                                                 <div className="names-fit d-flex justify-content-between pb-2 mt-2">
@@ -102,11 +103,11 @@ class CompanySearch extends Component {
                         <div className="col-md-12 mt-4">
                             <div className="caption-sort d-flex justify-content-between align-items-center pb-2">
                                 <div className="caption text-white">CREATORS</div>
-                                <div className="sort text-steelo-l2">See more RainJobs</div>
+                                <div className="sort text-steelo-l2 cursor-pointer">See more creators</div>
                             </div>
                             <div className="row list-job">
                                 {this.state.creators.map((a, ia) => (
-                                    <div className="col-md-4 mt-3" key={'yourfit-' + ia}>
+                                    <div className="col-md-4 mt-3" key={'creators-' + ia}>
                                         <div className="card-custom">
                                             <div className="list-a-item p-3">
                                                 <div className="d-flex align-items-center">
@@ -133,11 +134,11 @@ class CompanySearch extends Component {
                         <div className="col-md-12 mt-4">
                             <div className="caption-sort d-flex justify-content-between align-items-center pb-2">
                                 <div className="caption text-white">BRANDS</div>
-                                <div className="sort text-steelo-l2">See more RainJobs</div>
+                                <div className="sort text-steelo-l2 cursor-pointer">See more brands</div>
                             </div>
                             <div className="row list-job">
                                 {this.state.brands.map((a, ia) => (
-                                    <div className="col-md-4 mt-3" key={'yourfit-' + ia}>
+                                    <div className="col-md-4 mt-3" key={'brands-' + ia}>
                                         <div className="card-custom">
                                             <div className="list-a-item p-3">
                                                 <div className="d-flex align-items-center">
