@@ -93,6 +93,12 @@ class CreatorSetting extends Component {
                                     <div className="title2 text-white">PROFILE SETTINGS</div>
                                     <div className="sep mt-2"></div>
                                     <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
+                                        <div className="change-photo">
+                                            <div className="in d-flex flex-column align-items-center">
+                                                <img src="/assets/img/user-creator.png" alt="Rainmakr" />
+                                                <div className="text-white mt-2 upload">CHANGE AVATAR</div>
+                                            </div>
+                                        </div>
                                         <div className="form-row">
                                             <div className="col-md-5">
                                                 <label className="text-steelo-l2">FIRST NAME</label>
