@@ -6,12 +6,12 @@ import FooterLogged from "../../../components/FooterLogged";
 import { Typeahead } from 'react-bootstrap-typeahead';
 import 'react-bootstrap-typeahead/css/Typeahead.css';
 
-class CompanyBrandList extends Component {
+class CompanyCreatorList extends Component {
     constructor(props) {
         super(props)
 
         props.handlerHeader({
-            page: 'company-brand'
+            page: 'company-creator'
         })
 
         this.state = {
@@ -26,8 +26,8 @@ class CompanyBrandList extends Component {
             segments: [],
         }
     }
-    showView(id){
-        this.props.history.push('/company/brand/'+id)
+    showView(id) {
+        this.props.history.push('/company/creator/' + id)
     }
     render() {
         return (
@@ -40,8 +40,8 @@ class CompanyBrandList extends Component {
                                 <div className="col-md-6">
                                     <Link to={'/company/search'} className="txt mr-4">SEARCH</Link>
                                     <Link to={'/company/rainjobs'} className="txt mr-4">RAINJOBS</Link>
-                                    <Link to={'/company/brand'} className="txt active mr-4">BRANDS</Link>
-                                    <Link to={'/company/creator'} className="txt mr-4">CREATORS</Link>
+                                    <Link to={'/company/brand'} className="txt mr-4">BRANDS</Link>
+                                    <Link to={'/company/creator'} className="txt active mr-4">CREATORS</Link>
                                 </div>
                             </div>
                         </div>
@@ -58,22 +58,22 @@ class CompanyBrandList extends Component {
                             </div>
                             <div className="row list-job">
                                 {this.state.brands.map((a, ia) => (
-                                    <div className="col-md-4 mt-3" key={'yourfit-' + ia}>
+                                    <div className="col-md-4 mt-3" key={'creators-' + ia}>
                                         <div className="card-custom">
                                             <div className="list-a-item p-3">
                                                 <div className="d-flex align-items-center">
                                                     <div className="img mr-2">
-                                                        <img src="/assets/img/logo-nescafe.png" alt="Rainmakr" />
+                                                        <img src="/assets/img/user-creator.png" alt="Rainmakr" />
                                                     </div>
                                                     <div className="names flex-fill">
-                                                        <div className="a text-white">MERCADO LIVRE</div>
-                                                        <div className="b text-steelo-l2">BUENOS AIRES</div>
-                                                        <div className="c text-blueberry mt-2">E-COMMERCE</div>
+                                                        <div className="a text-white">MITHI</div>
+                                                        <div className="b text-steelo-l2">LOS ANGELES</div>
+                                                        <div className="c text-blueberry mt-1">LIFESTYLE</div>
                                                     </div>
                                                     <div className="fit-info">
                                                         <div className="a text-steelo-l2">FIT</div>
-                                                        <div className="b text-white">80%</div>
-                                                        <div className="c text-blueberry mt-2" onClick={_=>this.showView(3)}>PROFILE</div>
+                                                        <div className="b text-white mt-1">80%</div>
+                                                        <div className="c text-blueberry mt-1" onClick={_ => this.showView(3)}>PROFILE</div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -151,4 +151,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch: dispatch
 })
 
-export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CompanyBrandList))
+export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CompanyCreatorList))

@@ -26,6 +26,7 @@ import CompanySearch from "../modules/Company/CompanySearch"
 import { PROFILE_COMPANY, PROFILE_CREATOR } from "../constants/Config"
 import CompanyBrandList from "../modules/Company/Brand/CompanyBrandList"
 import CompanyBrandView from "../modules/Company/Brand/CompanyBrandView"
+import CompanyCreatorList from "../modules/Company/Creator/CompanyCreatorList"
 
 const routes = [
     {
@@ -33,6 +34,13 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: true,
+                path: '/company/creator',
+                component: CompanyCreatorList,
+                auth: true,
+                profileId: PROFILE_COMPANY
+            },
             {
                 exact: false,
                 path: '/company/brand/:id',

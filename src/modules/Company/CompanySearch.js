@@ -44,7 +44,7 @@ class CompanySearch extends Component {
                                     <Link to={'/company/search'} className="txt active mr-4">SEARCH</Link>
                                     <Link to={'/company/rainjobs'} className="txt mr-4">RAINJOBS</Link>
                                     <Link to={'/company/brand'} className="txt mr-4">BRANDS</Link>
-                                    <Link to={'/company/creators'} className="txt mr-4">CREATORS</Link>
+                                    <Link to={'/company/creator'} className="txt mr-4">CREATORS</Link>
                                 </div>
                             </div>
                         </div>
