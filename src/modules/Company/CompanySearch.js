@@ -103,7 +103,7 @@ class CompanySearch extends Component {
                         <div className="col-md-12 mt-4">
                             <div className="caption-sort d-flex justify-content-between align-items-center pb-2">
                                 <div className="caption text-white">CREATORS</div>
-                                <div className="sort text-steelo-l2 cursor-pointer">See more creators</div>
+                                <div className="sort text-steelo-l2 cursor-pointer" onClick={_=>history.push('/company/creator')}>See more creators</div>
                             </div>
                             <div className="row list-job">
                                 {this.state.creators.map((a, ia) => (
@@ -134,7 +134,7 @@ class CompanySearch extends Component {
                         <div className="col-md-12 mt-4">
                             <div className="caption-sort d-flex justify-content-between align-items-center pb-2">
                                 <div className="caption text-white">BRANDS</div>
-                                <div className="sort text-steelo-l2 cursor-pointer">See more brands</div>
+                                <div className="sort text-steelo-l2 cursor-pointer" onClick={_=>history.push('/company/brand')}>See more brands</div>
                             </div>
                             <div className="row list-job">
                                 {this.state.brands.map((a, ia) => (
