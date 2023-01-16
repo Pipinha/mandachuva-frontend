@@ -1073,6 +1073,23 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
+.page-company-creator-post-step .posts-item .in .infos .review .resume {
+    width: 180px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.page-company-creator-post-step .posts-item .in .infos .review textarea {
+    background: #182123;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
 /* HELPERS */
 .mt-6 {
     margin-top: 60px;

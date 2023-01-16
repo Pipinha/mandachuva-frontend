@@ -92,7 +92,7 @@ class CompanyCreatorView extends Component {
                                 <div className="posts-item" key={'list-job-' + ai}>
                                     <div className="in d-flex">
                                         <div className="img">
-                                            <img src="/assets/img/img-post.png" alt="Raimakr" />
+                                            <img src="/assets/img/img-post.png" alt="Raimakr" className="img-fluid" />
                                         </div>
                                         <div className="infos flex-fill ml-3">
                                             <div className="titles d-flex justify-content-between align-items-center pb-2">
