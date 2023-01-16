@@ -145,7 +145,7 @@ class Header extends Component {
                                     <div className="col-md-3 d-none d-sm-block">
                                         <div className="menu d-flex align-items-center justify-content-end">
                                             <Link to={'/company/profile'} className="menu-item"><Icon icon="material-symbols:notifications-outline-rounded" width={24} height={24} /></Link>
-                                            <Link to={'/company/ready-to-post'} className="menu-item"><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
+                                            <Link to={'/company/creator'} className="menu-item"><Icon icon="material-symbols:space-dashboard-sharp" width={24} height={24} /></Link>
                                             <div className="profile d-flex align-items-center">
                                                 <img src={this.props.store.session.photo} alt="Rainmakr" className="rounded-circle" />
                                                 <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />

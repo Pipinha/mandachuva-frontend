@@ -395,11 +395,12 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment,
 .page-company-setting-payment-edit,
 .page-company-job,
+.page-company-job-view,
 .page-company-search,
 .page-company-brand,
 .page-company-brand-view,
 .page-company-creator,
-.page-company-job-view {
+.page-company-creator-view {
     background-color: #182123;
 }
 
@@ -620,10 +621,10 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title,
 .page-company-setting-payment-edit .title,
 .page-company-job .title,
+.page-company-job-view .title,
 .page-company-search .title,
 .page-company-brand .title,
-.page-company-creator .title,
-.page-company-job-view .title {
+.page-company-creator .title {
     position: relative;
 }
 
@@ -638,10 +639,10 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title .bg,
 .page-company-setting-payment-edit .title .bg,
 .page-company-job .title .bg,
+.page-company-job-view .title .bg,
 .page-company-search .title .bg,
 .page-company-brand .title .bg,
-.page-company-creator .title .bg,
-.page-company-job-view .title .bg {
+.page-company-creator .title .bg {
     margin-top: -56px;
     width: 100%;
     height: auto;
@@ -658,10 +659,10 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title .infos,
 .page-company-setting-payment-edit .title .infos,
 .page-company-job .title .infos,
+.page-company-job-view .title .infos,
 .page-company-search .title .infos,
 .page-company-brand .title .infos,
-.page-company-creator .title .infos,
-.page-company-job-view .title .infos {
+.page-company-creator .title .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -679,10 +680,10 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-setting-payment .title .infos .txt,
 .page-company-setting-payment-edit .title .infos .txt,
 .page-company-job .title .infos .txt,
+.page-company-job-view .title .infos .txt,
 .page-company-search .title .infos .txt,
 .page-company-brand .title .infos .txt,
-.page-company-creator .title .infos .txt,
-.page-company-job-view .title .infos .txt {
+.page-company-creator .title .infos .txt {
     display: inline-block;
     font-family: 'Roboto';
     font-style: normal;
@@ -899,18 +900,23 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2,
-.page-company-brand-view .title2 {
+.page-company-brand-view .title2,
+.page-company-creator-view .title2 {
     position: relative;
+    height: 190px;
+    overflow: hidden;
 }
 
 .page-creator-brand-view .title2 .bg,
-.page-company-brand-view .title2 .bg {
+.page-company-brand-view .title2 .bg,
+.page-company-creator-view .title2 .bg {
     width: 100%;
     height: auto;
 }
 
 .page-creator-brand-view .title2 .infos,
-.page-company-brand-view .title2 .infos {
+.page-company-brand-view .title2 .infos,
+.page-company-creator-view .title2 .infos {
     position: absolute;
     left: 0;
     right: 0;
@@ -918,7 +924,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2 .infos .a,
-.page-company-brand-view .title2 .infos .a {
+.page-company-brand-view .title2 .infos .a,
+.page-company-creator-view .title2 .infos .a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -930,21 +937,114 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2 .infos .a.active,
-.page-company-brand-view .title2 .infos .a.active {
+.page-company-brand-view .title2 .infos .a.active,
+.page-company-creator-view .title2 .infos .a.active {
     border-bottom: 3px solid #fff;
     padding-bottom: 8px;
 }
 
 .page-creator-brand-view .wrap,
-.page-company-brand-view .wrap {
+.page-company-brand-view .wrap,
+.page-company-creator-view .wrap {
     position: relative;
     z-index: 1;
     margin-top: -160px;
 }
 
 .page-creator-brand-view .list-job,
-.page-company-brand-view .list-job {
+.page-company-brand-view .list-job,
+.page-company-creator-view .list-job {
     margin-top: 170px;
+}
+
+.page-company-creator-view .posts-item .in {
+    background-color: #0E181A;
+    padding: 15px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.page-company-creator-view .posts-item .in .infos .titles {
+    border-bottom: 1px solid #42585F;
+}
+
+.page-company-creator-view .posts-item .in .infos .titles .a1 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .prices {
+    width: 160px;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .prices .desc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item {
+    border-bottom: 1px solid #42585F;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item:last-child {
+    border-bottom: none !important;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    color: #fff;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .c select {
+    width: 40px;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .option .total .a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
+    letter-spacing: 0.5px;
+    color: #5D818D;
+}
+
+.page-company-creator-view .posts-item .in .infos .prices-option .option .total .b {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
+    letter-spacing: 0.25px;
+    color: #fff;
 }
 
 /* HELPERS */
@@ -960,6 +1060,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .cursor-pointer {
     cursor: pointer;
 }
+
 .back-to a {
     font-family: 'Roboto';
     font-style: normal;

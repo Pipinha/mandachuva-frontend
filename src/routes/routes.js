@@ -28,6 +28,7 @@ import CompanyBrandList from "../modules/Company/Brand/CompanyBrandList"
 import CompanyBrandView from "../modules/Company/Brand/CompanyBrandView"
 import CompanyCreatorList from "../modules/Company/Creator/CompanyCreatorList"
 import CompanyJobView from "../modules/Company/Job/CompanyJobView"
+import CompanyCreatorView from "../modules/Company/Creator/CompanyCreatorView"
 
 const routes = [
     {
@@ -35,6 +36,13 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: true,
+                path: '/company/creator/:id',
+                component: CompanyCreatorView,
+                auth: true,
+                profileId: PROFILE_COMPANY
+            },
             {
                 exact: true,
                 path: '/company/creator',
