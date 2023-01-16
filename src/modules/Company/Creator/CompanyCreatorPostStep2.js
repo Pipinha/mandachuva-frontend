@@ -98,8 +98,8 @@ class CompanyCreatorPostStep2 extends Component {
                                 </div>
                             </div>
                             <div className="row payment mt-5">
-                                <div className="col-md-8">
-                                    <div className="address">
+                                <div className="col-md-7">
+                                    <div className="payment-box">
                                         <div className="in">
                                             <div className="tit">BILLING ADDRESS</div>
                                             <div className="row mt-2">
@@ -145,10 +145,38 @@ class CompanyCreatorPostStep2 extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-4"></div>
-                            </div>
-                            <div className="btns text-right mt-3">
-                                <Link to={'/'} className="btn btn-a">Continue to Payment</Link>
+                                <div className="col-md-5">
+                                    <div className="payment-box">
+                                        <div className="in">
+                                            <div className="tit">PAY WITH CREDIT CARD</div>
+                                            <div className="row mt-2">
+                                                <div className="col-md-12 form-group">
+                                                    <label className="text-steelo-l2">NAME ON THE CARD</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="NAME ON THE CARD" />
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-md-6 form-group">
+                                                    <label className="text-steelo-l2">EXPIRE DATE</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="MM/YY" />
+                                                </div>
+                                                <div className="col-md-6 form-group">
+                                                    <label className="text-steelo-l2">CVV</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="000" />
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-md-12 form-group">
+                                                    <label className="text-steelo-l2">CARD NUMBER</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="0000 0000 0000 0000" />
+                                                </div>
+                                            </div>
+                                            <div className="btns text-right mt-4">
+                                                <button type="button" className="btn btn-a">Pay now</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

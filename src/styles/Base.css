@@ -1147,7 +1147,7 @@ font-family: 'Roboto Condensed', sans-serif;
     background-color: #42585F;
 }
 
-.page-company-creator-post-step .payment .address {
+.page-company-creator-post-step .payment .payment-box {
     background: #0E181A;
     box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
     -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
@@ -1157,11 +1157,11 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 8px;
 }
 
-.page-company-creator-post-step .payment .address .in {
+.page-company-creator-post-step .payment .payment-box .in {
     padding: 20px;
 }
 
-.page-company-creator-post-step .payment .address .in .tit {
+.page-company-creator-post-step .payment .payment-box .in .tit {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
