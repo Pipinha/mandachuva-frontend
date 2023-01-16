@@ -44,6 +44,12 @@ class CompanyCreatorView extends Component {
                                 <div className="profile p-4">
                                     <div className="photo">
                                         <img src="/assets/img/user-creator.png" alt="Rainmakr" className="main" />
+                                        <div className="fit-box">
+                                            <div className="fit-box-in d-flex flex-column align-items-center justify-content-center">
+                                                <div className="fit-box-title text-white">FIT</div>
+                                                <div className="fit-box-perc text-white">80%</div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="name text-white text-center mt-4">ARIEL CHRISTINE</div>
                                     <div className="country-state2 text-center text-steelo-l2 mt-3">LOS ANGELES, CA</div>
