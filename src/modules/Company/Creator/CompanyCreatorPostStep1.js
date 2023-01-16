@@ -81,7 +81,23 @@ class CompanyCreatorPostStep1 extends Component {
                             <div className="back-to mt-1">
                                 <Link to={'/company/creator/3'} className="text-blueberry d-flex align-items-center"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={12} height={12} className="mr-1" /> Back to ready to post</Link>
                             </div>
-                            <div className="posts-item pt-3">
+                            <div className="progress-post d-flex align-items-center pt-3">
+                                <div className="point active">
+                                    <div className="circle"></div>
+                                    <div className="desc">Review</div>
+                                </div>
+                                <div className="step flex-fill"></div>
+                                <div className="point">
+                                    <div className="circle"></div>
+                                    <div className="desc">Payment</div>
+                                </div>
+                                <div className="step flex-fill"></div>
+                                <div className="point">
+                                    <div className="circle"></div>
+                                    <div className="desc">Finish</div>
+                                </div>
+                            </div>
+                            <div className="posts-item mt-5">
                                 <div className="in d-flex">
                                     <div className="img">
                                         <img src="/assets/img/img-post.png" className="img-fluid" alt="Raimakr" />
@@ -98,13 +114,13 @@ class CompanyCreatorPostStep1 extends Component {
                                                 Feed: 1 Post
                                             </div>
                                             <div className="hashs">
-                                                <textarea className="form-control">#hashtags</textarea>
+                                                <textarea className="form-control" placeholder="#hashtags"></textarea>
                                             </div>
                                             <div className="captions ml-2">
-                                                <textarea className="form-control">@username</textarea>
+                                                <textarea className="form-control" placeholder="@username"></textarea>
                                             </div>
                                             <div className="briefing ml-2">
-                                                <textarea className="form-control">Briefing</textarea>
+                                                <textarea className="form-control" placeholder="Briefing"></textarea>
                                             </div>
                                         </div>
                                     </div>

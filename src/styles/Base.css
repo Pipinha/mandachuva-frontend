@@ -1090,6 +1090,57 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 4px;
 }
 
+.page-company-creator-post-step .progress-post {
+    padding: 0 50px;
+}
+
+.page-company-creator-post-step .progress-post .point {
+    position: relative;
+}
+
+.page-company-creator-post-step .progress-post .point .circle {
+    width: 24px;
+    height: 24px;
+    border: 3px solid #42585F;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    position: relative;
+}
+
+.page-company-creator-post-step .progress-post .point.active .circle:after {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #EEBA00;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+.page-company-creator-post-step .progress-post .point .desc {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 60px;
+    left: 50%;
+    margin-left: -30px;
+    top: 32px;
+}
+
+.page-company-creator-post-step .progress-post .step {
+    height: 3px;
+    background-color: #42585F;
+}
+
 /* HELPERS */
 .mt-6 {
     margin-top: 60px;
