@@ -101,10 +101,46 @@ class CompanyCreatorPostStep2 extends Component {
                                 <div className="col-md-8">
                                     <div className="address">
                                         <div className="in">
-                                            <div className="tit">Billing address</div>
-                                            <div className="mt-2">
-                                                <label>FIRST NAME</label>
-                                                <input type="text" className="form-control with-label" />
+                                            <div className="tit">BILLING ADDRESS</div>
+                                            <div className="row mt-2">
+                                                <div className="col-md-6 form-group">
+                                                    <label className="text-steelo-l2">FIRST NAME</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="FIRST NAME" />
+                                                </div>
+                                                <div className="col-md-6 form-group">
+                                                    <label className="text-steelo-l2">LAST NAME</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="LAST NAME" />
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-md-6 form-group">
+                                                    <label className="text-steelo-l2">EMAIL</label>
+                                                    <input type="email" className="form-control with-label3" placeholder="your@email.com" />
+                                                </div>
+                                                <div className="col-md-6 form-group">
+                                                    <label className="text-steelo-l2">PHONE</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="0000000" />
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-md-8 form-group">
+                                                    <label className="text-steelo-l2">STREET ADDRESS</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="STREET ADDRESS" />
+                                                </div>
+                                                <div className="col-md-4 form-group">
+                                                    <label className="text-steelo-l2">CITY</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="CITY" />
+                                                </div>
+                                            </div>
+                                            <div className="row">
+                                                <div className="col-md-6 form-group">
+                                                    <label className="text-steelo-l2">STATE / PROVINCE</label>
+                                                    <input type="email" className="form-control with-label3" placeholder="STATE / PROVINCE" />
+                                                </div>
+                                                <div className="col-md-6 form-group">
+                                                    <label className="text-steelo-l2">ZIP CODE</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="0000000" />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
