@@ -2,7 +2,6 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
-import Swal from "sweetalert2";
 
 class CompanyJobView extends Component {
     constructor(props) {
