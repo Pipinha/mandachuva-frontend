@@ -3,7 +3,7 @@ import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
 
-class CompanyCreatorPostStep1 extends Component {
+class CompanyCreatorPostStep2 extends Component {
     constructor(props) {
         super(props)
 
@@ -21,7 +21,7 @@ class CompanyCreatorPostStep1 extends Component {
                             <div className="row">
                                 <div className="col-md-3"></div>
                                 <div className="col-md-9">
-                                    <Link to={'/company/creator/3'} className="a active">READY TO POST {'>'} REVIEW</Link>
+                                    <Link to={'/company/creator/post-step1/3'} className="a active">READY TO POST {'>'} REVIEW {'>'} PAYMENT</Link>
                                 </div>
                             </div>
                         </div>
@@ -82,12 +82,12 @@ class CompanyCreatorPostStep1 extends Component {
                                 <Link to={'/company/creator/3'} className="text-blueberry d-flex align-items-center"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={12} height={12} className="mr-1" /> Back to ready to post</Link>
                             </div>
                             <div className="progress-post d-flex align-items-center pt-3">
-                                <div className="point active">
+                                <div className="point active ok">
                                     <div className="circle"></div>
                                     <div className="desc">Review</div>
                                 </div>
                                 <div className="step flex-fill"></div>
-                                <div className="point">
+                                <div className="point active">
                                     <div className="circle"></div>
                                     <div className="desc">Payment</div>
                                 </div>
@@ -97,37 +97,9 @@ class CompanyCreatorPostStep1 extends Component {
                                     <div className="desc">Finish</div>
                                 </div>
                             </div>
-                            <div className="posts-item mt-5">
-                                <div className="in d-flex">
-                                    <div className="img">
-                                        <img src="/assets/img/img-post.png" className="img-fluid" alt="Raimakr" />
-                                    </div>
-                                    <div className="infos flex-fill ml-3">
-                                        <div className="titles d-flex justify-content-between align-items-center pb-2">
-                                            <div className="a text-white">MORNING ROUTINE</div>
-                                            <div className="a text-white">TOTAL: $6.000</div>
-                                        </div>
-                                        <div className="review d-flex mt-3">
-                                            <div className="resume">
-                                                Stories: 3 Posts<br/>
-                                                Reels: 1 Post<br/>
-                                                Feed: 1 Post
-                                            </div>
-                                            <div className="hashs">
-                                                <textarea className="form-control" placeholder="#hashtags"></textarea>
-                                            </div>
-                                            <div className="captions ml-2">
-                                                <textarea className="form-control" placeholder="@username"></textarea>
-                                            </div>
-                                            <div className="briefing ml-2">
-                                                <textarea className="form-control" placeholder="Briefing"></textarea>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="btns text-right">
-                                <Link to={'/company/creator/post-step2/3'} className="btn btn-a">Continue to Payment</Link>
+                            
+                            <div className="btns text-right mt-5">
+                                <Link to={'/'} className="btn btn-a">Continue to Payment</Link>
                             </div>
                         </div>
                     </div>
@@ -148,4 +120,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch: dispatch
 })
 
-export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CompanyCreatorPostStep1))
+export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CompanyCreatorPostStep2))
