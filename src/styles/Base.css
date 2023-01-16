@@ -400,7 +400,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-brand,
 .page-company-brand-view,
 .page-company-creator,
-.page-company-creator-view {
+.page-company-creator-view,
+.page-company-creator-post-step {
     background-color: #182123;
 }
 
@@ -901,7 +902,8 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-brand-view .title2,
 .page-company-brand-view .title2,
-.page-company-creator-view .title2 {
+.page-company-creator-view .title2,
+.page-company-creator-post-step .title2 {
     position: relative;
     height: 190px;
     overflow: hidden;
@@ -909,23 +911,27 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-brand-view .title2 .bg,
 .page-company-brand-view .title2 .bg,
-.page-company-creator-view .title2 .bg {
+.page-company-creator-view .title2 .bg,
+.page-company-creator-post-step .title2 .bg {
     width: 100%;
     height: auto;
 }
 
 .page-creator-brand-view .title2 .infos,
 .page-company-brand-view .title2 .infos,
-.page-company-creator-view .title2 .infos {
+.page-company-creator-view .title2 .infos,
+.page-company-creator-post-step .title2 .infos {
     position: absolute;
     left: 0;
     right: 0;
     bottom: 11px;
+    z-index: 2;
 }
 
 .page-creator-brand-view .title2 .infos .a,
 .page-company-brand-view .title2 .infos .a,
-.page-company-creator-view .title2 .infos .a {
+.page-company-creator-view .title2 .infos .a,
+.page-company-creator-post-step .title2 .infos .a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -936,16 +942,25 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
+.page-creator-brand-view .title2 .infos .a:hover,
+.page-company-brand-view .title2 .infos .a:hover,
+.page-company-creator-view .title2 .infos .a:hover,
+.page-company-creator-post-step .title2 .infos .a:hover {
+    text-decoration: none;
+}
+
 .page-creator-brand-view .title2 .infos .a.active,
 .page-company-brand-view .title2 .infos .a.active,
-.page-company-creator-view .title2 .infos .a.active {
+.page-company-creator-view .title2 .infos .a.active,
+.page-company-creator-post-step .title2 .infos .a.active {
     border-bottom: 3px solid #fff;
     padding-bottom: 8px;
 }
 
 .page-creator-brand-view .wrap,
 .page-company-brand-view .wrap,
-.page-company-creator-view .wrap {
+.page-company-creator-view .wrap,
+.page-company-creator-post-step .wrap {
     position: relative;
     z-index: 1;
     margin-top: -160px;
@@ -953,11 +968,18 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-brand-view .list-job,
 .page-company-brand-view .list-job,
-.page-company-creator-view .list-job {
+.page-company-creator-view .list-job,
+.page-company-creator-post-step .list-job {
     margin-top: 170px;
 }
 
-.page-company-creator-view .posts-item .in {
+.page-company-creator-view .posts-item,
+.page-company-creator-post-step .posts-item {
+    margin-bottom: 20px;
+}
+
+.page-company-creator-view .posts-item .in,
+.page-company-creator-post-step .posts-item .in {
     background-color: #0E181A;
     padding: 15px;
     -webkit-border-radius: 8px;
@@ -968,11 +990,13 @@ font-family: 'Roboto Condensed', sans-serif;
     -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
-.page-company-creator-view .posts-item .in .infos .titles {
+.page-company-creator-view .posts-item .in .infos .titles,
+.page-company-creator-post-step .posts-item .in .infos .titles {
     border-bottom: 1px solid #42585F;
 }
 
-.page-company-creator-view .posts-item .in .infos .titles .a1 {
+.page-company-creator-view .posts-item .in .infos .titles .a,
+.page-company-creator-post-step .posts-item .in .infos .titles .a {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;

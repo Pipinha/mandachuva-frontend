@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import history from "../../../routes/history";
 
 class CompanyCreatorView extends Component {
     constructor(props) {
@@ -30,7 +31,6 @@ class CompanyCreatorView extends Component {
                                 <div className="col-md-3"></div>
                                 <div className="col-md-9">
                                     <Link to={'/company/creator/3'} className="a active">READY TO POST</Link>
-                                    <Link to={'#a'} className="a ml-3">BUY CUSTOM CONTENT</Link>
                                     <Link to={'#a'} className="a ml-3">MY INSTAGRAM</Link>
                                 </div>
                             </div>
@@ -87,16 +87,16 @@ class CompanyCreatorView extends Component {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-9 list-job">
-                            {this.state.jobs.map(_ => (
-                                <div className="posts-item py-3">
+                        <div className="col-md-9 list-job pt-3">
+                            {this.state.jobs.map((_, ai) => (
+                                <div className="posts-item" key={'list-job-' + ai}>
                                     <div className="in d-flex">
                                         <div className="img">
                                             <img src="/assets/img/img-post.png" alt="Raimakr" />
                                         </div>
                                         <div className="infos flex-fill ml-3">
                                             <div className="titles d-flex justify-content-between align-items-center pb-2">
-                                                <div className="a1 text-white">MORNING ROUTINE</div>
+                                                <div className="a text-white">MORNING ROUTINE</div>
                                                 <div>
                                                     <a href="https://instagram.com" className="text-white"><Icon icon="bi:instagram" width={24} height={24} /></a>
                                                 </div>
@@ -146,7 +146,7 @@ class CompanyCreatorView extends Component {
                                                         <div className="b">$0</div>
                                                     </div>
                                                     <div className="btns mt-6">
-                                                        <button type="button" className="btn btn-a">Buy it</button>
+                                                        <button type="button" className="btn btn-a" onClick={_ => history.push('/company/creator/post-step1/3')}>Buy it</button>
                                                     </div>
                                                 </div>
                                             </div>
