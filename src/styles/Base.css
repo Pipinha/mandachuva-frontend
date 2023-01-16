@@ -627,6 +627,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-brand .title,
 .page-company-creator .title {
     position: relative;
+    height: 190px;
+    overflow: hidden;
 }
 
 .page-creator-setting .title .bg,
