@@ -46,24 +46,6 @@ class CompanyJobView extends Component {
                 }
             ]
         }
-
-        this.apply.bind(this)
-    }
-    apply() {
-        Swal.fire({
-            title: 'GOOD LUCK!',
-            text: 'Continue searching the perfect RainJobs for you.',
-            showDenyButton: false,
-            showCancelButton: false,
-            confirmButtonText: 'Back to RainJobs',
-            background: '#273539',
-            color: '#fff',
-            customClass: {
-                confirmButton: 'btn btn-e',
-            },
-            buttonsStyling: false,
-            footer: '<a href="/creator/rainjobs" class="text-blueberry">Back to the actual job</a>'
-        })
     }
     render() {
         return (
