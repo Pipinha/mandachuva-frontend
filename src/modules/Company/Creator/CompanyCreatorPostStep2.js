@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import history from "../../../routes/history";
 
 class CompanyCreatorPostStep2 extends Component {
     constructor(props) {
@@ -10,6 +11,9 @@ class CompanyCreatorPostStep2 extends Component {
         props.handlerHeader({
             page: 'company-creator-post-step'
         })
+    }
+    submit(){
+        history.push('/company/creator/post-step3/3')
     }
     render() {
         return (
@@ -97,87 +101,89 @@ class CompanyCreatorPostStep2 extends Component {
                                     <div className="desc">Finish</div>
                                 </div>
                             </div>
-                            <div className="row payment mt-5">
-                                <div className="col-md-7">
-                                    <div className="payment-box">
-                                        <div className="in">
-                                            <div className="tit">BILLING ADDRESS</div>
-                                            <div className="row mt-2">
-                                                <div className="col-md-6 form-group">
-                                                    <label className="text-steelo-l2">FIRST NAME</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="FIRST NAME" />
+                            <form onSubmit={e => { e.preventDefault(); this.submit() }}>
+                                <div className="row payment mt-5">
+                                    <div className="col-md-7">
+                                        <div className="payment-box">
+                                            <div className="in">
+                                                <div className="tit">BILLING ADDRESS</div>
+                                                <div className="row mt-2">
+                                                    <div className="col-md-6 form-group">
+                                                        <label className="text-steelo-l2">FIRST NAME</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="FIRST NAME" />
+                                                    </div>
+                                                    <div className="col-md-6 form-group">
+                                                        <label className="text-steelo-l2">LAST NAME</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="LAST NAME" />
+                                                    </div>
                                                 </div>
-                                                <div className="col-md-6 form-group">
-                                                    <label className="text-steelo-l2">LAST NAME</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="LAST NAME" />
+                                                <div className="row">
+                                                    <div className="col-md-6 form-group">
+                                                        <label className="text-steelo-l2">EMAIL</label>
+                                                        <input type="email" className="form-control with-label3" placeholder="your@email.com" />
+                                                    </div>
+                                                    <div className="col-md-6 form-group">
+                                                        <label className="text-steelo-l2">PHONE</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="0000000" />
+                                                    </div>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-md-8 form-group">
+                                                        <label className="text-steelo-l2">STREET ADDRESS</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="STREET ADDRESS" />
+                                                    </div>
+                                                    <div className="col-md-4 form-group">
+                                                        <label className="text-steelo-l2">CITY</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="CITY" />
+                                                    </div>
+                                                </div>
+                                                <div className="row">
+                                                    <div className="col-md-6 form-group">
+                                                        <label className="text-steelo-l2">STATE / PROVINCE</label>
+                                                        <input type="email" className="form-control with-label3" placeholder="STATE / PROVINCE" />
+                                                    </div>
+                                                    <div className="col-md-6 form-group">
+                                                        <label className="text-steelo-l2">ZIP CODE</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="0000000" />
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div className="row">
-                                                <div className="col-md-6 form-group">
-                                                    <label className="text-steelo-l2">EMAIL</label>
-                                                    <input type="email" className="form-control with-label3" placeholder="your@email.com" />
+                                        </div>
+                                    </div>
+                                    <div className="col-md-5">
+                                        <div className="payment-box">
+                                            <div className="in">
+                                                <div className="tit">PAY WITH CREDIT CARD</div>
+                                                <div className="row mt-2">
+                                                    <div className="col-md-12 form-group">
+                                                        <label className="text-steelo-l2">NAME ON THE CARD</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="NAME ON THE CARD" />
+                                                    </div>
                                                 </div>
-                                                <div className="col-md-6 form-group">
-                                                    <label className="text-steelo-l2">PHONE</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="0000000" />
+                                                <div className="row">
+                                                    <div className="col-md-6 form-group">
+                                                        <label className="text-steelo-l2">EXPIRE DATE</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="MM/YY" />
+                                                    </div>
+                                                    <div className="col-md-6 form-group">
+                                                        <label className="text-steelo-l2">CVV</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="000" />
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-md-8 form-group">
-                                                    <label className="text-steelo-l2">STREET ADDRESS</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="STREET ADDRESS" />
+                                                <div className="row">
+                                                    <div className="col-md-12 form-group">
+                                                        <label className="text-steelo-l2">CARD NUMBER</label>
+                                                        <input type="text" className="form-control with-label3" placeholder="0000 0000 0000 0000" />
+                                                    </div>
                                                 </div>
-                                                <div className="col-md-4 form-group">
-                                                    <label className="text-steelo-l2">CITY</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="CITY" />
-                                                </div>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-md-6 form-group">
-                                                    <label className="text-steelo-l2">STATE / PROVINCE</label>
-                                                    <input type="email" className="form-control with-label3" placeholder="STATE / PROVINCE" />
-                                                </div>
-                                                <div className="col-md-6 form-group">
-                                                    <label className="text-steelo-l2">ZIP CODE</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="0000000" />
+                                                <div className="btns text-right mt-4">
+                                                    <button type="submit" className="btn btn-a">Pay now</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-md-5">
-                                    <div className="payment-box">
-                                        <div className="in">
-                                            <div className="tit">PAY WITH CREDIT CARD</div>
-                                            <div className="row mt-2">
-                                                <div className="col-md-12 form-group">
-                                                    <label className="text-steelo-l2">NAME ON THE CARD</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="NAME ON THE CARD" />
-                                                </div>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-md-6 form-group">
-                                                    <label className="text-steelo-l2">EXPIRE DATE</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="MM/YY" />
-                                                </div>
-                                                <div className="col-md-6 form-group">
-                                                    <label className="text-steelo-l2">CVV</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="000" />
-                                                </div>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-md-12 form-group">
-                                                    <label className="text-steelo-l2">CARD NUMBER</label>
-                                                    <input type="text" className="form-control with-label3" placeholder="0000 0000 0000 0000" />
-                                                </div>
-                                            </div>
-                                            <div className="btns text-right mt-4">
-                                                <button type="button" className="btn btn-a">Pay now</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

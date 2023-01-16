@@ -31,6 +31,7 @@ import CompanyJobView from "../modules/Company/Job/CompanyJobView"
 import CompanyCreatorView from "../modules/Company/Creator/CompanyCreatorView"
 import CompanyCreatorPostStep1 from "../modules/Company/Creator/CompanyCreatorPostStep1"
 import CompanyCreatorPostStep2 from "../modules/Company/Creator/CompanyCreatorPostStep2"
+import CompanyCreatorPostStep3 from "../modules/Company/Creator/CompanyCreatorPostStep3"
 
 const routes = [
     {
@@ -38,6 +39,13 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: true,
+                path: '/company/creator/post-step3/:id',
+                component: CompanyCreatorPostStep3,
+                auth: true,
+                profileId: PROFILE_COMPANY
+            },
             {
                 exact: true,
                 path: '/company/creator/post-step2/:id',
