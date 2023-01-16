@@ -27,6 +27,7 @@ import { PROFILE_COMPANY, PROFILE_CREATOR } from "../constants/Config"
 import CompanyBrandList from "../modules/Company/Brand/CompanyBrandList"
 import CompanyBrandView from "../modules/Company/Brand/CompanyBrandView"
 import CompanyCreatorList from "../modules/Company/Creator/CompanyCreatorList"
+import CompanyJobView from "../modules/Company/Job/CompanyJobView"
 
 const routes = [
     {
@@ -59,6 +60,13 @@ const routes = [
                 exact: true,
                 path: '/company/search',
                 component: CompanySearch,
+                auth: true,
+                profileId: PROFILE_COMPANY
+            },
+            {
+                exact: false,
+                path: '/company/rainjobs/:id',
+                component: CompanyJobView,
                 auth: true,
                 profileId: PROFILE_COMPANY
             },
