@@ -85,7 +85,7 @@ class CreatorBrandList extends Component {
                             <div className="card-custom">
                                 <div className="filter-job p-3">
                                     <form onSubmit={e => { e.preventDefault(); }}>
-                                        <div className="title text-white">FILTERS</div>
+                                        <div className="tit text-white">FILTERS</div>
                                         <div className="mt-2">
                                             <label className="text-steelo-l2">FIT</label>
                                             <Typeahead

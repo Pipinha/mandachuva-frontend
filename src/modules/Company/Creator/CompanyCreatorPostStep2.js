@@ -97,8 +97,21 @@ class CompanyCreatorPostStep2 extends Component {
                                     <div className="desc">Finish</div>
                                 </div>
                             </div>
-                            
-                            <div className="btns text-right mt-5">
+                            <div className="row payment mt-5">
+                                <div className="col-md-8">
+                                    <div className="address">
+                                        <div className="in">
+                                            <div className="tit">Billing address</div>
+                                            <div className="mt-2">
+                                                <label>FIRST NAME</label>
+                                                <input type="text" className="form-control with-label" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-md-4"></div>
+                            </div>
+                            <div className="btns text-right mt-3">
                                 <Link to={'/'} className="btn btn-a">Continue to Payment</Link>
                             </div>
                         </div>

@@ -150,7 +150,7 @@ class CreatorJobList extends Component {
                             <div className="card-custom">
                                 <div className="filter-job p-3">
                                     <form onSubmit={e => { e.preventDefault(); }}>
-                                        <div className="title text-white">FILTERS</div>
+                                        <div className="tit text-white">FILTERS</div>
                                         <div className="mt-2">
                                             <label className="text-steelo-l2">FIT</label>
                                             <Typeahead
@@ -211,7 +211,7 @@ class CreatorJobList extends Component {
                                             />
                                         </div>
                                         <div className="trace-a mt-3"></div>
-                                        <div className="title text-white mt-3">EXIBITION</div>
+                                        <div className="tit text-white mt-3">EXIBITION</div>
                                         <div className="mt-3 d-flex align-items-center">
                                             <label className="custom-switch mr-2">
                                                 <input type="checkbox" />
