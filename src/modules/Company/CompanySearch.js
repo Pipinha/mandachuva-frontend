@@ -122,7 +122,7 @@ class CompanySearch extends Component {
                                                     <div className="fit-info">
                                                         <div className="a text-steelo-l2">FIT</div>
                                                         <div className="b text-white mt-1">80%</div>
-                                                        <div className="c text-blueberry mt-1" onClick={_=>this.showView(3)}>PROFILE</div>
+                                                        <div className="c text-blueberry mt-1" onClick={_=>history.push('/company/creator/3')}>PROFILE</div>
                                                     </div>
                                                 </div>
                                             </div>

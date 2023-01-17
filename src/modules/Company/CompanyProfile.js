@@ -115,10 +115,10 @@ class CreatorProfile extends Component {
 
                             <div className="card-custom mt-4">
                                 <div className="simple p-3">
-                                    <div className="title text-steelo-l2">FIND NEW CREATORS</div>
+                                    <div className="tit text-steelo-l2">FIND NEW CREATORS</div>
                                     <div className="txt text-white mt-3">Find new creators and select them with our FIT feature.</div>
                                     <div className="copy text-right mt-3">
-                                        <span onClick={_ => history.push('/')} className="text-blueberry">Search now</span>
+                                        <span onClick={_ => history.push('/company/creator')} className="text-blueberry">Search now</span>
                                     </div>
                                 </div>
                             </div>
@@ -128,7 +128,7 @@ class CreatorProfile extends Component {
                         <div className="col-md-6">
                             <div className="card-custom">
                                 <div className="timeline-profile p-3">
-                                    <div className="title text-steelo-l2">GROWTH YOUR FIT WITH CREATORS</div>
+                                    <div className="tit text-steelo-l2">GROWTH YOUR FIT WITH CREATORS</div>
                                     <div className="timeline mt-3 d-flex justify-content-between align-items-center">
                                         <div className="timeline-point">
                                             <div className="bal">&nbsp;</div>
@@ -154,8 +154,8 @@ class CreatorProfile extends Component {
                             </div>
                             <div className="jobs-options d-flex justify-content-between mt-4">
                                 <div className="menu">
-                                    <Link to={'/creator/profile'} className="active">ACTIVE</Link>
-                                    <Link to={'/creator/profile'}>FAVORITES</Link>
+                                    <Link to={'/company/profile'} className="active">ACTIVE</Link>
+                                    <Link to={'/company/profile'}>FAVORITES</Link>
                                 </div>
                                 <div className="sort text-steelo-l2">
                                     ORDER BY <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />
@@ -177,7 +177,7 @@ class CreatorProfile extends Component {
                                                     <div className={'msg' + (a.message ? ' new text-gray-20' : ' text-steelo-m2')}>
                                                         <Icon icon="material-symbols:chat-rounded" width={24} height={24} />
                                                     </div>
-                                                    <Link to={'/creator/profile'} className="text-blueberry">More</Link>
+                                                    <Link to={'/company/profile'} className="text-blueberry">More</Link>
                                                 </div>
                                                 <div className={'btn-show-hide text-center' + (a.open ? ' open' : '')}><Icon icon={'material-symbols:arrow-drop-' + (!a.open ? 'up' : 'down') + '-rounded'} width={24} height={24} /></div>
                                             </div>
@@ -229,7 +229,7 @@ class CreatorProfile extends Component {
                             <div className="mt-4 d-block d-sm-none"></div>
                             <div className="card-custom">
                                 <div className="simple p-3">
-                                    <div className="title text-steelo-l2">FIT WITH CREATORS</div>
+                                    <div className="tit text-steelo-l2">FIT WITH CREATORS</div>
                                     <div className="list-fit-companies">
                                         {this.state.fitCreators.map((a, ia) => (
                                             <div className="item d-flex align-items-center" key={'fit-' + ia}>
@@ -248,14 +248,14 @@ class CreatorProfile extends Component {
                                         ))}
                                     </div>
                                     <div className="copy text-right mt-3">
-                                        <span className="text-blueberry">See others</span>
+                                        <span className="text-blueberry cursor-pointer" onClick={_=>history.push('/company/creator')}>See others</span>
                                     </div>
                                 </div>
                             </div>
 
                             <div className="card-custom mt-4">
                                 <div className="simple p-3">
-                                    <div className="title text-steelo-l2">INVITE CREATORS</div>
+                                    <div className="tit text-steelo-l2">INVITE CREATORS</div>
                                     <div className="txt text-white mt-3">Invite creators and get exclusive benefits.</div>
                                     <div className="copy text-right mt-3">
                                         <span onClick={_ => history.push('/')} className="text-blueberry">Invite</span>

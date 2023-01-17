@@ -104,7 +104,7 @@ class CompanySettingPayment extends Component {
                         <div className="col-md-3">
                             <div className="card-custom p-3">
                                 <div className="simple">
-                                    <div className="title2 text-white">SETTINGS MENU</div>
+                                    <div className="tit2 text-white">SETTINGS MENU</div>
                                     <div className="sep mt-2"></div>
                                     <div className="item-menu mt-2">
                                         <Link to={'/company/setting'}><Icon icon="ic:baseline-person-outline" width={14} height={14} /> Profile settings</Link>
@@ -125,7 +125,7 @@ class CompanySettingPayment extends Component {
                         <div className="col-md-9">
                             <div className="card-custom p-3">
                                 <div className="simple">
-                                    <div className="title2 text-white">PAYMENT</div>
+                                    <div className="tit2 text-white">PAYMENT</div>
                                     <div className="sep mt-2"></div>
                                     <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
                                         <div className="form-row">

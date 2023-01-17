@@ -2,6 +2,7 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import history from "../../../routes/history";
 
 class CompanyJobView extends Component {
     constructor(props) {
@@ -114,7 +115,7 @@ class CompanyJobView extends Component {
                         <div className="col-md-3">
                             <div className="card-custom">
                                 <div className="simple p-3">
-                                    <div className="title text-steelo-l2">OTHER RAINJOBS</div>
+                                    <div className="tit text-steelo-l2">OTHER RAINJOBS</div>
                                     <div className="list-fit-companies">
                                         {this.state.fitCompanies.map((a, ia) => (
                                             <div className="item d-flex align-items-center" key={'fit-' + ia}>
@@ -133,7 +134,7 @@ class CompanyJobView extends Component {
                                         ))}
                                     </div>
                                     <div className="copy text-right mt-3">
-                                        <span className="text-blueberry">More jobs</span>
+                                        <span className="text-blueberry" onClick={_=>history.push('/company/rainjobs')}>More jobs</span>
                                     </div>
                                 </div>
                             </div>

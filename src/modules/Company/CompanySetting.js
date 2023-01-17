@@ -68,7 +68,7 @@ class CompanySetting extends Component {
                         <div className="col-md-3">
                             <div className="card-custom p-3">
                                 <div className="simple">
-                                    <div className="title2 text-white">SETTINGS MENU</div>
+                                    <div className="tit2 text-white">SETTINGS MENU</div>
                                     <div className="sep mt-2"></div>
                                     <div className="item-menu active mt-2">
                                         <Link to={'/company/setting'}><Icon icon="ic:baseline-person-outline" width={14} height={14} /> Profile settings</Link>
@@ -89,7 +89,7 @@ class CompanySetting extends Component {
                         <div className="col-md-9">
                             <div className="card-custom p-3">
                                 <div className="simple">
-                                    <div className="title2 text-white">PROFILE SETTINGS</div>
+                                    <div className="tit2 text-white">PROFILE SETTINGS</div>
                                     <div className="sep mt-2"></div>
                                     <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
                                         <div className="change-photo">
