@@ -164,7 +164,7 @@ class CreatorProfile extends Component {
                             <div className="jobs-list mt-2">
                                 {this.state.jobs.map((a, ia) => (
                                     <div className={'item' + (ia > 0 ? ' mt-3' : '')} key={'job-' + ia}>
-                                        <div className="card-custom" onClick={_ => this.openJob(ia)}>
+                                        <div className="card-custom">
                                             <div className="item-main d-flex align-items-center">
                                                 <div className="company flex-fill">
                                                     <div className="name text-white">{a.name}</div>
@@ -177,9 +177,9 @@ class CreatorProfile extends Component {
                                                     <div className={'msg' + (a.message ? ' new text-gray-20' : ' text-steelo-m2')}>
                                                         <Icon icon="material-symbols:chat-rounded" width={24} height={24} />
                                                     </div>
-                                                    <Link to={'/company/profile'} className="text-blueberry">More</Link>
+                                                    <Link to={'/company/order/3'} className="text-blueberry">More</Link>
                                                 </div>
-                                                <div className={'btn-show-hide text-center' + (a.open ? ' open' : '')}><Icon icon={'material-symbols:arrow-drop-' + (!a.open ? 'up' : 'down') + '-rounded'} width={24} height={24} /></div>
+                                                <div className={'btn-show-hide text-center' + (a.open ? ' open' : '')}><Icon icon={'material-symbols:arrow-drop-' + (!a.open ? 'up' : 'down') + '-rounded'} className="cursor-pointer" width={24} height={24} onClick={_ => this.openJob(ia)} /></div>
                                             </div>
                                         </div>
                                         <div className="item-hide" style={{ display: a.open ? 'block' : 'none' }}>

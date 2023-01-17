@@ -457,7 +457,6 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-profile .jobs-list .item .item-main {
     padding: 15px;
     position: relative;
-    cursor: pointer;
 }
 
 .page-creator-profile .jobs-list .item .item-main .company .name,
