@@ -6,6 +6,7 @@ import { actionCompanyOrderSendMessage } from "../../../actions/Company/ActionCo
 import Helper from "../../../components/Helper";
 
 class CompanyOrderView extends Component {
+    messagesEnd = null
     constructor(props) {
         super(props)
 
@@ -27,6 +28,16 @@ class CompanyOrderView extends Component {
             text: text,
         }))
         this.setState({ text: '' })
+        this.messageScrollToBottom();
+    }
+    messageScrollToBottom() {
+        this.messagesEnd.scrollTo(0, this.messagesEnd.scrollHeight);
+    }
+    componentDidMount() {
+        this.messageScrollToBottom();
+    }
+    componentDidUpdate() {
+        this.messageScrollToBottom();
     }
     render() {
         return (
@@ -197,7 +208,7 @@ class CompanyOrderView extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card-msg-list">
+                                <div className="card-msg-list" ref={(el) => { this.messagesEnd = el; }}>
                                     {this.props.store.order.messages.map((a, ai) => (
                                         <div className={'card-msg-item d-flex ' + (a.side === 0 ? 'justify-content-start' : 'justify-content-end')} key={'msg-' + ai}>
                                             <div className="card-msg-content d-flex align-items-start">
@@ -218,30 +229,6 @@ class CompanyOrderView extends Component {
                                             </div>
                                         </div>
                                     ))}
-                                    {/* <div className="card-msg-item d-flex justify-content-start">
-                                        <div className="card-msg-content d-flex align-items-start">
-                                            <div className="card-msg-photo">
-                                                <img src="/assets/img/user-creator.png" alt="Rainmakr" />
-                                            </div>
-                                            <div className="card-msg-text ml-3">
-                                                Hello, whatup man :D<br />
-                                                Hello, whatup man :D<br />
-                                                Hello, whatup man :D
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="card-msg-item d-flex justify-content-end">
-                                        <div className="card-msg-content d-flex align-items-start">
-                                            <div className="card-msg-text text-right">
-                                                Hello, whatup man :D<br />
-                                                Hello, whatup man :D<br />
-                                                Hello, whatup :D
-                                            </div>
-                                            <div className="card-msg-photo ml-3">
-                                                <img src="/assets/img/user-company.png" alt="Rainmakr" />
-                                            </div>
-                                        </div>
-                                    </div> */}
                                 </div>
                                 <div className="card-msg-form">
                                     <form className="d-flex align-items-center" onSubmit={e => { e.preventDefault(); this.sendMessage() }}>
