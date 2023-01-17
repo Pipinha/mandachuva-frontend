@@ -155,9 +155,9 @@ class CompanyOrderView extends Component {
                                         </div>
                                         <div className="opts flex-fill px-3">
                                             <div className="chk d-flex justify-content-center">
-                                                <label class="custom-checkbox">
+                                                <label className="custom-checkbox">
                                                     <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
-                                                    <span class="checkmark"></span>
+                                                    <span className="checkmark"></span>
                                                     <span className="text-white">I confirm the dates</span>
                                                 </label>
                                             </div>
@@ -185,19 +185,25 @@ class CompanyOrderView extends Component {
                                     </div>
                                 </div>
                                 <div className="card-msg-list">
-                                    <div className="card-msg-item d-flex">
+                                    <div className="card-msg-item d-flex justify-content-start">
                                         <div className="card-msg-content d-flex align-items-start">
                                             <div className="card-msg-photo">
                                                 <img src="/assets/img/user-creator.png" alt="Rainmakr" />
                                             </div>
                                             <div className="card-msg-text ml-3">
+                                                Hello, whatup man :D<br/>
+                                                Hello, whatup man :D<br/>
                                                 Hello, whatup man :D
                                             </div>
                                         </div>
                                     </div>
                                     <div className="card-msg-item d-flex justify-content-end">
-                                        <div className="card-msg-content d-flex">
-                                            <div className="card-msg-text text-right">Ok ?</div>
+                                        <div className="card-msg-content d-flex align-items-start">
+                                            <div className="card-msg-text text-right">
+                                                Hello, whatup man :D<br/>
+                                                Hello, whatup man :D<br/>
+                                                Hello, whatup :D
+                                            </div>
                                             <div className="card-msg-photo ml-3">
                                                 <img src="/assets/img/user-company.png" alt="Rainmakr" />
                                             </div>
@@ -206,13 +212,13 @@ class CompanyOrderView extends Component {
                                 </div>
                                 <div className="card-msg-form">
                                     <form className="d-flex align-items-center">
-                                        <div className="bt-file">
+                                        <div className="bt-file mr-3">
                                             <button type="button" className="btn btn-submit btn-lg"><Icon icon="mdi:attachment-vertical" width={24} height={24} /></button>
                                         </div>
                                         <div className="field-text flex-fill">
                                             <input type="text" className="form-control with-label3" placeholder="Type your message..." />
                                         </div>
-                                        <div className="bt-send">
+                                        <div className="bt-send ml-3">
                                             <button type="submit" className="btn btn-submit btn-lg">Send</button>
                                         </div>
                                     </form>

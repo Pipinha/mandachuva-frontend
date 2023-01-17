@@ -123,9 +123,9 @@ class CreatorSettingSocial extends Component {
                                                 </div>
                                                 <div className="form-row mt-3">
                                                     <div className="col-md-3">
-                                                        <label class="custom-checkbox">
+                                                        <label className="custom-checkbox">
                                                             <input type="checkbox" checked={this.state.consult} onChange={e => this.setState({ consult: e.target.checked })} />
-                                                            <span class="checkmark"></span>
+                                                            <span className="checkmark"></span>
                                                             <span className="text-white">Under consultant</span>
                                                         </label>
                                                     </div>
