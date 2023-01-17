@@ -76,11 +76,12 @@ class CompanyOrderView extends Component {
                             </div>
                         </div>
                         <div className="col-md-9 list-job">
-                            <div className="back-to mt-1">
+                            <div className="back-to d-flex justify-content-between mt-1">
                                 <Link to={'/company/profile'} className="text-blueberry d-flex align-items-center"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={12} height={12} className="mr-1" /> Back to dashboard</Link>
+                                <Link to={'#a'} className="text-blueberry d-flex align-items-center">Ready to post details <Icon icon="material-symbols:info" width={24} height={24} className="ml-1" /></Link>
                             </div>
 
-                            <div className="progress-stage mt-4">
+                            <div className="progress-stage mt-3">
                                 <div className="in">
                                     <div className="tit d-flex justify-content-between align-items-center">
                                         <div className="a">PROGRESS</div>
