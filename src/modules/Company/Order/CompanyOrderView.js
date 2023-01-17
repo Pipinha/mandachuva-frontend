@@ -10,6 +10,10 @@ class CompanyOrderView extends Component {
         props.handlerHeader({
             page: 'company-order-view'
         })
+
+        this.state = {
+            confirm: false,
+        }
     }
     render() {
         return (
@@ -133,8 +137,33 @@ class CompanyOrderView extends Component {
                                     </div>
                                 </div>
                                 <div className="stage">
-                                    <div className="step1">
-                                        
+                                    <div className="step1 d-flex align-items-center">
+                                        <div className="stage-tit">
+                                            <div className="a">SET UP THE DELIVERY</div>
+                                            <div className="b mt-2">Talk to the creator to set up what needs to be done. When the both sides are ok, go to the next step. </div>
+                                        </div>
+                                        <div className="dates d-flex justify-content-around ml-3">
+                                            <div>
+                                                <label className="text-steelo-l2">LAST POST DELIVERY</label>
+                                                <input type="text" className="form-control with-label3" placeholder="AAAA-MM-YYYY" />
+                                            </div>
+                                            <div className="ml-3">
+                                                <label className="text-steelo-l2">LAST PUBLICATION</label>
+                                                <input type="text" className="form-control with-label3" placeholder="AAAA-MM-YYYY" />
+                                            </div>
+                                        </div>
+                                        <div className="opts flex-fill px-3">
+                                            <div className="chk">
+                                                <label class="custom-checkbox">
+                                                    <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
+                                                    <span class="checkmark"></span>
+                                                    <span className="text-white">I confirm the dates</span>
+                                                </label>
+                                            </div>
+                                            <div className="btns">
+                                                <button type="button" className="btn btn-block btn-a with-shadow">Go to creation</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
