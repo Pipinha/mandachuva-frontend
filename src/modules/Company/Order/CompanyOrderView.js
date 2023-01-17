@@ -31,7 +31,7 @@ class CompanyOrderView extends Component {
         this.messageScrollToBottom();
     }
     messageScrollToBottom() {
-        this.messagesEnd.scrollTo(0, this.messagesEnd.scrollHeight);
+        window.setTimeout(_ => this.messagesEnd.scrollTo(0, this.messagesEnd.scrollHeight), 400)
     }
     componentDidMount() {
         this.messageScrollToBottom();
