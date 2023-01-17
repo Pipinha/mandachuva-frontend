@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-// import { PROFILE_COMPANY } from '../constants/Config'
+import { PROFILE_COMPANY } from '../constants/Config'
 
 const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware))
 
@@ -11,13 +11,22 @@ const initialState = {
     error: '',
     success: '',
     session: {
-        // logged: true,
-        // photo: '/assets/img/user-company.png',
-        // profileId: PROFILE_COMPANY,
-        logged: false,
-        photo: null,
-        profileId: null,
+        logged: true,
+        photo: '/assets/img/user-company.png',
+        profileId: PROFILE_COMPANY,
+        // logged: false,
+        // photo: null,
+        // profileId: null,
     },
+    order: {
+        messages: [
+            {
+                photo: '/assets/img/user-creator.png',
+                side: 0,
+                text: 'Hello, whatup man :D\nHello, whatup man :D\nHello, whatup man :D',
+            }
+        ],
+    }
 }
 
 const reducer = (state = initialState, action) => {
@@ -49,6 +58,14 @@ const reducer = (state = initialState, action) => {
                     logged: action.payload.logged,
                     photo: action.payload.photo,
                     profileId: action.payload.profileId
+                }
+            }
+        case 'ORDER_SEND_MESSAGE':
+            state.order.messages.push(action.payload)
+            return {
+                ...state,
+                order: {
+                    messages: state.order.messages,
                 }
             }
         default:

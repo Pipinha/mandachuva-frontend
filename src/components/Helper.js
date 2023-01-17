@@ -78,7 +78,7 @@ let Helper = {
             }
         })
     },
-    uploadFileOne(callback){
+    uploadFileOne(callback) {
         let file = document.createElement('input')
         file.setAttribute('type', 'file')
         file.setAttribute('accept', '.jpg,.jpeg,.png')
@@ -90,7 +90,7 @@ let Helper = {
                 }
                 return
             }
-            if (typeof(a.target.files[0]) !== 'object') {
+            if (typeof (a.target.files[0]) !== 'object') {
                 if (typeof (callback) == 'function') {
                     callback('Objeto do arquivo é inválido!')
                 }
@@ -111,6 +111,11 @@ let Helper = {
                 callback(false, event.target.result)
             }
         }
+    },
+    nl2br(str, replaceMode, isXhtml) {
+        var breakTag = (isXhtml) ? '<br />' : '<br>';
+        var replaceStr = (replaceMode) ? '$1' + breakTag : '$1' + breakTag + '$2';
+        return (str + '').replace(/([^>\r\n]?)(\r\n|\n\r|\r|\n)/g, replaceStr);
     }
 }
 export default Helper

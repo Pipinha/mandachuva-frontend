@@ -2,6 +2,8 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
+import { actionCompanyOrderSendMessage } from "../../../actions/Company/ActionCompanyOrder";
+import Helper from "../../../components/Helper";
 
 class CompanyOrderView extends Component {
     constructor(props) {
@@ -13,7 +15,18 @@ class CompanyOrderView extends Component {
 
         this.state = {
             confirm: false,
+            step: 1,
+            text: '',
         }
+    }
+    sendMessage() {
+        let text = this.state.text
+        this.props.dispatch(actionCompanyOrderSendMessage({
+            photo: '/assets/img/user-company.png',
+            side: 1,
+            text: text,
+        }))
+        this.setState({ text: '' })
     }
     render() {
         return (
@@ -185,14 +198,34 @@ class CompanyOrderView extends Component {
                                     </div>
                                 </div>
                                 <div className="card-msg-list">
-                                    <div className="card-msg-item d-flex justify-content-start">
+                                    {this.props.store.order.messages.map((a, ai) => (
+                                        <div className={'card-msg-item d-flex ' + (a.side === 0 ? 'justify-content-start' : 'justify-content-end')} key={'msg-' + ai}>
+                                            <div className="card-msg-content d-flex align-items-start">
+                                                {a.side === 0 ?
+                                                    <>
+                                                        <div className="card-msg-photo">
+                                                            <img src={a.photo} alt="Rainmakr" />
+                                                        </div>
+                                                        <div className="card-msg-text ml-3" dangerouslySetInnerHTML={{ __html: Helper.nl2br(a.text) }} ></div>
+                                                    </>
+                                                    :
+                                                    <>
+                                                        <div className="card-msg-text text-right" dangerouslySetInnerHTML={{ __html: Helper.nl2br(a.text) }} ></div>
+                                                        <div className="card-msg-photo ml-3">
+                                                            <img src={a.photo} alt="Rainmakr" />
+                                                        </div>
+                                                    </>}
+                                            </div>
+                                        </div>
+                                    ))}
+                                    {/* <div className="card-msg-item d-flex justify-content-start">
                                         <div className="card-msg-content d-flex align-items-start">
                                             <div className="card-msg-photo">
                                                 <img src="/assets/img/user-creator.png" alt="Rainmakr" />
                                             </div>
                                             <div className="card-msg-text ml-3">
-                                                Hello, whatup man :D<br/>
-                                                Hello, whatup man :D<br/>
+                                                Hello, whatup man :D<br />
+                                                Hello, whatup man :D<br />
                                                 Hello, whatup man :D
                                             </div>
                                         </div>
@@ -200,23 +233,23 @@ class CompanyOrderView extends Component {
                                     <div className="card-msg-item d-flex justify-content-end">
                                         <div className="card-msg-content d-flex align-items-start">
                                             <div className="card-msg-text text-right">
-                                                Hello, whatup man :D<br/>
-                                                Hello, whatup man :D<br/>
+                                                Hello, whatup man :D<br />
+                                                Hello, whatup man :D<br />
                                                 Hello, whatup :D
                                             </div>
                                             <div className="card-msg-photo ml-3">
                                                 <img src="/assets/img/user-company.png" alt="Rainmakr" />
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                                 <div className="card-msg-form">
-                                    <form className="d-flex align-items-center">
+                                    <form className="d-flex align-items-center" onSubmit={e => { e.preventDefault(); this.sendMessage() }}>
                                         <div className="bt-file mr-3">
                                             <button type="button" className="btn btn-submit btn-lg"><Icon icon="mdi:attachment-vertical" width={24} height={24} /></button>
                                         </div>
                                         <div className="field-text flex-fill">
-                                            <input type="text" className="form-control with-label3" placeholder="Type your message..." />
+                                            <input type="text" className="form-control with-label3" placeholder="Type your message..." value={this.state.text} onChange={e => this.setState({ text: e.target.value })} />
                                         </div>
                                         <div className="bt-send ml-3">
                                             <button type="submit" className="btn btn-submit btn-lg">Send</button>

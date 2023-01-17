@@ -2263,6 +2263,8 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .card-msg .card-msg-list {
     padding: 15px;
+    height: 220px;
+    overflow: auto;
 }
 
 .card-msg .card-msg-list .card-msg-item {
