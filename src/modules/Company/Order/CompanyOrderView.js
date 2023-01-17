@@ -288,18 +288,19 @@ class CompanyOrderView extends Component {
                             </div>
                             <div className="card-msg mt-4">
                                 <div className="card-msg-tit d-flex justify-content-between align-items-center">
-                                    <div className="a">MESSENGER</div>
-                                    <div className="opts d-flex align-items-center">
-                                        <div className="a">
-                                            <select className="form-control with-label3">
-                                                <option value={'0'}>Briefing</option>
-                                            </select>
-                                        </div>
-                                        <div className="b ml-3">
-                                            <input type="text" placeholder="Search in..." className="form-control with-label4" />
-                                            <Icon icon="material-symbols:search" width={24} height={24} />
-                                        </div>
-                                    </div>
+                                    <div className="a">{this.state.step < 6 ? 'MESSENGER' : 'MESSENGER DISCONNECT'}</div>
+                                    {this.state.step < 6 ?
+                                        <div className="opts d-flex align-items-center">
+                                            <div className="a">
+                                                <select className="form-control with-label3">
+                                                    <option value={'0'}>Briefing</option>
+                                                </select>
+                                            </div>
+                                            <div className="b ml-3">
+                                                <input type="text" placeholder="Search in..." className="form-control with-label4" />
+                                                <Icon icon="material-symbols:search" width={24} height={24} />
+                                            </div>
+                                        </div> : ''}
                                 </div>
                                 <div className="card-msg-list" ref={(el) => { this.messagesEnd = el; }}>
                                     {this.props.store.order.messages.map((a, ai) => (
@@ -326,13 +327,13 @@ class CompanyOrderView extends Component {
                                 <div className="card-msg-form">
                                     <form className="d-flex align-items-center" onSubmit={e => { e.preventDefault(); this.sendMessage() }}>
                                         <div className="bt-file mr-3">
-                                            <button type="button" className="btn btn-submit btn-lg"><Icon icon="mdi:attachment-vertical" width={24} height={24} /></button>
+                                            <button type="button" className="btn btn-submit btn-lg" disabled={this.state.step>=6}><Icon icon="mdi:attachment-vertical" width={24} height={24} /></button>
                                         </div>
                                         <div className="field-text flex-fill">
-                                            <input type="text" className="form-control with-label3" placeholder="Type your message..." value={this.state.text} onChange={e => this.setState({ text: e.target.value })} />
+                                            <input type="text" className="form-control with-label3" placeholder="Type your message..." value={this.state.text} onChange={e => this.setState({ text: e.target.value })} disabled={this.state.step>=6} />
                                         </div>
                                         <div className="bt-send ml-3">
-                                            <button type="submit" className="btn btn-submit btn-lg">Send</button>
+                                            <button type="submit" className="btn btn-submit btn-lg" disabled={this.state.step>=6}>Send</button>
                                         </div>
                                     </form>
                                 </div>
