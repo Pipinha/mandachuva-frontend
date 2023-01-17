@@ -132,6 +132,11 @@ class CompanyOrderView extends Component {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="stage">
+                                    <div className="step1">
+                                        
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
