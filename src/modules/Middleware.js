@@ -26,16 +26,16 @@ class Middleware extends Component {
                 <Switch>
                     {this.props.routes.map((a, i) => {
                         return <Route key={'route-middleware-' + i} exact={a.exact} path={a.path} render={(props) => {
-                            if (!this.props.store.session.logged && a.auth) {
+                            if (!this.props.store.session.logged && a.auth && a.public === null) {
                                 return <Redirect to={'/account/login'} />
                             }
-                            if (this.props.store.session.logged && !a.auth && this.props.store.session.profileId === PROFILE_CREATOR) {
+                            if (this.props.store.session.logged && !a.auth && this.props.store.session.profileId === PROFILE_CREATOR && a.public === null) {
                                 return <Redirect to={'/creator/profile'} />
                             }
-                            if (this.props.store.session.logged && !a.auth && this.props.store.session.profileId === PROFILE_COMPANY) {
+                            if (this.props.store.session.logged && !a.auth && this.props.store.session.profileId === PROFILE_COMPANY && a.public === null) {
                                 return <Redirect to={'/company/profile'} />
                             }
-                            if (this.props.store.session.logged && this.props.store.session.profileId !== a.profileId) {
+                            if (this.props.store.session.logged && this.props.store.session.profileId !== a.profileId && a.public === null) {
                                 if(this.props.store.session.profileId === PROFILE_CREATOR){
                                     return <Redirect to={'/creator/profile'} />
                                 }

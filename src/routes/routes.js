@@ -44,224 +44,256 @@ const routes = [
                 path: '/company/creator/post-step3/:id',
                 component: CompanyCreatorPostStep3,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/creator/post-step2/:id',
                 component: CompanyCreatorPostStep2,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/creator/post-step1/:id',
                 component: CompanyCreatorPostStep1,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/creator/:id',
                 component: CompanyCreatorView,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/creator',
                 component: CompanyCreatorList,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: false,
                 path: '/company/brand/:id',
                 component: CompanyBrandView,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/brand',
                 component: CompanyBrandList,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/search',
                 component: CompanySearch,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: false,
                 path: '/company/rainjobs/:id',
                 component: CompanyJobView,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/rainjobs',
                 component: CompanyJobList,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: false,
                 path: '/company/setting/payment/:id',
                 component: CompanySettingPaymentEdit,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/setting/payment',
                 component: CompanySettingPayment,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/setting/privacy',
                 component: CompanySettingPrivacy,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/setting',
                 component: CompanySetting,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: true,
                 path: '/company/profile',
                 component: CompanyProfile,
                 auth: true,
-                profileId: PROFILE_COMPANY
+                profileId: PROFILE_COMPANY,
+                public: null
             },
             {
                 exact: false,
                 path: '/creator/brand/:id',
                 component: CreatorBrandView,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: true,
                 path: '/creator/brand',
                 component: CreatorBrandList,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: false,
                 path: '/creator/rainjobs/:id',
                 component: CreatorJobView,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: true,
                 path: '/creator/rainjobs',
                 component: CreatorJobList,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: false,
                 path: '/creator/ready-to-post/edit/:id',
                 component: CreatorPostEdit,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: true,
                 path: '/creator/ready-to-post',
                 component: CreatorPostList,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: true,
                 path: '/creator/setting/privacy',
                 component: CreatorSettingPrivacy,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: true,
                 path: '/creator/setting/social',
                 component: CreatorSettingSocial,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: true,
                 path: '/creator/setting',
                 component: CreatorSetting,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: true,
                 path: '/creator/profile',
                 component: CreatorProfile,
                 auth: true,
-                profileId: PROFILE_CREATOR
+                profileId: PROFILE_CREATOR,
+                public: null
             },
             {
                 exact: false,
                 path: '/creator/:username',
                 component: CreatorRainlink,
-                auth: true,
-                profileId: PROFILE_CREATOR
+                auth: null,
+                profileId: PROFILE_CREATOR,
+                public: true
             },
             {
                 exact: true,
                 path: '/register',
                 component: Register,
                 auth: false,
-                profileId: null
+                profileId: null,
+                public: null
             },
             {
                 exact: true,
                 path: '/account/recovery',
                 component: AccountRecovery,
                 auth: false,
-                profileId: null
+                profileId: null,
+                public: null
             },
             {
                 exact: true,
                 path: '/account/forgot',
                 component: AccountForgot,
                 auth: false,
-                profileId: null
+                profileId: null,
+                public: null
             },
             {
                 exact: true,
                 path: '/account/login',
                 component: AccountLogin,
                 auth: false,
-                profileId: null
+                profileId: null,
+                public: null
             },
             {
                 exact: true,
                 path: '/test',
                 component: Test,
                 auth: false,
-                profileId: null
+                profileId: null,
+                public: null
             },
             {
                 exact: true,
                 path: '/',
                 component: Home,
                 auth: false,
-                profileId: null
+                profileId: null,
+                public: null
             }
         ],
     },
