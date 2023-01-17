@@ -213,9 +213,79 @@ class CompanyOrderView extends Component {
                                             </div>
                                         </div>
                                     ) : ''}
+                                    {this.state.step === 3 ? (
+                                        <div className="d-flex align-items-center">
+                                            <div className="stage-tit">
+                                                <div className="a">SET THE POSTS DATES</div>
+                                                <div className="b mt-2">Set with the creator the dates for every post and check all the creations previously made.</div>
+                                            </div>
+                                            <div className="flex-fill"></div>
+                                            <div className="opts px-3">
+                                                <div className="chk d-flex justify-content-center">
+                                                    <label className="custom-checkbox">
+                                                        <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
+                                                        <span className="checkmark"></span>
+                                                        <span className="text-white">I agree with the dates</span>
+                                                    </label>
+                                                </div>
+                                                <div className="btns">
+                                                    <button type="button" className="btn btn-block btn-a with-shadow" onClick={_ => this.setState({ step: this.state.step + 1 })}>Go to report</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ) : ''}
+                                    {this.state.step === 4 ? (
+                                        <div className="d-flex align-items-center">
+                                            <div className="stage-tit">
+                                                <div className="a">REPORT</div>
+                                                <div className="b mt-2">Talk with the creator about de feedback and confirm the end of the project.</div>
+                                            </div>
+                                            <div className="flex-fill"></div>
+                                            <div className="opts px-3">
+                                                <div className="chk d-flex justify-content-center">
+                                                    <label className="custom-checkbox">
+                                                        <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
+                                                        <span className="checkmark"></span>
+                                                        <span className="text-white">I agree with the report</span>
+                                                    </label>
+                                                </div>
+                                                <div className="btns">
+                                                    <button type="button" className="btn btn-block btn-a with-shadow" onClick={_ => this.setState({ step: this.state.step + 1 })}>Finish the job</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ) : ''}
+                                    {this.state.step === 5 ? (
+                                        <div className="d-flex align-items-center">
+                                            <div className="stage-tit">
+                                                <div className="a">FINISH THE JOB</div>
+                                                <div className="b mt-2">If everything is alright, at the end of project give the creator the payment for the job.</div>
+                                            </div>
+                                            <div className="flex-fill"></div>
+                                            <div className="opts px-3">
+                                                <div className="chk d-flex justify-content-center">
+                                                    <label className="custom-checkbox">
+                                                        <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
+                                                        <span className="checkmark"></span>
+                                                        <span className="text-white">The job is finished</span>
+                                                    </label>
+                                                </div>
+                                                <div className="btns">
+                                                    <button type="button" className="btn btn-block btn-a with-shadow" onClick={_ => this.setState({ step: this.state.step + 1 })}>Pay the creator</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ) : ''}
+                                    {this.state.step === 6 ? (
+                                        <div className="d-flex align-items-center justify-content-center">
+                                            <div className="stage-finish">
+                                                <div className="a">THE JOB IS FINISHED</div>
+                                                <div className="b mt-2">The history can be seen in the archive.</div>
+                                            </div>
+                                        </div>
+                                    ) : ''}
                                 </div>
                             </div>
-
                             <div className="card-msg mt-4">
                                 <div className="card-msg-tit d-flex justify-content-between align-items-center">
                                     <div className="a">MESSENGER</div>

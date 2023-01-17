@@ -1340,6 +1340,27 @@ font-family: 'Roboto Condensed', sans-serif;
     max-width  : 210px;
 }
 
+.page-company-order-view .stage .stage-finish .a {
+    font-family   : 'Roboto';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 20px;
+    line-height   : 23px;
+    letter-spacing: 0.25px;
+    color         : #fff;
+    text-align : center;
+}
+
+.page-company-order-view .stage .stage-finish .b {
+    font-family: 'Roboto';
+    font-style : normal;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 19px;
+    text-align : center;
+    color      : #fff;
+}
+
 .page-company-order-view .stage .dates {
     max-width: 360px;
 }
