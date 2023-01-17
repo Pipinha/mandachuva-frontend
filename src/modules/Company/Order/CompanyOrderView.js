@@ -75,6 +75,64 @@ class CompanyOrderView extends Component {
                             <div className="back-to mt-1">
                                 <Link to={'/company/profile'} className="text-blueberry d-flex align-items-center"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={12} height={12} className="mr-1" /> Back to dashboard</Link>
                             </div>
+
+                            <div className="progress-stage mt-4">
+                                <div className="in">
+                                    <div className="tit d-flex justify-content-between align-items-center">
+                                        <div className="a">PROGRESS</div>
+                                        <div className="a">STAGE 2 OF 6</div>
+                                    </div>
+                                    <div className="timeline d-flex align-items-center">
+                                        <div className="point active ok">
+                                            <div className="circle"></div>
+                                            <div className="desc">
+                                                <div className="a">1. Purchase</div>
+                                                <div className="b">03/10/2022</div>
+                                            </div>
+                                        </div>
+                                        <div className="bar ok flex-fill"></div>
+                                        <div className="point active">
+                                            <div className="circle"></div>
+                                            <div className="desc">
+                                                <div className="a">2. Briefing</div>
+                                                <div className="b">WAITING</div>
+                                            </div>
+                                        </div>
+                                        <div className="bar flex-fill"></div>
+                                        <div className="point">
+                                            <div className="circle"></div>
+                                            <div className="desc">
+                                                <div className="a">2. Briefing</div>
+                                                <div className="b">WAITING</div>
+                                            </div>
+                                        </div>
+                                        <div className="bar flex-fill"></div>
+                                        <div className="point">
+                                            <div className="circle"></div>
+                                            <div className="desc">
+                                                <div className="a">2. Briefing</div>
+                                                <div className="b">WAITING</div>
+                                            </div>
+                                        </div>
+                                        <div className="bar flex-fill"></div>
+                                        <div className="point">
+                                            <div className="circle"></div>
+                                            <div className="desc">
+                                                <div className="a">2. Briefing</div>
+                                                <div className="b">WAITING</div>
+                                            </div>
+                                        </div>
+                                        <div className="bar flex-fill"></div>
+                                        <div className="point">
+                                            <div className="circle"></div>
+                                            <div className="desc">
+                                                <div className="a">2. Briefing</div>
+                                                <div className="b">WAITING</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
