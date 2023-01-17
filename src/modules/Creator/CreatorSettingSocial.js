@@ -81,7 +81,7 @@ class CreatorSettingSocial extends Component {
                         <div className="col-md-9">
                             <div className="card-custom p-3">
                                 <div className="simple">
-                                    <div className="title2 text-white">SOCIAL MEDIA</div>
+                                    <div className="tit2 text-white">SOCIAL MEDIA</div>
                                     <div className="sep mt-2"></div>
                                     {!this.state.integraded ?
                                         <div className="mt-3">
@@ -100,7 +100,7 @@ class CreatorSettingSocial extends Component {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="title2 text-white mt-3">VALUES</div>
+                                            <div className="tit2 text-white mt-3">VALUES</div>
                                             <div className="description text-steelo-l2 mt-2">This data is important for our search and fit engine. If the fields stay empty, the prices suggested by Rain will appear instead.</div>
                                             <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
                                                 <div className="form-row">

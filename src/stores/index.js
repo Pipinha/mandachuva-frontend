@@ -1,7 +1,7 @@
 import { createStore, applyMiddleware } from 'redux'
 import thunkMiddleware from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
-// import { PROFILE_COMPANY } from '../constants/Config'
+import { PROFILE_CREATOR } from '../constants/Config'
 
 const composedEnhancer = composeWithDevTools(applyMiddleware(thunkMiddleware))
 
@@ -11,12 +11,12 @@ const initialState = {
     error: '',
     success: '',
     session: {
-        // logged: true,
-        // photo: '/assets/img/user-company.png',
-        // profileId: PROFILE_COMPANY,
-        logged: false,
-        photo: null,
-        profileId: null,
+        logged: true,
+        photo: '/assets/img/user-company.png',
+        profileId: PROFILE_CREATOR,
+        // logged: false,
+        // photo: null,
+        // profileId: null,
     },
 }
 

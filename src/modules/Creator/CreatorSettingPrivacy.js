@@ -79,7 +79,7 @@ class CreatorSettingPrivacy extends Component {
                         <div className="col-md-9">
                             <div className="card-custom p-3">
                                 <div className="simple">
-                                    <div className="title2 text-white">PRIVACY AND SECURITY</div>
+                                    <div className="tit2 text-white">PRIVACY AND SECURITY</div>
                                     <div className="sep mt-2"></div>
                                     <form onSubmit={e => { e.preventDefault(); this.submit() }} className="mt-3">
                                         <div className="form-row">
@@ -100,7 +100,7 @@ class CreatorSettingPrivacy extends Component {
                                                 <input type="password" className="form-control with-label" value={this.state.password} onChange={(e) => this.setState({ password: e.target.value })} placeholder="Password" />
                                             </div>
                                         </div>
-                                        <div className="title2 text-white mt-6">RAINBOT NOTIFICATION</div>
+                                        <div className="tit2 text-white mt-6">RAINBOT NOTIFICATION</div>
                                         <div className="sep mt-2"></div>
                                         <div className="form-row mt-2">
                                             <div className="col-md-4">
