@@ -102,7 +102,7 @@ class CompanyOrderView extends Component {
                                         <div className="point">
                                             <div className="circle"></div>
                                             <div className="desc">
-                                                <div className="a">2. Briefing</div>
+                                                <div className="a">3. Creation</div>
                                                 <div className="b">WAITING</div>
                                             </div>
                                         </div>

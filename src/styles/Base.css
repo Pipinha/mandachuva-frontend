@@ -1280,7 +1280,7 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 11px;
     text-align: center;
     letter-spacing: 0.1px;
-    color: #fff;
+    color: #273539;
 }
 
 .page-company-order-view .progress-stage .timeline .point .desc .b {
@@ -1291,6 +1291,22 @@ font-family: 'Roboto Condensed', sans-serif;
     line-height: 12px;
     text-align: center;
     letter-spacing: 0.1px;
+    color: #273539;
+}
+
+.page-company-order-view .progress-stage .timeline .point.active .desc .a {
+    color: #FFFFFF;
+}
+
+.page-company-order-view .progress-stage .timeline .point.active.ok .desc .a {
+    color: #999999;
+}
+
+.page-company-order-view .progress-stage .timeline .point.active .desc .b {
+    color: #5D818D;
+}
+
+.page-company-order-view .progress-stage .timeline .point.active.ok .desc .b {
     color: #42585F;
 }
 
