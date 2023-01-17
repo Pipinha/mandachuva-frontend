@@ -38,6 +38,7 @@ class CreatorBrandList extends Component {
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-6">
+                                    <Link to={'/creator/search'} className="txt mr-4">SEARCH</Link>
                                     <Link to={'/creator/rainjobs'} className="txt mr-4">RAINJOBS</Link>
                                     <Link to={'/creator/brand'} className="txt active mr-4">BRANDS</Link>
                                     <Link to={'/creator/creators'} className="txt mr-4">CREATORS</Link>

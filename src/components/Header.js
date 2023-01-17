@@ -34,7 +34,11 @@ class Header extends Component {
         let search = this.state.search
         this.setState({ search: '' })
         history.push('/company/search?search=' + search)
-        
+    }
+    creatorSearch() {
+        let search = this.state.search
+        this.setState({ search: '' })
+        history.push('/creator/search?search=' + search)
     }
     render() {
         return (
@@ -70,7 +74,7 @@ class Header extends Component {
                                     <div className="col-md-6 d-none d-sm-block">
                                         <div className="search">
                                             <div className="input-icon">
-                                                <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} onChange={e => this.setState({ search: e.target.value })} value={this.state.search} /><Icon icon="material-symbols:search" width={20} height={20} />
+                                                <input type="text" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} onChange={e => this.setState({ search: e.target.value })} value={this.state.search} /><Icon icon="material-symbols:search" width={20} height={20} onClick={_ => this.creatorSearch()} />
                                             </div>
                                         </div>
                                     </div>
@@ -138,7 +142,7 @@ class Header extends Component {
                                     <div className="col-md-6 d-none d-sm-block">
                                         <div className="search">
                                             <div className="input-icon">
-                                                <input type="search" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} onChange={e => this.setState({ search: e.target.value })} value={this.state.search} /><Icon icon="material-symbols:search" width={20} height={20} onClick={_ => this.companySearch()} />
+                                                <input type="text" className="form-control text-gray-20" placeholder={this.props.store.session.profileId === PROFILE_CREATOR ? 'Search jobs...' : 'Search creators...'} onChange={e => this.setState({ search: e.target.value })} value={this.state.search} /><Icon icon="material-symbols:search" width={20} height={20} onClick={_ => this.companySearch()} />
                                             </div>
                                         </div>
                                     </div>

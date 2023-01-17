@@ -32,6 +32,7 @@ import CompanyCreatorView from "../modules/Company/Creator/CompanyCreatorView"
 import CompanyCreatorPostStep1 from "../modules/Company/Creator/CompanyCreatorPostStep1"
 import CompanyCreatorPostStep2 from "../modules/Company/Creator/CompanyCreatorPostStep2"
 import CompanyCreatorPostStep3 from "../modules/Company/Creator/CompanyCreatorPostStep3"
+import CreatorSearch from "../modules/Creator/CreatorSearch"
 
 const routes = [
     {
@@ -187,6 +188,14 @@ const routes = [
                 exact: true,
                 path: '/creator/rainjobs',
                 component: CreatorJobList,
+                auth: true,
+                profileId: PROFILE_CREATOR,
+                public: null
+            },
+            {
+                exact: true,
+                path: '/creator/search',
+                component: CreatorSearch,
                 auth: true,
                 profileId: PROFILE_CREATOR,
                 public: null
