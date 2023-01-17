@@ -119,40 +119,40 @@ class CompanyOrderView extends Component {
                                                 <div className="b">03/10/2022</div>
                                             </div>
                                         </div>
-                                        <div className="bar ok flex-fill"></div>
-                                        <div className="point active">
+                                        <div className={'bar ' + (this.state.step >= 1 ? ' ok ' : '') + ' flex-fill'}></div>
+                                        <div className={'point ' + (this.state.step === 1 ? ' active ' : (this.state.step > 1 ? ' active ok ' : ''))}>
                                             <div className="circle"></div>
                                             <div className="desc">
                                                 <div className="a">2. Briefing</div>
                                                 <div className="b">WAITING</div>
                                             </div>
                                         </div>
-                                        <div className="bar flex-fill"></div>
-                                        <div className="point">
+                                        <div className={'bar ' + (this.state.step >= 2 ? ' ok ' : '') + ' flex-fill'}></div>
+                                        <div className={'point ' + (this.state.step === 2 ? ' active ' : (this.state.step > 2 ? ' active ok ' : ''))}>
                                             <div className="circle"></div>
                                             <div className="desc">
                                                 <div className="a">3. Creation</div>
                                                 <div className="b">WAITING</div>
                                             </div>
                                         </div>
-                                        <div className="bar flex-fill"></div>
-                                        <div className="point">
+                                        <div className={'bar ' + (this.state.step >= 3 ? ' ok ' : '') + ' flex-fill'}></div>
+                                        <div className={'point ' + (this.state.step === 3 ? ' active ' : (this.state.step > 3 ? ' active ok ' : ''))}>
                                             <div className="circle"></div>
                                             <div className="desc">
                                                 <div className="a">2. Briefing</div>
                                                 <div className="b">WAITING</div>
                                             </div>
                                         </div>
-                                        <div className="bar flex-fill"></div>
-                                        <div className="point">
+                                        <div className={'bar ' + (this.state.step >= 4 ? ' ok ' : '') + ' flex-fill'}></div>
+                                        <div className={'point ' + (this.state.step === 4 ? ' active ' : (this.state.step > 4 ? ' active ok ' : ''))}>
                                             <div className="circle"></div>
                                             <div className="desc">
                                                 <div className="a">2. Briefing</div>
                                                 <div className="b">WAITING</div>
                                             </div>
                                         </div>
-                                        <div className="bar flex-fill"></div>
-                                        <div className="point">
+                                        <div className={'bar ' + (this.state.step >= 5 ? ' ok ' : '') + ' flex-fill'}></div>
+                                        <div className={'point ' + (this.state.step === 5 ? ' active ' : (this.state.step > 5 ? ' active ok ' : ''))}>
                                             <div className="circle"></div>
                                             <div className="desc">
                                                 <div className="a">2. Briefing</div>
@@ -162,34 +162,57 @@ class CompanyOrderView extends Component {
                                     </div>
                                 </div>
                                 <div className="stage">
-                                    <div className="step1 d-flex align-items-center">
-                                        <div className="stage-tit">
-                                            <div className="a">SET UP THE DELIVERY</div>
-                                            <div className="b mt-2">Talk to the creator to set up what needs to be done. When the both sides are ok, go to the next step. </div>
+                                    {this.state.step === 1 ? (
+                                        <div className="step1 d-flex align-items-center">
+                                            <div className="stage-tit">
+                                                <div className="a">SET UP THE DELIVERY</div>
+                                                <div className="b mt-2">Talk to the creator to set up what needs to be done. When the both sides are ok, go to the next step. </div>
+                                            </div>
+                                            <div className="dates d-flex justify-content-around ml-3">
+                                                <div>
+                                                    <label className="text-steelo-l2">LAST POST DELIVERY</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="AAAA-MM-YYYY" />
+                                                </div>
+                                                <div className="ml-3">
+                                                    <label className="text-steelo-l2">LAST PUBLICATION</label>
+                                                    <input type="text" className="form-control with-label3" placeholder="AAAA-MM-YYYY" />
+                                                </div>
+                                            </div>
+                                            <div className="opts flex-fill px-3">
+                                                <div className="chk d-flex justify-content-center">
+                                                    <label className="custom-checkbox">
+                                                        <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
+                                                        <span className="checkmark"></span>
+                                                        <span className="text-white">I confirm the dates</span>
+                                                    </label>
+                                                </div>
+                                                <div className="btns">
+                                                    <button type="button" className="btn btn-block btn-a with-shadow" onClick={_ => this.setState({ step: this.state.step + 1 })}>Go to creation</button>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div className="dates d-flex justify-content-around ml-3">
-                                            <div>
-                                                <label className="text-steelo-l2">LAST POST DELIVERY</label>
-                                                <input type="text" className="form-control with-label3" placeholder="AAAA-MM-YYYY" />
+                                    ) : ''}
+                                    {this.state.step === 2 ? (
+                                        <div className="d-flex align-items-center">
+                                            <div className="stage-tit">
+                                                <div className="a">CREATION AND REVISION</div>
+                                                <div className="b mt-2">Talk to the creator to creator to check if all the posts are correct what both established in briefing.</div>
                                             </div>
-                                            <div className="ml-3">
-                                                <label className="text-steelo-l2">LAST PUBLICATION</label>
-                                                <input type="text" className="form-control with-label3" placeholder="AAAA-MM-YYYY" />
+                                            <div className="flex-fill"></div>
+                                            <div className="opts px-3">
+                                                <div className="chk d-flex justify-content-center">
+                                                    <label className="custom-checkbox">
+                                                        <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
+                                                        <span className="checkmark"></span>
+                                                        <span className="text-white">I aprovee the posts</span>
+                                                    </label>
+                                                </div>
+                                                <div className="btns">
+                                                    <button type="button" className="btn btn-block btn-a with-shadow" onClick={_ => this.setState({ step: this.state.step + 1 })}>Go to publish</button>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div className="opts flex-fill px-3">
-                                            <div className="chk d-flex justify-content-center">
-                                                <label className="custom-checkbox">
-                                                    <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
-                                                    <span className="checkmark"></span>
-                                                    <span className="text-white">I confirm the dates</span>
-                                                </label>
-                                            </div>
-                                            <div className="btns">
-                                                <button type="button" className="btn btn-block btn-a with-shadow">Go to creation</button>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ) : ''}
                                 </div>
                             </div>
 
