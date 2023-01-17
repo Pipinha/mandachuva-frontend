@@ -154,7 +154,7 @@ class CompanyOrderView extends Component {
                                             </div>
                                         </div>
                                         <div className="opts flex-fill px-3">
-                                            <div className="chk">
+                                            <div className="chk d-flex justify-content-center">
                                                 <label class="custom-checkbox">
                                                     <input type="checkbox" checked={this.state.confirm} onChange={e => this.setState({ confirm: e.target.checked })} />
                                                     <span class="checkmark"></span>
@@ -166,6 +166,56 @@ class CompanyOrderView extends Component {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+
+                            <div className="card-msg mt-4">
+                                <div className="card-msg-tit d-flex justify-content-between align-items-center">
+                                    <div className="a">MESSENGER</div>
+                                    <div className="opts d-flex align-items-center">
+                                        <div className="a">
+                                            <select className="form-control with-label3">
+                                                <option value={'0'}>Briefing</option>
+                                            </select>
+                                        </div>
+                                        <div className="b ml-3">
+                                            <input type="text" placeholder="Search in..." className="form-control with-label4" />
+                                            <Icon icon="material-symbols:search" width={24} height={24} />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card-msg-list">
+                                    <div className="card-msg-item d-flex">
+                                        <div className="card-msg-content d-flex align-items-start">
+                                            <div className="card-msg-photo">
+                                                <img src="/assets/img/user-creator.png" alt="Rainmakr" />
+                                            </div>
+                                            <div className="card-msg-text ml-3">
+                                                Hello, whatup man :D
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="card-msg-item d-flex justify-content-end">
+                                        <div className="card-msg-content d-flex">
+                                            <div className="card-msg-text text-right">Ok ?</div>
+                                            <div className="card-msg-photo ml-3">
+                                                <img src="/assets/img/user-company.png" alt="Rainmakr" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="card-msg-form">
+                                    <form className="d-flex align-items-center">
+                                        <div className="bt-file">
+                                            <button type="button" className="btn btn-submit btn-lg"><Icon icon="mdi:attachment-vertical" width={24} height={24} /></button>
+                                        </div>
+                                        <div className="field-text flex-fill">
+                                            <input type="text" className="form-control with-label3" placeholder="Type your message..." />
+                                        </div>
+                                        <div className="bt-send">
+                                            <button type="submit" className="btn btn-submit btn-lg">Send</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

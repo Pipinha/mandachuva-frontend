@@ -1336,8 +1336,8 @@ font-family: 'Roboto Condensed', sans-serif;
     font-size  : 14px;
     line-height: 19px;
     text-align : justify;
-    color: #fff;
-    max-width: 210px;
+    color      : #fff;
+    max-width  : 210px;
 }
 
 .page-company-order-view .stage .dates {
@@ -2216,6 +2216,79 @@ font-family: 'Roboto Condensed', sans-serif;
     cursor     : pointer;
 }
 
+.card-msg {
+    background-color     : #0E181A;
+    -webkit-border-radius: 8px;
+    -moz-border-radius   : 8px;
+    border-radius        : 8px;
+}
+
+.card-msg .card-msg-tit {
+    background-color               : #273539;
+    padding                        : 15px;
+    -webkit-border-top-left-radius : 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft     : 8px;
+    -moz-border-radius-topright    : 8px;
+    border-top-left-radius         : 8px;
+    border-top-right-radius        : 8px;
+}
+
+.card-msg .card-msg-tit .a {
+    font-family   : 'Roboto';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 20px;
+    line-height   : 23px;
+    letter-spacing: 0.25px;
+    color         : #fff;
+}
+
+.card-msg .card-msg-tit .opts .a select {
+    width: 120px;
+}
+
+.card-msg .card-msg-tit .opts .b {
+    position: relative;
+}
+
+.card-msg .card-msg-tit .opts .b svg {
+    position  : absolute;
+    right     : 6px;
+    top       : 50%;
+    margin-top: -12px;
+    color     : #CCCCCC;
+    cursor    : pointer;
+}
+
+.card-msg .card-msg-list {
+    padding: 15px;
+}
+
+.card-msg .card-msg-list .card-msg-item {
+    padding-bottom: 2em;
+}
+
+.card-msg .card-msg-list .card-msg-item .card-msg-content .card-msg-photo {
+    margin-top: 5px;
+}
+
+.card-msg .card-msg-list .card-msg-item .card-msg-content .card-msg-photo img {
+    width : 50px;
+    height: auto;
+}
+
+.card-msg .card-msg-list .card-msg-item .card-msg-content .card-msg-text {
+    margin-top: 8px;
+    background-color     : #182123;
+    color                : #ccc;
+    padding              : 8px;
+    height               : auto;
+    -webkit-border-radius: 8px;
+    -moz-border-radius   : 8px;
+    border-radius        : 8px;
+}
+
 .fit-box {
     position           : absolute;
     background-image   : url(/public/assets/img/fit-box.png);
@@ -2382,6 +2455,15 @@ select.with-label3 {
     background-color: #182123;
 }
 
+input[type=text].with-label4,
+input[type=email].with-label4,
+input[type=password].with-label4,
+input[type=search].with-label4,
+select.with-label4 {
+    color           : #CCCCCC;
+    background-color: #42585F;
+}
+
 input[type="radio"] {
     /* Add if not using autoprefixer */
     -webkit-appearance: none;
@@ -2440,7 +2522,7 @@ input[type="radio"]:focus {
 }
 
 .custom-checkbox span {
-    position  : relative;
+    position: relative;
 }
 
 /* Hide the browser's default checkbox */
