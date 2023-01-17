@@ -2,31 +2,13 @@ import { Icon } from "@iconify/react";
 import { Component } from "react";
 import { connect } from "react-redux";
 import { Link, withRouter } from "react-router-dom";
-import Swal from "sweetalert2";
-import history from "../../../routes/history";
 
-class CompanyCreatorPostStep3 extends Component {
+class CompanyOrderView extends Component {
     constructor(props) {
         super(props)
 
         props.handlerHeader({
-            page: 'company-creator-post-step'
-        })
-
-        Swal.fire({
-            title: 'WELLL DONE!',
-            text: 'Contact the creator and set the briefing now!',
-            showDenyButton: false,
-            showCancelButton: false,
-            confirmButtonText: 'Say hello',
-            background: '#273539',
-            color: '#fff',
-            customClass: {
-                confirmButton: 'btn btn-e',
-            },
-            buttonsStyling: false,
-        }).then((result) => {
-            history.push('/company/order/3')
+            page: 'company-order-view'
         })
     }
     render() {
@@ -39,7 +21,7 @@ class CompanyCreatorPostStep3 extends Component {
                             <div className="row">
                                 <div className="col-md-3"></div>
                                 <div className="col-md-9">
-                                    <Link to={'/company/creator/post-step1/3'} className="a">READY TO POST {'>'} REVIEW {'>'} PAYMENT</Link>
+                                    <Link to={'/company/order/3'} className="a">ARIEL CHRISTINE {'>'} MORNING ROUTINE</Link>
                                 </div>
                             </div>
                         </div>
@@ -52,12 +34,6 @@ class CompanyCreatorPostStep3 extends Component {
                                 <div className="profile p-4">
                                     <div className="photo">
                                         <img src="/assets/img/user-creator.png" alt="Rainmakr" className="main" />
-                                        <div className="fit-box">
-                                            <div className="fit-box-in d-flex flex-column align-items-center justify-content-center">
-                                                <div className="fit-box-title text-white">FIT</div>
-                                                <div className="fit-box-perc text-white">80%</div>
-                                            </div>
-                                        </div>
                                     </div>
                                     <div className="name text-white text-center mt-4">ARIEL CHRISTINE</div>
                                     <div className="country-state2 text-center text-steelo-l2 mt-3">LOS ANGELES, CA</div>
@@ -97,25 +73,8 @@ class CompanyCreatorPostStep3 extends Component {
                         </div>
                         <div className="col-md-9 list-job">
                             <div className="back-to mt-1">
-                                <Link to={'/company/creator/3'} className="text-blueberry d-flex align-items-center"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={12} height={12} className="mr-1" /> Back to ready to post</Link>
+                                <Link to={'/company/profile'} className="text-blueberry d-flex align-items-center"><Icon icon="material-symbols:arrow-back-ios-new-rounded" width={12} height={12} className="mr-1" /> Back to dashboard</Link>
                             </div>
-                            <div className="progress-post d-flex align-items-center pt-3">
-                                <div className="point active ok">
-                                    <div className="circle"></div>
-                                    <div className="desc">Review</div>
-                                </div>
-                                <div className="step flex-fill"></div>
-                                <div className="point active ok">
-                                    <div className="circle"></div>
-                                    <div className="desc">Payment</div>
-                                </div>
-                                <div className="step flex-fill"></div>
-                                <div className="point active ok">
-                                    <div className="circle"></div>
-                                    <div className="desc">Finish</div>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -135,4 +94,4 @@ const mapDispatchToProps = dispatch => ({
     dispatch: dispatch
 })
 
-export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CompanyCreatorPostStep3))
+export default withRouter(connect(mapPropsToState, mapDispatchToProps)(CompanyOrderView))

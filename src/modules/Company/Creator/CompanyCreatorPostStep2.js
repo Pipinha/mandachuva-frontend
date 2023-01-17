@@ -25,7 +25,7 @@ class CompanyCreatorPostStep2 extends Component {
                             <div className="row">
                                 <div className="col-md-3"></div>
                                 <div className="col-md-9">
-                                    <Link to={'/company/creator/post-step1/3'} className="a active">READY TO POST {'>'} REVIEW {'>'} PAYMENT</Link>
+                                    <Link to={'/company/creator/post-step1/3'} className="a">READY TO POST {'>'} REVIEW {'>'} PAYMENT</Link>
                                 </div>
                             </div>
                         </div>

@@ -33,6 +33,7 @@ import CompanyCreatorPostStep1 from "../modules/Company/Creator/CompanyCreatorPo
 import CompanyCreatorPostStep2 from "../modules/Company/Creator/CompanyCreatorPostStep2"
 import CompanyCreatorPostStep3 from "../modules/Company/Creator/CompanyCreatorPostStep3"
 import CreatorSearch from "../modules/Creator/CreatorSearch"
+import CompanyOrderView from "../modules/Company/Order/CompanyOrderView"
 
 const routes = [
     {
@@ -40,6 +41,14 @@ const routes = [
         path: '/',
         component: Middleware,
         routes: [
+            {
+                exact: true,
+                path: '/company/order/:id',
+                component: CompanyOrderView,
+                auth: true,
+                profileId: PROFILE_COMPANY,
+                public: null
+            },
             {
                 exact: true,
                 path: '/company/creator/post-step3/:id',
