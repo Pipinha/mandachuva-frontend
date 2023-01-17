@@ -51,7 +51,7 @@ class CompanyCreatorList extends Component {
                     <div className="row">
                         <div className="col-md-9">
                             <div className="caption-sort d-flex justify-content-between align-items-center pb-2">
-                                <div className="caption text-white">BRANDS</div>
+                                <div className="caption text-white">CREATORS</div>
                                 <div className="sort text-steelo-l2">
                                     ORDER BY <Icon icon="material-symbols:arrow-drop-down" width={24} height={24} />
                                 </div>
