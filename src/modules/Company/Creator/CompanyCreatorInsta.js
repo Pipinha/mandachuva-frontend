@@ -12,6 +12,7 @@ class CompanyCreatorInsta extends Component {
         })
 
         this.state = {
+            posts: [{}, {}, {}, {}, {}, {}]
         }
     }
     render() {
@@ -82,7 +83,31 @@ class CompanyCreatorInsta extends Component {
                             </div>
                         </div>
                         <div className="col-md-9 list-job pt-3">
-                            
+                            <div className="row">
+                                {this.state.posts.map(_ => (
+                                    <div className="col-md-4 insta-item mb-4">
+                                        <div className="insta-item-in">
+                                            <div className="img">
+                                                <img src="/assets/img/img-insta.png" alt="Rainmakr" className="img-fluid" />
+                                            </div>
+                                            <div className="option d-flex justify-content-center p-3">
+                                                <div className="option-item">
+                                                    <Icon icon="ic:outline-remove-red-eye" width={32} height={32} /><br />
+                                                    100
+                                                </div>
+                                                <div className="option-item ml-3">
+                                                    <Icon icon="mdi:cards-heart-outline" width={32} height={32} /><br />
+                                                    100
+                                                </div>
+                                                <div className="option-item ml-3">
+                                                    <Icon icon="mdi:cards-heart-outline" width={32} height={32} /><br />
+                                                    100
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </div>

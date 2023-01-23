@@ -1,7 +1,7 @@
 body,
 html,
 #root {
-    height  : 100%;
+    height: 100%;
     overflow: hidden !important;
 }
 
@@ -12,9 +12,9 @@ font-family: 'Roboto Condensed', sans-serif;
 
 /* HEADERS AND FOOTERS */
 .header-default {
-    height  : 56px;
+    height: 56px;
     position: relative;
-    z-index : 2;
+    z-index: 2;
 }
 
 .header-default .container,
@@ -31,11 +31,11 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header-default.logged {
-    background-color  : #273539;
+    background-color: #273539;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position          : relative;
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: relative;
 }
 
 .header-default.logged .container,
@@ -44,69 +44,69 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header-default.logged .search input {
-    font-family     : 'Roboto', sans-serif;
-    font-weight     : 300;
-    font-size       : 16px;
-    color           : #ccc;
-    letter-spacing  : 0.5px;
-    border          : none;
-    outline         : none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ccc;
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
     background-color: #42585F;
 }
 
 .header-default.logged .search .input-icon svg {
-    color : #ccc;
+    color: #ccc;
     cursor: pointer;
 }
 
 .header-default.logged .search input:focus {
-    outline         : none;
-    box-shadow      : none !important;
+    outline: none;
+    box-shadow: none !important;
     background-color: #42585F;
 }
 
 .header-default.logged .search input::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
-    font-family   : 'Roboto', sans-serif;
-    font-weight   : 300;
-    font-size     : 16px;
-    color         : #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ccc;
     letter-spacing: 0.5px;
-    opacity       : 1;
+    opacity: 1;
     /* Firefox */
 }
 
 .header-default.logged .search input:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
-    font-family   : 'Roboto', sans-serif;
-    font-weight   : 300;
-    font-size     : 16px;
-    color         : #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ccc;
     letter-spacing: 0.5px;
 }
 
 .header-default.logged .search input::-ms-input-placeholder {
     /* Microsoft Edge */
-    font-family   : 'Roboto', sans-serif;
-    font-weight   : 300;
-    font-size     : 16px;
-    color         : #ccc;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #ccc;
     letter-spacing: 0.5px;
 }
 
 .header-default.logged .menu .menu-item {
-    color      : #ccc;
+    color: #ccc;
     margin-left: 20px;
 }
 
 .header-default.logged .menu .profile {
     margin-left: 20px;
-    cursor     : pointer;
-    position   : relative;
+    cursor: pointer;
+    position: relative;
 }
 
 .header-default.logged .menu .profile img {
-    height : 32px;
+    height: 32px;
     opacity: 0.6;
 }
 
@@ -119,56 +119,56 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header-default.logged .menu .profile .profile-menu {
-    display         : none;
-    position        : absolute;
-    top             : 100%;
-    right           : 0;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
     background-color: #273539;
-    z-index         : 4;
-    text-align      : right;
-    min-width       : 150px;
-    padding         : 20px;
+    z-index: 4;
+    text-align: right;
+    min-width: 150px;
+    padding: 20px;
 }
 
 .header-default.logged .menu .profile .profile-menu a {
-    display       : block;
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 16px;
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.5px;
-    color         : #CCCCCC;
+    color: #CCCCCC;
 }
 
 .header-default.logged .menu .profile .profile-menu a:hover {
     text-decoration: none;
-    color          : #3CE9FF;
+    color: #3CE9FF;
 }
 
 .header-default.logged .menu-mob {
-    cursor             : pointer;
+    cursor: pointer;
     -webkit-user-select: none;
     /* Safari */
-    -ms-user-select    : none;
+    -ms-user-select: none;
     /* IE 10 and IE 11 */
-    user-select        : none;
+    user-select: none;
     /* Standard syntax */
 }
 
 .header-default.logged .menu-mob-sub {
-    position          : absolute;
-    left              : 0;
-    right             : 0;
-    background-color  : #273539;
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #273539;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    -moz-box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow        : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .header-default.logged .menu-mob-sub .menu-mob-item {
     border-bottom: 1px solid #42585F;
-    padding      : 8px 0;
+    padding: 8px 0;
 }
 
 .header-default.logged .menu-mob-sub .menu-mob-item:last-child {
@@ -180,11 +180,11 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .header-default.logged .menu-mob-sub .menu-mob-item a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.5px;
 }
 
@@ -198,18 +198,18 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .footer-logged .links a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 200%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 200%;
     letter-spacing: 0.1px;
-    display       : inline-block;
+    display: inline-block;
 }
 
 /* PAGES */
 .page {
-    height  : 100%;
+    height: 100%;
     overflow: auto;
 }
 
@@ -219,42 +219,42 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .title {
-    color         : #12CCE4;
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-size     : 48px;
-    line-height   : 48px;
-    font-weight   : 400;
+    color: #12CCE4;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
     letter-spacing: -2x;
 }
 
 .page-home .caption {
-    font-family   : 'Roboto', sans-serif;
-    font-size     : 16px;
-    line-height   : 25px;
-    color         : #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
     letter-spacing: -0.5px;
 }
 
 .page-home .block-2 .box-brand {
     background-color: #273539;
-    padding         : 40px 30px;
+    padding: 40px 30px;
 }
 
 .page-home .block-2 .bg-brand {
     position: relative;
-    width   : 390px;
+    width: 390px;
 }
 
 .page-home .block-2 .title-over {
-    color         : #FF6B00;
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-size     : 38px;
-    line-height   : 38px;
-    font-weight   : 400;
+    color: #FF6B00;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 400;
     letter-spacing: -2x;
-    position      : absolute;
-    top           : 88px;
-    left          : 35px;
+    position: absolute;
+    top: 88px;
+    left: 35px;
 }
 
 .page-home .block-2 .adjust {
@@ -266,20 +266,20 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .block-3 .box-info .title-links {
-    color         : #ED1E79;
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-size     : 40px;
-    line-height   : 38px;
-    font-weight   : 400;
+    color: #ED1E79;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    line-height: 38px;
+    font-weight: 400;
     letter-spacing: -2x;
 }
 
 .page-home .block-3 .box-info .title-jobs {
-    color         : #12CCE4;
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-size     : 40px;
-    line-height   : 38px;
-    font-weight   : 400;
+    color: #12CCE4;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 40px;
+    line-height: 38px;
+    font-weight: 400;
     letter-spacing: -2x;
 }
 
@@ -288,11 +288,11 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .block-3 .box-register .title-register {
-    color         : #fff;
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-size     : 48px;
-    line-height   : 48px;
-    font-weight   : 400;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 400;
     letter-spacing: -2px;
 }
 
@@ -305,13 +305,13 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-home .block-5 .brands-title {
-    color         : #fff;
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-size     : 38px;
-    line-height   : 38px;
-    font-weight   : 400;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 400;
     letter-spacing: -2px;
-    margin        : 0 48px;
+    margin: 0 48px;
 }
 
 .page-home .block-5 .brands-title .c1 {
@@ -323,9 +323,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-account-recovery,
 .page-creator-rainlink,
 .page-register {
-    background-image : url(/public/assets/img/bg-login.png);
+    background-image: url(/public/assets/img/bg-login.png);
     background-repeat: no-repeat;
-    background-size  : 100% auto;
+    background-size: 100% auto;
 }
 
 .page-account-login .box-central,
@@ -333,8 +333,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-account-recovery .box-central,
 .page-register .box-central,
 .page-creator-rainlink .box-central {
-    background   : #273539;
-    width        : 360px;
+    background: #273539;
+    width: 360px;
     border-radius: 8px;
 }
 
@@ -353,14 +353,14 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-register .radio-profile {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 400;
-    font-size     : 16px;
-    line-height   : 19px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
     /* identical to box height */
     letter-spacing: 0.5px;
-    color         : #fff;
+    color: #fff;
 }
 
 .page-account-login .box-central .line-sep,
@@ -415,15 +415,15 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-profile .jobs-options .menu a,
 .page-company-profile .jobs-options .menu a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
     text-transform: uppercase;
-    color         : #42585F;
-    margin-right  : 20px;
+    color: #42585F;
+    margin-right: 20px;
 }
 
 .page-creator-profile .jobs-options .menu a.active,
@@ -433,62 +433,62 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-profile .jobs-options .menu a:hover,
 .page-company-profile .jobs-options .menu a:hover {
-    color          : #fff;
+    color: #fff;
     text-decoration: none;
 }
 
 .page-creator-profile .jobs-options .sort,
 .page-company-profile .jobs-options .sort {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 10px;
+    font-size: 10px;
     line-height: 12px;
 }
 
 .page-creator-profile .jobs-list .item,
 .page-company-profile .jobs-list .item {
-    background-color     : #0E181A;
+    background-color: #0E181A;
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .page-creator-profile .jobs-list .item .item-main,
 .page-company-profile .jobs-list .item .item-main {
-    padding : 15px;
+    padding: 15px;
     position: relative;
 }
 
 .page-creator-profile .jobs-list .item .item-main .company .name,
 .page-company-profile .jobs-list .item .item-main .company .name {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
     text-transform: uppercase;
 }
 
 .page-creator-profile .jobs-list .item .item-main .company .description,
 .page-company-profile .jobs-list .item .item-main .company .description {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
     /* identical to box height */
     letter-spacing: 0.5px;
 }
 
 .page-creator-profile .jobs-list .item .item-main .status,
 .page-company-profile .jobs-list .item .item-main .status {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 0.1px;
 }
 
@@ -499,23 +499,23 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-profile .jobs-list .item .item-main .link .msg.new:before,
 .page-company-profile .jobs-list .item .item-main .link .msg.new:before {
-    position             : absolute;
-    content              : ' ';
-    width                : 10px;
-    height               : 10px;
+    position: absolute;
+    content: ' ';
+    width: 10px;
+    height: 10px;
     -webkit-border-radius: 5px;
-    -moz-border-radius   : 5px;
-    border-radius        : 5px;
-    background-color     : #EEBA00;
-    right                : 0;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    background-color: #EEBA00;
+    right: 0;
 }
 
 .page-creator-profile .jobs-list .item .item-main .link a,
 .page-company-profile .jobs-list .item .item-main .link a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
     margin-left: 30px;
 }
@@ -523,10 +523,10 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-profile .jobs-list .item .item-main .btn-show-hide,
 .page-company-profile .jobs-list .item .item-main .btn-show-hide {
     position: absolute;
-    left    : 0;
-    right   : 0;
-    bottom  : -5px;
-    color   : #5D818D;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+    color: #5D818D;
 }
 
 .page-creator-profile .jobs-list .item .item-main .btn-show-hide.open,
@@ -546,54 +546,54 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point,
 .page-company-profile .jobs-list .item .item-hide .timeline .timeline-point {
-    width                : 24px;
-    height               : 24px;
-    border               : 3px solid #273539;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #273539;
     -webkit-border-radius: 12px;
-    -moz-border-radius   : 12px;
-    border-radius        : 12px;
-    display              : flex;
-    justify-content      : center;
-    align-items          : center;
-    position             : relative;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .description,
 .page-company-profile .jobs-list .item .item-hide .timeline .timeline-point .description {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.1px;
-    position      : absolute;
-    width         : 72px;
-    top           : 30px;
-    text-align    : center;
+    position: absolute;
+    width: 72px;
+    top: 30px;
+    text-align: center;
 }
 
 .page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .date,
 .page-company-profile .jobs-list .item .item-hide .timeline .timeline-point .date {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 0.1px;
-    position      : absolute;
-    width         : 72px;
-    top           : 45px;
-    text-align    : center;
+    position: absolute;
+    width: 72px;
+    top: 45px;
+    text-align: center;
 }
 
 .page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point .bal,
 .page-company-profile .jobs-list .item .item-hide .timeline .timeline-point .bal {
-    width                : 12px;
-    height               : 12px;
-    background-color     : #5D818D;
+    width: 12px;
+    height: 12px;
+    background-color: #5D818D;
     -webkit-border-radius: 6px;
-    -moz-border-radius   : 6px;
-    border-radius        : 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 .page-creator-profile .jobs-list .item .item-hide .timeline .timeline-point.error .bal,
@@ -608,8 +608,8 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-profile .jobs-list .item .item-hide .timeline .timeline-bar,
 .page-company-profile .jobs-list .item .item-hide .timeline .timeline-bar {
-    flex            : 1;
-    height          : 3px;
+    flex: 1;
+    height: 3px;
     background-color: #273539;
 }
 
@@ -630,7 +630,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-brand .title,
 .page-company-creator .title {
     position: relative;
-    height  : 130px;
+    height: 130px;
     overflow: hidden;
 }
 
@@ -650,7 +650,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-search .title .bg,
 .page-company-brand .title .bg,
 .page-company-creator .title .bg {
-    width : 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -671,9 +671,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-brand .title .infos,
 .page-company-creator .title .infos {
     position: absolute;
-    left    : 0;
-    right   : 0;
-    bottom  : 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .page-creator-setting .title .infos .txt,
@@ -692,18 +692,18 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-search .title .infos .txt,
 .page-company-brand .title .infos .txt,
 .page-company-creator .title .infos .txt {
-    display        : inline-block;
-    font-family    : 'Roboto';
-    font-style     : normal;
-    font-weight    : 700;
-    font-size      : 24px;
-    line-height    : 28px;
-    letter-spacing : 0.25px;
-    text-transform : uppercase;
+    display: inline-block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    text-transform: uppercase;
     text-decoration: none;
-    color          : #999999;
-    border-bottom  : 3px solid transparent;
-    padding-bottom : 8px;
+    color: #999999;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
 }
 
 .page-creator-setting .title .infos .txt.active,
@@ -721,13 +721,13 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-brand .title .infos .txt.active,
 .page-company-creator .title .infos .txt.active {
     border-bottom: 3px solid #fff;
-    color        : #fff !important;
+    color: #fff !important;
 }
 
 .page-creator-job-view .title .infos .txt.active,
 .page-company-job-view .title .infos .txt.active {
     border-bottom: 3px solid transparent;
-    color        : #fff !important;
+    color: #fff !important;
 }
 
 .page-creator-setting-social .btn-insta {
@@ -736,9 +736,9 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-setting-social .integraded-ok .status .infos .a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
@@ -748,55 +748,55 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-setting-social .integraded-ok .status .infos .b .l,
 .page-creator-setting-social .integraded-ok .status .infos .b .r {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 0.5px;
 }
 
 .page-creator-setting-social .integraded-ok .description {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
-    text-align : justify;
-    width      : 344px;
+    text-align: justify;
+    width: 344px;
 }
 
 .page-creator-post-edit .post-list .menu-store .menu a.active,
 .page-creator-post-list .post-list .menu-store .menu a.active {
-    color        : #fff;
+    color: #fff;
     border-bottom: 3px solid #fff;
 }
 
 .page-creator-post-edit .post-list .menu-store .menu a,
 .page-creator-post-list .post-list .menu-store .menu a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 24px;
-    line-height   : 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.25px;
     text-transform: uppercase;
-    color         : #999999;
+    color: #999999;
     padding-bottom: 5px;
 }
 
 .page-creator-post-edit .post-list .menu-store .menu a:hover,
 .page-creator-post-list .post-list .menu-store .menu a:hover {
     text-decoration: none;
-    color          : #fff;
+    color: #fff;
 }
 
 .page-creator-post-list .post-list .menu-store .store .a,
 .page-creator-post-list .post-list .menu-store .store .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
@@ -805,30 +805,30 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-rainlink .profile .name {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
     text-transform: uppercase;
 }
 
 .page-creator-rainlink .profile .country-state {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.5px;
 }
 
 .page-creator-rainlink .profile .segment {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.5px;
 }
 
@@ -842,31 +842,31 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-creator-rainlink .profile .scores .scores-item .a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
 .page-creator-rainlink .profile .scores .scores-item .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
 .page-creator-rainlink .profile .social-links a {
-    display    : inline-block;
+    display: inline-block;
     margin-left: 15px;
 }
 
 .page-creator-rainlink .profile .caption {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.5px;
 }
 
@@ -887,11 +887,11 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-search .caption-sort .caption,
 .page-company-brand .caption-sort .caption,
 .page-company-creator .caption-sort .caption {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 24px;
-    line-height   : 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.25px;
     text-transform: uppercase;
 }
@@ -904,11 +904,11 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-brand .caption-sort .sort,
 .page-company-creator .caption-sort .sort {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 10px;
+    font-size: 10px;
     line-height: 12px;
-    text-align : right;
+    text-align: right;
 }
 
 .page-creator-brand-view .title2,
@@ -918,7 +918,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-creator-insta .title2,
 .page-company-order-view .title2 {
     position: relative;
-    height  : 190px;
+    height: 190px;
     overflow: hidden;
 }
 
@@ -928,7 +928,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-creator-post-step .title2 .bg,
 .page-company-creator-insta .title2 .bg,
 .page-company-order-view .title2 .bg {
-    width : 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -939,10 +939,10 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-creator-insta .title2 .infos,
 .page-company-order-view .title2 .infos {
     position: absolute;
-    left    : 0;
-    right   : 0;
-    bottom  : 11px;
-    z-index : 2;
+    left: 0;
+    right: 0;
+    bottom: 11px;
+    z-index: 2;
 }
 
 .page-creator-brand-view .title2 .infos .a,
@@ -951,14 +951,14 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-creator-post-step .title2 .infos .a,
 .page-company-creator-insta .title2 .infos .a,
 .page-company-order-view .title2 .infos .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 24px;
-    line-height   : 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.25px;
     text-transform: uppercase;
-    color         : #fff;
+    color: #fff;
 }
 
 .page-creator-brand-view .title2 .infos .a:hover,
@@ -976,7 +976,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-creator-post-step .title2 .infos .a.active,
 .page-company-creator-insta .title2 .infos .a.active,
 .page-company-order-view .title2 .infos .a.active {
-    border-bottom : 3px solid #fff;
+    border-bottom: 3px solid #fff;
     padding-bottom: 8px;
 }
 
@@ -986,8 +986,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-creator-post-step .wrap,
 .page-company-creator-insta .wrap,
 .page-company-order-view .wrap {
-    position  : relative;
-    z-index   : 1;
+    position: relative;
+    z-index: 1;
     margin-top: -160px;
 }
 
@@ -1007,14 +1007,14 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-company-creator-view .posts-item .in,
 .page-company-creator-post-step .posts-item .in {
-    background-color     : #0E181A;
-    padding              : 15px;
+    background-color: #0E181A;
+    padding: 15px;
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
-    box-shadow           : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow   : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow      : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .page-company-creator-view .posts-item .in .infos .titles,
@@ -1024,11 +1024,11 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-company-creator-view .posts-item .in .infos .titles .a,
 .page-company-creator-post-step .posts-item .in .infos .titles .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 24px;
-    line-height   : 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.25px;
 }
 
@@ -1037,11 +1037,11 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .desc {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.5px;
 }
 
@@ -1055,21 +1055,21 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
-    color      : #fff;
+    color: #fff;
 }
 
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
-    text-align : right;
-    color      : #fff;
+    text-align: right;
+    color: #fff;
 }
 
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .c select {
@@ -1077,42 +1077,42 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-company-creator-view .posts-item .in .infos .prices-option .option .total .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
-    text-align    : right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
     letter-spacing: 0.5px;
-    color         : #5D818D;
+    color: #5D818D;
 }
 
 .page-company-creator-view .posts-item .in .infos .prices-option .option .total .b {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 24px;
-    line-height   : 28px;
-    text-align    : right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: right;
     letter-spacing: 0.25px;
-    color         : #fff;
+    color: #fff;
 }
 
 .page-company-creator-post-step .posts-item .in .infos .review .resume {
-    width      : 180px;
+    width: 180px;
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 20px;
-    color      : #fff;
+    color: #fff;
 }
 
 .page-company-creator-post-step .posts-item .in .infos .review textarea {
-    background           : #182123;
+    background: #182123;
     -webkit-border-radius: 4px;
-    -moz-border-radius   : 4px;
-    border-radius        : 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
 }
 
 .page-company-creator-post-step .progress-post {
@@ -1124,28 +1124,28 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-company-creator-post-step .progress-post .point .circle {
-    width                : 24px;
-    height               : 24px;
-    border               : 3px solid #42585F;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #42585F;
     -webkit-border-radius: 12px;
-    -moz-border-radius   : 12px;
-    border-radius        : 12px;
-    position             : relative;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    position: relative;
 }
 
 .page-company-creator-post-step .progress-post .point.active .circle:after {
-    position             : absolute;
-    top                  : 50%;
-    left                 : 50%;
-    margin-top           : -6px;
-    margin-left          : -6px;
-    content              : '';
-    width                : 12px;
-    height               : 12px;
-    background-color     : #EEBA00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #EEBA00;
     -webkit-border-radius: 6px;
-    -moz-border-radius   : 6px;
-    border-radius        : 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 .page-company-creator-post-step .progress-post .point.active.ok .circle:after {
@@ -1154,32 +1154,32 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .page-company-creator-post-step .progress-post .point .desc {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
-    text-align : center;
-    color      : #fff;
-    position   : absolute;
-    width      : 60px;
-    left       : 50%;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 60px;
+    left: 50%;
     margin-left: -30px;
-    top        : 32px;
+    top: 32px;
 }
 
 .page-company-creator-post-step .progress-post .step {
-    height          : 3px;
+    height: 3px;
     background-color: #42585F;
 }
 
 .page-company-creator-post-step .payment .payment-box {
-    background           : #0E181A;
-    box-shadow           : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow   : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow      : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    background: #0E181A;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .page-company-creator-post-step .payment .payment-box .in {
@@ -1187,57 +1187,57 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-company-creator-post-step .payment .payment-box .in .tit {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 24px;
-    line-height   : 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
     letter-spacing: 0.25px;
-    color         : #fff;
+    color: #fff;
 }
 
 .page-company-order-view .progress-stage .in {
-    background                     : #0E181A;
-    box-shadow                     : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
-    -webkit-box-shadow             : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
-    -moz-box-shadow                : inset 0px 2px 2px rgba(0, 0, 0, 0.5);
-    -webkit-border-top-left-radius : 8px;
+    background: #0E181A;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
+    -webkit-border-top-left-radius: 8px;
     -webkit-border-top-right-radius: 8px;
-    -moz-border-radius-topleft     : 8px;
-    -moz-border-radius-topright    : 8px;
-    border-top-left-radius         : 8px;
-    border-top-right-radius        : 8px;
-    padding                        : 15px;
-    min-height                     : 140px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 15px;
+    min-height: 140px;
 }
 
 .page-company-order-view .progress-stage .stage {
-    background-color                  : #273539;
-    box-shadow                        : 0px 4px 4px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow                : 0px 4px 4px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow                   : 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: #273539;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     -webkit-border-bottom-right-radius: 8px;
-    -webkit-border-bottom-left-radius : 8px;
-    -moz-border-radius-bottomright    : 8px;
-    -moz-border-radius-bottomleft     : 8px;
-    border-bottom-right-radius        : 8px;
-    border-bottom-left-radius         : 8px;
-    padding                           : 15px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 15px;
 }
 
 .page-company-order-view .progress-stage .tit .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
-    color         : #fff;
+    color: #fff;
 }
 
 .page-company-order-view .progress-stage .timeline {
     min-height: 70px;
-    padding   : 0 20px;
+    padding: 0 20px;
 }
 
 .page-company-order-view .progress-stage .timeline .point {
@@ -1245,28 +1245,28 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-company-order-view .progress-stage .timeline .point .circle {
-    width                : 24px;
-    height               : 24px;
-    border               : 3px solid #42585F;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #42585F;
     -webkit-border-radius: 12px;
-    -moz-border-radius   : 12px;
-    border-radius        : 12px;
-    position             : relative;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    position: relative;
 }
 
 .page-company-order-view .progress-stage .timeline .point.active .circle:after {
-    position             : absolute;
-    top                  : 50%;
-    left                 : 50%;
-    margin-top           : -6px;
-    margin-left          : -6px;
-    content              : '';
-    width                : 12px;
-    height               : 12px;
-    background-color     : #EEBA00;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -6px;
+    margin-left: -6px;
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: #EEBA00;
     -webkit-border-radius: 6px;
-    -moz-border-radius   : 6px;
-    border-radius        : 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 .page-company-order-view .progress-stage .timeline .point.active.ok .circle:after {
@@ -1274,33 +1274,33 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-company-order-view .progress-stage .timeline .point .desc {
-    position   : absolute;
-    width      : 60px;
-    left       : 50%;
+    position: absolute;
+    width: 60px;
+    left: 50%;
     margin-left: -30px;
-    top        : 32px;
+    top: 32px;
 }
 
 .page-company-order-view .progress-stage .timeline .point .desc .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 11px;
-    line-height   : 11px;
-    text-align    : center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 11px;
+    text-align: center;
     letter-spacing: 0.1px;
-    color         : #273539;
+    color: #273539;
 }
 
 .page-company-order-view .progress-stage .timeline .point .desc .b {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
-    text-align    : center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
     letter-spacing: 0.1px;
-    color         : #273539;
+    color: #273539;
 }
 
 .page-company-order-view .progress-stage .timeline .point.active .desc .a {
@@ -1320,7 +1320,7 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-company-order-view .progress-stage .timeline .bar {
-    height          : 3px;
+    height: 3px;
     background-color: transparent;
 }
 
@@ -1329,45 +1329,45 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-company-order-view .stage .stage-tit .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
-    color         : #fff;
+    color: #fff;
 }
 
 .page-company-order-view .stage .stage-tit .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 19px;
-    text-align : justify;
-    color      : #fff;
-    max-width  : 210px;
+    text-align: justify;
+    color: #fff;
+    max-width: 210px;
 }
 
 .page-company-order-view .stage .stage-finish .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
-    color         : #fff;
-    text-align : center;
+    color: #fff;
+    text-align: center;
 }
 
 .page-company-order-view .stage .stage-finish .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 19px;
-    text-align : center;
-    color      : #fff;
+    text-align: center;
+    color: #fff;
 }
 
 .page-company-order-view .stage .dates {
@@ -1377,6 +1377,36 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-company-order-view .stage .opts .chk .custom-checkbox .checkmark {
     margin-top: 3px;
 }
+
+.page-company-creator-insta .insta-item .insta-item-in,
+.page-company-creator-insta .insta-item .insta-item-in .img,
+.page-company-creator-insta .insta-item .insta-item-in .img img {
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.page-company-creator-insta .insta-item .insta-item-in .img {
+    min-height: 255px;
+}
+
+.page-company-creator-insta .insta-item .insta-item-in .option {
+    background-color: #273539;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.page-company-creator-insta .insta-item .insta-item-in .option .option-item {
+    color: #fff;
+}
+
 
 /* HELPERS */
 .mt-6 {
@@ -1394,9 +1424,9 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .back-to a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
 }
 
@@ -1405,13 +1435,13 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom {
-    -webkit-box-shadow   : 0px 4px 4px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow      : 0px 4px 4px rgba(0, 0, 0, 0.2);
-    box-shadow           : 0px 4px 4px rgba(0, 0, 0, 0.2);
-    background           : #273539;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    background: #273539;
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .card-custom.bg-profile {
@@ -1428,28 +1458,28 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .profile .photo {
-    position             : relative;
+    position: relative;
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
-    min-height           : 180px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    min-height: 180px;
 }
 
 .card-custom .profile.company .photo {
-    position   : static;
-    min-height : auto;
-    text-align : center;
+    position: static;
+    min-height: auto;
+    text-align: center;
     padding-top: 1.5rem;
 }
 
 .card-custom .profile.company .photo .main {
-    position      : static;
-    margin-left   : auto;
+    position: static;
+    margin-left: auto;
     padding-bottom: 1.5rem;
 }
 
 .card-custom .profile .photo img {
-    width : 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -1462,106 +1492,106 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .profile .fit-box {
-    right : -40px;
+    right: -40px;
     bottom: 60px;
 }
 
 .card-custom .profile .photo .main {
-    position             : absolute;
-    width                : 120px;
-    top                  : 25%;
-    left                 : 50%;
-    margin-left          : -60px;
-    filter               : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    position: absolute;
+    width: 120px;
+    top: 25%;
+    left: 50%;
+    margin-left: -60px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     -webkit-border-radius: 60px;
-    -moz-border-radius   : 60px;
-    border-radius        : 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
 }
 
 .card-custom .profile .name {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
-    text-align    : center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
     letter-spacing: 0.25px;
     text-transform: uppercase;
 }
 
 .card-custom .profile .followers {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
 }
 
 .card-custom .profile .category {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
 }
 
 .card-custom .profile .category2 {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .profile .country-state {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .profile .country-state2 {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .profile .segment {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .profile .sep {
-    height          : 2px;
+    height: 2px;
     background-color: #182123;
 }
 
 .card-custom .profile .scores2 .scores-item .a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
-    text-align : justify;
+    text-align: justify;
 }
 
 .card-custom .profile .scores2 .scores-item .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
-    text-align : right;
+    text-align: right;
 }
 
 .card-custom .profile .scores2 .scores-item {
@@ -1574,35 +1604,35 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .card-custom .profile .social-links a {
     display: inline-block;
-    margin : 0 5px;
+    margin: 0 5px;
 }
 
 .card-custom .profile .scores .scores-item .a,
 .card-custom .profile .scores .scores-item .b {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     text-transform: capitalize;
 }
 
 .card-custom .simple .tit {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 16px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
     letter-spacing: 0.25px;
     text-transform: uppercase;
 }
 
 .card-custom .simple .tit2 {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     text-transform: uppercase;
 }
 
@@ -1612,59 +1642,59 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .card-custom .simple .change-photo .in {
     position: absolute;
-    right   : 0;
-    top     : 0;
+    right: 0;
+    top: 0;
 }
 
 .card-custom .simple .change-photo .in img {
     height: 120px;
-    width : auto;
+    width: auto;
 }
 
 .card-custom .simple .change-photo .in .upload {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.5px;
-    cursor        : pointer;
+    cursor: pointer;
 }
 
 .card-custom .simple .credit-list .credit-item {
-    background-color     : #42585F;
-    height               : 36px;
-    background           : #42585F;
-    -moz-box-shadow      : 0px 1px 4px rgba(0, 0, 0, 0.25);
-    box-shadow           : 0px 1px 4px rgba(0, 0, 0, 0.25);
+    background-color: #42585F;
+    height: 36px;
+    background: #42585F;
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     -webkit-border-radius: 10px;
-    -moz-border-radius   : 10px;
-    border-radius        : 10px;
-    margin-top           : 12px;
-    padding-left         : 8px;
-    padding-right        : 8px;
-    cursor               : pointer;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    cursor: pointer;
 }
 
 .card-custom .simple .credit-list .credit-item .name {
     font-family: 'Roboto Condensed';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 18px;
+    font-size: 18px;
     line-height: 22px;
-    color      : #FFFFFF;
+    color: #FFFFFF;
 }
 
 .card-custom .simple .credit-list .credit-item .options .option-btn {
-    width                : 24px;
-    height               : 24px;
+    width: 24px;
+    height: 24px;
     -webkit-border-radius: 12px;
-    -moz-border-radius   : 12px;
-    border-radius        : 12px;
-    display              : flex;
-    justify-content      : center;
-    align-items          : center;
-    color                : #fff;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 .card-custom .simple .credit-item:first {
@@ -1672,100 +1702,100 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .simple .credit-add {
-    background-color     : #42585F;
-    height               : 36px;
-    background           : #42585F;
-    -moz-box-shadow      : 0px 1px 4px rgba(0, 0, 0, 0.25);
-    box-shadow           : 0px 1px 4px rgba(0, 0, 0, 0.25);
+    background-color: #42585F;
+    height: 36px;
+    background: #42585F;
+    -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
     -webkit-border-radius: 10px;
-    -moz-border-radius   : 10px;
-    border-radius        : 10px;
-    margin-top           : 12px;
-    padding-left         : 8px;
-    padding-right        : 8px;
-    display              : flex;
-    justify-content      : center;
-    align-items          : center;
-    cursor               : pointer;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
 
 .card-custom .simple .credit-add .ico {
-    width                : 24px;
-    height               : 24px;
+    width: 24px;
+    height: 24px;
     -webkit-border-radius: 12px;
-    -moz-border-radius   : 12px;
-    border-radius        : 12px;
-    display              : flex;
-    justify-content      : center;
-    align-items          : center;
-    color                : #fff;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
 }
 
 .card-custom .simple .credit-add .txt {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 800;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
-    color      : #fff;
+    color: #fff;
 }
 
 .card-custom .simple .sep {
     background-color: #42585F;
-    height          : 1px;
+    height: 1px;
 }
 
 .card-custom .simple .item-menu a svg {
-    position  : relative;
+    position: relative;
     margin-top: -4px;
 }
 
 .card-custom .simple .item-menu a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
-    color      : #999999;
+    color: #999999;
 }
 
 .card-custom .simple .item-menu a:hover,
 .card-custom .simple .item-menu.active a {
-    color          : #12CCE4;
+    color: #12CCE4;
     text-decoration: none;
 }
 
 .card-custom .simple .link {
-    height        : 40px;
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 400;
-    font-size     : 14px;
-    line-height   : 16px;
+    height: 40px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.5px;
-    color         : #CCCCCC;
-    text-indent   : 10px;
+    color: #CCCCCC;
+    text-indent: 10px;
 }
 
 .card-custom .simple .txt {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
 .card-custom .simple .copy span {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
-    cursor     : pointer;
+    cursor: pointer;
 }
 
 .card-custom .simple .list-fit-companies .item {
-    padding      : 15px 0;
+    padding: 15px 0;
     border-bottom: 2px solid #182123;
 }
 
@@ -1774,55 +1804,55 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .simple .list-fit-companies .item .logo img {
-    width                : 32px;
-    height               : 32px;
-    filter               : drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 32px;
+    height: 32px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     -webkit-border-radius: 16px;
-    -moz-border-radius   : 16px;
-    border-radius        : 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
 }
 
 .card-custom .simple .list-fit-companies .item .infos .name {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
 .card-custom .simple .list-fit-companies .item .infos .brand {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .simple .list-fit-companies .item .fit .a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 10px;
+    font-size: 10px;
     line-height: 12px;
-    text-align : right;
+    text-align: right;
 }
 
 .card-custom .simple .list-fit-companies .item .fit .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
-    text-align : right;
+    text-align: right;
 }
 
 .card-custom .timeline-profile .tit {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 24px;
-    line-height   : 28px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
     text-transform: uppercase;
 }
 
@@ -1831,38 +1861,38 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .timeline-profile .timeline .timeline-point {
-    width                : 24px;
-    height               : 24px;
-    border               : 3px solid #42585F;
+    width: 24px;
+    height: 24px;
+    border: 3px solid #42585F;
     -webkit-border-radius: 12px;
-    -moz-border-radius   : 12px;
-    border-radius        : 12px;
-    display              : flex;
-    justify-content      : center;
-    align-items          : center;
-    position             : relative;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .card-custom .timeline-profile .timeline .timeline-point .description {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
-    text-align    : center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
     text-transform: capitalize;
-    position      : absolute;
-    width         : 72px;
-    top           : 30px;
+    position: absolute;
+    width: 72px;
+    top: 30px;
 }
 
 .card-custom .timeline-profile .timeline .timeline-point .bal {
-    width                : 12px;
-    height               : 12px;
-    background-color     : #42585F;
+    width: 12px;
+    height: 12px;
+    background-color: #42585F;
     -webkit-border-radius: 6px;
-    -moz-border-radius   : 6px;
-    border-radius        : 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
 .card-custom .timeline-profile .timeline .timeline-point.active .bal {
@@ -1870,8 +1900,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .timeline-profile .timeline .timeline-bar {
-    flex            : 1;
-    height          : 3px;
+    flex: 1;
+    height: 3px;
     background-color: #42585F;
 }
 
@@ -1886,19 +1916,19 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .card-custom .post-new-item .title,
 .card-custom .post-item .title {
-    font-family   : 'Roboto Condensed';
-    font-style    : normal;
-    font-weight   : 400;
-    font-size     : 16px;
-    line-height   : 16px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
     letter-spacing: -0.3px;
-    text-align    : center;
+    text-align: center;
 }
 
 .card-custom .post-new-item .start {
-    height       : 150px;
-    background   : #182123;
-    border       : 1px solid #CCCCCC;
+    height: 150px;
+    background: #182123;
+    border: 1px solid #CCCCCC;
     border-radius: 8px;
 }
 
@@ -1911,23 +1941,23 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .post-new-item .description {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 400;
-    font-size     : 10px;
-    line-height   : 12px;
-    display       : flex;
-    align-items   : flex-end;
-    text-align    : center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: flex-end;
+    text-align: center;
     letter-spacing: 0.25px;
-    color         : #fff;
+    color: #fff;
 }
 
 .card-custom .post-item .photo {
-    position             : relative;
+    position: relative;
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .card-custom .post-item:hover>.photo .infos {
@@ -1935,70 +1965,70 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .post-item .photo .infos {
-    display              : none;
-    position             : absolute;
-    z-index              : 1;
-    top                  : 0;
-    bottom               : 0;
-    left                 : 0;
-    right                : 0;
-    background           : linear-gradient(136.67deg, rgba(237, 30, 121, 0.2) 2.16%, rgba(18, 204, 228, 0.2) 100%), rgba(0, 0, 0, 0.72);
+    display: none;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(136.67deg, rgba(237, 30, 121, 0.2) 2.16%, rgba(18, 204, 228, 0.2) 100%), rgba(0, 0, 0, 0.72);
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .card-custom .post-item .photo .infos .infos-title {
     font-family: 'Roboto Condensed';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 14px;
-    text-align : center;
-    color      : #fff;
+    text-align: center;
+    color: #fff;
 }
 
 .card-custom .post-item .photo .infos .potential {
-    font-family   : 'Roboto Condensed';
-    font-style    : normal;
-    font-weight   : 400;
-    font-size     : 22px;
-    line-height   : 22px;
-    text-align    : center;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
     letter-spacing: 0.25px;
-    color         : #FF910F;
+    color: #FF910F;
 }
 
 .card-custom .post-item .photo .infos .prices .price-item .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 400;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.4px;
-    color         : #FFFFFF;
+    color: #FFFFFF;
 }
 
 
 .card-custom .post-item .photo .infos .prices .price-item .b {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 400;
-    font-size     : 12px;
-    line-height   : 14px;
-    text-align    : right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
     letter-spacing: 0.4px;
-    color         : #FFFFFF;
+    color: #FFFFFF;
 }
 
 .card-custom .post-item .social a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 800;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
     text-transform: uppercase;
-    margin-right  : 15px;
+    margin-right: 15px;
 }
 
 .card-custom .post-item .social a:last-child {
@@ -2018,44 +2048,44 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .post-item .options .edit {
-    display              : block;
-    width                : 24px;
-    height               : 24px;
+    display: block;
+    width: 24px;
+    height: 24px;
     -webkit-border-radius: 12px;
-    -moz-border-radius   : 12px;
-    border-radius        : 12px;
-    background           : #12CCE4;
-    color                : #fff;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background: #12CCE4;
+    color: #fff;
 }
 
 .card-custom .post-item .options .trash {
-    display              : block;
-    width                : 24px;
-    height               : 24px;
+    display: block;
+    width: 24px;
+    height: 24px;
     -webkit-border-radius: 12px;
-    -moz-border-radius   : 12px;
-    border-radius        : 12px;
-    background           : #FF6B00;
-    color                : #fff;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    background: #FF6B00;
+    color: #fff;
 }
 
 .card-custom .post-edit .photo {
-    border               : 2px solid #5D818D;
-    height               : 227px;
+    border: 2px solid #5D818D;
+    height: 227px;
     -webkit-border-radius: 4px;
-    -moz-border-radius   : 4px;
-    border-radius        : 4px;
-    cursor               : pointer;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .card-custom .post-edit .thumbs .thumb {
-    width                : 30%;
-    height               : 58px;
-    border               : 2px solid #5D818D;
+    width: 30%;
+    height: 58px;
+    border: 2px solid #5D818D;
     -webkit-border-radius: 4px;
-    -moz-border-radius   : 4px;
-    border-radius        : 4px;
-    cursor               : pointer;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
 .card-custom .list-job-item .names-fit {
@@ -2064,102 +2094,102 @@ font-family: 'Roboto Condensed', sans-serif;
 
 .card-custom .list-job-item .names-fit .names .a,
 .card-custom .list-job-item .names-fit .fit .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .list-job-item .names-fit .names .b,
 .card-custom .list-job-item .names-fit .fit .b {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 16px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
     letter-spacing: 0.25px;
 }
 
 .card-custom .list-job-item .infos .a {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
 .card-custom .list-job-item .infos .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
 .card-custom .list-job-item .segment {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.5px;
-    border-bottom : 2px solid #182123;
+    border-bottom: 2px solid #182123;
 }
 
 .card-custom .list-job-item .plataform-action .plataform .plataform-caption {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .filter-job .tit {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
 }
 
 .card-custom .view .h .names .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .view .h .names .b {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 24px;
+    font-size: 24px;
     line-height: 28px;
-    position   : relative;
+    position: relative;
 }
 
 .card-custom .view .segment {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .view .infos .a,
 .card-custom .view .infos .b {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 400;
-    font-size     : 14px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: capitalize;
 }
 
@@ -2168,19 +2198,19 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .view .txt-title {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
 }
 
 .card-custom .view .txt * {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
@@ -2189,89 +2219,89 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-custom .list-a-item .names .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
     letter-spacing: 0.25px;
 }
 
 .card-custom .list-a-item .names .b {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 10px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .list-a-item .names .c {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 12px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
     letter-spacing: 0.5px;
 }
 
 .card-custom .list-a-item .fit-info .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
-    text-align    : right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: right;
     letter-spacing: 0.5px;
 }
 
 .card-custom .list-a-item .fit-info .b {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 14px;
-    line-height   : 14px;
-    text-align    : right;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: right;
     letter-spacing: 0.25px;
 }
 
 .card-custom .list-a-item .fit-info .c {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 700;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
     /* identical to box height */
-    text-align : right;
-    cursor     : pointer;
+    text-align: right;
+    cursor: pointer;
 }
 
 .card-msg {
-    background-color     : #0E181A;
+    background-color: #0E181A;
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .card-msg .card-msg-tit {
-    background-color               : #273539;
-    padding                        : 15px;
-    -webkit-border-top-left-radius : 8px;
+    background-color: #273539;
+    padding: 15px;
+    -webkit-border-top-left-radius: 8px;
     -webkit-border-top-right-radius: 8px;
-    -moz-border-radius-topleft     : 8px;
-    -moz-border-radius-topright    : 8px;
-    border-top-left-radius         : 8px;
-    border-top-right-radius        : 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .card-msg .card-msg-tit .a {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 20px;
-    line-height   : 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
     letter-spacing: 0.25px;
-    color         : #fff;
+    color: #fff;
 }
 
 .card-msg .card-msg-tit .opts .a select {
@@ -2283,12 +2313,12 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-msg .card-msg-tit .opts .b svg {
-    position  : absolute;
-    right     : 6px;
-    top       : 50%;
+    position: absolute;
+    right: 6px;
+    top: 50%;
     margin-top: -12px;
-    color     : #CCCCCC;
-    cursor    : pointer;
+    color: #CCCCCC;
+    cursor: pointer;
 }
 
 .card-msg .card-msg-list {
@@ -2306,71 +2336,71 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .card-msg .card-msg-list .card-msg-item .card-msg-content .card-msg-photo img {
-    width : 50px;
+    width: 50px;
     height: auto;
 }
 
 .card-msg .card-msg-list .card-msg-item .card-msg-content .card-msg-text {
-    margin-top           : 8px;
-    background-color     : #182123;
-    color                : #ccc;
-    padding              : 8px;
-    height               : auto;
+    margin-top: 8px;
+    background-color: #182123;
+    color: #ccc;
+    padding: 8px;
+    height: auto;
     -webkit-border-radius: 8px;
-    -moz-border-radius   : 8px;
-    border-radius        : 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
 }
 
 .card-msg .card-msg-form {
-    background-color                  : #273539;
+    background-color: #273539;
     -webkit-border-bottom-right-radius: 8px;
-    -webkit-border-bottom-left-radius : 8px;
-    -moz-border-radius-bottomright    : 8px;
-    -moz-border-radius-bottomleft     : 8px;
-    border-bottom-right-radius        : 8px;
-    border-bottom-left-radius         : 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
     padding: 15px;
 }
 
 .fit-box {
-    position           : absolute;
-    background-image   : url(/public/assets/img/fit-box.png);
-    background-repeat  : no-repeat;
+    position: absolute;
+    background-image: url(/public/assets/img/fit-box.png);
+    background-repeat: no-repeat;
     background-position: center center;
-    background-size    : 100% 100%;
-    width              : 99.49px;
-    height             : 100px;
-    bottom             : 4px;
-    right              : -115px;
-    z-index            : 2;
+    background-size: 100% 100%;
+    width: 99.49px;
+    height: 100px;
+    bottom: 4px;
+    right: -115px;
+    z-index: 2;
 }
 
 .fit-box .fit-box-in {
-    width : 99.49px;
+    width: 99.49px;
     height: 82px;
 }
 
 .fit-box .fit-box-in .fit-box-title {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 800;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
     letter-spacing: 2px;
 }
 
 .fit-box .fit-box-in .fit-box-perc {
-    font-family   : 'Roboto Condensed';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 35px;
-    line-height   : 35px;
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 35px;
     letter-spacing: -0.5px;
 }
 
 .trace-a {
     background-color: #182123;
-    height          : 3px;
+    height: 3px;
 }
 
 .swal2-footer {
@@ -2383,56 +2413,56 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
-    font-size     : 74px;
-    line-height   : 74px;
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-weight   : 500;
+    font-size: 74px;
+    line-height: 74px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
     letter-spacing: -1.5px;
-    margin        : 0;
+    margin: 0;
 }
 
 h2 {
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-weight   : 500;
-    font-size     : 45px;
-    line-height   : 35px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 35px;
     letter-spacing: -0.5px;
-    margin        : 0;
+    margin: 0;
 }
 
 h4 {
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-weight   : 700;
-    font-size     : 26px;
-    line-height   : 26px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
     letter-spacing: 0.25px;
-    margin        : 0;
+    margin: 0;
 }
 
 h5,
 .h5 {
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-weight   : 400;
-    font-size     : 18px;
-    line-height   : 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
     letter-spacing: 0px;
-    margin        : 0;
+    margin: 0;
 }
 
 h6,
 .h6 {
-    font-family   : 'Roboto Condensed', sans-serif;
-    font-weight   : 400;
-    font-size     : 14px;
-    line-height   : 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
     letter-spacing: 0px;
-    margin        : 0;
+    margin: 0;
 }
 
 a {
-    font-family   : 'Roboto', sans-serif;
-    font-weight   : 500;
-    font-size     : 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
     letter-spacing: 0px;
 }
 
@@ -2441,12 +2471,12 @@ input[type=email].form-control,
 input[type=password].form-control,
 input[type=search].form-control,
 select.form-control {
-    font-family   : 'Roboto', sans-serif;
-    font-weight   : 400;
-    font-size     : 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     letter-spacing: 0.5px;
-    border        : none !important;
-    outline       : none !important;
+    border: none !important;
+    outline: none !important;
 }
 
 textarea:focus,
@@ -2455,20 +2485,20 @@ input[type=email]:focus,
 input[type=password]:focus,
 input[type=search]:focus,
 select:focus {
-    outline         : none;
-    box-shadow      : none !important;
+    outline: none;
+    box-shadow: none !important;
     background-color: #0E181A;
-    color           : #ccc;
+    color: #ccc;
 }
 
 select.form-control,
 select.form-control option {
     -webkit-appearance: none;
-    -moz-appearance   : none;
-    appearance        : none;
-    background        : url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiICAgaWQ9IkxheWVyXzEiICAgZGF0YS1uYW1lPSJMYXllciAxIiAgIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIiAgIHZlcnNpb249IjEuMSIgICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIgICBzb2RpcG9kaTpkb2NuYW1lPSJkb3dubG9hZC5zdmciPiAgPG1ldGFkYXRhICAgICBpZD0ibWV0YWRhdGE0MjAyIj4gICAgPHJkZjpSREY+ICAgICAgPGNjOldvcmsgICAgICAgICByZGY6YWJvdXQ9IiI+ICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4gICAgICAgIDxkYzp0eXBlICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPiAgICAgIDwvY2M6V29yaz4gICAgPC9yZGY6UkRGPiAgPC9tZXRhZGF0YT4gIDxzb2RpcG9kaTpuYW1lZHZpZXcgICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIgICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IiAgICAgYm9yZGVyb3BhY2l0eT0iMSIgICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiICAgICBncmlkdG9sZXJhbmNlPSIxMCIgICAgIGd1aWRldG9sZXJhbmNlPSIxMCIgICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIgICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIgICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMjciICAgICBpZD0ibmFtZWR2aWV3NDIwMCIgICAgIHNob3dncmlkPSJmYWxzZSIgICAgIGlua3NjYXBlOnpvb209Ijg0LjMiICAgICBpbmtzY2FwZTpjeD0iMi40NzQ5OTk5IiAgICAgaW5rc2NhcGU6Y3k9IjUiICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMTkyMCIgICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIgICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJMYXllcl8xIiAvPiAgPGRlZnMgICAgIGlkPSJkZWZzNDE5MCI+ICAgIDxzdHlsZSAgICAgICBpZD0ic3R5bGU0MTkyIj4uY2xzLTJ7ZmlsbDojNDQ0O308L3N0eWxlPiAgPC9kZWZzPiAgPHRpdGxlICAgICBpZD0idGl0bGU0MTk0Ij5hcnJvd3M8L3RpdGxlPiAgPHBvbHlnb24gICAgIGNsYXNzPSJjbHMtMiIgICAgIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIiAgICAgaWQ9InBvbHlnb240MTk4IiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MSIgLz48L3N2Zz4=) no-repeat 97% -4px;
-    background-color  : #0E181A !important;
-    color             : #ccc !important;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+PHN2ZyAgIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIiAgIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyIgICB4bWxuczpzdmc9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiICAgaWQ9IkxheWVyXzEiICAgZGF0YS1uYW1lPSJMYXllciAxIiAgIHZpZXdCb3g9IjAgMCA0Ljk1IDEwIiAgIHZlcnNpb249IjEuMSIgICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjkxIHIxMzcyNSIgICBzb2RpcG9kaTpkb2NuYW1lPSJkb3dubG9hZC5zdmciPiAgPG1ldGFkYXRhICAgICBpZD0ibWV0YWRhdGE0MjAyIj4gICAgPHJkZjpSREY+ICAgICAgPGNjOldvcmsgICAgICAgICByZGY6YWJvdXQ9IiI+ICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4gICAgICAgIDxkYzp0eXBlICAgICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPiAgICAgIDwvY2M6V29yaz4gICAgPC9yZGY6UkRGPiAgPC9tZXRhZGF0YT4gIDxzb2RpcG9kaTpuYW1lZHZpZXcgICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIgICAgIGJvcmRlcmNvbG9yPSIjNjY2NjY2IiAgICAgYm9yZGVyb3BhY2l0eT0iMSIgICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiICAgICBncmlkdG9sZXJhbmNlPSIxMCIgICAgIGd1aWRldG9sZXJhbmNlPSIxMCIgICAgIGlua3NjYXBlOnBhZ2VvcGFjaXR5PSIwIiAgICAgaW5rc2NhcGU6cGFnZXNoYWRvdz0iMiIgICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTkyMCIgICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjEwMjciICAgICBpZD0ibmFtZWR2aWV3NDIwMCIgICAgIHNob3dncmlkPSJmYWxzZSIgICAgIGlua3NjYXBlOnpvb209Ijg0LjMiICAgICBpbmtzY2FwZTpjeD0iMi40NzQ5OTk5IiAgICAgaW5rc2NhcGU6Y3k9IjUiICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMTkyMCIgICAgIGlua3NjYXBlOndpbmRvdy15PSIyNyIgICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJMYXllcl8xIiAvPiAgPGRlZnMgICAgIGlkPSJkZWZzNDE5MCI+ICAgIDxzdHlsZSAgICAgICBpZD0ic3R5bGU0MTkyIj4uY2xzLTJ7ZmlsbDojNDQ0O308L3N0eWxlPiAgPC9kZWZzPiAgPHRpdGxlICAgICBpZD0idGl0bGU0MTk0Ij5hcnJvd3M8L3RpdGxlPiAgPHBvbHlnb24gICAgIGNsYXNzPSJjbHMtMiIgICAgIHBvaW50cz0iMy41NCA1LjMzIDIuNDggNi44MiAxLjQxIDUuMzMgMy41NCA1LjMzIiAgICAgaWQ9InBvbHlnb240MTk4IiAgICAgc3R5bGU9ImZpbGw6I2ZmZmZmZjtmaWxsLW9wYWNpdHk6MSIgLz48L3N2Zz4=) no-repeat 97% -4px;
+    background-color: #0E181A !important;
+    color: #ccc !important;
 }
 
 input[type=text].with-label,
@@ -2485,7 +2515,7 @@ input[type=password].with-label2,
 input[type=search].with-label2,
 select.with-label2,
 select.with-label2 option {
-    color           : #CCCCCC;
+    color: #CCCCCC;
     background-color: #0E181A;
 }
 
@@ -2494,7 +2524,7 @@ input[type=email].with-label3,
 input[type=password].with-label3,
 input[type=search].with-label3,
 select.with-label3 {
-    color           : #CCCCCC;
+    color: #CCCCCC;
     background-color: #182123;
 }
 
@@ -2503,7 +2533,7 @@ input[type=email].with-label4,
 input[type=password].with-label4,
 input[type=search].with-label4,
 select.with-label4 {
-    color           : #CCCCCC;
+    color: #CCCCCC;
     background-color: #42585F;
 }
 
@@ -2511,29 +2541,29 @@ input[type="radio"] {
     /* Add if not using autoprefixer */
     -webkit-appearance: none;
     /* Remove most all native input styles */
-    appearance        : none;
+    appearance: none;
     /* For iOS < 15 */
-    margin            : 0;
+    margin: 0;
 
-    width        : 20px;
-    height       : 20px;
-    border       : 2px solid #fff;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
     border-radius: 50%;
-    transform    : translateY(-0.075em);
+    transform: translateY(-0.075em);
 
-    display      : grid;
+    display: grid;
     place-content: center;
-    background   : transparent;
+    background: transparent;
 }
 
 input[type="radio"]::before {
-    content         : "";
-    width           : 8px;
-    height          : 8px;
-    border-radius   : 50%;
-    transform       : scale(0);
-    transition      : 120ms transform ease-in-out;
-    box-shadow      : inset 1em 1em var(--form-control-color);
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
     /* Windows High Contrast Mode */
     background-color: #fff;
 }
@@ -2547,21 +2577,21 @@ input[type="radio"]:checked::before {
 }
 
 input[type="radio"]:focus {
-    outline       : max(2px, 0.15em) solid #ccc;
+    outline: max(2px, 0.15em) solid #ccc;
     outline-offset: max(2px, 0.15em);
 }
 
 /* The container */
 .custom-checkbox {
-    display            : block;
-    position           : relative;
-    padding-left       : 25px;
-    margin-bottom      : 12px;
-    cursor             : pointer;
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    cursor: pointer;
     -webkit-user-select: none;
-    -moz-user-select   : none;
-    -ms-user-select    : none;
-    user-select        : none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .custom-checkbox span {
@@ -2571,21 +2601,21 @@ input[type="radio"]:focus {
 /* Hide the browser's default checkbox */
 .custom-checkbox input {
     position: absolute;
-    opacity : 0;
-    cursor  : pointer;
-    height  : 0;
-    width   : 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
 }
 
 /* Create a custom checkbox */
 .custom-checkbox .checkmark {
-    position        : absolute;
-    top             : 0;
-    left            : 0;
-    height          : 16px;
-    width           : 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
     background-color: transparent;
-    border          : 1px solid #fff;
+    border: 1px solid #fff;
 }
 
 /* On mouse-over, add a grey background color */
@@ -2600,9 +2630,9 @@ input[type="radio"]:focus {
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .custom-checkbox .checkmark:after {
-    content : "";
+    content: "";
     position: absolute;
-    display : none;
+    display: none;
 }
 
 /* Show the checkmark when checked */
@@ -2612,70 +2642,70 @@ input[type="radio"]:focus {
 
 /* Style the checkmark/indicator */
 .custom-checkbox .checkmark:after {
-    left             : 5px;
-    top              : 1px;
-    width            : 5px;
-    height           : 10px;
-    border           : solid white;
-    border-width     : 0 2px 2px 0;
+    left: 5px;
+    top: 1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
     -webkit-transform: rotate(45deg);
-    -ms-transform    : rotate(45deg);
-    transform        : rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .checkbox {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 400;
-    font-size  : 14px;
+    font-size: 14px;
     line-height: 16px;
 }
 
 /* The switch - the box around the slider */
 .custom-switch {
     position: relative;
-    display : inline-block;
-    width   : 39px;
-    height  : 24px;
+    display: inline-block;
+    width: 39px;
+    height: 24px;
 }
 
 /* Hide default HTML checkbox */
 .custom-switch input {
     opacity: 0;
-    width  : 0;
-    height : 0;
+    width: 0;
+    height: 0;
 }
 
 /* The slider */
 .custom-switch .slider {
-    position          : absolute;
-    cursor            : pointer;
-    top               : 0;
-    left              : 0;
-    right             : 0;
-    bottom            : 0;
-    background-color  : #273539;
-    border            : 2px solid #5D818D;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #273539;
+    border: 2px solid #5D818D;
     -webkit-transition: .4s;
-    transition        : .4s;
+    transition: .4s;
 }
 
 .custom-switch .slider:before {
-    position          : absolute;
-    content           : "";
-    height            : 16px;
-    width             : 16px;
-    left              : 3px;
-    bottom            : 2px;
-    background-color  : #5D818D;
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 2px;
+    background-color: #5D818D;
     -webkit-transition: .4s;
-    transition        : .4s;
+    transition: .4s;
 }
 
 .custom-switch input:checked+.slider:before {
     -webkit-transform: translateX(14px);
-    -ms-transform    : translateX(14px);
-    transform        : translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
 }
 
 .custom-switch input:checked~.slider {
@@ -2700,22 +2730,22 @@ input[type="radio"]:focus {
 }
 
 .input-icon svg {
-    position  : absolute;
-    top       : 50%;
-    right     : 10px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
     margin-top: -10px;
 }
 
 form label {
-    font-family   : 'Roboto';
-    font-style    : normal;
-    font-weight   : 700;
-    font-size     : 12px;
-    line-height   : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
     /* identical to box height */
     letter-spacing: 0.5px;
-    margin        : 0;
-    padding       : 0;
+    margin: 0;
+    padding: 0;
 }
 
 .rbt-input-multi.form-control {
@@ -2724,7 +2754,7 @@ form label {
 
 .rbt-input-multi.focus {
     border-color: transparent !important;
-    box-shadow  : none !important;
+    box-shadow: none !important;
 }
 
 .rbt-close-content {
@@ -2737,42 +2767,42 @@ form label {
 
 .dropdown-item {
     font-family: 'Roboto';
-    font-style : normal;
+    font-style: normal;
     font-weight: 600;
-    font-size  : 12px;
+    font-size: 12px;
     line-height: 14px;
 }
 
 .dropdown-item:focus,
 .dropdown-item:hover,
 .dropdown-item {
-    font-family     : 'Roboto';
-    font-style      : normal;
-    font-weight     : 600;
-    font-size       : 12px;
-    line-height     : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
     background-color: #0E181A !important;
-    color           : #fff;
+    color: #fff;
 }
 
 .rbt-token-active {
-    font-family     : 'Roboto';
-    font-style      : normal;
-    font-weight     : 600;
-    font-size       : 12px;
-    line-height     : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
     background-color: #12CCE4 !important;
-    color           : #0E181A !important;
+    color: #0E181A !important;
 }
 
 .rbt-token {
-    font-family     : 'Roboto';
-    font-style      : normal;
-    font-weight     : 600;
-    font-size       : 12px;
-    line-height     : 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
     background-color: #12CCE4 !important;
-    color           : #0E181A !important;
+    color: #0E181A !important;
 }
 
 .form-control {
@@ -2781,12 +2811,12 @@ form label {
 
 .menu-item {
     font-family: 'Roboto', sans-serif;
-    font-size  : 14px;
-    color      : #CCCCCC;
+    font-size: 14px;
+    color: #CCCCCC;
 }
 
 .menu-item:hover {
-    color          : #3CE9FF;
+    color: #3CE9FF;
     text-decoration: none;
 }
 
@@ -2797,7 +2827,7 @@ form label {
 
 a.text-blueberry-l2:hover {
     text-decoration: none;
-    color          : #3CE9FF;
+    color: #3CE9FF;
 }
 
 .text-blueberry {
@@ -2806,7 +2836,7 @@ a.text-blueberry-l2:hover {
 
 a.text-blueberry:hover {
     text-decoration: none;
-    color          : #12CCE4;
+    color: #12CCE4;
 }
 
 .text-orange-m1 {
@@ -2815,7 +2845,7 @@ a.text-blueberry:hover {
 
 a.text-orange-m1:hover {
     text-decoration: none;
-    color          : #F15700;
+    color: #F15700;
 }
 
 .text-steelo-l2 {
@@ -2824,7 +2854,7 @@ a.text-orange-m1:hover {
 
 a.text-steelo-l2:hover {
     text-decoration: none;
-    color          : #5D818D;
+    color: #5D818D;
 }
 
 .text-green {
@@ -2833,11 +2863,11 @@ a.text-steelo-l2:hover {
 
 a.text-green:hover {
     text-decoration: none;
-    color          : #00EE0A;
+    color: #00EE0A;
 }
 
 .text-grad-hot-pink {
-    background             : linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgba(237, 30, 121, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgba(237, 30, 121, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2848,7 +2878,7 @@ a.text-green:hover {
 
 a.text-pitaya:hover {
     text-decoration: underline;
-    color          : #ED1E79;
+    color: #ED1E79;
 }
 
 .text-steelo-m2 {
@@ -2857,7 +2887,7 @@ a.text-pitaya:hover {
 
 a.text-steelo-m2:hover {
     text-decoration: underline;
-    color          : #0E181A;
+    color: #0E181A;
 }
 
 .text-gray-20 {
@@ -2866,7 +2896,7 @@ a.text-steelo-m2:hover {
 
 a.text-gray-20:hover {
     text-decoration: underline;
-    color          : #CCCCCC;
+    color: #CCCCCC;
 }
 
 .text-gray-30 {
@@ -2875,7 +2905,7 @@ a.text-gray-20:hover {
 
 a.text-gray-30:hover {
     text-decoration: underline;
-    color          : #B5B5B5;
+    color: #B5B5B5;
 }
 
 .text-gray-40 {
@@ -2884,7 +2914,7 @@ a.text-gray-30:hover {
 
 a.text-gray-40:hover {
     text-decoration: underline;
-    color          : #999999;
+    color: #999999;
 }
 
 .bg-steelo-l2 {
@@ -2921,18 +2951,18 @@ a.text-gray-40:hover {
 
 /* BUTTONS */
 .btn {
-    height               : 40px;
+    height: 40px;
     -webkit-border-radius: 20px;
-    -moz-border-radius   : 20px;
-    border-radius        : 20px;
-    font-family          : 'Roboto', sans-serif;
-    font-weight          : 500;
-    font-size            : 14px;
-    letter-spacing       : 0px;
-    padding              : 0 20px;
-    border               : none;
-    display              : inline-block;
-    line-height          : 39px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0px;
+    padding: 0 20px;
+    border: none;
+    display: inline-block;
+    line-height: 39px;
 }
 
 .btn:focus {
@@ -2940,27 +2970,27 @@ a.text-gray-40:hover {
 }
 
 .btn-sm {
-    height       : 35px;
-    line-height  : 35px;
+    height: 35px;
+    line-height: 35px;
     border-radius: 20px;
-    font-size    : 16px;
+    font-size: 16px;
 }
 
 .btn.no-shadow {
     -webkit-box-shadow: none;
-    -moz-box-shadow   : none;
-    box-shadow        : none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .btn.with-shadow {
     -webkit-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow   : 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
-    box-shadow        : 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
 
 .btn.btn-a {
     background-color: #20DEF6;
-    color           : #0E181A;
+    color: #0E181A;
 }
 
 .btn.btn-a:hover,
@@ -2975,33 +3005,33 @@ a.text-gray-40:hover {
 
 .btn.btn-b {
     background-color: transparent;
-    color           : #5D818D;
-    border          : 2px solid #5D818D;
+    color: #5D818D;
+    border: 2px solid #5D818D;
 }
 
 .btn.btn-b:hover,
 .btn.btn-b:focus,
 .btn.btn-b.active {
-    color : #12CCE4;
+    color: #12CCE4;
     border: 2px solid #12CCE4;
 }
 
 .btn.btn-c {
     background-color: transparent;
-    color           : #fff;
-    border          : 2px solid #fff;
+    color: #fff;
+    border: 2px solid #fff;
 }
 
 .btn.btn-c:hover,
 .btn.btn-c:focus,
 .btn.btn-c.active {
-    color : #fff;
+    color: #fff;
     border: 2px solid #fff;
 }
 
 .btn.btn-d {
     background-color: #ED1E79;
-    color           : #fff;
+    color: #fff;
 }
 
 .btn.btn-d:hover,
@@ -3012,7 +3042,7 @@ a.text-gray-40:hover {
 
 .btn.btn-e {
     background-color: #5D818D;
-    color           : #fff;
+    color: #fff;
 }
 
 .btn.btn-e:hover,
@@ -3023,7 +3053,7 @@ a.text-gray-40:hover {
 
 .btn.btn-f {
     background-color: #ED1E79;
-    color           : #0E181A;
+    color: #0E181A;
 }
 
 .btn.btn-f:hover,
@@ -3035,17 +3065,17 @@ a.text-gray-40:hover {
 .btn.btn-grad-a {
     background: rgb(255, 107, 0);
     background: linear-gradient(90deg, rgba(255, 107, 0, 1) 0%, rgb(239, 223, 230) 100%);
-    color     : #fff;
+    color: #fff;
 }
 
 .btn.btn-submit {
     background-color: #5D818D;
-    color           : #FFFFFF;
+    color: #FFFFFF;
 }
 
 .btn.btn-no {
     background-color: transparent;
-    color           : #5D818D;
+    color: #5D818D;
 }
 
 @media screen and (max-width: 1112px) {
@@ -3093,7 +3123,7 @@ a.text-gray-40:hover {
     .page-company-job-view .title .infos,
     .page-company-brand .title .infos {
         margin-top: 20px;
-        position  : static;
+        position: static;
     }
 
     .page-creator-setting .title .infos .txt,
@@ -3112,7 +3142,7 @@ a.text-gray-40:hover {
     .page-company-job .title .infos .txt,
     .page-company-job-view .title .infos .txt,
     .page-company-brand .title .infos .txt {
-        display   : block;
+        display: block;
         margin-top: 15px;
     }
 
@@ -3141,7 +3171,7 @@ a.text-gray-40:hover {
     .page-creator-rainlink,
     .page-register {
         background-position: center top;
-        background-size    : auto 100%;
+        background-size: auto 100%;
     }
 
     .page-creator-post-list .post-list .menu-store,
@@ -3151,7 +3181,7 @@ a.text-gray-40:hover {
 
     .page-creator-post-list .post-list .menu-store .menu,
     .page-creator-post-edit .post-list .menu-store .menu {
-        display       : flex;
+        display: flex;
         flex-direction: column;
     }
 
@@ -3173,11 +3203,11 @@ a.text-gray-40:hover {
 
     .card-custom .post-item .photo {
         overflow: hidden;
-        height  : 200px;
+        height: 200px;
     }
 
     .card-custom .post-item .photo img {
-        width : 100%;
+        width: 100%;
         height: auto;
 
     }
@@ -3193,8 +3223,8 @@ a.text-gray-40:hover {
     }
 
     .page-home .block-3 .box-img {
-        margin    : 60px 0 0 0;
-        padding   : 0 0 0 0;
+        margin: 60px 0 0 0;
+        padding: 0 0 0 0;
         text-align: right;
     }
 
@@ -3212,7 +3242,7 @@ a.text-gray-40:hover {
 
     .card-custom .simple .change-photo {
         position: static;
-        padding : 1.5rem 0;
+        padding: 1.5rem 0;
     }
 
     .card-custom .simple .change-photo .in {
