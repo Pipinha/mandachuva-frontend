@@ -34,6 +34,7 @@ import CompanyCreatorPostStep2 from "../modules/Company/Creator/CompanyCreatorPo
 import CompanyCreatorPostStep3 from "../modules/Company/Creator/CompanyCreatorPostStep3"
 import CreatorSearch from "../modules/Creator/CreatorSearch"
 import CompanyOrderView from "../modules/Company/Order/CompanyOrderView"
+import CompanyCreatorInsta from "../modules/Company/Creator/CompanyCreatorInsta"
 
 const routes = [
     {
@@ -45,6 +46,14 @@ const routes = [
                 exact: true,
                 path: '/company/order/:id',
                 component: CompanyOrderView,
+                auth: true,
+                profileId: PROFILE_COMPANY,
+                public: null
+            },
+            {
+                exact: true,
+                path: '/company/creator/insta/:id',
+                component: CompanyCreatorInsta,
                 auth: true,
                 profileId: PROFILE_COMPANY,
                 public: null

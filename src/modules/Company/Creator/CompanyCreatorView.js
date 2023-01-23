@@ -31,7 +31,7 @@ class CompanyCreatorView extends Component {
                                 <div className="col-md-3"></div>
                                 <div className="col-md-9">
                                     <Link to={'/company/creator/3'} className="a active">READY TO POST</Link>
-                                    <Link to={'#a'} className="a ml-3">MY INSTAGRAM</Link>
+                                    <Link to={'/company/creator/insta/3'} className="a ml-3">MY INSTAGRAM</Link>
                                 </div>
                             </div>
                         </div>
