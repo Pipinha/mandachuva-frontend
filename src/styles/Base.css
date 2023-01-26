@@ -390,6 +390,9 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand,
 .page-creator-brand-view,
 .page-creator-search,
+.page-creator-list,
+.page-creator-view,
+.page-creator-insta,
 .page-company-profile,
 .page-company-setting,
 .page-company-setting-privacy,
@@ -620,6 +623,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job-view .title,
 .page-creator-brand .title,
 .page-creator-search .title,
+.page-creator-list .title,
 .page-company-setting .title,
 .page-company-setting-privacy .title,
 .page-company-setting-payment .title,
@@ -641,6 +645,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job-view .title .bg,
 .page-creator-brand .title .bg,
 .page-creator-search .title .bg,
+.page-creator-list .title .bg,
 .page-company-setting .title .bg,
 .page-company-setting-privacy .title .bg,
 .page-company-setting-payment .title .bg,
@@ -661,6 +666,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job-view .title .infos,
 .page-creator-brand .title .infos,
 .page-creator-search .title .infos,
+.page-creator-list .title .infos,
 .page-company-setting .title .infos,
 .page-company-setting-privacy .title .infos,
 .page-company-setting-payment .title .infos,
@@ -683,6 +689,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job-view .title .infos .txt,
 .page-creator-brand .title .infos .txt,
 .page-creator-search .title .infos .txt,
+.page-creator-list .title .infos .txt,
 .page-company-setting .title .infos .txt,
 .page-company-setting-privacy .title .infos .txt,
 .page-company-setting-payment .title .infos .txt,
@@ -712,6 +719,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job .title .infos .txt.active,
 .page-creator-brand .title .infos .txt.active,
 .page-creator-search .title .infos .txt.active,
+.page-creator-list .title .infos .txt.active,
 .page-company-setting .title .infos .txt.active,
 .page-company-setting-privacy .title .infos .txt.active,
 .page-company-setting-payment .title .infos .txt.active,
@@ -873,6 +881,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job .caption-sort,
 .page-creator-brand .caption-sort,
 .page-creator-search .caption-sort,
+.page-creator-list .caption-sort,
 .page-company-job .caption-sort,
 .page-company-search .caption-sort,
 .page-company-brand .caption-sort,
@@ -883,6 +892,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job .caption-sort .caption,
 .page-creator-brand .caption-sort .caption,
 .page-creator-search .caption-sort .caption,
+.page-creator-list .caption-sort .caption,
 .page-company-job .caption-sort .caption,
 .page-company-search .caption-sort .caption,
 .page-company-brand .caption-sort .caption,
@@ -899,6 +909,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-job .caption-sort .sort,
 .page-creator-brand .caption-sort .sort,
 .page-creator-search .caption-sort .sort,
+.page-creator-list .caption-sort .sort,
 .page-company-job .caption-sort .sort,
 .page-company-search .caption-sort .sort,
 .page-company-brand .caption-sort .sort,
@@ -912,6 +923,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2,
+.page-creator-view .title2,
+.page-creator-insta .title2,
 .page-company-brand-view .title2,
 .page-company-creator-view .title2,
 .page-company-creator-post-step .title2,
@@ -923,6 +936,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2 .bg,
+.page-creator-view .title2 .bg,
+.page-creator-insta .title2 .bg,
 .page-company-brand-view .title2 .bg,
 .page-company-creator-view .title2 .bg,
 .page-company-creator-post-step .title2 .bg,
@@ -933,6 +948,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2 .infos,
+.page-creator-view .title2 .infos,
+.page-creator-insta .title2 .infos,
 .page-company-brand-view .title2 .infos,
 .page-company-creator-view .title2 .infos,
 .page-company-creator-post-step .title2 .infos,
@@ -946,6 +963,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2 .infos .a,
+.page-creator-view .title2 .infos .a,
+.page-creator-insta .title2 .infos .a,
 .page-company-brand-view .title2 .infos .a,
 .page-company-creator-view .title2 .infos .a,
 .page-company-creator-post-step .title2 .infos .a,
@@ -962,6 +981,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2 .infos .a:hover,
+.page-creator-view .title2 .infos .a:hover,
+.page-creator-insta .title2 .infos .a:hover,
 .page-company-brand-view .title2 .infos .a:hover,
 .page-company-creator-view .title2 .infos .a:hover,
 .page-company-creator-post-step .title2 .infos .a:hover,
@@ -971,6 +992,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .title2 .infos .a.active,
+.page-creator-view .title2 .infos .a.active,
+.page-creator-insta .title2 .infos .a.active,
 .page-company-brand-view .title2 .infos .a.active,
 .page-company-creator-view .title2 .infos .a.active,
 .page-company-creator-post-step .title2 .infos .a.active,
@@ -981,6 +1004,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .wrap,
+.page-creator-view .wrap,
+.page-creator-insta .wrap,
 .page-company-brand-view .wrap,
 .page-company-creator-view .wrap,
 .page-company-creator-post-step .wrap,
@@ -992,6 +1017,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-brand-view .list-job,
+.page-creator-view .list-job,
+.page-creator-insta .list-job,
 .page-company-brand-view .list-job,
 .page-company-creator-view .list-job,
 .page-company-creator-post-step .list-job,
@@ -1000,11 +1027,13 @@ font-family: 'Roboto Condensed', sans-serif;
     margin-top: 170px;
 }
 
+.page-creator-view .posts-item,
 .page-company-creator-view .posts-item,
 .page-company-creator-post-step .posts-item {
     margin-bottom: 20px;
 }
 
+.page-creator-view .posts-item .in,
 .page-company-creator-view .posts-item .in,
 .page-company-creator-post-step .posts-item .in {
     background-color: #0E181A;
@@ -1017,11 +1046,13 @@ font-family: 'Roboto Condensed', sans-serif;
     -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.page-creator-view .posts-item .in .infos .titles,
 .page-company-creator-view .posts-item .in .infos .titles,
 .page-company-creator-post-step .posts-item .in .infos .titles {
     border-bottom: 1px solid #42585F;
 }
 
+.page-creator-view .posts-item .in .infos .titles .a,
 .page-company-creator-view .posts-item .in .infos .titles .a,
 .page-company-creator-post-step .posts-item .in .infos .titles .a {
     font-family: 'Roboto';
@@ -1032,10 +1063,12 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.25px;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .prices,
 .page-company-creator-view .posts-item .in .infos .prices-option .prices {
     width: 160px;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .prices .desc,
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .desc {
     font-family: 'Roboto';
     font-style: normal;
@@ -1045,14 +1078,17 @@ font-family: 'Roboto Condensed', sans-serif;
     letter-spacing: 0.5px;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item,
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item {
     border-bottom: 1px solid #42585F;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item:last-child,
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item:last-child {
     border-bottom: none !important;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .a,
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .a {
     font-family: 'Roboto';
     font-style: normal;
@@ -1062,6 +1098,7 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .b,
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .b {
     font-family: 'Roboto';
     font-style: normal;
@@ -1072,10 +1109,12 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .c select,
 .page-company-creator-view .posts-item .in .infos .prices-option .prices .list-price .list-price-item .c select {
     width: 40px;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .option .total .a,
 .page-company-creator-view .posts-item .in .infos .prices-option .option .total .a {
     font-family: 'Roboto';
     font-style: normal;
@@ -1087,6 +1126,7 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #5D818D;
 }
 
+.page-creator-view .posts-item .in .infos .prices-option .option .total .b,
 .page-company-creator-view .posts-item .in .infos .prices-option .option .total .b {
     font-family: 'Roboto';
     font-style: normal;
@@ -1378,6 +1418,9 @@ font-family: 'Roboto Condensed', sans-serif;
     margin-top: 3px;
 }
 
+.page-creator-insta .insta-item .insta-item-in,
+.page-creator-insta .insta-item .insta-item-in .img,
+.page-creator-insta .insta-item .insta-item-in .img img,
 .page-company-creator-insta .insta-item .insta-item-in,
 .page-company-creator-insta .insta-item .insta-item-in .img,
 .page-company-creator-insta .insta-item .insta-item-in .img img {
@@ -1389,10 +1432,12 @@ font-family: 'Roboto Condensed', sans-serif;
     border-top-right-radius: 8px;
 }
 
+.page-creator-insta .insta-item .insta-item-in .img,
 .page-company-creator-insta .insta-item .insta-item-in .img {
     min-height: 255px;
 }
 
+.page-creator-insta .insta-item .insta-item-in .option,
 .page-company-creator-insta .insta-item .insta-item-in .option {
     background-color: #273539;
     -webkit-border-bottom-right-radius: 8px;
@@ -1403,6 +1448,7 @@ font-family: 'Roboto Condensed', sans-serif;
     border-bottom-left-radius: 8px;
 }
 
+.page-creator-insta .insta-item .insta-item-in .option .option-item,
 .page-company-creator-insta .insta-item .insta-item-in .option .option-item {
     color: #fff;
 }
@@ -3093,7 +3139,7 @@ a.text-gray-40:hover {
     .page-creator-job .title .bg,
     .page-creator-job-view .title .bg,
     .page-creator-brand .title .bg,
-    .page-creator-search .title .bg,
+    .page-creator-list .title .bg .page-creator-search .title .bg,
     .page-company-setting .title .bg,
     .page-company-setting-privacy .title .bg,
     .page-company-setting-payment .title .bg,
@@ -3102,7 +3148,8 @@ a.text-gray-40:hover {
     .page-company-search .title .bg,
     .page-company-job .title .bg,
     .page-company-job-view .title .bg,
-    .page-company-brand .title .bg {
+    .page-company-brand .title .bg,
+    .page-company-creator .title .bg {
         display: none;
     }
 
@@ -3112,6 +3159,7 @@ a.text-gray-40:hover {
     .page-creator-job .title .infos,
     .page-creator-job-view .title .infos,
     .page-creator-brand .title .infos,
+    .page-creator-list .title .infos,
     .page-creator-search .title .infos,
     .page-company-setting .title .infos,
     .page-company-setting-privacy .title .infos,
@@ -3121,7 +3169,8 @@ a.text-gray-40:hover {
     .page-company-search .title .infos,
     .page-company-job .title .infos,
     .page-company-job-view .title .infos,
-    .page-company-brand .title .infos {
+    .page-company-brand .title .infos,
+    .page-company-creator .title .infos {
         margin-top: 20px;
         position: static;
     }
@@ -3132,6 +3181,7 @@ a.text-gray-40:hover {
     .page-creator-job .title .infos .txt,
     .page-creator-job-view .title .infos .txt,
     .page-creator-brand .title .infos .txt,
+    .page-creator-list .title .infos .txt,
     .page-creator-search .title .infos .txt,
     .page-company-setting .title .infos .txt,
     .page-company-setting-privacy .title .infos .txt,
@@ -3141,7 +3191,8 @@ a.text-gray-40:hover {
     .page-company-search .title .infos .txt,
     .page-company-job .title .infos .txt,
     .page-company-job-view .title .infos .txt,
-    .page-company-brand .title .infos .txt {
+    .page-company-brand .title .infos .txt,
+    .page-company-creator .title .infos .txt {
         display: block;
         margin-top: 15px;
     }
@@ -3152,6 +3203,7 @@ a.text-gray-40:hover {
     .page-creator-job .title .infos .txt:first,
     .page-creator-job-view .title .infos .txt:first,
     .page-creator-brand .title .infos .txt:first,
+    .page-creator-list .title .infos .txt:first,
     .page-creator-search .title .infos .txt:first,
     .page-company-setting .title .infos .txt:first,
     .page-company-setting-privacy .title .infos .txt:first,
@@ -3161,7 +3213,8 @@ a.text-gray-40:hover {
     .page-company-search .title .infos .txt:first,
     .page-company-job .title .infos .txt:first,
     .page-company-job-view .title .infos .txt:first,
-    .page-company-brand .title .infos .txt:first {
+    .page-company-brand .title .infos .txt:first,
+    .page-company-creator .title .infos .txt:first {
         margin-top: 0 !important;
     }
 

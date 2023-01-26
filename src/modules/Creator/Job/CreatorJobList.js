@@ -44,7 +44,7 @@ class CreatorJobList extends Component {
                                     <Link to={'/creator/search'} className="txt mr-4">SEARCH</Link>
                                     <Link to={'/creator/rainjobs'} className="txt active mr-4">RAINJOBS</Link>
                                     <Link to={'/creator/brand'} className="txt mr-4">BRANDS</Link>
-                                    <Link to={'/creator/creators'} className="txt mr-4">CREATORS</Link>
+                                    <Link to={'/creator/list'} className="txt mr-4">CREATORS</Link>
                                 </div>
                             </div>
                         </div>

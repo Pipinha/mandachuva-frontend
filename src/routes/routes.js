@@ -35,6 +35,9 @@ import CompanyCreatorPostStep3 from "../modules/Company/Creator/CompanyCreatorPo
 import CreatorSearch from "../modules/Creator/CreatorSearch"
 import CompanyOrderView from "../modules/Company/Order/CompanyOrderView"
 import CompanyCreatorInsta from "../modules/Company/Creator/CompanyCreatorInsta"
+import CreatorList from "../modules/Creator/Creator/CreatorList"
+import CreatorView from "../modules/Creator/Creator/CreatorView"
+import CreatorInsta from "../modules/Creator/Creator/CreatorInsta"
 
 const routes = [
     {
@@ -176,6 +179,30 @@ const routes = [
                 component: CompanyProfile,
                 auth: true,
                 profileId: PROFILE_COMPANY,
+                public: null
+            },
+            {
+                exact: true,
+                path: '/creator/insta/:id',
+                component: CreatorInsta,
+                auth: true,
+                profileId: PROFILE_CREATOR,
+                public: null
+            },
+            {
+                exact: true,
+                path: '/creator/view/:id',
+                component: CreatorView,
+                auth: true,
+                profileId: PROFILE_CREATOR,
+                public: null
+            },
+            {
+                exact: true,
+                path: '/creator/list',
+                component: CreatorList,
+                auth: true,
+                profileId: PROFILE_CREATOR,
                 public: null
             },
             {
