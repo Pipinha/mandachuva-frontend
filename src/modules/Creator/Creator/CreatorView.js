@@ -146,7 +146,7 @@ class CreatorView extends Component {
                                                         <div className="b">$0</div>
                                                     </div>
                                                     <div className="btns mt-6">
-                                                        <button type="button" className="btn btn-a" onClick={_ => history.push('/creator/creator/post-step1/3')}>Buy it</button>
+                                                        <button type="button" className="btn btn-a" onClick={_ => history.push('/creator/post-step1/3')}>Buy it</button>
                                                     </div>
                                                 </div>
                                             </div>

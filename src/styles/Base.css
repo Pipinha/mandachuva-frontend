@@ -393,6 +393,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-list,
 .page-creator-view,
 .page-creator-insta,
+.page-creator-post-step,
 .page-company-profile,
 .page-company-setting,
 .page-company-setting-privacy,
@@ -925,6 +926,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand-view .title2,
 .page-creator-view .title2,
 .page-creator-insta .title2,
+.page-creator-post-step .title2,
 .page-company-brand-view .title2,
 .page-company-creator-view .title2,
 .page-company-creator-post-step .title2,
@@ -938,6 +940,8 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand-view .title2 .bg,
 .page-creator-view .title2 .bg,
 .page-creator-insta .title2 .bg,
+.page-creator-post-step .title2 .bg,
+.page-creator-post-step .title2 .bg,
 .page-company-brand-view .title2 .bg,
 .page-company-creator-view .title2 .bg,
 .page-company-creator-post-step .title2 .bg,
@@ -950,6 +954,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand-view .title2 .infos,
 .page-creator-view .title2 .infos,
 .page-creator-insta .title2 .infos,
+.page-creator-post-step .title2 .infos,
 .page-company-brand-view .title2 .infos,
 .page-company-creator-view .title2 .infos,
 .page-company-creator-post-step .title2 .infos,
@@ -965,6 +970,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand-view .title2 .infos .a,
 .page-creator-view .title2 .infos .a,
 .page-creator-insta .title2 .infos .a,
+.page-creator-post-step .title2 .infos .a,
 .page-company-brand-view .title2 .infos .a,
 .page-company-creator-view .title2 .infos .a,
 .page-company-creator-post-step .title2 .infos .a,
@@ -983,6 +989,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand-view .title2 .infos .a:hover,
 .page-creator-view .title2 .infos .a:hover,
 .page-creator-insta .title2 .infos .a:hover,
+.page-creator-post-step .title2 .infos .a:hover,
 .page-company-brand-view .title2 .infos .a:hover,
 .page-company-creator-view .title2 .infos .a:hover,
 .page-company-creator-post-step .title2 .infos .a:hover,
@@ -994,6 +1001,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand-view .title2 .infos .a.active,
 .page-creator-view .title2 .infos .a.active,
 .page-creator-insta .title2 .infos .a.active,
+.page-creator-post-step .title2 .infos .a.active,
 .page-company-brand-view .title2 .infos .a.active,
 .page-company-creator-view .title2 .infos .a.active,
 .page-company-creator-post-step .title2 .infos .a.active,
@@ -1006,6 +1014,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand-view .wrap,
 .page-creator-view .wrap,
 .page-creator-insta .wrap,
+.page-creator-post-step .wrap,
 .page-company-brand-view .wrap,
 .page-company-creator-view .wrap,
 .page-company-creator-post-step .wrap,
@@ -1019,6 +1028,7 @@ font-family: 'Roboto Condensed', sans-serif;
 .page-creator-brand-view .list-job,
 .page-creator-view .list-job,
 .page-creator-insta .list-job,
+.page-creator-post-step .list-job,
 .page-company-brand-view .list-job,
 .page-company-creator-view .list-job,
 .page-company-creator-post-step .list-job,
@@ -1028,12 +1038,14 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-view .posts-item,
+.page-creator-post-step .posts-item,
 .page-company-creator-view .posts-item,
 .page-company-creator-post-step .posts-item {
     margin-bottom: 20px;
 }
 
 .page-creator-view .posts-item .in,
+.page-creator-post-step .posts-item .in,
 .page-company-creator-view .posts-item .in,
 .page-company-creator-post-step .posts-item .in {
     background-color: #0E181A;
@@ -1047,12 +1059,14 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 .page-creator-view .posts-item .in .infos .titles,
+.page-creator-post-step .posts-item .in .infos .titles,
 .page-company-creator-view .posts-item .in .infos .titles,
 .page-company-creator-post-step .posts-item .in .infos .titles {
     border-bottom: 1px solid #42585F;
 }
 
 .page-creator-view .posts-item .in .infos .titles .a,
+.page-creator-post-step .posts-item .in .infos .titles .a,
 .page-company-creator-view .posts-item .in .infos .titles .a,
 .page-company-creator-post-step .posts-item .in .infos .titles .a {
     font-family: 'Roboto';
@@ -1138,6 +1152,7 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
+.page-creator-post-step .posts-item .in .infos .review .resume,
 .page-company-creator-post-step .posts-item .in .infos .review .resume {
     width: 180px;
     font-family: 'Roboto';
@@ -1148,6 +1163,7 @@ font-family: 'Roboto Condensed', sans-serif;
     color: #fff;
 }
 
+.page-creator-post-step .posts-item .in .infos .review textarea,
 .page-company-creator-post-step .posts-item .in .infos .review textarea {
     background: #182123;
     -webkit-border-radius: 4px;
@@ -1155,14 +1171,17 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 4px;
 }
 
+.page-creator-post-step .progress-post,
 .page-company-creator-post-step .progress-post {
     padding: 0 50px;
 }
 
+.page-creator-post-step .progress-post .point,
 .page-company-creator-post-step .progress-post .point {
     position: relative;
 }
 
+.page-creator-post-step .progress-post .point .circle,
 .page-company-creator-post-step .progress-post .point .circle {
     width: 24px;
     height: 24px;
@@ -1173,6 +1192,7 @@ font-family: 'Roboto Condensed', sans-serif;
     position: relative;
 }
 
+.page-creator-post-step .progress-post .point.active .circle:after,
 .page-company-creator-post-step .progress-post .point.active .circle:after {
     position: absolute;
     top: 50%;
@@ -1188,10 +1208,12 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 6px;
 }
 
+.page-creator-post-step .progress-post .point.active.ok .circle:after,
 .page-company-creator-post-step .progress-post .point.active.ok .circle:after {
     background-color: #00EE0A;
 }
 
+.page-creator-post-step .progress-post .point .desc,
 .page-company-creator-post-step .progress-post .point .desc {
     font-family: 'Roboto';
     font-style: normal;
@@ -1207,11 +1229,13 @@ font-family: 'Roboto Condensed', sans-serif;
     top: 32px;
 }
 
+.page-creator-post-step .progress-post .step,
 .page-company-creator-post-step .progress-post .step {
     height: 3px;
     background-color: #42585F;
 }
 
+.page-creator-post-step .payment .payment-box,
 .page-company-creator-post-step .payment .payment-box {
     background: #0E181A;
     box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5);
@@ -1222,10 +1246,12 @@ font-family: 'Roboto Condensed', sans-serif;
     border-radius: 8px;
 }
 
+.page-creator-post-step .payment .payment-box .in,
 .page-company-creator-post-step .payment .payment-box .in {
     padding: 20px;
 }
 
+.page-creator-post-step .payment .payment-box .in .tit,
 .page-company-creator-post-step .payment .payment-box .in .tit {
     font-family: 'Roboto';
     font-style: normal;
