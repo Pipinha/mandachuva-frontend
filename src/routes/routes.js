@@ -41,6 +41,7 @@ import CreatorInsta from "../modules/Creator/Creator/CreatorInsta"
 import CreatorPostStep1 from "../modules/Creator/Creator/CreatorPostStep1"
 import CreatorPostStep2 from "../modules/Creator/Creator/CreatorPostStep2"
 import CreatorPostStep3 from "../modules/Creator/Creator/CreatorPostStep3"
+import CreatorOrderView from "../modules/Creator/Order/CreatorOrderView"
 
 const routes = [
     {
@@ -182,6 +183,14 @@ const routes = [
                 component: CompanyProfile,
                 auth: true,
                 profileId: PROFILE_COMPANY,
+                public: null
+            },
+            {
+                exact: true,
+                path: '/creator/order/:id',
+                component: CreatorOrderView,
+                auth: true,
+                profileId: PROFILE_CREATOR,
                 public: null
             },
             {
